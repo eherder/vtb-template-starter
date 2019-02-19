@@ -1,1038 +1,2541 @@
 {
-  "startDate":"Tue Nov 13 2018 00:00:00 GMT+0100 ",
-  "TSOrder":{
-     "id":594,
-     "sourceDescription":"Test VTB"
-  },
-  "extraFieldValues":[
-     {
-        "id":1,
-        "parent_id":null,
-        "link_type":"order",
-        "layout_data":null,
-        "display_at":null,
-        "sort_order":null,
-        "name":"Order Extra Fields",
-        "fields":[
-           {
-              "id":2,
-              "name":"header_video",
-              "type_id":1,
-              "valid_regex":"",
-              "defaults":null,
-              "category_id":2,
-              "sort_order":null,
-              "field_type":"TextBox",
-              "display_at":"both",
-              "show_in_product":0,
-              "layout_data":null,
-              "maxlength":null,
-              "maxlength_enforce":0,
-              "translated_name":"Header Video",
-              "field_value_link_id":5,
-              "link_type":"order",
-              "link_id":594,
-              "value":"https:\/\/www.youtube.com\/watch?v=Ioq1u3VvWRk"
-           }
+    "TSOrder": {
+      "texts": {
+        "general": "<p>Reizen en vervoer<\/p><p>Tijdens de geoffreerde reis heb je te maken met verschillende vervoerders en maatschappijen. We geven graag alvast de volgende informatie zodat jullie ook nu al goed ge&iuml;nformeerd zijn.<\/p><p>KLM<\/p><p><img alt=\"\" src=\"http:\/\/bft-test.telespirit.com\/site.php?mod=tsckeimg&amp;img=klm-logo.jpg&amp;mod_name=bft\" class=\"extrasmall left\" \/>Jullie vliegen deze reis met KLM\/Air France. KLM\/Air France verzorgt tijdens de intercontinentale vluchten kosteloos maaltijden, snacks en drankjes. Het gebruik van de persoonlijke entertainmentset is altijd inclusief. Speciale (die&euml;t) wensen of eisen? Laat het ons weten dan gaan we voor u aan de slag.<br \/><br \/>KLM\/Air France heeft afwijkende annuleringsvoorwaarden. Na ticketafgifte (doorgaans zo&#39;n 4 weken voor vertrek) wordt 100% annuleringskosten in rekening gebracht. Indien u een annuleringsverzekering heeft afgesloten, wordt dit uiteraard bij een geldige annuleringsreden gedekt.<br \/><br \/>Onderstaande informatie is zo up-to-date mogelijk, tussentijdse wijzigingen bij KLM\/Air France zijn echter altijd mogelijk. Controleer dan ook altijd via &#39;mijn reis&#39; op de KLM site de actuele status. De genoemde tijden in het reisschema kunnen door de luchtvaartmaatschappij gewijzigd worden, vliegtijden zijn altijd onder voorbehoud. Een luchtvaartmaatschappij is gemachtigd te allen tijde hun vluchtschema te wijzigen. Ook nadat de tickets al in jullie bezit zijn.<\/p><p>Bagageregeling<\/p><p>Bij KLM\/Air France heb je in de Economy Class een standaard bagagevrijdom van 1 stuks van maximaal 23 kilo. Iedere koffer mag max. 158 cm (l + b + h) groot zijn. Je mag binnen de&nbsp; tot maximaal 12kg aan handbagage meenemen. Met betrekking tot de handbagage mag ieder stuk maximaal 55 x 25 x 35 cm (l x b x h) groot zijn. Daarbij mag je ook een accessoire als handbagage (bijvoorbeeld een handtas of laptop) meenemen, hiervan zijn de maximum afmetingen 40 x 30 x 15 cm (l + b + h). De handbagage mag samen maximaal 12 kg wegen.<\/p><p>Meer bagage meenemen?<\/p><p>Soms heeft u niet voldoende aan 23kg of wilt u een extra tas of koffer meenemen. BON travel verzorgt dit vanzelfsprekend graag voor je.&nbsp; KLM rekent voor een extra koffer\/tas van maximaal 23kg een voorboekingstarief van &euro; 80,- per enkele reis. Op Schiphol betaal je meer. De extra bagage kan geboekt worden op de site van KLM, maar natuurlijk kunnen wij dit ook voor jullie verzorgen.<\/p><p>Stoelen met extra beenruimte<\/p><p>Wilt u tijdens uw reis lekker ruim zitten? Dan biedt KLM een aantal mogelijkheden. U kunt bijvoorbeeld kiezen voor voorkeursstoelen (helemaal voorin de Economy Class, maar met normale beenruimte), stoelen bij de nooduitgang of voor Economy Comfort stoelen (extra beenruimte en uw rugleuning kan verder naar achteren).<br \/><br \/>Logischerwijs zijn hier wel kosten aan verbonden, deze vari&euml;ren van &euro; 30,- (voorkeursstoelen zonder extra beenruimte) tot max. &euro; 150,- voor een stoel in de Economy Comfort (enkele reis). De prijs voor Economy Comfort is afhankelijk van de reismaand en u krijgt korting wanneer u ver van te voren de reservering maakt.<br \/>Flying Blue deelnemers krijgen korting op de stoelreservering, de hoogte ervan is afhankelijk van het deelnemerslevel.<br \/><br \/>Voor alle reserveringen in Economy Comfort geldt: &lsquo;zolang beschikbaar&#39;. KLM stelt een bepaald percentage stoelen beschikbaar voor de voorverkoop. Daarna sluit het systeem en is elke stoelreservering pas weer mogelijk bij online check-in (vanaf 30 uur voor vertrek).<br \/><br \/>V&oacute;&oacute;r het inchecken kunt u voor EUR 20 (per enkele vlucht) een standaardstoel reserveren.<br \/>Tijdens het inchecken kunnen standaardstoelen gratis worden gereserveerd.<br \/><br \/>Voor een gegarandeerde stoelnummer reservering is het noodzakelijk dat wij de tickets afgeven. Hiervoor is een volledige betaling van de tickets vereist. Wanneer jullie direct een betaalde stoelreservering willen doen, zal er dan dus een verhoogde aanbetaling zijn. Neemt u hiervoor svp contact met ons op.<br \/><br \/>Vliegt u KLM maar is uw vluchtnummer van Delta? In dat geval kunt u geen stoelen reserveren.<\/p><p><img alt=\"\" src=\"https:\/\/bft.telespirit.com\/site.php?mod=tsckeimg&amp;img=dividivi.png&amp;mod_name=bft\" class=\"extrasmall left\" \/>Divi Divi Air<\/p><p>Tijdens jullie reis vliegen jullie met Divi Divi Air tussen de verschillende eilanden. Omdat dit vaak hele korte vluchten zijn wordt er geen maaltijd aan boord geserveerd.<br \/><br \/>Bij Divi Divi Air gelden de volgende bagage regels:<\/p><p>Handbagage<\/p><p>1 x 3 kg<br \/>Afmetingen: 25 x 25 x 35 cm (l x b x h)<br \/>In sommige gevallen kan het zijn dat de handbagage toch moet worden ingecheckt vanwege de gelimiteerde ruimte aan boord.<\/p><p><strong>Ruimbagage<\/strong><\/p><p>Maximaal gewicht:&nbsp;18 kg<br \/>Afmeting: 67 x 38&nbsp;x 65 cm (l x b x h).<br \/>Zwaardere koffers kunnen niet bij check-in worden geaccepteerd. Ze moeten dan als vracht worden vervoerd of de inhoud moet worden gesplitst en afzonderlijk verpakt. Wanneer ompakken nodig is op de luchthaven, zijn de eventuele kosten hiervoor voor eigen rekening.<br \/>Wanneer u van te voren al weet dat u meer bagage meeneemt, is het verstandig dit van te voren al aan te geven.<br \/>Door de gelimiteerde ruimte aan boord, kan het zijn dat de extra bagage niet direct mee kan, het zal dan vervoerd worden op een latere vlucht.<br \/>Wanneer u extra bagage meeneemt is het eveneens aan te raden op tijd in te checken, minimaal 70 minuten voor vertrek.<br \/><br \/>Als de ruimbagage zwaarder is dan 18 kg geldt een toeslag van US$ 2,- per kilo (tot max. 23&nbsp;kg).<\/p><p>Vliegtijden zijn onder voorbehoud<\/p><p>De vliegtijden altijd onder voorbehoud. De airline kan en mag altijd de vliegtijden aanpassen. De binnenlandse vluchten tussen de eilanden onderling kunnen wij niet (optioneel) inboeken. Daarom zijn de tijden altijd onder voorbehoud van beschikbaarheid. Wanneer u beslist op een bepaalde tijd wilt vliegen, kunt u ervoor kiezen deze tickets direct na ontvangst van de factuur af te geven. Wanneer u hiervan gebruik wilt maken, vernemen wij dat graag. U dient dan een verhoogde aanbetaling te doen om de kosten voor het afgeven van de tickets te dekken. Na afgifte van de tickets kunnen deze niet meer gewijzigd worden en zijn de wijzigings- en annuleringskosten 100%. Daarnaast kunnen er na de ticketafgifte altijd nog schemawijzigingen of vertragingen optreden, wij hebben daar helaas geen invloed op.<br \/>Wanneer u besluit de tickets niet direct na boeking te betalen, zijn de vliegtijden derhalve onder voorbehoud en afhankelijk van de beschikbaarheid ca. 5 weken voor vertrek.<\/p><p>Vertrekbelasting<\/p><p>Tegenwoordig zijn bij de intercontinentale vluchten de zogenaamde vertrekbelastingen (departure tax) inbegrepen. Op binnenlandse vluchten dient u deze soms nog ter plaatse op het vliegveld te voldoen. In onderstaande matrix kunt u de bedragen zijn die u nog dient te voldoen.<br \/>&nbsp;<\/p><p>&nbsp;ArubaCura&ccedil;aoBonaire<\/p><p>ArubanvtUS$ 20,-US$ 9,-<\/p><p>Cura&ccedil;aoUS$ 34,25nvtUS$ 9,-<\/p><p>BonaireUS$ 34,25US$ 10,-nvt<\/p><p><br \/>Genoemde prijzen zijn per persoon<\/p><p>Brandstoftoeslag<\/p><p>Een deel van de prijs van een vliegticket bestaat uit brandstoftoeslag. Door de fluctuerende marktprijzen van ruwe olie kan de prijs van kerosine veranderen. Dit resulteert vaak in een verhoging van de brandstoftoeslag welke door de luchtvaartmaatschappij wordt doorberekend. Dit houdt in dat zelfs na het boeken van een reis, de prijs van een ticket nog hoger kan worden. Zolang de tickets nog niet volledig zijn betaald en zijn uitgegeven kunnen de airliners de prijs nog wijzigen. Bij een verhoging van de brandstoftoeslag (verlaging komt eigenlijk nooit voor) worden wij door de airliner op de hoogte gebracht. De verhoging is nog te voorkomen door de tickets binnen een (korte) termijn uit te geven. De tickets dienen dan volledig te zijn voldaan.<br \/><br \/>Jullie kunnen er voor kiezen om de tickets direct volledig te betalen, zodat BON travel ze tijdig kan uitgeven bij een brandstofverhoging. Een mogelijke tussentijdse verhoging is dan niet meer van toepassing. Het is wel zo dat na uitgifte de tickets niet meer kosteloos wijzigbaar zijn en je ze niet meer kan annuleren. Een goede annuleringsverzekering dekt echter wel de reeds gemaakte kosten.<br \/>Wanneer jullie binnen vijf werkdagen na ontvangst van de factuur aangeven de verhoging te willen voorkomen, dan vernemen wij dat graag per mail. Wij rekenen dan voor u uit wat het te betalen bedrag is.<br \/>Er is ook een mogelijkheid om de verhoging gewoon te betalen. BON travel zal dan een aanvullende factuur toezenden. In dit geval rekenen we, naast de verhoging ook eenmalig &euro; 25,- administratiekosten (per factuur).<\/p><p>Gezondheid<\/p><p>Gele Koorts<\/p><p>Voor de ABC en SSS eilanden zijn geen vaccinaties verplicht of aanbevolen, tenzij u komt uit een hoogrisicogebied voor <strong>gele koorts (oa. Suriname en Brazilie)<\/strong>. Dan is deze vaccinatie wel verplicht, ook&nbsp;voor baby&#39;s vanaf 6 maanden. Bekijk via deze link <a href=\"http:\/\/www.vaccinatiesopreis.nl\/gele-koorts-landen\/\">hier<\/a> welke landen dat zijn.<\/p><p>Reisdocumenten<\/p><p>Een geldig paspoort, ook wel internationale reispas genoemd, dient tot en met terugkomst in Nederland geldig te zijn voor de bestemmingen Aruba, Bonaire, Curacao en Guadeloupe en Martinique. Voor alle overige bestemmingen geldt dat ze nog minimaal 6 maanden geldig moet zijn, na terugkomst in Nederland.<br \/><br \/>Als EU-Ingezetene heb je geen visum nodig voor reizen naar de bestemmingen die BON travel aanbiedt. Heb je een andere nationaliteit of twijfel je over het wel of niet nodige hebben van een visa? Bezoek dan de <a href=\"http:\/\/nl.rsonac.org\/caribische-visa\/1---visum-kort-verblijf\">site van de rijksoverheid<\/a> over alle regels over visa&#39;s.<\/p><p>Autohuur AB Carrental Bonaire<\/p><p>Zorgeloos rijden<\/p><p>BON travel zorgt er voor dat u tijdens uw verblijf op Bonaire zich geen zorgen hoeft te maken. We bieden uw huurauto dan ook aan met een eigen risico van USD 0,-. Op deze wijze heeft u ook geen credit card als borg nodig. U bent volledig verzekerd tegen schade aan derden, schade die u zelf (eenzijdig) veroorzaakt en schade of vermissing door diefstal. Bijkomende service is de pech onderweg service, waardoor u 24 uur per dag geholpen wordt bij een pech geval. Kortom, u kunt helemaal van Bonaire genieten en zorgeloos gebruik maken van uw huurauto. Bij volledige verzekering mogen alle reisdeelnemers de auto besturen. Er geldt wel dat de bestuurder minimaal 23 jaar is en 1 jaar of langer een rijbewijs heeft.<\/p><p><strong>Toch een eigen risico?<\/strong><\/p><p>Natuurlijk kost deze volledige verzekering iets meer. U kunt er voor kiezen om de auto op basis van CDW te verzekeren. Uw eigen risico is dan USD 550,- per schade geval, u bent echter volledig verantwoordelijk voor de schade die ontstaat door diefstal of vermissing. Kiest u voor een CDW verzekering dan krijgt u een korting van &euro; 8,- per dag. We vernemen graag of u van deze optie gebruik wilt maken.<br \/><br \/>Een inzittendenverzekering (PAI) is niet inbegrepen, maar wordt meestal gedekt door de reisverzekering. Deze dekt de (letsel)schade van alle inzittenden van de huurauto in geval van een ongeluk. Let op: als er personen meerijden die niet op de reisverzekeringspolis van de hoofdbestuurder staan dan dienen zij een eigen reisverzekering te hebben.<br \/><br \/>De huur van de auto is op basis van 24 uur. Mocht u onverhoopt de auto later moeten inleveren dan de ophaaltijd, of wilt u langer gebruik maken van de auto dan worden ter plaatse extra kosten in rekening gebracht. Deze kosten bedragen ca. USD 6,75 per extra uur. De verzekering (USD 19 voor full insurance) wordt per dag in rekening gebracht, waardoor u bij verlaat inleveren van de auto altijd een volledige extra dag moet voldoen.<\/p><p>AB Carrental Bonaire late aankomst<\/p><p>Wanneer u met een binnenlandse vlucht aankomt buiten de openingstijden van de autoverhuurder (op ma tot do na 19.00 uur en op vr tot zo na 21.00 uur), staat de huurauto op Flamingo Airport voor jullie klaar. Vriendelijk verzoek om de volgende morgen even naar kantoor te rijden om de benodigde papieren te tekenen.&nbsp;<\/p><p>Autohuur Sunny Cars<\/p><p>U heeft een huurauto van Sunny Cars. Sunny biedt als een van de weinige verhuurders altijd een volledige verzekering, waarbij het eigen risico &euro; 0,- is. Ter plekke dient u wel een borg af te geven middels een creditcard op naam van de bestuurder waarop een bedrag wordt gereserveerd. Een credit card (met pincode) is derhalve verplicht!<br \/>Mocht er schade zijn dan zal de lokale verhuurder de borg van uw credit card incasseren. Bij terugkomst in Nederland zal Sunny Cars het volledige bedrag terugbetalen.<br \/><br \/>De huurauto is op basis van volledige verzekering en dan ook inclusief:<\/p><ul><li>Ongelimiteerd aantal kilometers<\/li><li>CDW verzekering (schade aan de huurauto) met terugbetaling van het eigen risico<\/li><li>TP verzekering (diefstal) met terugbetaling van het eigen risico<\/li><li>Dekking glas-banden-bodem en dakschade.<\/li><li>WA-verzekering met een aanvullende dekking van &euro; 7,5 miljoen<\/li><li>Ongevallenverzekering (PAI) met een dekking van Eur 20.000 per inzittende (Ja, het geldt dus voor alle inzittenden van de huurauto. Maar het is natuurlijk niet de bedoeling dat je met 6 personen in een auto zit terwijl er maar 5 gordels aanwezig zijn ;-)<\/li><li>Lokale belastingen<\/li><li>Luchthavenbelastingen<\/li><li>Tankregeling FF: Inleveren met benzinestand zoals opgehaald, meestal is dit &acute;vol-vol&acute;<\/li><li>Een 24\/7 Nederlandstalig noodnummer.<\/li><\/ul><p>Belangrijke huurinformatie:<\/p><ul><li>WAARBORG: Creditcard met pincode op bestuurdersnaam verplicht. Elektronische creditcards (= zonder reli&euml;f) en prepaid\/ debit cards worden niet geaccepteerd. De waarborg is USD 500<\/li><li>TANKREGELING FF: Inleveren met benzinestand zoals opgehaald, meestal is dit &acute;vol-vol&acute;. Wanneer u de huurauto met minder brandstof inlevert dan afgesproken worden er, naast de ontbrekende brandstof, servicekosten voor het aftanken in rekening gebracht. Voor de eerste tank brandstof wordt meestal een waarborg gevraagd.<\/li><li>RIJBEWIJS: Men moet minimaal 1 jaar in het bezit zijn van een geldig rijbewijs. Een geldig ticket voor de terugvlucht moet ook getoond worden bij het ophalen van de auto.<\/li><li>MINIMUM\/MAXIMUM LEEFTIJD: minimumleeftijd 25 jaar.<\/li><li>VERLAGEN VAN DE MINIMUMLEEFTIJD (23-24): USD 8,55 per dag<\/li><li>EXTRA BESTUURDER: USD 8,55 per dag. Eventuele extra bestuurders moeten ter plekke ook een rijbewijs en paspoort overleggen om op het huurcontract bijgeschreven te kunnen worden.<\/li><li>VERLENGING: als het contract al ingegaan is, moet een nieuwe reservering worden gemaakt via Sunny Cars en moet de klant een nieuwe huurovereenkomst ondertekenen ter plaatse. In principe dient de klant terug te keren naar een locatie en een nieuwe huurovereenkomst te ondertekenen en indien nodig een nieuwe borgsom achter te laten. Een andere mogelijkheid is om de verlenging te regelen in overleg met de lokale wagenparkbeheerder tegen de lokale voorwaarden en tarieven. Dan gelden de lokale voorwaarden en is er geen verzekeringsdekking via Sunny Cars, de betaling gebeurt dan direct ter plaatse.<\/li><li>Alle genoemde kosten voor accessoires en ter plaatse te betalen toeslagen zoals bijvoorbeeld &acute;one way&acute; of het verlagen van de minimum leeftijd zijn exclusief de lokale belastingen.<\/li><\/ul><p>Terugbetalign glas-banden-bodem-dakschade&nbsp;door Sunny Cars<\/p><ul><li>LET OP! In geval van schade moet u direct, ongeacht of er een andere partij bij betrokken is, de Cura&ccedil;ao Road Services (Forensys) (telefoonnummer 199) bellen aangezien de verzekeringsmaatschappijen een CRS rapport eisen. Indien geen CRS-schaderapport direct bij de gebeurtenis is opgemaakt, dan vervalt automatisch uw verzekering en bent u persoonlijk verantwoordelijk voor het gehele schadebedrag.<\/li><li>Schade aan glas-banden-bodem of dak (GBBD) van de huurauto zal de lokale verhuurder aan u doorberekenen. Dit bedrag is echter gedekt via de all-in huursom van Sunny Cars. Na thuiskomst kunt u het schadebedrag eenvoudig bij ons claimen via het declaratieformulier dat u vindt onder https:\/\/www.sunnycars.nl\/contact\/ . Terugbetaling is gegarandeerd, mits aan de voorwaarden voldaan uiteraard. Deze vindt u terug in de bijlage bij de voucher of in de Algemene Voorwaarden.<\/li><li>Sluit bij het ophalen van de huurauto dus geen aanvullende verzekeringen af. Doet u dit toch, dan krijgt u de kosten voor deze (overbodig) afgesloten verzekering niet van Sunny Cars terug. Ondervindt u problemen over deze voorwaarden bij het ophalen van de auto, neem dan contact met ons op via ons noodnummer zodat we kunnen bemiddelen.<\/li><\/ul><p>Accessoires<\/p><ul><li>BABYZITJE (6-11 maanden): USD 6,10 per dag. Vervangingskosten: USD 170<\/li><li>KINDERZITJE: USD 6,10 per dag. Vervangingskosten: USD 170<\/li><li>BOOSTER ZITJE: USD 6,10 per dag. Vervangingskosten: USD 170<\/li><li>GPS: is niet van te voren te reserveren. Bij ophalen van de auto kunt u vragen naar de beschikbaarheid van het GPS systeem. Bij verlies of diefstal van de GPS zal de verhuurder een schadevergoeding van USD 350 in rekening brengen.<\/li><li>IMPERIAAL: niet leverbaar<\/li><li>Alle genoemde kosten voor accessoires en ter plaatse te betalen toeslagen zoals bijvoorbeeld &acute;one way&acute; of het verlagen van de minimum leeftijd zijn exclusief de lokale belastingen.<\/li><\/ul><p>Wat wilt u geregeld hebben als de reis niet doorgaat, of als u onderweg een probleem heeft?<\/p><p><img alt=\"\" src=\"http:\/\/bft-test.telespirit.com\/site.php?mod=tsckeimg&amp;img=Schermafbeelding%202015-11-03%20om%2011.53.55.png&amp;mod_name=bft\" class=\"left small\" \/>Mocht uw reis onverhoopt niet doorgaan, moet u vroegtijdig naar huis terugkeren of mocht zich ter plaatse een calamiteit voordoen, dan is het fijn om goed verzekerd te zijn. BON travel werkt samen met de Europeesche Verzekeringen, wij treden op als tussenpersoon. Europeesche Verzekeringen helpt al bijna een eeuw om mensen onbezorgd te laten genieten van hun vrijetijdsbesteding. Van fietsen, varen en motorrijden tot campervakanties en verre reizen. Omdat ze zelf ook liefhebbers zijn, kennen ze de leuke kanten &eacute;n de risico&rsquo;s. Dat vind je terug in de verzekeringen en de manier waarop ze onze klanten helpen. Elke dag opnieuw.<br \/><br \/>Onderstaand lichten wij de mogelijkheden toe.<br \/><br \/><strong>Tip:<\/strong> wanneer u al in het bezit bent van een doorlopende reis- en annuleringsverzekering controleer dan s.v.p. of de werelddekking aanstaat bij de reisverzekering en of het verzekerd bedrag per verzekerde per reis op de annuleringsverzekering toereikend is. Dit verschilt per verzekeraar, maar is vaak rond de Eur 1.500,- per persoon per reis.<\/p><p>Kortlopende Annuleringsverzekeringen<\/p><p>U kunt de Kortlopende Annuleringsverzekering volledig aanpassen aan uw wensen. Kies voor een standaard Annuleringsverzekering of een Allrisk Annuleringsverzekering. Beide gelden voor vertrek &eacute;n tijdens uw vakantie. U bent daarmee beschermd tegen de kosten van annulering en ongebruikte reisdagen. Let op: u kunt alleen een beroep doen op uw annuleringsverzekering bij onvoorziene gebeurtenissen. Is een gebeurtenis of situatie v&oacute;&oacute;r&nbsp;het afsluiten van de verzekering al bekend? Dan biedt een annuleringsverzekering geen dekking.<br \/><br \/>De kortlopende annuleringsverzekering kost 5,5% van de totale reissom, exclusief 21% assurantiebelasting en &euro; 3,50 poliskosten.<\/p><p>Kortlopende reisverzekering<\/p><p>Wie reist, wil vrijheid. Ontspanning. Nieuwe ervaringen opdoen. Soms zijn dat niet de ervaringen die u verwacht. Dan is het prettig als u kunt terugvallen op een goede reisverzekering. De Kortlopende Reisverzekering van de Europeesche is er voor elke vakantie en elke reis. En dankzij alle extra&#39;s bepaalt u helemaal zelf wat u wel en niet verzekert.<\/p><p>Voor een reis naar het Caribisch gebied heeft u Werelddekking nodig.<\/p><p><strong>Comfort<\/strong><br \/>Met de Comfort-reisverzekering bent u verzekerd tegen volgende risico&#39;s:<br \/>&nbsp;<\/p><p>PersonenhulpKostprijs<\/p><p>Bagage&euro; 3.000,-<\/p><p>Geneeskundige kostenKostprijs<\/p><p>Ongevallen: Overlijden&euro; 12.500,-<\/p><p>Blijvende invaliditeit&euro; 75.000,-<\/p><p>Bovenstaande dekking kunnen we per persoon aanbieden voor &euro; 3,07 per reisdag, exclusief &euro; 3,50 poliskosten.<br \/><br \/>Bent u niet in Nederland woonachtig? Dan kunnen we de kortlopende reisverzekering alleen voor u afsluiten als u in Belgie of Duitsland woont. Als u uw reisverzekering wilt uitbreiden met Geneeskundige kosten, dan stelt de Europeesche als eis dat uw ziektekostenverzekering een buitenlanddekking heeft die vergelijkbaar is met de Nederlandse Basis zorgverzekering. Er moet dus een primaire ziektekostenvoorziening zijn voor het land en de plaats waar de medische kosten worden gemaakt. Voldoet u aan deze voorwaarde, dan is het mogelijk om de dekking Geneeskundige kosten af te sluiten. Voor inwoners van Belgie en Duitsland is het niet mogelijk de Optimaaldekking en\/of rechtsbijstand af te sluiten.<\/p><p>Voorwaarden &amp; Garanties<\/p><p>Op deze offerte zijn diverse voorwaarden en garanties van toepassing. De offerte is samengesteld conform de eisen van de reclamecode Reisaanbiedingen 2014. Wilt u deze nalezen kijk dan op de <a href=\"https:\/\/www.reclamecode.nl\/nrc\/pagina.asp?paginaID=273%20&amp;deel=2\"> website<\/a> van de Stichting Reclame Code.<br \/><br \/>De voorwaarden van BON travel zijn standaard, partners hanteren soms andere voorwaarden. Deze gelden dan voor de voorwaarden van BON travel. Hieronder tref je wat voor jullie van toepassing is. Mochten er onduidelijkheden over bestaan dan horen we dat graag en geven we een duidelijke uitleg. Als tip: controleer de dekking van je reis- en annuleringsverzekering. BON travel kan deze ook voor jullie verzorgen, we zijn intermediair van de Europeesche Verzekeringen.<\/p><p>(Aan)betaling van de reissom plus eventuele verzekeringen<\/p><p>BON travel hanteert op de standaard reizen een aanbetaling van 15% van de reissom. Als je ook een reis- en\/of annuleringsverzekering hebt afgesloten zal deze volledig moeten worden voldaan (m.a.w. 15% van de reissom + 100% verzekeringskosten). Voor maatwerkreizen en\/of speciale aanbiedingen\/acties kan een verhoogde aanbetaling gelden. Dit zal duidelijk in de offerte worden vermeld.<br \/><br \/>De aanbetaling, welke bij de bevestiging van de reis wordt gevraagd, dient per ommegaande te worden voldaan. Het resterende bedrag dient uiterlijk 6 weken voor vertrek te zijn voldaan.<\/p><p>Betaalmethoden<\/p><p>Nadat je je reis bij BON travel hebt geboekt ontvang je per email de definitieve bevestiging en factuur. De factuur kun je (veelal kosteloos) per bankoverschrijving voldoen. Het is ook mogelijk om met credit card te betalen. Als je met een credit card wil betalen dan ontvang je van BON travel een Paypal betalingsverzoek. Het betaalverzoek zal bestaan uit de reissom + 3,5% kosten welke door Pay Pal worden berekend. Het is niet mogelijk om per PIN te betalen.<\/p><p>Reisbescheiden<\/p><p>De reisbescheiden, zoals vliegtickets, vouchers en extra informatie voor je reis zullen ongeveer tien (werk)dagen voor vertrek per post naar je worden toegezonden. De gehele reissom dient wel door BON travel te zijn ontvangen.<\/p><p>Voorwaarden BON travel<\/p><p>Voor de actuele voorwaarden van BON travel verwijzen we graag door naar onze website <a href=\"http:\/\/www.bontravel.nl\/voorwaarden\/\">http:\/\/www.bontravel.nl\/voorwaarden\/<\/a>. Of ga direct naar de <a href=\"http:\/\/www.bontravel.nl\/wp-content\/uploads\/2012\/01\/Voorwaarden-BON-Travel.pdf\"> algemene voorwaarden<\/a> of <a href=\"http:\/\/www.bontravel.nl\/wp-content\/uploads\/2012\/01\/Annuleringsvoorwaarden-BON-Travel.pdf\"> annuleringsvoorwaarden<\/a> van BON travel.<\/p><p>Calamiteitenfonds<\/p><p><img alt=\"\" src=\"http:\/\/bft-test.telespirit.com\/site.php?mod=tsckeimg&amp;img=logo-calamiteitenfonds.jpg&amp;mod_name=bft\" class=\"extrasmall left\" \/>Binnen de grenzen van de garantieregeling van het Calamiteitenfonds vallen de op deze internetsite gepubliceerde reizen onder de garantie van het Calamiteitenfonds. Deze garantie houdt in dat jij als consument die deelneemt aan een door ons georganiseerde reis:<br \/>- (een deel van) uw reissom terugkrijgt indien wij de reis als gevolg van een calamiteit niet of niet volledig kunnen uitvoeren;<br \/>- de noodzakelijke meerkosten vergoed krijgt indien wij als gevolg van een calamiteit de reis moeten aanpassen of indien wij u vervroegd moeten repatri&euml;ren.<br \/>Onder calamiteit wordt verstaan een door molest of natuurramp veroorzaakte abnormale gebeurtenis. Meer informatie vindt u op <a href=\"http:\/\/www.calamiteitenfonds.nl\/garantieregeling\">http:\/\/www.calamiteitenfonds.nl\/garantieregeling<\/a><\/p><p>Stichting Garantiefonds Reisgelden (SGR)<\/p><p><img alt=\"\" src=\"http:\/\/bft-test.telespirit.com\/site.php?mod=tsckeimg&amp;img=sgr-logo.jpg&amp;mod_name=bft\" class=\"extrasmall left\" \/>BON Travel is deelnemer in de Stichting Garantiefonds Reisgelden (SGR) en onder deelnemersnummer 2644. Op deze overeenkomst is de SGR-garantieregeling van toepassing. Je kunt de voorwaarden vinden op www.sgr.nl\/garantieregeling. Op verzoek stuurt SGR deze voorwaarden kosteloos toe.<\/p>",
+        "proposal": "<p>Met heel veel plezier hebben we voor jullie een Caribische reisplan gemaakt naar de Benedenwindse eilanden Bonaire en Cura&ccedil;ao.<br \/><br \/>Dit vrijblijvende reisvoorstel geeft een beeld van wat jullie allemaal tijdens de combinatiereis naar Bonaire &amp; Cura&ccedil;ao&nbsp;gaan zien en meemaken. Bij het opstellen van deze offerte hebben we zoveel mogelijk naar jullie wensen geluisterd en deze vertaald in een programma. Het programma is nog aanpasbaar, dat is de kracht van BON travel.<br \/><br \/>In het voorstel heb ik een retourvlucht per KLM op zaterdag 22 juni en zaterdag 6 juli (aankomst zondag 7 juli in NL) geoffreerd. Jullie verblijven nu eerst 7 nachten op Bonaire bij het Buddy Dive Resort en vervolgens 7 nachten op Cura&ccedil;ao bij het Lions Dive Resort. Op beide eilanden heb ik een upgrade van het kamertype genoemd en een voordeliger verblijf.<br \/><br \/>Tijdens het maken van dit reisplan zijn nog geen opties geplaatst op de vluchten en het landarrangement. De beschikbaarheid van beide is dan ook nog onder voorbehoud. BON travel kan geheel vrijblijvend en kosteloos deze reis voor jullie in optie nemen. Hierdoor ben je er zeker van dat deze reis ook zo kan worden gemaakt zoals aangegeven. Het zou toch jammer zijn als dit niet zou kunnen.<br \/><br \/>Een optie kunnen we plaatsen met de gegevens van de reizigers, zoals in de controlestrip onderaan het paspoort (internationale reispas):<\/p><ul><li>voornaam (niet roepnaam);<\/li><li>achternaam (meisjesnaam);<\/li><li>geboortedatum;<\/li><li>nationaliteit<\/li><li>het paspoort \/ reispas nummer is niet nodig.<\/li><\/ul><p>We vernemen heel graag of je hier gebruik van zou willen maken.&nbsp;<br \/><br \/>We hopen dat we met dit reisvoorstel jullie blij maken, laat de voorpret voor de vakantie vast beginnen. We horen dan ook heel graag hoe jullie verder zouden willen gaan.<\/p>"
+      },
+      "id": 5796,
+      "sourceDescription": "#005796: Frank Bijsterbosch"
+    },
+    "startDate": "Sat Jun 22 2019 00:00:00 GMT+0200 ",
+    "extraFieldValues": [
+      {
+        "id": 1,
+        "parent_id": null,
+        "link_type": "order",
+        "layout_data": null,
+        "display_at": null,
+        "sort_order": null,
+        "name": "Cover",
+        "fields": [
+          {
+            "id": 1,
+            "name": "cover",
+            "type_id": 3,
+            "valid_regex": "",
+            "defaults": "aruba|antigua|anguilla|bonaire|bonaire-duiken|belize|abc|loungereis|loungereisdeluxe|saba|st-eustatius|st-maarten|st-lucia|aruba-bonaire|bonaire-curacao|aruba-curacao|islandhopping-algemeen;aruba|antigua|anguilla|bonaire|bonaire-duiken|belize|abc|loungereis|loungereisdeluxe|saba|st-eustatius|st-maarten|st-lucia|aruba-bonaire|bonaire-curacao|aruba-curacao|islandhopping-algemeen|statia-bonaire|jamaica-sandals|curacao|dominica|dominica-stbarth|belize-newyork|belize-duiken|bonaire-newyork|mia|dom-sxm|bart|sab-eux|nye-cur|nye-caribbean|antigua-barbuda|guadeloupe|sxm-guadeloupe|antigua-sxm|antigua-guadeloupe|dom-ptp|nyc-aruba|martinique|guadeloupe-martinique|zeilen-grenadines|slu-martinique|belize-4x4|zeilen-grenada-grenadines",
+            "category_id": 1,
+            "sort_order": null,
+            "field_type": "FilteringSelect",
+            "display_at": null,
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Cover",
+            "selected": "aruba|antigua|anguilla|bonaire|bonaire-duiken|belize|abc|loungereis|loungereisdeluxe|saba|st-eustatius|st-maarten|st-lucia|aruba-bonaire|bonaire-curacao|aruba-curacao|islandhopping-algemeen",
+            "options": [
+              "aruba",
+              "antigua",
+              "anguilla",
+              "bonaire",
+              "bonaire-duiken",
+              "belize",
+              "abc",
+              "loungereis",
+              "loungereisdeluxe",
+              "saba",
+              "st-eustatius",
+              "st-maarten",
+              "st-lucia",
+              "aruba-bonaire",
+              "bonaire-curacao",
+              "aruba-curacao",
+              "islandhopping-algemeen",
+              "statia-bonaire",
+              "jamaica-sandals",
+              "curacao",
+              "dominica",
+              "dominica-stbarth",
+              "belize-newyork",
+              "belize-duiken",
+              "bonaire-newyork",
+              "mia",
+              "dom-sxm",
+              "bart",
+              "sab-eux",
+              "nye-cur",
+              "nye-caribbean",
+              "antigua-barbuda",
+              "guadeloupe",
+              "sxm-guadeloupe",
+              "antigua-sxm",
+              "antigua-guadeloupe",
+              "dom-ptp",
+              "nyc-aruba",
+              "martinique",
+              "guadeloupe-martinique",
+              "zeilen-grenadines",
+              "slu-martinique",
+              "belize-4x4",
+              "zeilen-grenada-grenadines"
+            ]
+          }
         ]
-     }
-  ],
-  "participants":{
-     "party 1":[
+      },
+      {
+        "id": 6,
+        "parent_id": null,
+        "link_type": "order",
+        "layout_data": null,
+        "display_at": null,
+        "sort_order": null,
+        "name": "",
+        "fields": [
+          {
+            "id": 10,
+            "name": "prijsweergave",
+            "type_id": 3,
+            "valid_regex": "",
+            "defaults": "geen_pp_prijs_totaal;geen_pp_prijs_totaal;afwijkend",
+            "category_id": 6,
+            "sort_order": null,
+            "field_type": "FilteringSelect",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Not translated",
+            "selected": "geen_pp_prijs_totaal",
+            "options": [
+              "geen_pp_prijs_totaal"
+            ]
+          },
+          {
+            "id": 11,
+            "name": "offertenamen",
+            "type_id": 2,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 6,
+            "sort_order": null,
+            "field_type": "CheckBox",
+            "display_at": null,
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Not translated"
+          },
+          {
+            "id": 12,
+            "name": "vluchtschemanamen",
+            "type_id": 2,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 6,
+            "sort_order": null,
+            "field_type": "CheckBox",
+            "display_at": null,
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Not translated"
+          },
+          {
+            "id": 13,
+            "name": "toonduplicates",
+            "type_id": 2,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 6,
+            "sort_order": null,
+            "field_type": "CheckBox",
+            "display_at": null,
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Not translated"
+          }
+        ]
+      }
+    ],
+    "participants": {
+      "party 1": [
         {
-           "id":5271,
-           "title_id":2,
-           "title":"Mevr.",
-           "initials":"",
-           "name":"Jane",
-           "surname":"Doe",
-           "company":"",
-           "street":"",
-           "housenum":"",
-           "postalcode":"",
-           "city":"",
-           "country":"NL",
-           "birthdate":null,
-           "age_calc_type":"birthdate",
-           "informal":1,
-           "language_id":2,
-           "notes":"",
-           "created":"2018-12-07 12:36:10",
-           "created_by":null,
-           "modified":null,
-           "minimal":1,
-           "use_maincontact_details":0,
-           "nationality":null,
-           "passport_firstname":"",
-           "passport_number":"",
-           "passport_expiry_date":null,
-           "frequent_flyer_numbers":"",
-           "airline_preference":"",
-           "meal_preference":"",
-           "seat_preference":"",
-           "preferences_memo":"",
-           "smoking":null,
-           "lodging_preference":"",
-           "province":"",
-           "passport_issue_city":"",
-           "birth_city":"",
-           "contact_tag":null,
-           "surname_prefix":"",
-           "last_email_contact_ts":null,
-           "last_email_contact_id":null,
-           "last_email_contact_mailbox_id":null,
-           "last_call_contact_id":null,
-           "last_call_contact_ts":null,
-           "passport_surname":"",
-           "inserted_by":9,
-           "inserted_at":"2018-12-07 12:36:10",
-           "inserted_audit_id":null,
-           "updated_by":9,
-           "updated_at":"2018-12-07 12:36:10",
-           "updated_audit_id":null,
-           "general_info":null,
-           "passport_nr":null,
-           "boardingplace_id":null,
-           "groupnr":1,
-           "sex":"female",
-           "has_linked_ols":38,
-           "has_locked_ols":0,
-           "partyName":"party 1"
+          "id": 40797,
+          "title_id": 1,
+          "title": "",
+          "initials": "F.G.H.J.",
+          "name": "Frank",
+          "surname": "Bijsterbosch",
+          "company": "",
+          "street": "",
+          "housenum": "",
+          "postalcode": "",
+          "city": "",
+          "country": "NL",
+          "birthdate": "1969-04-06",
+          "age_calc_type": "birthdate",
+          "informal": 0,
+          "language_id": 2,
+          "notes": "",
+          "created": "2016-02-24 13:48:26",
+          "created_by": null,
+          "modified": null,
+          "minimal": 1,
+          "use_maincontact_details": 0,
+          "nationality": null,
+          "passport_firstname": "Frank",
+          "passport_number": "",
+          "passport_expiry_date": null,
+          "frequent_flyer_numbers": "",
+          "airline_preference": "",
+          "meal_preference": "vegetarier",
+          "seat_preference": "",
+          "preferences_memo": "",
+          "smoking": "",
+          "lodging_preference": "",
+          "province": "",
+          "passport_issue_city": "",
+          "birth_city": "",
+          "contact_tag": null,
+          "surname_prefix": "",
+          "last_email_contact_ts": null,
+          "last_email_contact_id": null,
+          "last_email_contact_mailbox_id": null,
+          "last_call_contact_id": null,
+          "last_call_contact_ts": null,
+          "passport_surname": "",
+          "inserted_by": 20,
+          "inserted_at": "2015-07-21 12:16:51",
+          "inserted_audit_id": 478359,
+          "updated_by": 20,
+          "updated_at": "2016-03-08 11:53:11",
+          "updated_audit_id": 1028463,
+          "partyName": "party 1"
+        },
+        {
+          "id": 44061,
+          "title_id": 2,
+          "title": "",
+          "initials": "",
+          "name": "Baukje",
+          "surname": "Douma",
+          "company": "",
+          "street": "",
+          "housenum": "",
+          "postalcode": "",
+          "city": "",
+          "country": "NL",
+          "birthdate": "1958-12-10",
+          "age_calc_type": "birthdate",
+          "informal": 0,
+          "language_id": 2,
+          "notes": "",
+          "created": "2016-09-01 15:50:06",
+          "created_by": null,
+          "modified": null,
+          "minimal": 1,
+          "use_maincontact_details": 0,
+          "nationality": null,
+          "passport_firstname": "Baukje",
+          "passport_number": "",
+          "passport_expiry_date": null,
+          "frequent_flyer_numbers": "",
+          "airline_preference": "",
+          "meal_preference": "",
+          "seat_preference": "",
+          "preferences_memo": "",
+          "smoking": "",
+          "lodging_preference": "",
+          "province": "",
+          "passport_issue_city": "",
+          "birth_city": null,
+          "contact_tag": null,
+          "surname_prefix": "",
+          "last_email_contact_ts": null,
+          "last_email_contact_id": null,
+          "last_email_contact_mailbox_id": null,
+          "last_call_contact_id": null,
+          "last_call_contact_ts": null,
+          "passport_surname": "",
+          "inserted_by": 20,
+          "inserted_at": "2016-09-01 15:50:06",
+          "inserted_audit_id": 1381120,
+          "updated_by": 29,
+          "updated_at": "2016-09-01 16:34:40",
+          "updated_audit_id": 1381255,
+          "partyName": "party 1"
+        },
+        {
+          "id": 26978,
+          "title_id": 2,
+          "title": "",
+          "initials": "E.B.",
+          "name": "Eline",
+          "surname": "Herder",
+          "company": "",
+          "street": "",
+          "housenum": "",
+          "postalcode": "",
+          "city": "",
+          "country": "NL",
+          "birthdate": "1987-12-27",
+          "age_calc_type": "birthdate",
+          "informal": 1,
+          "language_id": 2,
+          "notes": "",
+          "created": "2015-08-02 16:35:08",
+          "created_by": null,
+          "modified": null,
+          "minimal": 1,
+          "use_maincontact_details": 0,
+          "nationality": null,
+          "passport_firstname": "Eline",
+          "passport_number": "",
+          "passport_expiry_date": null,
+          "frequent_flyer_numbers": "",
+          "airline_preference": "",
+          "meal_preference": "",
+          "seat_preference": "",
+          "preferences_memo": "",
+          "smoking": "",
+          "lodging_preference": "",
+          "province": "",
+          "passport_issue_city": "",
+          "birth_city": "",
+          "contact_tag": null,
+          "surname_prefix": "",
+          "last_email_contact_ts": null,
+          "last_email_contact_id": null,
+          "last_email_contact_mailbox_id": null,
+          "last_call_contact_id": null,
+          "last_call_contact_ts": null,
+          "passport_surname": null,
+          "inserted_by": null,
+          "inserted_at": null,
+          "inserted_audit_id": null,
+          "updated_by": 20,
+          "updated_at": "2016-03-08 11:53:04",
+          "updated_audit_id": 1028462,
+          "partyName": "party 1"
         }
-     ]
-  },
-  "segments":[
-     {
-        "nights":2,
-        "day":1,
-        "isFlight":false,
-        "typeId":12,
-        "title":"Consectetur adipiscing elit",
-        "subTitle":"Donec iaculis enim",
-        "content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ligula mauris, consequat quis leo maximus, pellentesque condimentum urna. Pellentesque vel metus non ligula efficitur condimentum. Donec enim nisi, mollis sed aliquet id, tempor quis risus. Pellentesque neque massa, ultrices sed eros eu, pretium porta urna. Curabitur nulla ipsum, fringilla convallis quam in, pretium cursus justo. Cras aliquam orci sed lorem rhoncus, ac tincidunt elit interdum. Cras nec tortor augue. Donec vehicula nulla posuere ante rutrum, ultrices facilisis eros accumsan. Donec elementum finibus arcu, ut viverra nisi porttitor vitae. Nunc sed ullamcorper libero, ac condimentum purus. Nunc aliquet, velit nec egestas vestibulum, nulla arcu hendrerit justo, at tincidunt magna nisl eu orci. Vestibulum a nisi varius, egestas orci id, commodo ex. Donec iaculis enim quis libero viverra, eget tempus tellus posuere. Aliquam sit amet lectus eros. Mauris posuere ex dolor, a luctus ante tempus eu. Proin imperdiet mattis odio, ut lobortis tellus imperdiet nec.<\/p>",
-        "TSBlock":{
-           "id":3249
+      ]
+    },
+    "segments": [
+      {
+        "nights": 0,
+        "day": 1,
+        "isFlight": false,
+        "typeId": 12,
+        "title": null,
+        "subTitle": null,
+        "content": "<p><br \/>Een combinatiereis naar Curacao en Bonaire: met deze reis combineer je twee heerlijke benedenwindse eilanden tijdens &eacute;&eacute;n vakantie. Bezoek <strong>Cura&ccedil;ao<\/strong> en <strong>Bonaire<\/strong> en ontdek de verschillende culturen. De eilanden liggen niet ver uit elkaar, de verschillen zijn echter groot. En dat maakt het zo leuk om deze combinatiereis als vakantie te boeken.<br \/><br \/>Op het veelzijdige Cura&ccedil;ao ontdek je het kleurrijke Willemstad, rustige romantische baaitjes of ga chillen bij een van de beachclubs. Op Bonaire geniet je van de relaxte eilandsfeer, mooie natuur en van Caribisch beste watersportmogelijkheden (windsurfen, kitesurfen, duiken, snorkelen).<br \/><br \/>BON travel heeft dit reisplan op basis van jullie wensen opgesteld. De combinatiereis naar Curacao en Bonaire is helemaal op maat samen te stellen. We passen graag de offerte aan op basis van jullie wensen. De volgorde van de eilanden, de duur op de verschillende eilanden, de resorts waar je zou willen verblijven, etc.&nbsp; Ik ben nu uitgegaan van de route Bonaire - Cura&ccedil;ao aangezien dit jullie voorkeur heeft.<\/p>",
+        "TSBlock": {
+          "id": 46446
         },
-        "flightInfo":[
-
+        "flightInfo": [
+          
         ],
-        "media":[
-           {
-              "sourceType":"mediaspirit",
-              "sourceId":"09eea36db78f48a52450481ffc13c3b3",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Zuid-Afrika-Fauna-babyolifant.JPG"
-           },
-           {
-              "sourceType":"mediaspirit",
-              "sourceId":"677a2ed7fe35b9d5f8b300bb67823f5b",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Zuid-Afrika-BlydeRiverCanyon.JPG"
-           },
-           {
-              "sourceType":"mediaspirit",
-              "sourceId":"804f8c2ccbce001f14a2b3640bf60fd5",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/route%20van%20Johannesburg%20naar%20Hazyview%20Machadodorp%20(1).jpg"
-           }
+        "media": [
+          {
+            "sourceType": "mediaspirit",
+            "sourceId": "10bd5841485268c1d377c16d8e9bd469",
+            "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/Sleeping-Giant-600-007.jpg"
+          },
+          {
+            "sourceType": "mediaspirit",
+            "sourceId": "09b5d2e3bf8716f1856c183b7bcffd0d",
+            "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/Pagua-Bay-Resort-Dominica 31.jpg"
+          },
+          {
+            "sourceType": "mediaspirit",
+            "sourceId": "10bd5841485268c1d377c16d8e99d4bc",
+            "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/gaia-400-015.jpg"
+          }
         ],
-        "elements":[
-           {
-              "offset":0,
-              "nights":2,
-              "unitAmount":2,
-              "unitId":2,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Hotel Iaculis Ligula",
-              "TSProduct":{
-                 "id":191,
-                 "tag":"GUAACCELH",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8457
-              },
-              "media":[
-                 {
-                    "id":1,
-                    "sourceType":"mediaspirit",
-                    "sourceId":"b87d869228aac78678cd0559d0225241",
-                    "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Manggis,%20Alila%20Manggis%20(8).jpg",
-                    "description":null
-                 }
+        "elements": [
+          {
+            "offset": 0,
+            "nights": 0,
+            "unitAmount": 1,
+            "unitId": 0,
+            "optional": false,
+            "not_calculated": false,
+            "title": "tekst",
+            "TSProduct": {
+              "id": 503,
+              "tag": null,
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111483
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "tekst",
+              "discountMethod": null,
+              "exchangeRate": "1.000000000",
+              "purchaseCurrency": "EUR",
+              "salesCurrency": "EUR",
+              "participants": [
+                
               ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Hotel Iaculis Ligula",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000",
-                 "hasError":"Bad Request: failed fetching live prices: error_no_matrixline_found",
-                 "usedParams":{
-                    "productId":191,
-                    "startDate":"2018-11-13",
-                    "nrOfItems":2,
-                    "nrOfAdults":1,
-                    "nrOfChildren":0,
-                    "nrOfBabies":0,
-                    "nrOfAdolescent":0,
-                    "matrixDescription":"Vulputate ut"
-                 }
-              },
-              "additionalText":"Glass aptent taciti sociosqu ad litora torquent per conubia",
-              "subAdditionalText":null,
-              "roomTypes":[
-                 {
-                    "defaultPrice":"0.0000",
-                    "description":"Vulputate ut",
-                    "minPerson":null,
-                    "maxPerson":null,
-                    "minUnit":null,
-                    "maxUnit":null
-                 }
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "hasPreviousElementParticipantOverlap":true,
-              "day":1,
-              "date":"2018-11-12T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false,
-              "subTitle":"Vulputate ut"
-           },
-           {
-              "offset":0,
-              "nights":2,
-              "unitAmount":2,
-              "unitId":2,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Hotel Iaculis Ligula",
-              "TSProduct":{
-                 "id":191,
-                 "tag":"GUAACCELH",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8457
-              },
-              "media":[
-                 {
-                    "id":1,
-                    "sourceType":"mediaspirit",
-                    "sourceId":"b87d869228aac78678cd0559d0225241",
-                    "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/P1030133_gu329s.JPG",
-                    "description":null
-                 }
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Hotel Iaculis Ligula",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000",
-                 "hasError":"Bad Request: failed fetching live prices: error_no_matrixline_found",
-                 "usedParams":{
-                    "productId":191,
-                    "startDate":"2018-11-13",
-                    "nrOfItems":2,
-                    "nrOfAdults":1,
-                    "nrOfChildren":0,
-                    "nrOfBabies":0,
-                    "nrOfAdolescent":0,
-                    "matrixDescription":"Libero gravida"
-                 }
-              },
-              "additionalText":"Class aptent taciti sociosqu ad litora torquent per conubia",
-              "subAdditionalText":null,
-              "roomTypes":[
-                 {
-                    "defaultPrice":"0.0000",
-                    "description":"Libero gravida",
-                    "minPerson":null,
-                    "maxPerson":null,
-                    "minUnit":null,
-                    "maxUnit":null
-                 }
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "hasPreviousElementParticipantOverlap":true,
-              "day":1,
-              "date":"2018-11-12T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false,
-              "subTitle":"Libero gravida"
-           },
-           {
-              "offset":0,
-              "nights":2,
-              "unitAmount":2,
-              "unitId":2,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Hotel Etiam Sodales",
-              "TSProduct":{
-                 "id":191,
-                 "tag":"GUAACCELH",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8457
-              },
-              "media":[
-                 {
-                    "id":1,
-                    "sourceType":"mediaspirit",
-                    "sourceId":"b87d869228aac78678cd0559d0225241",
-                    "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Manggis,%20Alila%20Manggis%20(20).jpg",
-                    "description":null
-                 }
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Hotel Etiam Sodales",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000",
-                 "hasError":"Bad Request: failed fetching live prices: error_no_matrixline_found",
-                 "usedParams":{
-                    "productId":191,
-                    "startDate":"2018-11-13",
-                    "nrOfItems":2,
-                    "nrOfAdults":1,
-                    "nrOfChildren":0,
-                    "nrOfBabies":0,
-                    "nrOfAdolescent":0,
-                    "matrixDescription":"Ex Ontbijt"
-                 }
-              },
-              "additionalText":"Class aptent taciti sociosqu ad litora torquent per conubia",
-              "subAdditionalText":null,
-              "roomTypes":[
-                 {
-                    "defaultPrice":"0.0000",
-                    "description":"Proin faucibus",
-                    "minPerson":null,
-                    "maxPerson":null,
-                    "minUnit":null,
-                    "maxUnit":null
-                 }
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "hasPreviousElementParticipantOverlap":true,
-              "day":1,
-              "date":"2018-11-12T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false,
-              "subTitle":"Proin faucibus"
-           },
-           {
-              "offset":0,
-              "nights":2,
-              "unitAmount":2,
-              "unitId":2,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Hotel Sed Porttitor Lacus",
-              "TSProduct":{
-                 "id":191,
-                 "tag":"GUAACCELH",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8457
-              },
-              "media":[
-                 {
-                    "id":1,
-                    "sourceType":"mediaspirit",
-                    "sourceId":"b87d869228aac78678cd0559d0225241",
-                    "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/IMG_0360_8iylui.JPG",
-                    "description":null
-                 }
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Hotel Sed Porttitor Lacus",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"5.000",
-                 "hasError":"Bad Request: failed fetching live prices: error_no_matrixline_found",
-                 "usedParams":{
-                    "productId":191,
-                    "startDate":"2018-11-13",
-                    "nrOfItems":2,
-                    "nrOfAdults":1,
-                    "nrOfChildren":0,
-                    "nrOfBabies":0,
-                    "nrOfAdolescent":0,
-                    "matrixDescription":"Hotel Sed Porttitor Lacus"
-                 }
-              },
-              "additionalText":"Glass aptent taciti sociosqu ad litora torquent per conubia",
-              "subAdditionalText":null,
-              "roomTypes":[
-                 {
-                    "defaultPrice":"0.0000",
-                    "description":"Hotel Sed Porttitor Lacus",
-                    "minPerson":null,
-                    "maxPerson":null,
-                    "minUnit":null,
-                    "maxUnit":null
-                 }
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "hasPreviousElementParticipantOverlap":true,
-              "day":1,
-              "date":"2018-11-12T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false,
-              "subTitle":"Posuere dolor"
-           }
+              "salesTotal": 0
+            },
+            "subAdditionalText": null,
+            "additionalText": null,
+            "roomTypes": [
+              
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "needsOffsetRecalculation": true,
+            "day": 1,
+            "date": "2019-06-21T22:00:00.000Z",
+            "endDate": "2019-06-21T22:00:00.000Z",
+            "roomTypeMatchesParticipants": true
+          }
         ],
-        "inViewport":false,
-        "maps":{
-           "latitude":-24.238182,
-           "longitude":19.801568,
-           "zoom":5
+        "inViewport": true,
+        "maps": {
+          "latitude": 52.212853,
+          "longitude": 5.2886923,
+          "zoom": 15
         },
-        "carRentalElements":[
-
+        "carRentalElements": [
+          
         ],
-        "date":"2018-11-12T23:00:00.000Z",
-        "missingBookableDays":false,
-        "elementsOrder":"8457",
-        "elementsMapActive":"",
-        "hasElementsOverlap":false,
-        "carRentalEnd":null,
-        "carRentalStart":null,
-        "endDate":"2018-11-14T23:00:00.000Z"
-     },
-     {
-        "nights":0,
-        "day":2,
-        "isFlight":false,
-        "typeId":12,
-        "title":"Nullam in augue",
-        "subTitle":"Vivamus nisl est",
-        "content":"<p>Nullam in augue et eros congue dictum. Vivamus nisl est, interdum et molestie non, pulvinar quis leo. Morbi convallis est leo, ut fermentum velit malesuada non. Phasellus nec enim sapien. In nec iaculis ligula. Donec viverra, libero ut blandit condimentum, velit orci finibus turpis, vel accumsan nibh eros vel eros. Fusce libero sapien, accumsan eu massa quis, efficitur iaculis elit. Sed sed tincidunt enim, quis faucibus massa. Vestibulum vel risus vitae enim sagittis ornare sed et est.<\/p>",
-        "TSBlock":{
-           "id":2991
+        "date": "2019-06-21T22:00:00.000Z",
+        "missingBookableDays": false,
+        "elementsOrder": "111483",
+        "elementsMapActive": "",
+        "hasElementsOverlap": false,
+        "carRentalEnd": null,
+        "carRentalStart": null,
+        "endDate": "2019-06-21T22:00:00.000Z"
+      },
+      {
+        "nights": 0,
+        "day": 1,
+        "isFlight": true,
+        "typeId": 4,
+        "title": " Vliegticket van Amsterdam Schiphol naar Bonaire Flamingo Airport   <KL6RFVZ6>",
+        "subTitle": null,
+        "content": "<html>\n<head>\n\t<title><\/title>\n<\/head>\n<body>\n<div class=\"rijdatum\">\n<div class=\"celdepartdate\">zaterdag 22 juni 2019<\/div>\n<\/div>\n\n<div class=\"rijvan\">\n<div class=\"celdepartairport\">Amsterdam Schiphol<\/div>\n\n<div class=\"celdepartdate\">zaterdag 22 juni 2019<br \/>\nVertrek: 12:25 uur (lokale tijd)<\/div>\n<\/div>\n\n<div class=\"rijnaar\">\n<div class=\"celarriveairport\">Bonaire Flamingo Airport<\/div>\n\n<div class=\"celarrivedate\">zaterdag 22 juni 2019<br \/>\nAankomst: 18:25 uur (lokale tijd)<\/div>\n<\/div>\n\n<div class=\"rijvluchtinformatie\">\n<div class=\"celairline\">KLM<\/div>\n\n<div class=\"celflightnumber\">KL 765<\/div>\n\n<div class=\"celflighttime\">12 uren<\/div>\n\n<div class=\"celstopinfo\">(Met een tussenlanding op Aruba)<\/div>\n<\/div>\n[Arrival KL 765 zaterdag 22 juni 2019 om 06:25 pm]<\/body>\n<\/html>\n",
+        "TSBlock": {
+          "id": 46447
         },
-        "flightInfo":[
-
+        "flightInfo": [
+          
         ],
-        "media":[
-           {
-              "sourceType":"mediaspirit",
-              "sourceId":"09eea36db78f48a52450481ffc13c3b3",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Zuid-Afrika-Krugerpark-Neushoorn.JPG"
-           },
-           {
-              "id":2,
-              "sourceType":"mediaspirit",
-              "sourceId":"6ef21317bb6a50e1ede18bb9bd13d16d",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Krugerpark%20(1).JPG",
-              "description":""
-           },
-           {
-              "sourceType":"mediaspirit",
-              "sourceId":"804f8c2ccbce001f14a2b3640bf28b0c",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Krugerpark%20selfdrive%20(1).JPG"
-           }
+        "media": [
+          {
+            "sourceType": "mediaspirit",
+            "sourceId": "10bd5841485268c1d377c16d8e8dc323",
+            "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/belgische-duiksportbeurs.jpg"
+          }
         ],
-        "elements":[
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":0,
-              "unitId":1,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Nam mollis hendrerit",
-              "TSProduct":{
-                 "id":199,
-                 "tag":"GUATRAAN2",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8010
-              },
-              "media":[
-
+        "elements": [
+          {
+            "offset": 0,
+            "nights": 0,
+            "unitAmount": 2,
+            "unitId": 3,
+            "optional": false,
+            "not_calculated": false,
+            "title": "<#TKD2019-Mnd-Dag> Vliegticket Amsterdam - Bonaire per KLM o.b.v. Economy Class incl. 23 kg ruimbagage",
+            "TSProduct": {
+              "id": 529,
+              "tag": "AIRTRADE",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111484
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": "0.000",
+              "title": "<#TKD2019-Mnd-Dag> Vliegticket Amsterdam - Bonaire per KLM o.b.v. Economy Class incl. 23 kg ruimbagage",
+              "discountMethod": "absolute",
+              "exchangeRate": "1.000000000",
+              "purchaseCurrency": "EUR",
+              "salesCurrency": "EUR",
+              "participants": [
+                
               ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Nam mollis hendrerit",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000"
-              },
-              "additionalText":"In nec iaculis ligula. Donec viverra, libero ut blandit condimentum",
-              "subAdditionalText":null,
-              "roomTypes":[
-
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "needsOffsetRecalculation":true,
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false
-           },
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":2,
-              "unitId":5,
-              "optional":true,
-              "not_calculated":true,
-              "title":"Proin et dolor",
-              "TSProduct":{
-                 "id":200,
-                 "tag":"GUAACCELP",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8011
-              },
-              "media":[
-
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Proin et dolor",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"20.000"
-              },
-              "additionalText":"Proin et dolor vel dui tincidunt sodales",
-              "subAdditionalText":null,
-              "roomTypes":[
-                 {
-                    "defaultPrice":"0.0000",
-                    "description":"Incl Ontbijt",
-                    "minPerson":null,
-                    "maxPerson":null,
-                    "minUnit":null,
-                    "maxUnit":null
-                 }
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "needsOffsetRecalculation":true,
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false
-           },
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":0,
-              "unitId":5,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Etiam a lorem a mi pulvinar condimentum",
-              "TSProduct":{
-                 "id":201,
-                 "tag":"GUAACTRAF",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8012
-              },
-              "media":[
-
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Etiam a lorem a mi pulvinar condimentum",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"75.000"
-              },
-              "additionalText":"Phasellus pulvinar arcu dolor, et mollis quam maximus quis",
-              "subAdditionalText":null,
-              "roomTypes":[
-
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "needsOffsetRecalculation":true,
-              "manual_calc":false,
-              "oldPricesUsed":false
-           }
+              "salesTotal": 1618
+            },
+            "subAdditionalText": null,
+            "additionalText": null,
+            "roomTypes": [
+              
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "needsOffsetRecalculation": true,
+            "day": 1,
+            "date": "2019-06-21T22:00:00.000Z",
+            "endDate": "2019-06-21T22:00:00.000Z",
+            "roomTypeMatchesParticipants": true
+          }
         ],
-        "inViewport":false,
-        "maps":{
-           "latitude":52.212853,
-           "longitude":5.2886923,
-           "zoom":15
+        "inViewport": false,
+        "maps": {
+          "latitude": 52.212853,
+          "longitude": 5.2886923,
+          "zoom": 15
         },
-        "carRentalElements":[
-
+        "carRentalElements": [
+          
         ],
-        "date":"2018-11-14T23:00:00.000Z",
-        "missingBookableDays":false,
-        "elementsOrder":"8010|8011|8012",
-        "elementsMapActive":"",
-        "hasElementsOverlap":false,
-        "carRentalEnd":null,
-        "carRentalStart":null,
-        "endDate":"2018-11-14T23:00:00.000Z"
-     },
-     {
-        "nights":0,
-        "day":3,
-        "isFlight":false,
-        "typeId":12,
-        "title":"Sed porttitor lacus",
-        "subTitle":"In pellentesque",
-        "content":"<p>Praesent accumsan eros vel odio semper, sed porttitor lacus pellentesque. In pellentesque, orci ut porta porttitor, felis ipsum varius ligula, a facilisis nunc orci eu sapien. Proin et dolor vel dui tincidunt sodales ac ut augue. Aliquam malesuada sodales enim et efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vulputate luctus nisl, ut finibus lectus ultricies at. Cras vulputate velit eu libero volutpat commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi eu tellus a nunc ullamcorper facilisis. Ut ut luctus sapien, eget convallis ex. Proin elementum ultrices augue, id gravida urna porta eu. Phasellus nunc risus, bibendum non pharetra eu, vulputate ut leo. Donec viverra faucibus elit eu scelerisque. Morbi eu gravida turpis. Aenean ultrices arcu non quam tempor, ut vulputate nisi ultricies.<\/p>",
-        "TSBlock":{
-           "id":2992
+        "date": "2019-06-21T22:00:00.000Z",
+        "missingBookableDays": false,
+        "elementsOrder": "111484",
+        "elementsMapActive": "",
+        "hasElementsOverlap": false,
+        "carRentalEnd": null,
+        "carRentalStart": null,
+        "endDate": "2019-06-21T22:00:00.000Z"
+      },
+      {
+        "nights": 14,
+        "day": 1,
+        "isFlight": false,
+        "typeId": 13,
+        "title": "Jullie verblijf op Bonaire",
+        "subTitle": null,
+        "content": "<p>&nbsp;<\/p><p>Divers Paradise: Bonaire<\/p><p>Bonaire kent de slogan &#39;Divers Paradise&#39;. Dat is zeker waar, maar ook voor niet-duikers is Bonaire een heerlijke plek voor een vakantie. Bonaire is een ontzettend relaxt eiland. Hier gaat het leven een tandje langzamer en kom je helemaal tot rust dankzij de ontspannen eilandvibe. Hier heb je geen verkeerslichten en rij je lekker met een armpje uit het raam.&nbsp;<\/p><p>Jullie combinatiereis zal starten op Bonaire. Dit eiland brengt vooral een heerlijke relaxe sfeer. Bonaire heeft heel veel te bieden, zoveel meer dan alleen duiken of snorkelen. Zo is Washington Slagbaai een bijzonder natuurpark. Beklim de Brandaris voor een spectaculair uitzicht (bij goed zicht zie je Cura&ccedil;ao en Venezuela), het leuke plaatsje Rincon (authentiek) of ga surfen bij Lac Baai of kiten bij Atlantis. Het is eiland is klein maar bijzonder. Alle klanten komen eigenlijk altijd met dit eiland als favoriet naar huis.<\/p><p>Leuk om over Bonaire te weten<\/p><ul><li>De munteenheid is de US Dollar;<\/li><li>Het water wordt net als op de andere eilanden gewonnen uit de zee, ook wel reversed osmose genoemd. Het zout wordt uit het zeewater gehaald, daardoor krijg je heerlijk zacht drinkwater. Dit is een dure methode, daarom vraagt men om spaarzaam met water om te gaan;<\/li><li>Boodschappen? Die doe je bij Van Tweel of de Bon Digro;<\/li><li>Voor de duikers, altijd een gratis upgrade naar Nitrox;<\/li><li>Er is geen openbaar vervoer op Bonaire, eigen vervoer is daarom zeer aan te raden!<\/li><li>BON travel weet de allerleukste eet adresjes.<\/li><\/ul><p>Geniet van Bonaire, wij noemen het Happy Paradise!<br \/>&nbsp;<\/p>",
+        "TSBlock": {
+          "id": 46448
         },
-        "flightInfo":[
-
+        "flightInfo": [
+          
         ],
-        "media":[
-           {
-              "sourceType":"mediaspirit",
-              "sourceId":"3dd2a2bb0d796cb070ee31b1c16113de",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Zuid-Afrika-Krugerpark-olifanten.JPG"
-           },
-           {
-              "id":4,
-              "sourceType":"mediaspirit",
-              "sourceId":"518ab2b45169dd25618fb08c3019a2c4",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Krugerpark%20safari%20(3).jpg",
-              "description":""
-           },
-           {
-              "sourceType":"mediaspirit",
-              "sourceId":"0fc160a85361066719014f668aadd86d",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Krugerpark%20wrattenzwijn.jpg"
-           }
+        "media": [
+          {
+            "sourceType": "mediaspirit",
+            "sourceId": "52eb3c2444a994e114f0f1f0005eea11",
+            "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/12-10.jpg"
+          },
+          {
+            "sourceType": "mediaspirit",
+            "sourceId": "38a4e112318f35cc91a9c594fa18d693",
+            "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/Appartement-9-7.jpg"
+          },
+          {
+            "sourceType": "mediaspirit",
+            "sourceId": "1d5d745340e46f862fd8bd812bf1e600",
+            "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/bonaire 19.jpg"
+          },
+          {
+            "sourceType": "mediaspirit",
+            "sourceId": "3b1d9b19243d2578ec521e5214ccc425",
+            "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/34AB3D0E-DCF5-4C5D-8F13-6563992FCDE7.JPG"
+          }
         ],
-        "elements":[
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":0,
-              "unitId":4,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Luctus libero gravida",
-              "TSProduct":{
-                 "id":202,
-                 "tag":"GUATRASEM",
-                 "bookableDays":[
-
-                 ]
+        "elements": [
+          {
+            "offset": 0,
+            "nights": 7,
+            "unitAmount": 7,
+            "unitId": 1,
+            "optional": false,
+            "not_calculated": false,
+            "subTitle": "Double Cabin Pickup inclusief Full Insurance",
+            "title": "Autohuur Bonaire <AB Carrental Full Coverage plan>",
+            "TSProduct": {
+              "id": 363,
+              "tag": "ABCAR",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111485
+            },
+            "maps": {
+              "addressInfo": {
+                "housenum": "29",
+                "street": "Kaya Industria",
+                "city": "Kralendijk",
+                "state": "Bonaire",
+                "county": "Caribbean Netherlands"
               },
-              "TSOrderline":{
-                 "id":8013
-              },
-              "media":[
-
+              "fiendOfView": 84.46979999999999,
+              "heading": 0,
+              "latitude": 12.1444903,
+              "longitude": -68.26979140000003,
+              "pitch": 0,
+              "searchPlace": "Kaya Industria 31, Kralendijk, Caribisch Nederland",
+              "staticImageZoom": null,
+              "zoom": 1
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": "0.000",
+              "title": "Autohuur Bonaire <AB Carrental Full Coverage plan> [Double Cabin Pickup inclusief Full Insurance]",
+              "discountMethod": "absolute",
+              "exchangeRate": "0.935000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": [
+                
               ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Luctus libero gravida",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000"
+              "salesTotal": 448
+            },
+            "additionalText": "<html><head><title><\/title><\/head><body>Geniet van de vrijheid op Bonaire met een huurauto. Bonaire heeft geen enkele vorm van openbaar vervoer, waardoor een huurauto bijna een must is om het eiland te kunnen verkennen of om je dagelijkse boodschappen te doen. Op Bonaire levert BON Travel altijd een Double Cabin Pickup. Handig, je zet je koelbox, je strandstoeltjes of je duik- \/ surfuitrusting achterin de laadbak. De auto is geschikt voor 5 personen. Op verzoek kunnen we een (gratis) kinderzitje leveren. Op Bonaire mag je met de huurauto ook onverhard rijden, ga zeker een dag het prachtige Washington SlagBaai verkennen, het natuurpark. Je bent altijd volledig verzekerd, het eigen risico is dan ook USD 0,- Het enige dat je nog moet betalen is de brandstof. De huur van de auto is op basis van 24 uur. Mocht u onverhoopt de auto later moeten inleveren dan de ophaaltijd, of wilt u langer gebruik maken van de auto dan worden ter plaatse extra kosten in rekening gebracht. Voor meer informatie verwijzen we jullie graag naar de bijlage van deze offerte.<\/body><\/html>",
+            "subAdditionalText": null,
+            "roomTypes": [
+              {
+                "defaultPrice": "54.5600",
+                "description": "Double Cabin Pickup inclusief Full Insurance",
+                "minPerson": 1,
+                "maxPerson": 5,
+                "minUnit": 3,
+                "maxUnit": null
+              }
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "hasPreviousElementParticipantOverlap": true,
+            "day": 1,
+            "date": "2019-06-21T22:00:00.000Z",
+            "endDate": "2019-06-28T22:00:00.000Z",
+            "roomTypeMatchesParticipants": false
+          },
+          {
+            "offset": 7,
+            "nights": 7,
+            "unitAmount": 7,
+            "unitId": 2,
+            "optional": false,
+            "not_calculated": false,
+            "subTitle": "Studio o.b.v. logies",
+            "title": "Buddy Dive Resort <room only & meals>",
+            "TSProduct": {
+              "id": 26,
+              "tag": "BUDDY",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111486
+            },
+            "maps": {
+              "addressInfo": {
+                "street": "Buddy Dive Resort",
+                "city": "Kralendijk",
+                "state": "Bonaire",
+                "county": "Caribbean Netherlands"
               },
-              "additionalText":"Class aptent taciti sociosqu",
-              "subAdditionalText":null,
-              "roomTypes":[
-
+              "fiendOfView": 84.46979999999999,
+              "heading": 0,
+              "latitude": 12.1709436,
+              "longitude": -68.28748840000003,
+              "pitch": 0,
+              "searchPlace": "Buddy Dive Resort, Kralendijk, Caribisch Nederland",
+              "staticImageZoom": null,
+              "zoom": 1
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "Buddy Dive Resort <room only & meals> [Studio o.b.v. logies]",
+              "discountMethod": "absolute",
+              "exchangeRate": "0.935000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": [
+                
               ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
+              "salesTotal": 1158.5
+            },
+            "additionalText": "<html><head><title><\/title><\/head><body>Zoals de naam al aangeeft: dit is h&eacute;t resort voor duikers. Buddy Dive Resort is een walhalla voor duikers. Hier zul je alles vinden dat je tijdens je duikvakantie wenst, zoals een eigen huisrif en een heuze drive thru voor het ophalen van de flessen. Bij Buddy Dive Resort hoef je niet bang te zijn dat je kostbare vakantietijd verspilt. Alles wat je zelf moet doen is genieten, ontspannen en vooral duiken. Verder zijn er twee zwembaden, een poolbar en een klein aangelegd strandje. Ook restaurant Ingredients is op het terrein van Buddy Dive te vinden.<\/body><\/html>",
+            "subAdditionalText": null,
+            "roomTypes": [
+              {
+                "defaultPrice": "156.4000",
+                "description": "1 slaapkamer appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "123.2200",
+                "description": "2 slaapkamer appartement o.b.v. logies",
+                "minPerson": 2,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "102.0800",
+                "description": "3 slaapkamer appartement o.b.v. logies",
+                "minPerson": 3,
+                "maxPerson": 6,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "136.2400",
+                "description": "Studio o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "156.4000",
+                "description": "1 slaapkamer appartement  o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "123.2200",
+                "description": "2 slaapkamer appartement  o.b.v. logies",
+                "minPerson": 2,
+                "maxPerson": 4,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "102.0800",
+                "description": "3 slaapkamer appartement  o.b.v. logies",
+                "minPerson": 3,
+                "maxPerson": 6,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "14.0000",
+                "description": "Ontbijtbuffet",
+                "minPerson": 1,
+                "maxPerson": 99,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "13.0000",
+                "description": "Lunch (1-gang, a-la-carte)",
+                "minPerson": 1,
+                "maxPerson": 99,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "19.5000",
+                "description": "Diner (1-gang, a-la-carte)",
+                "minPerson": 1,
+                "maxPerson": 99,
+                "minUnit": null,
+                "maxUnit": null
+              }
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "hasPreviousElementParticipantOverlap": true,
+            "day": 1,
+            "date": "2019-06-28T22:00:00.000Z",
+            "endDate": "2019-07-05T22:00:00.000Z",
+            "roomTypeMatchesParticipants": false
+          },
+          {
+            "offset": 7,
+            "nights": 7,
+            "unitAmount": 7,
+            "unitId": 2,
+            "optional": true,
+            "not_calculated": false,
+            "subTitle": "1 slaapkamer appartement o.b.v. logies",
+            "title": "Buddy Dive Resort <room only & meals>",
+            "TSProduct": {
+              "id": 26,
+              "tag": "BUDDY",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111487
+            },
+            "maps": {
+              "addressInfo": {
+                "street": "Buddy Dive Resort",
+                "city": "Kralendijk",
+                "state": "Bonaire",
+                "county": "Caribbean Netherlands"
+              },
+              "fiendOfView": 84.46979999999999,
+              "heading": 0,
+              "latitude": 12.1709436,
+              "longitude": -68.28748840000003,
+              "pitch": 0,
+              "searchPlace": "Buddy Dive Resort, Kralendijk, Caribisch Nederland",
+              "staticImageZoom": null,
+              "zoom": 1
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "Buddy Dive Resort <room only & meals> [1 slaapkamer appartement o.b.v. logies]",
+              "discountMethod": "absolute",
+              "exchangeRate": "0.935000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": [
+                
               ],
-              "needsOffsetRecalculation":true,
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false
-           },
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":1,
-              "unitId":3,
-              "optional":true,
-              "not_calculated":true,
-              "title":"Nunc ullamcorper ipsum eu",
-              "TSProduct":{
-                 "id":203,
-                 "tag":"GUAACCLOS",
-                 "bookableDays":[
-
-                 ]
+              "salesTotal": 165
+            },
+            "additionalText": "<html><head><title><\/title><\/head><body>Zoals de naam al aangeeft: dit is h&eacute;t resort voor duikers. Buddy Dive Resort is een walhalla voor duikers. Hier zul je alles vinden dat je tijdens je duikvakantie wenst, zoals een eigen huisrif en een heuze drive thru voor het ophalen van de flessen. Bij Buddy Dive Resort hoef je niet bang te zijn dat je kostbare vakantietijd verspilt. Alles wat je zelf moet doen is genieten, ontspannen en vooral duiken. Verder zijn er twee zwembaden, een poolbar en een klein aangelegd strandje. Ook restaurant Ingredients is op het terrein van Buddy Dive te vinden.<\/body><\/html>",
+            "subAdditionalText": null,
+            "roomTypes": [
+              {
+                "defaultPrice": "156.4000",
+                "description": "1 slaapkamer appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": null,
+                "maxUnit": null
               },
-              "TSOrderline":{
-                 "id":8014
+              {
+                "defaultPrice": "123.2200",
+                "description": "2 slaapkamer appartement o.b.v. logies",
+                "minPerson": 2,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
               },
-              "media":[
-
+              {
+                "defaultPrice": "102.0800",
+                "description": "3 slaapkamer appartement o.b.v. logies",
+                "minPerson": 3,
+                "maxPerson": 6,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "136.2400",
+                "description": "Studio o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "156.4000",
+                "description": "1 slaapkamer appartement  o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "123.2200",
+                "description": "2 slaapkamer appartement  o.b.v. logies",
+                "minPerson": 2,
+                "maxPerson": 4,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "102.0800",
+                "description": "3 slaapkamer appartement  o.b.v. logies",
+                "minPerson": 3,
+                "maxPerson": 6,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "14.0000",
+                "description": "Ontbijtbuffet",
+                "minPerson": 1,
+                "maxPerson": 99,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "13.0000",
+                "description": "Lunch (1-gang, a-la-carte)",
+                "minPerson": 1,
+                "maxPerson": 99,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "19.5000",
+                "description": "Diner (1-gang, a-la-carte)",
+                "minPerson": 1,
+                "maxPerson": 99,
+                "minUnit": null,
+                "maxUnit": null
+              }
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "hasPreviousElementParticipantOverlap": true,
+            "day": 1,
+            "date": "2019-06-28T22:00:00.000Z",
+            "endDate": "2019-07-05T22:00:00.000Z",
+            "roomTypeMatchesParticipants": false
+          },
+          {
+            "offset": 7,
+            "nights": 7,
+            "unitAmount": 7,
+            "unitId": 1,
+            "optional": true,
+            "not_calculated": false,
+            "title": "Buddy Dive Resort Ontbijt",
+            "TSProduct": {
+              "id": 134,
+              "tag": "budfb",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111488
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "Buddy Dive Resort Ontbijt",
+              "discountMethod": null,
+              "exchangeRate": "0.935000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": [
+                
               ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Nunc ullamcorper ipsum eu",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000"
+              "salesTotal": 231
+            },
+            "subAdditionalText": null,
+            "additionalText": null,
+            "roomTypes": [
+              
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "hasPreviousElementParticipantOverlap": true,
+            "day": 1,
+            "date": "2019-06-28T22:00:00.000Z",
+            "endDate": "2019-07-05T22:00:00.000Z",
+            "roomTypeMatchesParticipants": true
+          },
+          {
+            "offset": 7,
+            "nights": 7,
+            "unitAmount": 7,
+            "unitId": 2,
+            "optional": true,
+            "not_calculated": false,
+            "subTitle": "1 slaapkamer appartement o.b.v. logies",
+            "title": "Djambo Apartments Bonaire",
+            "TSProduct": {
+              "id": 36,
+              "tag": "DJAMBO",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111489
+            },
+            "maps": {
+              "addressInfo": {
+                "street": "Kaya Finlandia",
+                "city": "Kralendijk",
+                "state": "Bonaire",
+                "county": "Caribbean Netherlands"
               },
-              "additionalText":"-",
-              "subAdditionalText":null,
-              "supplierComment":null,
-              "missingBookableDays":[
-
+              "fiendOfView": 84.4698,
+              "heading": 0,
+              "latitude": 12.1422348,
+              "longitude": -68.2731018,
+              "pitch": 0,
+              "searchPlace": "11 Kaya Finlandia, Kralendijk, Caribisch Nederland",
+              "staticImageZoom": false,
+              "zoom": 0.9999999999999997
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "Djambo Apartments Bonaire [1 slaapkamer appartement o.b.v. logies]",
+              "discountMethod": "absolute",
+              "exchangeRate": "0.935000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": [
+                
               ],
-              "needsOffsetRecalculation":true,
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false
-           },
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":0,
-              "unitId":3,
-              "optional":true,
-              "not_calculated":true,
-              "title":"Nullam sed lectus felis",
-              "TSProduct":{
-                 "id":204,
-                 "tag":"GUAACTJOR",
-                 "bookableDays":[
-
-                 ]
+              "salesTotal": -315
+            },
+            "additionalText": "<html><head><title><\/title><\/head><body>Djambo&rsquo;s motto is <em>Happy Paradise<\/em>, geniet van het heerlijke eiland Bonaire in dit relaxe resortje. Het kleinschalige complex is vooral voor mensen die rust en gezelligheid zoeken, of dit nu boven of onder water is. De minimum leeftijd is 16 jaar. Djambo Bonaire is een nieuw gebouwd resort, bestaande uit 5 gebouwen geheel in de Bonairiaanse stijl. De vier Nederlandse eigenaren wonen zelf op het complex, waardoor er altijd iemand aanwezig is om vragen te beantwoorden, lokale tips te geven of gezellig een drankje mee te drinken in de Djambar. De 17 appartementen zijn rondom een tropsiche tuin met zwembad gebouwd. Alle appartementen hebben een buitenliving met keuken. De slaapkamers hebben airconditioning. Djambo ligt op loopafstand Kralendijk en ongeveer 350 meter van de Caribische zee. Willen jullie een kingsize bed of enkele bedden? Djambo wil graag jullie roepnamen weten zodat ze jullie persoonlijk kunnen verwelkomen. Willen jullie deze bij boeking aan ons doorgeven? Bedankt!<\/body><\/html>",
+            "subAdditionalText": null,
+            "roomTypes": [
+              {
+                "defaultPrice": "78.0000",
+                "description": "SPECIAL 1 slaapkamer appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 6,
+                "maxUnit": null
               },
-              "TSOrderline":{
-                 "id":8015
+              {
+                "defaultPrice": "92.0000",
+                "description": "1 slaapkamer appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
               },
-              "media":[
-
+              {
+                "defaultPrice": "112.0000",
+                "description": "2 slaapkamer appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "115.0000",
+                "description": "SPECIAL 2 slaapkamer appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 1,
+                "maxUnit": null
+              }
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "hasPreviousElementParticipantOverlap": true,
+            "day": 1,
+            "date": "2019-06-28T22:00:00.000Z",
+            "endDate": "2019-07-05T22:00:00.000Z",
+            "roomTypeMatchesParticipants": false
+          },
+          {
+            "offset": 0,
+            "nights": 0,
+            "unitAmount": 2,
+            "unitId": 3,
+            "optional": false,
+            "not_calculated": false,
+            "title": "<Bonaire Tropical Travel hosting>Service ter plaatse",
+            "TSProduct": {
+              "id": 409,
+              "tag": "TROPHOST",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111490
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "<Bonaire Tropical Travel hosting>Service ter plaatse",
+              "discountMethod": null,
+              "exchangeRate": "0.950000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": [
+                
               ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Nullam sed lectus felis",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000"
-              },
-              "additionalText":"Sed commodo mattis orci at viverra",
-              "subAdditionalText":null,
-              "roomTypes":[
-
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "needsOffsetRecalculation":true,
-              "maps":{
-                 "latitude":52.212853,
-                 "longitude":5.2886923,
-                 "zoom":13
-              },
-              "manual_calc":false,
-              "oldPricesUsed":false
-           },
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":0,
-              "unitId":1,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Proin elementum ultrices",
-              "TSProduct":{
-                 "id":205,
-                 "tag":"GUAACTSUN",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8016
-              },
-              "media":[
-
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Proin elementum ultrices",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000"
-              },
-              "additionalText":"Sed commodo mattis orci at viverra",
-              "subAdditionalText":null,
-              "roomTypes":[
-
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "needsOffsetRecalculation":true,
-              "manual_calc":false,
-              "oldPricesUsed":false
-           },
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":0,
-              "unitId":1,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Donec aliquam purus interdum eros",
-              "TSProduct":{
-                 "id":206,
-                 "tag":"GUAACCJAG",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8017
-              },
-              "media":[
-
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Donec aliquam purus interdum eros",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000"
-              },
-              "additionalText":"Donec aliquam purus interdum eros",
-              "subAdditionalText":null,
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "needsOffsetRecalculation":true,
-              "manual_calc":false,
-              "oldPricesUsed":false
-           }
+              "salesTotal": 5
+            },
+            "additionalText": "<html><head><title><\/title><\/head><body>Naast de service van BON travel vanuit ons kantoor in Nederland geniet u gedurende het verblijf op Bonaire ook lokale vertegenwoordiging. In geval van calamiteiten of onduidelijkheden tijdens je reis kun je contact opnemen met dit team. Zij zullen er zorg toe dragen dat er een passende oplossing \/ advies komt, al dan niet in overleg met het kantoor in Nederland. Ook wanneer je extra activiteiten op het eiland zou willen ondernemen staan ze voor je klaar.<br \/>&nbsp;<\/body><\/html>",
+            "subAdditionalText": null,
+            "roomTypes": [
+              
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "needsOffsetRecalculation": true,
+            "day": 1,
+            "date": "2019-06-21T22:00:00.000Z",
+            "endDate": "2019-06-21T22:00:00.000Z",
+            "roomTypeMatchesParticipants": true
+          }
         ],
-        "inViewport":true,
-        "maps":{
-           "latitude":52.212853,
-           "longitude":5.2886923,
-           "zoom":15
+        "inViewport": false,
+        "maps": {
+          "latitude": 52.212853,
+          "longitude": 5.2886923,
+          "zoom": 15
         },
-        "carRentalElements":[
-
+        "carRentalElements": [
+          
         ],
-        "date":"2018-11-14T23:00:00.000Z",
-        "missingBookableDays":false,
-        "elementsOrder":"8013|8014|8015|8016|8017",
-        "elementsMapActive":"",
-        "hasElementsOverlap":false,
-        "carRentalEnd":null,
-        "carRentalStart":null,
-        "endDate":"2018-11-14T23:00:00.000Z"
-     }
-  ],
-  "liborderId":594,
-  "cover":[
-     {
-        "id":145,
-        "sourceType":"mediaspirit",
-        "sourceId":"fc159151e390154a9bcd3e7fcd5ae741",
-        "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Krugerpark%20safari%20(1).jpg"
-     }
-  ],
-  "hasNotCalculated":true,
-  "totalDays":3,
-  "totalDaysAllocated":3,
-  "endDate":"2018-11-14T23:00:00.000Z",
-  "notifications":[
-
-  ],
-  "salesPriceAfterRounding":0,
-  "salesPriceBeforeRounding":0,
-  "costPriceBeforeRounding":0,
-  "title":"Pretium cursus justo",
-  "subTitle":"Augue"
-}
+        "date": "2019-06-21T22:00:00.000Z",
+        "missingBookableDays": false,
+        "elementsOrder": "111485|111486|111487|111488|111489|111490",
+        "elementsMapActive": "",
+        "hasElementsOverlap": false,
+        "carRentalEnd": null,
+        "carRentalStart": null,
+        "endDate": "2019-07-05T22:00:00.000Z"
+      },
+      {
+        "nights": 0,
+        "day": 15,
+        "isFlight": true,
+        "typeId": 4,
+        "title": "Vliegtficket Bonaire - Curacao",
+        "subTitle": null,
+        "content": "<p>zaterdag 29 juni&nbsp;2019<\/p><p>Bonaire Flamingo&nbsp;Airport<\/p><p>zaterdag 29 junffi&nbsp;2019<br \/>Vertrek: 12:45&nbsp;uur&nbsp;(lokale tijd)<\/p><p>Curacao Hato Airport<\/p><p>zaterdag 29 juni 2019<br \/>Aankomst: 13:10&nbsp;uur (lokale tijd)<\/p><p>Divi Divi<\/p><p>DVR219<\/p><p>25 minuten<br \/>[Departure DVR219 saturday 29th June&nbsp;2019 at 12:45 pm]<br \/>[Arrival DVR219 saturday 29th June&nbsp;2019 at 01:10&nbsp;pm]<\/p>",
+        "TSBlock": {
+          "id": 46449
+        },
+        "flightInfo": [
+          
+        ],
+        "media": [
+          {
+            "sourceType": "mediaspirit",
+            "sourceId": "09b5d2e3bf8716f1856c183b7bc99a76",
+            "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/Scuba-lodge-suites 9.jpg"
+          }
+        ],
+        "elements": [
+          {
+            "offset": 0,
+            "nights": 0,
+            "unitAmount": 2,
+            "unitId": 3,
+            "optional": false,
+            "not_calculated": false,
+            "title": "Vliegticket Bonaire - Cura\u00e7ao per  Divi Divi Air incl.18 kg ruimbagage",
+            "TSProduct": {
+              "id": 59,
+              "tag": "DIVIDI",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111491
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "Vliegticket Bonaire - Cura\u00e7ao per  Divi Divi Air incl.18 kg ruimbagage",
+              "discountMethod": null,
+              "exchangeRate": "0.950000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": [
+                
+              ],
+              "salesTotal": 198
+            },
+            "subAdditionalText": null,
+            "additionalText": null,
+            "roomTypes": [
+              
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "needsOffsetRecalculation": true,
+            "day": 15,
+            "date": "2019-07-05T22:00:00.000Z",
+            "endDate": "2019-07-05T22:00:00.000Z",
+            "roomTypeMatchesParticipants": true
+          }
+        ],
+        "inViewport": false,
+        "maps": {
+          "latitude": 52.212853,
+          "longitude": 5.2886923,
+          "zoom": 15
+        },
+        "carRentalElements": [
+          
+        ],
+        "date": "2019-07-05T22:00:00.000Z",
+        "missingBookableDays": false,
+        "elementsOrder": "111491",
+        "elementsMapActive": "",
+        "hasElementsOverlap": false,
+        "carRentalEnd": null,
+        "carRentalStart": null,
+        "endDate": "2019-07-05T22:00:00.000Z"
+      },
+      {
+        "nights": 7,
+        "day": 15,
+        "isFlight": false,
+        "typeId": 13,
+        "title": "Jullie verblijf op Curacao",
+        "subTitle": null,
+        "content": "<p><br \/><br \/>Bon Bini Cura&ccedil;ao<\/p><p>Cura&ccedil;ao is het grootste eiland van de benedenwindse Antillen. Sinds 10.10.10 is zij een zelfstandig land binnen het Koninkrijk der Nederlanden. De kleurrijke hoofdstad heet Willemstad en in totaal wonen er ongeveer 160.000 mensen op het eiland.<br \/><br \/>Na aankomst op het vliegveld Hato zul je direct de Caribische sferen van dit eiland proeven. En natuurlijk de altijd lekkere temperatuur en passaat die waait. Cura&ccedil;ao ligt &#39;tussen&#39; Aruba en Bonaire. Het bekende ABC&#39;tje klopt eigenlijk niet, het zou ACB&#39;tje moeten zijn.&nbsp;<\/p><p>Na de heerlijke periode op Bonaire gaan jullie het tweede eiland ontdekken. Lekker luieren in een van de vele baaitjes, het verkennen van Willemstad of de vele andere dorpjes, Curacao heeft veel te bieden. Rust zal je er vinden maar ook vertier. En geniet zeker van de vele restaurantjes of lokale snackies, er is volop keuze.<\/p><p>Handig om te weten<\/p><p>Een paar handige weetjes over Cura&ccedil;ao:<\/p><ul><li>Men spreekt er Nederlands, dat is lekker makkelijk<\/li><li>De munteenheid is de NAFl. maar je kan ook met US dollars betalen<\/li><li>BON Dia is goedendag in het Papiaments, BON Nochi, fijne avond<\/li><li>Men heeft 110V elektriciteit, maar ook vaak 220V<\/li><\/ul><p>Geniet van dit heerlijke eiland, geniet van K&ograve;rsou.<\/p>",
+        "TSBlock": {
+          "id": 46450
+        },
+        "flightInfo": [
+          
+        ],
+        "media": [
+          {
+            "sourceType": "mediaspirit",
+            "sourceId": "10bd5841485268c1d377c16d8ea03719",
+            "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/Scuba-lodge-suites 11.jpg"
+          },
+          {
+            "sourceType": "mediaspirit",
+            "sourceId": "09b5d2e3bf8716f1856c183b7bc9a3e8",
+            "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/happyhourproost.jpg"
+          },
+          {
+            "sourceType": "mediaspirit",
+            "sourceId": "10bd5841485268c1d377c16d8ea07262",
+            "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/shutterstock_438275356.jpg"
+          },
+          {
+            "sourceType": "mediaspirit",
+            "sourceId": "09b5d2e3bf8716f1856c183b7bcac433",
+            "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/iStock_000015402758_Large.jpg"
+          }
+        ],
+        "elements": [
+          {
+            "offset": 0,
+            "nights": 0,
+            "unitAmount": 2,
+            "unitId": 3,
+            "optional": false,
+            "not_calculated": true,
+            "subTitle": "Retourtransfer vliegveld - \nLions Dive Resort",
+            "title": "<Yellow transfer zone B> [Retourtransfer vliegveld - \nLions Dive Resort]",
+            "TSProduct": {
+              "id": 220,
+              "tag": "YELTRAB",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111492
+            },
+            "maps": {
+              "addressInfo": {
+                "street": "Bapor Kibr\u00e1",
+                "city": "Willemstad",
+                "state": "Cura\u00e7ao",
+                "county": "Cura\u00e7ao"
+              },
+              "fiendOfView": 84.46979999999999,
+              "heading": 0,
+              "latitude": 12.0881918,
+              "longitude": -68.89725390000001,
+              "pitch": 0,
+              "searchPlace": "Willemstad, Cura\u00e7ao",
+              "staticImageZoom": null,
+              "zoom": 1
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "<Yellow transfer zone B> [Retourtransfer vliegveld - \nLions Dive Resort]",
+              "discountMethod": "absolute",
+              "exchangeRate": "0.935000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": [
+                
+              ],
+              "salesTotal": 82
+            },
+            "additionalText": "<html><head><title><\/title><\/head><body>Jullie transfer wordt verzorgd door Yellow Tours. Inclusief &#39;meet and greet&#39; op vliegveld, hulp met bagage, vervoer in airconditioned van of bus. Voor de transfer op de terugreis worden jullie op de aangegeven tijd (tussen 3 en 2,5 uur voor vertrek van het vliegtuig) opgehaald door Yellow Tours.<\/body><\/html>",
+            "subAdditionalText": null,
+            "roomTypes": [
+              {
+                "defaultPrice": "35.0000",
+                "description": "Retourtransfer vliegveld - accommodatie v.v.",
+                "minPerson": 1,
+                "maxPerson": 99,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "17.5000",
+                "description": "Transfer enkel vliegveld - accommodatie of v.v.",
+                "minPerson": 1,
+                "maxPerson": 99,
+                "minUnit": 1,
+                "maxUnit": null
+              }
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "needsOffsetRecalculation": true,
+            "day": 15,
+            "date": "2019-07-05T22:00:00.000Z",
+            "endDate": "2019-07-05T22:00:00.000Z",
+            "roomTypeMatchesParticipants": false
+          },
+          {
+            "offset": 0,
+            "nights": 7,
+            "unitAmount": 7,
+            "unitId": 2,
+            "optional": false,
+            "not_calculated": false,
+            "subTitle": "Run of House o.b.v. logies",
+            "title": "Lions Dive Cura\u00e7ao <accommodatie>",
+            "TSProduct": {
+              "id": 94,
+              "tag": "LIONS",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111493
+            },
+            "maps": {
+              "addressInfo": {
+                "street": "Bapor Kibr\u00e1",
+                "city": "Willemstad",
+                "state": "Cura\u00e7ao",
+                "county": "Cura\u00e7ao"
+              },
+              "fiendOfView": 84.46979999999999,
+              "heading": 0,
+              "latitude": 12.08563987705917,
+              "longitude": -68.89734706607055,
+              "pitch": 0,
+              "searchPlace": "Bapor Kibr\u00e1, Willemstad, Cura\u00e7ao",
+              "staticImageZoom": null,
+              "zoom": 1
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "Lions Dive Cura\u00e7ao <accommodatie> [Run of House o.b.v. logies]",
+              "discountMethod": null,
+              "exchangeRate": "0.935000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": [
+                
+              ],
+              "salesTotal": 1148
+            },
+            "additionalText": "<html>\n<head>\n\t<title><\/title>\n<\/head>\n<body>Het Lions Dive &amp; Beach Resort ligt direct aan zee en wordt omgeven door een fantastische tropische tuin met veel eerbiedwaardige oude bomen. Het eigen strand grenst aan dat van het Seaquarium waar onder meer haaien, schildpadden en dolfijnen in hun natuurlijke omgeving te bewonderen zijn. Tevens ligt in de directe nabijheid het overbekende Mambo Beach, waar regelmatig bekende Nederlandse artiesten en DJ&rsquo;s optreden.<\/body>\n<\/html>",
+            "subAdditionalText": null,
+            "roomTypes": [
+              {
+                "defaultPrice": "335.0000",
+                "description": "Lions Suite 1 bedroom o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "355.0000",
+                "description": "Lions Apartment 2 bedroom o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 6,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "389.0000",
+                "description": "Lions Suite 2 bedroom o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "599.0000",
+                "description": "Lions Penthouse 2 bedroom o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "140.0000",
+                "description": "Run of House o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "161.0000",
+                "description": "Ocean View o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "214.0000",
+                "description": "Oceanfront o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "284.0000",
+                "description": "Oceanfront Cabana o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "209.0000",
+                "description": "Hotelkamer Oceanfront",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "284.0000",
+                "description": "Cabana Oceanfront",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "332.0000",
+                "description": "Lions Suite 1 slaapkamer",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "384.0000",
+                "description": "Lions Suite 2 slaapkamers",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "355.0000",
+                "description": "Lions Apartment 2 slaapkamers",
+                "minPerson": 1,
+                "maxPerson": 6,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "597.0000",
+                "description": "Lions Penthouse 2 slaapkamers",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "140.0000",
+                "description": "Run of the House",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "161.0000",
+                "description": "Hotelkamer Oceanview",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              }
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "hasPreviousElementParticipantOverlap": true,
+            "day": 15,
+            "date": "2019-07-05T22:00:00.000Z",
+            "endDate": "2019-07-12T22:00:00.000Z",
+            "roomTypeMatchesParticipants": false
+          },
+          {
+            "offset": 0,
+            "nights": 7,
+            "unitAmount": 7,
+            "unitId": 2,
+            "optional": true,
+            "not_calculated": false,
+            "subTitle": "Ocean View o.b.v. logies",
+            "title": "Lions Dive Cura\u00e7ao <accommodatie>",
+            "TSProduct": {
+              "id": 94,
+              "tag": "LIONS",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111494
+            },
+            "maps": {
+              "addressInfo": {
+                "street": "Bapor Kibr\u00e1",
+                "city": "Willemstad",
+                "state": "Cura\u00e7ao",
+                "county": "Cura\u00e7ao"
+              },
+              "fiendOfView": 84.46979999999999,
+              "heading": 0,
+              "latitude": 12.08563987705917,
+              "longitude": -68.89734706607055,
+              "pitch": 0,
+              "searchPlace": "Bapor Kibr\u00e1, Willemstad, Cura\u00e7ao",
+              "staticImageZoom": null,
+              "zoom": 1
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "Lions Dive Cura\u00e7ao <accommodatie> [Ocean View o.b.v. logies]",
+              "discountMethod": "absolute",
+              "exchangeRate": "0.935000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": [
+                
+              ],
+              "salesTotal": 150
+            },
+            "additionalText": "<html><head><title><\/title><\/head><body>Het Lions Dive &amp; Beach Resort ligt direct aan zee en wordt omgeven door een fantastische tropische tuin met veel eerbiedwaardige oude bomen. Het eigen strand grenst aan dat van het vermaarde Seaquarium waar onder meer haaien, schildpadden en dolfijnen in hun natuurlijke omgeving te bewonderen zijn. Tevens ligt in de directe nabijheid het overbekende Mambo Beach, waar regelmatig bekende Nederlandse artiesten en DJ&rsquo;s optreden.<\/body><\/html>",
+            "subAdditionalText": null,
+            "roomTypes": [
+              {
+                "defaultPrice": "335.0000",
+                "description": "Lions Suite 1 bedroom o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "355.0000",
+                "description": "Lions Apartment 2 bedroom o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 6,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "389.0000",
+                "description": "Lions Suite 2 bedroom o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "599.0000",
+                "description": "Lions Penthouse 2 bedroom o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "140.0000",
+                "description": "Run of House o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "161.0000",
+                "description": "Ocean View o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "214.0000",
+                "description": "Oceanfront o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "284.0000",
+                "description": "Oceanfront Cabana o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "209.0000",
+                "description": "Hotelkamer Oceanfront",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "284.0000",
+                "description": "Cabana Oceanfront",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "332.0000",
+                "description": "Lions Suite 1 slaapkamer",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "384.0000",
+                "description": "Lions Suite 2 slaapkamers",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "355.0000",
+                "description": "Lions Apartment 2 slaapkamers",
+                "minPerson": 1,
+                "maxPerson": 6,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "597.0000",
+                "description": "Lions Penthouse 2 slaapkamers",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "140.0000",
+                "description": "Run of the House",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "161.0000",
+                "description": "Hotelkamer Oceanview",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              }
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "hasPreviousElementParticipantOverlap": true,
+            "day": 15,
+            "date": "2019-07-05T22:00:00.000Z",
+            "endDate": "2019-07-12T22:00:00.000Z",
+            "roomTypeMatchesParticipants": false
+          },
+          {
+            "offset": 0,
+            "nights": 7,
+            "unitAmount": 7,
+            "unitId": 2,
+            "optional": true,
+            "not_calculated": false,
+            "subTitle": "Standaard hotelkamer o.b.v. logies",
+            "title": "Scuba Lodge Boutique Hotel Cura\u00e7ao",
+            "TSProduct": {
+              "id": 98,
+              "tag": "SCUBAL",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111495
+            },
+            "maps": {
+              "addressInfo": {
+                "street": "Kaya Wilson Godett",
+                "city": "Willemstad",
+                "state": "Cura\u00e7ao",
+                "county": "Cura\u00e7ao"
+              },
+              "fiendOfView": 84.46979999999999,
+              "heading": 0,
+              "latitude": 12.1021753,
+              "longitude": -68.92629620000002,
+              "pitch": 0,
+              "searchPlace": "104 Pietermaai, Willemstad Pietermaai, Cura\u00e7ao",
+              "staticImageZoom": null,
+              "zoom": 1
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "Scuba Lodge Boutique Hotel Cura\u00e7ao [Standaard hotelkamer o.b.v. logies]",
+              "discountMethod": "absolute",
+              "exchangeRate": "0.935000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": [
+                
+              ],
+              "salesTotal": -280
+            },
+            "additionalText": "<html><head><title><\/title><\/head><body>Het toonaangevende boutique hotel op Curacao! Bekend om haar mooie ligging aan zee, de onovertroffen atmosfeer en een oprecht, toegewijd en professioneel team. Een stukje paradijs, speciaal voor jou! Het kleine hotel met appartementen en hotelkamers is gevestigd in monumentale panden in het historische centrum van Willemstad, de kleurrijke hoofdstad van Cura&ccedil;ao. En dat direct aan zee, met eigen strand en een prachtige infinity pool.<br \/><br \/>Geniet van de gezellige bar, voetjes in het zand en het heerlijke restaurant. Bij aankomst krijg je een verfrissend welkomstdrankje en gedurende je verblijf kun je gratis gebruik maken van de snorkelsets.<\/body><\/html>",
+            "subAdditionalText": null,
+            "roomTypes": [
+              {
+                "defaultPrice": "124.0000",
+                "description": "Standard room o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "140.0000",
+                "description": "Superior room o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "159.0000",
+                "description": "Superior Deluxe City room o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "175.0000",
+                "description": "Superior Deluxe Ocean room o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": null,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "183.0000",
+                "description": "1 Bedroom City apartment o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 3,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "231.0000",
+                "description": "2 Bedroom City apartment o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 5,
+                "minUnit": 3,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "279.0000",
+                "description": "2 Bedroom Ocean apartment o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 3,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "335.0000",
+                "description": "3 Bedroom Ocean apartment o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 6,
+                "minUnit": 3,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "124.0000",
+                "description": "Standaard kamer o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "140.0000",
+                "description": "Superior Kamer o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "159.0000",
+                "description": "Superior Deluxe Kamer o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "175.0000",
+                "description": "Superior Deluxe Ocean Kamer o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "183.0000",
+                "description": "1 slaapkamer CITY appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "231.0000",
+                "description": "2 slaapkamer CITY appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "335.0000",
+                "description": "3 slaapkamer OCEAN appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 6,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "279.0000",
+                "description": "2 slaapkamer OCEAN appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 1,
+                "maxUnit": null
+              }
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "hasPreviousElementParticipantOverlap": true,
+            "day": 15,
+            "date": "2019-07-05T22:00:00.000Z",
+            "endDate": "2019-07-12T22:00:00.000Z",
+            "roomTypeMatchesParticipants": false
+          },
+          {
+            "offset": 0,
+            "nights": 7,
+            "unitAmount": 7,
+            "unitId": 1,
+            "optional": true,
+            "not_calculated": false,
+            "subTitle": "type Kia Picanto of soortgelijk inclusief Full Insurance verzekering",
+            "title": "Autohuur Cura\u00e7ao <Sunny Cars>",
+            "TSProduct": {
+              "id": 517,
+              "tag": "sunnycur",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111496
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "Autohuur Cura\u00e7ao [type Kia Picanto of soortgelijk inclusief Full Insurance verzekering]<Sunny Cars>",
+              "discountMethod": null,
+              "exchangeRate": "1.000000000",
+              "purchaseCurrency": "EUR",
+              "salesCurrency": "EUR",
+              "participants": [
+                
+              ],
+              "salesTotal": 225
+            },
+            "additionalText": "<html><head><title><\/title><\/head><body>Ontdek prachtig Cura&ccedil;ao met je eigen huurauto. Ga naar het groene Westpunt, bezoek de vele prachtige baaien die het eiland heeft. De huurauto staat (meestal) voor jullie klaar op het vliegveld, jullie kunnen bij aankomst zelf naar de accommodatie rijden. De afbeelding is informatief, houdt er rekening mee dat het autotype en de kleur afwijkend zijn van de afbeelding.&nbsp;Alvast goed om te weten, jullie hebben voor een huurauto een credit card op naam van de hoofdbestuurder nodig om de garantstelling te kunnen doen. Het is op geen van de bestemmingen mogelijk om de borg contant te voldoen. Willen jullie ons s.v.p. laten weten wie de hoofdbestuurder zal zijn? Kijk in de bijlage voor extra informatie en de overige voorwaarden m.b.t. de autohuur. De eerste bestuurder is...<\/body><\/html>",
+            "subAdditionalText": null,
+            "roomTypes": [
+              
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "hasPreviousElementParticipantOverlap": true,
+            "day": 15,
+            "date": "2019-07-05T22:00:00.000Z",
+            "endDate": "2019-07-12T22:00:00.000Z",
+            "roomTypeMatchesParticipants": false
+          },
+          {
+            "offset": 0,
+            "nights": 0,
+            "unitAmount": 2,
+            "unitId": 3,
+            "optional": false,
+            "not_calculated": false,
+            "title": "<Cura\u00e7ao Yellow hosting> Service ter plaatse",
+            "TSProduct": {
+              "id": 539,
+              "tag": "YELLOW",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111497
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "<Cura\u00e7ao Yellow hosting> Service ter plaatse",
+              "discountMethod": null,
+              "exchangeRate": "0.950000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": [
+                
+              ],
+              "salesTotal": 6
+            },
+            "additionalText": "<html><head><title><\/title><\/head><body>Naast de service van Bon travel vanuit ons kantoor in Nederland geniet u gedurende het verblijf op Cura&ccedil;ao ook lokale vertegenwoordiging. In geval van calamiteiten of onduidelijkheden tijdens je reis kun je contact opnemen met dit team. Zij zullen er zorg toe dragen dat er een passende oplossing \/ advies komt, al dan niet in overleg met het kantoor in Nederland. Ook wanneer je extra activiteiten (jeep safari, snorkeltrips, etc.) op het eiland zou willen ondernemen staan ze voor je klaar.<\/body><\/html>",
+            "subAdditionalText": null,
+            "roomTypes": [
+              
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "needsOffsetRecalculation": true,
+            "day": 15,
+            "date": "2019-07-05T22:00:00.000Z",
+            "endDate": "2019-07-05T22:00:00.000Z",
+            "roomTypeMatchesParticipants": true
+          }
+        ],
+        "inViewport": false,
+        "maps": {
+          "latitude": 52.212853,
+          "longitude": 5.2886923,
+          "zoom": 15
+        },
+        "carRentalElements": [
+          
+        ],
+        "date": "2019-07-05T22:00:00.000Z",
+        "missingBookableDays": false,
+        "elementsOrder": "111492|111493|111494|111495|111496|111497",
+        "elementsMapActive": "",
+        "hasElementsOverlap": false,
+        "carRentalEnd": null,
+        "carRentalStart": null,
+        "endDate": "2019-07-12T22:00:00.000Z"
+      },
+      {
+        "nights": 0,
+        "day": 22,
+        "isFlight": true,
+        "typeId": 4,
+        "title": " Vliegticket van Cura\u00e7ao Hato Airport naar Amsterdam Schiphol  <KL6RFVZ6>",
+        "subTitle": null,
+        "content": "<div class=\"rijdatum\"> <div class=\"celdepartdate\">zaterdag  6 juli 2019<\/div> <\/div> <div class=\"rijvan\"> <div class=\"celdepartairport\">Cura\u00e7ao Hato Airport<\/div> <div class=\"celdepartdate\">zaterdag  6 juli 2019<br \/> Vertrek: 14:35 uur  (lokale tijd)<\/div> <\/div> <div class=\"rijnaar\"> <div class=\"celarriveairport\">Amsterdam Schiphol<\/div> <div class=\"celarrivedate\">zondag  7 juli 2019<br \/> Aankomst: 05:45 uur 's morgens (lokale tijd)<\/div> <\/div> <div class=\"rijvluchtinformatie\"> <div class=\"celairline\">KLM<\/div> <div class=\"celflightnumber\">KL 736<\/div> <div class=\"celflighttime\">09 uren en 10 minuten<\/div> <div class=\"celstopinfo\">(Non-stop)<\/div> <\/div>[Departure KL 736 zaterdag  6 juli 2019 om 02:35 pm]",
+        "TSBlock": {
+          "id": 46451
+        },
+        "flightInfo": [
+          
+        ],
+        "media": [
+          {
+            "sourceType": "mediaspirit",
+            "sourceId": "38a4e112318f35cc91a9c594fa18d693",
+            "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/Appartement-9-7.jpg"
+          }
+        ],
+        "elements": [
+          {
+            "offset": 0,
+            "nights": 0,
+            "unitAmount": 2,
+            "unitId": 3,
+            "optional": false,
+            "not_calculated": false,
+            "title": "<#TKD2019-Mnd-Dag> Vliegticket Cura\u00e7ao - Amsterdam per KLM o.b.v. Economy Class incl. 23 kg ruimbagage",
+            "TSProduct": {
+              "id": 529,
+              "tag": "AIRTRADE",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111498
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": "0.000",
+              "title": "<#TKD2019-Mnd-Dag> Vliegticket Cura\u00e7ao - Amsterdam per KLM o.b.v. Economy Class incl. 23 kg ruimbagage",
+              "discountMethod": "absolute",
+              "exchangeRate": "1.000000000",
+              "purchaseCurrency": "EUR",
+              "salesCurrency": "EUR",
+              "participants": [
+                
+              ],
+              "salesTotal": 0
+            },
+            "subAdditionalText": null,
+            "additionalText": null,
+            "roomTypes": [
+              
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "needsOffsetRecalculation": true,
+            "day": 22,
+            "date": "2019-07-12T22:00:00.000Z",
+            "endDate": "2019-07-12T22:00:00.000Z",
+            "roomTypeMatchesParticipants": true
+          }
+        ],
+        "inViewport": false,
+        "maps": {
+          "latitude": 52.212853,
+          "longitude": 5.2886923,
+          "zoom": 15
+        },
+        "carRentalElements": [
+          
+        ],
+        "date": "2019-07-12T22:00:00.000Z",
+        "missingBookableDays": false,
+        "elementsOrder": "111498",
+        "elementsMapActive": "",
+        "hasElementsOverlap": false,
+        "carRentalEnd": null,
+        "carRentalStart": null,
+        "endDate": "2019-07-12T22:00:00.000Z"
+      },
+      {
+        "nights": 0,
+        "day": 22,
+        "isFlight": false,
+        "typeId": 15,
+        "title": "Algemene kosten",
+        "subTitle": null,
+        "content": null,
+        "TSBlock": {
+          "id": 46452
+        },
+        "flightInfo": [
+          
+        ],
+        "media": [
+          
+        ],
+        "elements": [
+          {
+            "offset": 0,
+            "nights": 0,
+            "unitAmount": 2,
+            "unitId": 3,
+            "optional": false,
+            "not_calculated": false,
+            "title": "Reserveringskosten <KLM>",
+            "TSProduct": {
+              "id": 525,
+              "tag": "FEEAIRTR",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111499
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "Reserveringskosten <KLM>",
+              "discountMethod": null,
+              "exchangeRate": "1.000000000",
+              "purchaseCurrency": "EUR",
+              "salesCurrency": "EUR",
+              "participants": [
+                
+              ],
+              "salesTotal": 30.5
+            },
+            "subAdditionalText": null,
+            "additionalText": null,
+            "roomTypes": [
+              
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "needsOffsetRecalculation": true,
+            "day": 22,
+            "date": "2019-07-12T22:00:00.000Z",
+            "endDate": "2019-07-12T22:00:00.000Z",
+            "roomTypeMatchesParticipants": true
+          },
+          {
+            "offset": 0,
+            "nights": 0,
+            "unitAmount": 1,
+            "unitId": 3,
+            "optional": false,
+            "not_calculated": false,
+            "title": "Calamiteitenfonds (bij de reissom vd hoofdboeker. Eur 2,50 per boeking van max. 9 pers)",
+            "TSProduct": {
+              "id": 1,
+              "tag": "CALFONDS",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111500
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "Calamiteitenfonds (bij de reissom vd hoofdboeker. Eur 2,50 per boeking van max. 9 pers)",
+              "discountMethod": null,
+              "exchangeRate": "1.000000000",
+              "purchaseCurrency": "EUR",
+              "salesCurrency": "EUR",
+              "participants": [
+                
+              ],
+              "salesTotal": 2.5
+            },
+            "subAdditionalText": null,
+            "additionalText": null,
+            "roomTypes": [
+              
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "needsOffsetRecalculation": true,
+            "day": 22,
+            "date": "2019-07-12T22:00:00.000Z",
+            "endDate": "2019-07-12T22:00:00.000Z",
+            "roomTypeMatchesParticipants": true
+          }
+        ],
+        "inViewport": false,
+        "maps": {
+          "latitude": 52.212853,
+          "longitude": 5.2886923,
+          "zoom": 15
+        },
+        "carRentalElements": [
+          
+        ],
+        "date": "2019-07-12T22:00:00.000Z",
+        "missingBookableDays": false,
+        "elementsOrder": "111499|111500",
+        "elementsMapActive": "",
+        "hasElementsOverlap": false,
+        "carRentalEnd": null,
+        "carRentalStart": null,
+        "endDate": "2019-07-12T22:00:00.000Z"
+      },
+      {
+        "nights": 0,
+        "day": 22,
+        "isFlight": false,
+        "typeId": 10,
+        "title": null,
+        "subTitle": null,
+        "content": null,
+        "TSBlock": {
+          "id": 46453
+        },
+        "flightInfo": [
+          
+        ],
+        "media": [
+          
+        ],
+        "elements": [
+          {
+            "offset": 0,
+            "nights": 0,
+            "unitAmount": 1,
+            "unitId": 3,
+            "optional": false,
+            "not_calculated": false,
+            "subTitle": "Porto NL 350 gr - 2 kg",
+            "title": "Portokosten",
+            "TSProduct": {
+              "id": 673,
+              "tag": "PORTO",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111501
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "Portokosten [Porto NL 350 gr - 2 kg]",
+              "discountMethod": null,
+              "exchangeRate": "1.000000000",
+              "purchaseCurrency": "EUR",
+              "salesCurrency": "EUR",
+              "participants": [
+                
+              ],
+              "salesTotal": 5
+            },
+            "subAdditionalText": null,
+            "additionalText": null,
+            "roomTypes": [
+              {
+                "defaultPrice": "8.7000",
+                "description": "Porto BE 100-350 gr",
+                "minPerson": 0,
+                "maxPerson": null,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "4.1500",
+                "description": "Porto NL 350 gr - 2 kg",
+                "minPerson": null,
+                "maxPerson": null,
+                "minUnit": 1,
+                "maxUnit": null
+              },
+              {
+                "defaultPrice": "3.3200",
+                "description": "Porto NL 100-350 gr",
+                "minPerson": null,
+                "maxPerson": null,
+                "minUnit": 1,
+                "maxUnit": null
+              }
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "needsOffsetRecalculation": true,
+            "day": 22,
+            "date": "2019-07-12T22:00:00.000Z",
+            "endDate": "2019-07-12T22:00:00.000Z",
+            "roomTypeMatchesParticipants": true
+          }
+        ],
+        "inViewport": false,
+        "maps": {
+          "latitude": 52.212853,
+          "longitude": 5.2886923,
+          "zoom": 15
+        },
+        "carRentalElements": [
+          
+        ],
+        "date": "2019-07-12T22:00:00.000Z",
+        "missingBookableDays": false,
+        "elementsOrder": "111501",
+        "elementsMapActive": "",
+        "hasElementsOverlap": false,
+        "carRentalEnd": null,
+        "carRentalStart": null,
+        "endDate": "2019-07-12T22:00:00.000Z"
+      },
+      {
+        "nights": 0,
+        "day": 22,
+        "isFlight": false,
+        "typeId": 14,
+        "title": null,
+        "subTitle": null,
+        "content": "<p>Ik heb dit voorstel met veel plezier voor jullie gemaakt. Ik benadruk graag nog eens dat aan dit voorstel nog volop gesleuteld kan worden. BON travel organiseert graag een reis die helemaal bij je past. Daarom leveren we reizen op maat. We luisteren daarom graag naar je wensen en dan gaan wij op zoek naar jouw droomreis.<\/p><p>Hoe gaan we verder?<\/p><p>Ik hoor graag hoe jullie verder zouden willen gaan. Is de reis zoals voorgesteld al helemaal naar wens of zou je nog een en ander willen aanpassen? We staan altijd voor jullie klaar, geen vraag \/ verzoek is ons te veel.<\/p><p>Deze reis boeken<\/p><p>Is de reis zoals voorgesteld helemaal naar wens en willen jullie deze graag boeken? Dan vernemen wij dit graag zo spoedig mogelijk. Laat dit ons telefonisch of per e-mail weten. Zodra we op de hoogte zijn gaan wij direct aan de slag om de reis definitief te maken.<\/p><p>Dit voorstel face-to-face bespreken?<\/p><p>Als je vragen hebt, de reis zou willen aanpassen of andere inspiratie zou willen opdoen dan ben je ook altijd bij ons op kantoor van harte welkom. We zijn in Stroe gevestigd (Stroe ligt centraal in Nederland aan de A1 tussen&nbsp; Amersfoort en Apeldoorn). We zijn aanwezig op alle werkdagen,&nbsp; van 10.00 tot 16.00 uur staat de koffie voor je klaar. Wil je langskomen dan kun je het beste even een afspraak maken zodat je er zeker van bent dat een van de reisexperts voor jouw reis ook op deze dag aanwezig is. Kun je vanwege je werk of andere verplichtingen niet langskomen op onze openingstijden, vraag dan naar de mogelijkheden. Ons telefoonnummer is 035-5426071 of mail naar info@bontravel.nl.<\/p><p>Opties plaatsen<\/p><p>Spreekt de offerte je in grote lijnen aan maar twijfel je nog over bepaalde onderdelen of moet je het nog bespreken met je medereizigers? In zo&#39;n geval kan het een goed idee zijn om alvast opties te plaatsen. Tijdens het maken van dit reisplan is nog geen optie geplaatst op de vluchten en het landarrangement. De beschikbaarheid van beide is dan ook nog onder voorbehoud. BON travel kan geheel vrijblijvend en kosteloos deze reis voor jullie in optie nemen. Hierdoor ben je er zeker van dat deze combinatiereis ook zo kan worden gemaakt zoals aangegeven. Het zou toch jammer zijn als dit niet zou kunnen.<br \/><br \/>Een optie kunnen we plaatsen met de gegevens van de reizigers, zoals in de controlestrip onderaan het paspoort (internationale reispas):<\/p><ul><li>&nbsp;&nbsp;&nbsp; voornaam (niet roepnaam);<\/li><li>&nbsp;&nbsp;&nbsp; achternaam (meisjesnaam);<\/li><li>&nbsp;&nbsp;&nbsp; geboortedatum;<\/li><li>&nbsp;&nbsp;&nbsp; Nationaliteit;<\/li><li>&nbsp;&nbsp;&nbsp; Het paspoort nummer is niet nodig.<\/li><\/ul><p>We vernemen graag of je van deze service gebruik van zou willen maken.<\/p>",
+        "TSBlock": {
+          "id": 46454
+        },
+        "flightInfo": [
+          
+        ],
+        "media": [
+          
+        ],
+        "elements": [
+          {
+            "offset": 0,
+            "nights": 0,
+            "unitAmount": 1,
+            "unitId": 0,
+            "optional": false,
+            "not_calculated": false,
+            "title": "tekst",
+            "TSProduct": {
+              "id": 503,
+              "tag": null,
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 111502
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": null,
+              "discount": null,
+              "title": "tekst",
+              "discountMethod": null,
+              "exchangeRate": "1.000000000",
+              "purchaseCurrency": "EUR",
+              "salesCurrency": "EUR",
+              "participants": [
+                
+              ],
+              "salesTotal": 0
+            },
+            "subAdditionalText": null,
+            "additionalText": null,
+            "roomTypes": [
+              
+            ],
+            "supplierComment": null,
+            "missingBookableDays": [
+              
+            ],
+            "needsOffsetRecalculation": true,
+            "day": 22,
+            "date": "2019-07-12T22:00:00.000Z",
+            "endDate": "2019-07-12T22:00:00.000Z",
+            "roomTypeMatchesParticipants": true
+          }
+        ],
+        "inViewport": false,
+        "maps": {
+          "latitude": 52.212853,
+          "longitude": 5.2886923,
+          "zoom": 15
+        },
+        "carRentalElements": [
+          
+        ],
+        "date": "2019-07-12T22:00:00.000Z",
+        "missingBookableDays": false,
+        "elementsOrder": "111502",
+        "elementsMapActive": "",
+        "hasElementsOverlap": false,
+        "carRentalEnd": null,
+        "carRentalStart": null,
+        "endDate": "2019-07-12T22:00:00.000Z"
+      }
+    ],
+    "liborderId": 5796,
+    "departmentName": "Combinatiereis Benedenwinds",
+    "departmentId": 12,
+    "officeId": 1,
+    "officeName": "BON travel",
+    "cover": [
+      {
+        "sourceType": "mediaspirit",
+        "sourceId": "52eb3c2444a994e114f0f1f0005d1da1",
+        "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/15003383_1197895426967263_1415216714825969922_o.jpg"
+      },
+      {
+        "sourceType": "mediaspirit",
+        "sourceId": "23c6eaa8b5d7130b0f28da294f9a2c3f",
+        "url": "http:\/\/media.bontravel.nl\/wordpress\/medium\/Terramar-Avond-2-copy.jpg"
+      }
+    ],
+    "hasNotCalculated": true,
+    "totalDays": 22,
+    "totalDaysAllocated": 22,
+    "endDate": "2019-07-12T22:00:00.000Z",
+    "notifications": [
+      {
+        "elementIndex": 0,
+        "segmentIndex": 2,
+        "type": "room-type-mismatch",
+        "elementId": "111485"
+      },
+      {
+        "elementIndex": 1,
+        "segmentIndex": 2,
+        "type": "room-type-mismatch",
+        "elementId": "111486"
+      },
+      {
+        "elementIndex": 2,
+        "segmentIndex": 2,
+        "type": "room-type-mismatch",
+        "elementId": "111487"
+      },
+      {
+        "elementIndex": 4,
+        "segmentIndex": 2,
+        "type": "room-type-mismatch",
+        "elementId": "111489"
+      },
+      {
+        "elementIndex": 0,
+        "segmentIndex": 4,
+        "type": "room-type-mismatch",
+        "elementId": "111492"
+      },
+      {
+        "elementIndex": 1,
+        "segmentIndex": 4,
+        "type": "room-type-mismatch",
+        "elementId": "111493"
+      },
+      {
+        "elementIndex": 2,
+        "segmentIndex": 4,
+        "type": "room-type-mismatch",
+        "elementId": "111494"
+      },
+      {
+        "elementIndex": 3,
+        "segmentIndex": 4,
+        "type": "room-type-mismatch",
+        "elementId": "111495"
+      },
+      {
+        "elementIndex": 4,
+        "segmentIndex": 4,
+        "type": "room-type-mismatch",
+        "elementId": "111496"
+      }
+    ],
+    "title": "Combinatiereis Bonaire & Cura\u00e7ao",
+    "subTitle": "Jouw combinatiereis"
+  }

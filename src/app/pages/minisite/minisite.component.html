@@ -68,9 +68,10 @@
 
   <vtb-segments
     [dataSource]="itinerary.segments"
-    [segmentFields]="['media', {name: 'day', prefix: 'Dag ', tag: 'span'}, {name: 'title', tag: 'h2'},{name: 'subTitle', tag: 'h4'},{name: 'content', tag: 'p'}]"
+    [segmentFields]="['media', {name: 'day', prefix: 'Dag ', tag: 'span'}, {name: 'title', tag: 'h2'},{name: 'subTitle', tag: 'h4'},{name: 'date', tag: 'p'},{name: 'content', tag: 'p'}]"
   ></vtb-segments>
 </div>
+
 
 <div class="program" data-block="program">
   <div class="titles">
