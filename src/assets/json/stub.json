@@ -1,1038 +1,1855 @@
 {
-  "startDate":"Tue Nov 13 2018 00:00:00 GMT+0100 ",
-  "TSOrder":{
-     "id":594,
-     "sourceDescription":"Test VTB"
-  },
-  "extraFieldValues":[
-     {
-        "id":1,
-        "parent_id":null,
-        "link_type":"order",
-        "layout_data":null,
-        "display_at":null,
-        "sort_order":null,
-        "name":"Order Extra Fields",
-        "fields":[
-           {
-              "id":2,
-              "name":"header_video",
-              "type_id":1,
-              "valid_regex":"",
-              "defaults":null,
-              "category_id":2,
-              "sort_order":null,
-              "field_type":"TextBox",
-              "display_at":"both",
-              "show_in_product":0,
-              "layout_data":null,
-              "maxlength":null,
-              "maxlength_enforce":0,
-              "translated_name":"Header Video",
-              "field_value_link_id":5,
-              "link_type":"order",
-              "link_id":594,
-              "value":"https:\/\/www.youtube.com\/watch?v=Ioq1u3VvWRk"
-           }
-        ]
-     }
-  ],
-  "participants":{
-     "party 1":[
+    "TSOrder": {
+      "texts": {
+        "general": "<html>\n<head>\n\t<title><\/title>\n<\/head>\n<body>\n<h1>Voorwaarden &amp; Garanties<\/h1>\nOp deze offerte zijn diverse voorwaarden en garanties van toepassing. De offerte is samengesteld conform de eisen van de reclamecode Reisaanbiedingen 2014. Wilt u deze nalezen kijk dan op de <a href=\"https:\/\/www.reclamecode.nl\/nrc\/pagina.asp?paginaID=273%20&amp;deel=2\"> website<\/a> van de Stichting Reclame Code.<br \/>\n<br \/>\nDe voorwaarden van BON travel zijn standaard, partners hanteren soms andere voorwaarden. Deze gelden dan voor de voorwaarden van BON travel. Hieronder tref je wat voor jullie van toepassing is. Mochten er onduidelijkheden over bestaan dan horen we dat graag en geven we een duidelijke uitleg. Als tip: controleer de dekking van je reis- en annuleringsverzekering. BON travel kan deze ook voor jullie verzorgen, we zijn intermediair van de Europeesche Verzekeringen.\n<h3>(Aan)betaling van de reissom plus eventuele verzekeringen<\/h3>\nBON travel hanteert op de standaard reizen een aanbetaling van 15% van de reissom. Als je ook een reis- en\/of annuleringsverzekering hebt afgesloten zal deze volledig moeten worden voldaan (m.a.w. 15% van de reissom + 100% verzekeringskosten). Voor maatwerkreizen en\/of speciale aanbiedingen\/acties kan een verhoogde aanbetaling gelden. Dit zal duidelijk in de offerte worden vermeld.<br \/>\n<br \/>\nDe aanbetaling, welke bij de bevestiging van de reis wordt gevraagd, dient per ommegaande te worden voldaan. Het resterende bedrag dient uiterlijk 6 weken voor vertrek te zijn voldaan.\n<h3>Betaalmethoden<\/h3>\nNadat je je reis bij BON travel hebt geboekt ontvang je per email de definitieve bevestiging en factuur. De factuur kun je (veelal kosteloos) per bankoverschrijving voldoen. Het is ook mogelijk om met credit card te betalen. Als je met een credit card wil betalen dan ontvang je van BON travel een Paypal betalingsverzoek. Het betaalverzoek zal bestaan uit de reissom + 3,5% kosten welke door Pay Pal worden berekend. Het is niet mogelijk om per PIN te betalen.\n\n<h3>Reisbescheiden<\/h3>\nDe reisbescheiden, zoals vliegtickets, vouchers en extra informatie voor je reis zullen ongeveer tien (werk)dagen voor vertrek per post naar je worden toegezonden. De gehele reissom dient wel door BON travel te zijn ontvangen.\n\n<h2>Voorwaarden BON travel<\/h2>\nVoor de actuele voorwaarden van BON travel verwijzen we graag door naar onze website <a href=\"http:\/\/www.bontravel.nl\/voorwaarden\/\">http:\/\/www.bontravel.nl\/voorwaarden\/<\/a>. Of ga direct naar de <a href=\"http:\/\/www.bontravel.nl\/wp-content\/uploads\/2012\/01\/Voorwaarden-BON-Travel.pdf\"> algemene voorwaarden<\/a> of <a href=\"http:\/\/www.bontravel.nl\/wp-content\/uploads\/2012\/01\/Annuleringsvoorwaarden-BON-Travel.pdf\"> annuleringsvoorwaarden<\/a> van BON travel.\n\n<hr \/>\n<h2>Calamiteitenfonds<\/h2>\n<img alt=\"\" class=\"extrasmall left\" src=\"http:\/\/bft-test.telespirit.com\/site.php?mod=tsckeimg&amp;img=logo-calamiteitenfonds.jpg&amp;mod_name=bft\" \/>Binnen de grenzen van de garantieregeling van het Calamiteitenfonds vallen de op deze internetsite gepubliceerde reizen onder de garantie van het Calamiteitenfonds. Deze garantie houdt in dat jij als consument die deelneemt aan een door ons georganiseerde reis:<br \/>\n- (een deel van) uw reissom terugkrijgt indien wij de reis als gevolg van een calamiteit niet of niet volledig kunnen uitvoeren;<br \/>\n- de noodzakelijke meerkosten vergoed krijgt indien wij als gevolg van een calamiteit de reis moeten aanpassen of indien wij u vervroegd moeten repatri&euml;ren.<br \/>\nOnder calamiteit wordt verstaan een door molest of natuurramp veroorzaakte abnormale gebeurtenis. Meer informatie vindt u op <a href=\"http:\/\/www.calamiteitenfonds.nl\/garantieregeling\">http:\/\/www.calamiteitenfonds.nl\/garantieregeling<\/a>\n\n<h2>Stichting Garantiefonds Reisgelden (SGR)<\/h2>\n<img alt=\"\" class=\"extrasmall left\" src=\"http:\/\/bft-test.telespirit.com\/site.php?mod=tsckeimg&amp;img=sgr-logo.jpg&amp;mod_name=bft\" \/>BON Travel is deelnemer in de Stichting Garantiefonds Reisgelden (SGR) en onder deelnemersnummer 2644. Op deze overeenkomst is de SGR-garantieregeling van toepassing. Je kunt de voorwaarden vinden op www.sgr.nl\/garantieregeling. Op verzoek stuurt SGR deze voorwaarden kosteloos toe.<\/body>\n<\/html>",
+        "proposal": "<p>Met heel veel plezier hebben we voor jullie een Caribische reisplan gemaakt naar de drie leukste Benedenwindse eilanden, Aruba, Bonaire en Cura\u00e7ao.<br><br>Dit vrijblijvende reisvoorstel geeft een beeld van wat jullie allemaal tijdens de Combinatiereis <i>\"Het ABC'tje\"<\/i> gaan zien en meemaken. Bij het opstellen van deze offerte hebben we zoveel mogelijk naar jullie wensen geluisterd en deze vertaald in een programma. Het programma is nog aanpasbaar, dat is de kracht van BON travel.<br><br>Ik wens jullie veel leesplezier en ik hoop dat dit voorstel jullie veel reisinspiratie zal geven.<br><br>&nbsp;<\/p>",
+        "vtbObjectId": "orderTexts1"
+      },
+      "id": 6170,
+      "sourceDescription": "#006170: Frank Bijsterbosch"
+    },
+    "startDate": "2019-07-17",
+    "extraFieldValues": [
+      {
+        "id": 1,
+        "parent_id": null,
+        "link_type": "order",
+        "layout_data": null,
+        "display_at": null,
+        "sort_order": null,
+        "name": "Cover",
+        "fields": [
+          {
+            "id": 1,
+            "name": "cover",
+            "type_id": 3,
+            "valid_regex": "",
+            "defaults": "aruba|antigua|anguilla|bonaire|bonaire-duiken|belize|abc|loungereis|loungereisdeluxe|saba|st-eustatius|st-maarten|st-lucia|aruba-bonaire|bonaire-curacao|aruba-curacao|islandhopping-algemeen;aruba|antigua|anguilla|bonaire|bonaire-duiken|belize|abc|loungereis|loungereisdeluxe|saba|st-eustatius|st-maarten|st-lucia|aruba-bonaire|bonaire-curacao|aruba-curacao|islandhopping-algemeen|statia-bonaire|jamaica-sandals|curacao|dominica|dominica-stbarth|belize-newyork|belize-duiken|bonaire-newyork|mia|dom-sxm|bart|sab-eux|nye-cur|nye-caribbean|antigua-barbuda|guadeloupe|sxm-guadeloupe|antigua-sxm|antigua-guadeloupe|dom-ptp|nyc-aruba|martinique|guadeloupe-martinique|zeilen-grenadines|slu-martinique|belize-4x4|zeilen-grenada-grenadines|zeilen-bvi",
+            "category_id": 1,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "FilteringSelect",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Cover",
+            "selected": "aruba|antigua|anguilla|bonaire|bonaire-duiken|belize|abc|loungereis|loungereisdeluxe|saba|st-eustatius|st-maarten|st-lucia|aruba-bonaire|bonaire-curacao|aruba-curacao|islandhopping-algemeen",
+            "options": [
+              "aruba",
+              "antigua",
+              "anguilla",
+              "bonaire",
+              "bonaire-duiken",
+              "belize",
+              "abc",
+              "loungereis",
+              "loungereisdeluxe",
+              "saba",
+              "st-eustatius",
+              "st-maarten",
+              "st-lucia",
+              "aruba-bonaire",
+              "bonaire-curacao",
+              "aruba-curacao",
+              "islandhopping-algemeen",
+              "statia-bonaire",
+              "jamaica-sandals",
+              "curacao",
+              "dominica",
+              "dominica-stbarth",
+              "belize-newyork",
+              "belize-duiken",
+              "bonaire-newyork",
+              "mia",
+              "dom-sxm",
+              "bart",
+              "sab-eux",
+              "nye-cur",
+              "nye-caribbean",
+              "antigua-barbuda",
+              "guadeloupe",
+              "sxm-guadeloupe",
+              "antigua-sxm",
+              "antigua-guadeloupe",
+              "dom-ptp",
+              "nyc-aruba",
+              "martinique",
+              "guadeloupe-martinique",
+              "zeilen-grenadines",
+              "slu-martinique",
+              "belize-4x4",
+              "zeilen-grenada-grenadines",
+              "zeilen-bvi"
+            ],
+            "field_value_link_id": 2447,
+            "link_type": "order",
+            "link_id": 6170,
+            "value": "abc",
+            "vtbObjectId": "lh8r4ky97rgsl96bc35s1e",
+            "translatedName": "Cover"
+          },
+          {
+            "id": 18,
+            "name": "Slider",
+            "type_id": 6,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 1,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "Date",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Not translated",
+            "vtbObjectId": "9u2k687szgbek3waasonug",
+            "translatedName": "Slider"
+          }
+        ],
+        "vtbObjectId": "kkxf1jsnkekawkl19unmh9"
+      },
+      {
+        "id": 6,
+        "parent_id": null,
+        "link_type": "order",
+        "layout_data": null,
+        "display_at": null,
+        "sort_order": null,
+        "name": "",
+        "fields": [
+          {
+            "id": 10,
+            "name": "prijsweergave",
+            "type_id": 3,
+            "valid_regex": "",
+            "defaults": "geen_pp_prijs_totaal;geen_pp_prijs_totaal;afwijkend",
+            "category_id": 6,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "FilteringSelect",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Not translated",
+            "selected": "geen_pp_prijs_totaal",
+            "options": [
+              "geen_pp_prijs_totaal"
+            ],
+            "field_value_link_id": 2598,
+            "link_type": "order",
+            "link_id": 6170,
+            "value": null,
+            "vtbObjectId": "4kzk4ur8s7kz5n774abj68",
+            "translatedName": "prijsweergave"
+          },
+          {
+            "id": 11,
+            "name": "offertenamen",
+            "type_id": 2,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 6,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "CheckBox",
+            "display_at": null,
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Not translated",
+            "field_value_link_id": 2599,
+            "link_type": "order",
+            "link_id": 6170,
+            "value": null,
+            "vtbObjectId": "tlf4yn6qfmfzocbbqvbsei",
+            "translatedName": "offertenamen"
+          },
+          {
+            "id": 12,
+            "name": "vluchtschemanamen",
+            "type_id": 2,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 6,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "CheckBox",
+            "display_at": null,
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Not translated",
+            "field_value_link_id": 2600,
+            "link_type": "order",
+            "link_id": 6170,
+            "value": null,
+            "vtbObjectId": "uu0fiz2j9dgy963m6k014",
+            "translatedName": "vluchtschemanamen"
+          },
+          {
+            "id": 13,
+            "name": "toonduplicates",
+            "type_id": 2,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 6,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "CheckBox",
+            "display_at": null,
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Not translated",
+            "field_value_link_id": 2601,
+            "link_type": "order",
+            "link_id": 6170,
+            "value": null,
+            "vtbObjectId": "rsofstp6qnnta94t398f8",
+            "translatedName": "toonduplicates"
+          }
+        ],
+        "vtbObjectId": "yf8a6ohvpp70axvb0pr28if"
+      },
+      {
+        "id": 7,
+        "parent_id": null,
+        "link_type": "order",
+        "layout_data": null,
+        "display_at": "both",
+        "sort_order": null,
+        "name": "",
+        "fields": [
+          {
+            "id": 14,
+            "name": "Bestemmingen",
+            "type_id": 8,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 7,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "TextAreaEditor",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Not translated",
+            "field_value_link_id": 2602,
+            "link_type": "order",
+            "link_id": 6170,
+            "value": "<p>Anguilla<\/p><p>&nbsp;<\/p>",
+            "vtbObjectId": "a7rgcyk47mtk33aorlpymq",
+            "translatedName": "Bestemmingen"
+          },
+          {
+            "id": 27,
+            "name": "Naam Reisgezelschap",
+            "type_id": 19,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 7,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "TextArea_Plain",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Naam Reisgezelschap",
+            "vtbObjectId": "cbqexk2flw6x3hhrf5gmg",
+            "value": "Familie boetjes",
+            "translatedName": "Naam Reisgezelschap"
+          },
+          {
+            "id": 28,
+            "name": "Aantallen Reisgezelschap",
+            "type_id": 19,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 7,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "TextArea_Plain",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Reisgezelschap",
+            "vtbObjectId": "ekcyvfgi7enk9zxub0qg",
+            "value": "2",
+            "translatedName": "Reisgezelschap"
+          }
+        ],
+        "vtbObjectId": "wbtppc10jzccj9dfq9vd0w"
+      },
+      {
+        "id": 8,
+        "parent_id": null,
+        "link_type": "order",
+        "layout_data": null,
+        "display_at": "both",
+        "sort_order": null,
+        "name": "",
+        "fields": [
+          
+        ],
+        "vtbObjectId": "b6u45e316hjuru5li9l98"
+      },
+      {
+        "id": 9,
+        "parent_id": null,
+        "link_type": "order",
+        "layout_data": null,
+        "display_at": "both",
+        "sort_order": null,
+        "name": "",
+        "fields": [
+          {
+            "id": 16,
+            "name": "Slaginskanspercentage",
+            "type_id": 19,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 9,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "TextArea_Plain",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Not translated",
+            "field_value_link_id": 2603,
+            "link_type": "order",
+            "link_id": 6170,
+            "value": null,
+            "vtbObjectId": "e3mywwujiff7c6rof2s053",
+            "translatedName": "Slaginskanspercentage"
+          }
+        ],
+        "vtbObjectId": "t9vdbt254r8ujvsp20jl5"
+      },
+      {
+        "id": 10,
+        "parent_id": null,
+        "link_type": "order",
+        "layout_data": null,
+        "display_at": "both",
+        "sort_order": null,
+        "name": "",
+        "fields": [
+          {
+            "id": 19,
+            "name": "medewerker",
+            "type_id": 3,
+            "valid_regex": "",
+            "defaults": "Milou van Steen;Milou van Steen|Mattijs Baijens|Anouk Zijlstra|Kelly Smid|Frank Bijsterbosch|Nicole Kedde",
+            "category_id": 10,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "FilteringSelect",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Not translated",
+            "selected": "Milou van Steen",
+            "options": [
+              "Milou van Steen",
+              "Mattijs Baijens",
+              "Anouk Zijlstra",
+              "Kelly Smid",
+              "Frank Bijsterbosch",
+              "Nicole Kedde"
+            ],
+            "vtbObjectId": "r8xgwuja4ir9tdbv1njs1f",
+            "value": "Milou van Steen",
+            "translatedName": "medewerker"
+          },
+          {
+            "id": 20,
+            "name": "Exclusief",
+            "type_id": 7,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 10,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "TextArea",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Exclusief",
+            "vtbObjectId": "yu0qizyfwnjgjn0f2u2saj",
+            "translatedName": "Exclusief"
+          },
+          {
+            "id": 21,
+            "name": "Voorwaarden",
+            "type_id": 8,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 10,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "TextAreaEditor",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Not translated",
+            "vtbObjectId": "9t66735puvoxi2obriwrzh",
+            "value": "<p>Voorwaarden extra toegevoegd<\/p><p>&nbsp;<\/p>",
+            "translatedName": "Voorwaarden"
+          },
+          {
+            "id": 25,
+            "name": "Praktische informatie",
+            "type_id": 8,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 10,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "TextAreaEditor",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Praktische informatie",
+            "vtbObjectId": "tpvjyo8tblamzohyu2dp7m",
+            "value": "<p>pracktische informatie<\/p><p>&nbsp;<\/p>",
+            "translatedName": "Praktische informatie"
+          },
+          {
+            "id": 26,
+            "name": "Verzekering",
+            "type_id": 8,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 10,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "TextAreaEditor",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Verzekering",
+            "vtbObjectId": "dlra3t5uh1mvn6jsv369j",
+            "value": "<p>Verzekeringen tekst<\/p><p>&nbsp;<\/p>",
+            "translatedName": "Verzekering"
+          }
+        ],
+        "vtbObjectId": "ohl51fij3x50r75s4w74j"
+      },
+      {
+        "id": 11,
+        "parent_id": null,
+        "link_type": "order",
+        "layout_data": null,
+        "display_at": "both",
+        "sort_order": null,
+        "name": "Afsluiting VTB",
+        "fields": [
+          {
+            "id": 22,
+            "name": "Afsluiting Optie tekst",
+            "type_id": 2,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 11,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "CheckBox",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Afsluiting optie tekst",
+            "vtbObjectId": "osn38t1v7nxei75g1sqec",
+            "value": true,
+            "translatedName": "Afsluiting optie tekst"
+          },
+          {
+            "id": 23,
+            "name": "Afsluiting kom langs op kantoor",
+            "type_id": 2,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 11,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "CheckBox",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Afsluiting kom langs op kantoor",
+            "vtbObjectId": "4erj4fb9p0xblsofhv0w6b",
+            "value": true,
+            "translatedName": "Afsluiting kom langs op kantoor"
+          },
+          {
+            "id": 24,
+            "name": "Vrije tekst afsluiting",
+            "type_id": 8,
+            "valid_regex": "",
+            "defaults": null,
+            "category_id": 11,
+            "sort_order": null,
+            "field_width": null,
+            "field_type": "TextAreaEditor",
+            "display_at": "both",
+            "show_in_product": 0,
+            "layout_data": null,
+            "maxlength": null,
+            "maxlength_enforce": 0,
+            "translated_name": "Vrije tekst afsluiting",
+            "vtbObjectId": "kxxpmbijw6sn3bl5k1pba",
+            "translatedName": "Vrije tekst afsluiting"
+          }
+        ],
+        "vtbObjectId": "rrivabfo2bib4v4fsso2up"
+      }
+    ],
+    "participants": {
+      "party 1": [
         {
-           "id":5271,
-           "title_id":2,
-           "title":"Mevr.",
-           "initials":"",
-           "name":"Jane",
-           "surname":"Doe",
-           "company":"",
-           "street":"",
-           "housenum":"",
-           "postalcode":"",
-           "city":"",
-           "country":"NL",
-           "birthdate":null,
-           "age_calc_type":"birthdate",
-           "informal":1,
-           "language_id":2,
-           "notes":"",
-           "created":"2018-12-07 12:36:10",
-           "created_by":null,
-           "modified":null,
-           "minimal":1,
-           "use_maincontact_details":0,
-           "nationality":null,
-           "passport_firstname":"",
-           "passport_number":"",
-           "passport_expiry_date":null,
-           "frequent_flyer_numbers":"",
-           "airline_preference":"",
-           "meal_preference":"",
-           "seat_preference":"",
-           "preferences_memo":"",
-           "smoking":null,
-           "lodging_preference":"",
-           "province":"",
-           "passport_issue_city":"",
-           "birth_city":"",
-           "contact_tag":null,
-           "surname_prefix":"",
-           "last_email_contact_ts":null,
-           "last_email_contact_id":null,
-           "last_email_contact_mailbox_id":null,
-           "last_call_contact_id":null,
-           "last_call_contact_ts":null,
-           "passport_surname":"",
-           "inserted_by":9,
-           "inserted_at":"2018-12-07 12:36:10",
-           "inserted_audit_id":null,
-           "updated_by":9,
-           "updated_at":"2018-12-07 12:36:10",
-           "updated_audit_id":null,
-           "general_info":null,
-           "passport_nr":null,
-           "boardingplace_id":null,
-           "groupnr":1,
-           "sex":"female",
-           "has_linked_ols":38,
-           "has_locked_ols":0,
-           "partyName":"party 1"
+          "id": "26978",
+          "name": "Eline",
+          "surname": "Herder",
+          "surname_prefix": "",
+          "title": "2",
+          "sex": "female",
+          "birthdate": "1987-12-27T00:00:00.000Z",
+          "partyName": "party 1"
+        },
+        {
+          "id": "40797",
+          "name": "Frank",
+          "surname": "Bijsterbosch",
+          "surname_prefix": "",
+          "title": "1",
+          "sex": "male",
+          "birthdate": "1969-04-06T00:00:00.000Z",
+          "partyName": "party 1"
+        },
+        {
+          "id": "36128",
+          "name": "Wendy",
+          "surname": "Ronde",
+          "surname_prefix": "",
+          "title": "2",
+          "sex": "",
+          "birthdate": "",
+          "partyName": "party 1"
+        },
+        {
+          "id": "26977",
+          "name": "Dick",
+          "surname": "Hanekamp",
+          "surname_prefix": "",
+          "title": "1",
+          "sex": "",
+          "birthdate": "1980-05-02",
+          "partyName": "party 1"
         }
-     ]
-  },
-  "segments":[
-     {
-        "nights":2,
-        "day":1,
-        "isFlight":false,
-        "typeId":12,
-        "title":"Consectetur adipiscing elit",
-        "subTitle":"Donec iaculis enim",
-        "content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ligula mauris, consequat quis leo maximus, pellentesque condimentum urna. Pellentesque vel metus non ligula efficitur condimentum. Donec enim nisi, mollis sed aliquet id, tempor quis risus. Pellentesque neque massa, ultrices sed eros eu, pretium porta urna. Curabitur nulla ipsum, fringilla convallis quam in, pretium cursus justo. Cras aliquam orci sed lorem rhoncus, ac tincidunt elit interdum. Cras nec tortor augue. Donec vehicula nulla posuere ante rutrum, ultrices facilisis eros accumsan. Donec elementum finibus arcu, ut viverra nisi porttitor vitae. Nunc sed ullamcorper libero, ac condimentum purus. Nunc aliquet, velit nec egestas vestibulum, nulla arcu hendrerit justo, at tincidunt magna nisl eu orci. Vestibulum a nisi varius, egestas orci id, commodo ex. Donec iaculis enim quis libero viverra, eget tempus tellus posuere. Aliquam sit amet lectus eros. Mauris posuere ex dolor, a luctus ante tempus eu. Proin imperdiet mattis odio, ut lobortis tellus imperdiet nec.<\/p>",
-        "TSBlock":{
-           "id":3249
+      ]
+    },
+    "segments": [
+      {
+        "isFlight": true,
+        "typeId": 4,
+        "title": "vliegticket Amsterdam - Aruba",
+        "subTitle": null,
+        "content": null,
+        "TSBlock": {
+          "id": 49571
         },
-        "flightInfo":[
-
+        "flightInfo": [
+          
         ],
-        "media":[
-           {
-              "sourceType":"mediaspirit",
-              "sourceId":"09eea36db78f48a52450481ffc13c3b3",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Zuid-Afrika-Fauna-babyolifant.JPG"
-           },
-           {
-              "sourceType":"mediaspirit",
-              "sourceId":"677a2ed7fe35b9d5f8b300bb67823f5b",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Zuid-Afrika-BlydeRiverCanyon.JPG"
-           },
-           {
-              "sourceType":"mediaspirit",
-              "sourceId":"804f8c2ccbce001f14a2b3640bf60fd5",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/route%20van%20Johannesburg%20naar%20Hazyview%20Machadodorp%20(1).jpg"
-           }
+        "media": [
+          
         ],
-        "elements":[
-           {
-              "offset":0,
-              "nights":2,
-              "unitAmount":2,
-              "unitId":2,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Hotel Iaculis Ligula",
-              "TSProduct":{
-                 "id":191,
-                 "tag":"GUAACCELH",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8457
-              },
-              "media":[
-                 {
-                    "id":1,
-                    "sourceType":"mediaspirit",
-                    "sourceId":"b87d869228aac78678cd0559d0225241",
-                    "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Manggis,%20Alila%20Manggis%20(8).jpg",
-                    "description":null
-                 }
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Hotel Iaculis Ligula",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000",
-                 "hasError":"Bad Request: failed fetching live prices: error_no_matrixline_found",
-                 "usedParams":{
-                    "productId":191,
-                    "startDate":"2018-11-13",
-                    "nrOfItems":2,
-                    "nrOfAdults":1,
-                    "nrOfChildren":0,
-                    "nrOfBabies":0,
-                    "nrOfAdolescent":0,
-                    "matrixDescription":"Vulputate ut"
-                 }
-              },
-              "additionalText":"Glass aptent taciti sociosqu ad litora torquent per conubia",
-              "subAdditionalText":null,
-              "roomTypes":[
-                 {
-                    "defaultPrice":"0.0000",
-                    "description":"Vulputate ut",
-                    "minPerson":null,
-                    "maxPerson":null,
-                    "minUnit":null,
-                    "maxUnit":null
-                 }
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "hasPreviousElementParticipantOverlap":true,
-              "day":1,
-              "date":"2018-11-12T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false,
-              "subTitle":"Vulputate ut"
-           },
-           {
-              "offset":0,
-              "nights":2,
-              "unitAmount":2,
-              "unitId":2,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Hotel Iaculis Ligula",
-              "TSProduct":{
-                 "id":191,
-                 "tag":"GUAACCELH",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8457
-              },
-              "media":[
-                 {
-                    "id":1,
-                    "sourceType":"mediaspirit",
-                    "sourceId":"b87d869228aac78678cd0559d0225241",
-                    "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/P1030133_gu329s.JPG",
-                    "description":null
-                 }
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Hotel Iaculis Ligula",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000",
-                 "hasError":"Bad Request: failed fetching live prices: error_no_matrixline_found",
-                 "usedParams":{
-                    "productId":191,
-                    "startDate":"2018-11-13",
-                    "nrOfItems":2,
-                    "nrOfAdults":1,
-                    "nrOfChildren":0,
-                    "nrOfBabies":0,
-                    "nrOfAdolescent":0,
-                    "matrixDescription":"Libero gravida"
-                 }
-              },
-              "additionalText":"Class aptent taciti sociosqu ad litora torquent per conubia",
-              "subAdditionalText":null,
-              "roomTypes":[
-                 {
-                    "defaultPrice":"0.0000",
-                    "description":"Libero gravida",
-                    "minPerson":null,
-                    "maxPerson":null,
-                    "minUnit":null,
-                    "maxUnit":null
-                 }
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "hasPreviousElementParticipantOverlap":true,
-              "day":1,
-              "date":"2018-11-12T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false,
-              "subTitle":"Libero gravida"
-           },
-           {
-              "offset":0,
-              "nights":2,
-              "unitAmount":2,
-              "unitId":2,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Hotel Etiam Sodales",
-              "TSProduct":{
-                 "id":191,
-                 "tag":"GUAACCELH",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8457
-              },
-              "media":[
-                 {
-                    "id":1,
-                    "sourceType":"mediaspirit",
-                    "sourceId":"b87d869228aac78678cd0559d0225241",
-                    "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Manggis,%20Alila%20Manggis%20(20).jpg",
-                    "description":null
-                 }
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Hotel Etiam Sodales",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000",
-                 "hasError":"Bad Request: failed fetching live prices: error_no_matrixline_found",
-                 "usedParams":{
-                    "productId":191,
-                    "startDate":"2018-11-13",
-                    "nrOfItems":2,
-                    "nrOfAdults":1,
-                    "nrOfChildren":0,
-                    "nrOfBabies":0,
-                    "nrOfAdolescent":0,
-                    "matrixDescription":"Ex Ontbijt"
-                 }
-              },
-              "additionalText":"Class aptent taciti sociosqu ad litora torquent per conubia",
-              "subAdditionalText":null,
-              "roomTypes":[
-                 {
-                    "defaultPrice":"0.0000",
-                    "description":"Proin faucibus",
-                    "minPerson":null,
-                    "maxPerson":null,
-                    "minUnit":null,
-                    "maxUnit":null
-                 }
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "hasPreviousElementParticipantOverlap":true,
-              "day":1,
-              "date":"2018-11-12T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false,
-              "subTitle":"Proin faucibus"
-           },
-           {
-              "offset":0,
-              "nights":2,
-              "unitAmount":2,
-              "unitId":2,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Hotel Sed Porttitor Lacus",
-              "TSProduct":{
-                 "id":191,
-                 "tag":"GUAACCELH",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8457
-              },
-              "media":[
-                 {
-                    "id":1,
-                    "sourceType":"mediaspirit",
-                    "sourceId":"b87d869228aac78678cd0559d0225241",
-                    "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/IMG_0360_8iylui.JPG",
-                    "description":null
-                 }
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Hotel Sed Porttitor Lacus",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"5.000",
-                 "hasError":"Bad Request: failed fetching live prices: error_no_matrixline_found",
-                 "usedParams":{
-                    "productId":191,
-                    "startDate":"2018-11-13",
-                    "nrOfItems":2,
-                    "nrOfAdults":1,
-                    "nrOfChildren":0,
-                    "nrOfBabies":0,
-                    "nrOfAdolescent":0,
-                    "matrixDescription":"Hotel Sed Porttitor Lacus"
-                 }
-              },
-              "additionalText":"Glass aptent taciti sociosqu ad litora torquent per conubia",
-              "subAdditionalText":null,
-              "roomTypes":[
-                 {
-                    "defaultPrice":"0.0000",
-                    "description":"Hotel Sed Porttitor Lacus",
-                    "minPerson":null,
-                    "maxPerson":null,
-                    "minUnit":null,
-                    "maxUnit":null
-                 }
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "hasPreviousElementParticipantOverlap":true,
-              "day":1,
-              "date":"2018-11-12T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false,
-              "subTitle":"Posuere dolor"
-           }
+        "elements": [
+          
         ],
-        "inViewport":false,
-        "maps":{
-           "latitude":-24.238182,
-           "longitude":19.801568,
-           "zoom":5
+        "inViewport": false,
+        "maps": [
+          
+        ],
+        "vtbObjectId": "hpfmui6w9il7gtj4drjp4b",
+        "carRentalElements": [
+          
+        ],
+        "day": 1,
+        "date": "2019-07-17",
+        "missingBookableDays": false,
+        "nights": 0,
+        "endDate": "2019-07-17"
+      },
+      {
+        "nights": 0,
+        "day": 1,
+        "isFlight": false,
+        "typeId": 13,
+        "title": "Aruba",
+        "subTitle": "One Happy Paradise",
+        "content": "<p>De complete reis Aruba is de perfecte vakantie voor liefhebbers van zon, zee en strand. Het zonnetje schijnt er nagenoeg het hele jaar door, kilometerslange witte zandstranden en een azuurblauwe Caribische zee wachten op jou. Je kunt er diverse watersporten beoefenen, zoals: (kite)surfen, zeilen, waterski&euml;n, jetski&euml;n, parasailing, diepzeevissen en duiken. In Oranjestad vindt je vele restaurants, eethuisjes, clubs, bars en discotheken die een bezoek zeker waard zijn.<\/p>\n\n<p>Het is met recht een eiland waar je van alles kan beleven, zeker tijdens carnaval of de regatta. <a href=\"http:\/\/www.bontravel.nl\/aruba\">Aruba<\/a> is gewoon One Happy Island!<\/p>\n",
+        "TSBlock": {
+          "id": 49572
         },
-        "carRentalElements":[
-
+        "flightInfo": [
+          
         ],
-        "date":"2018-11-12T23:00:00.000Z",
-        "missingBookableDays":false,
-        "elementsOrder":"8457",
-        "elementsMapActive":"",
-        "hasElementsOverlap":false,
-        "carRentalEnd":null,
-        "carRentalStart":null,
-        "endDate":"2018-11-14T23:00:00.000Z"
-     },
-     {
-        "nights":0,
-        "day":2,
-        "isFlight":false,
-        "typeId":12,
-        "title":"Nullam in augue",
-        "subTitle":"Vivamus nisl est",
-        "content":"<p>Nullam in augue et eros congue dictum. Vivamus nisl est, interdum et molestie non, pulvinar quis leo. Morbi convallis est leo, ut fermentum velit malesuada non. Phasellus nec enim sapien. In nec iaculis ligula. Donec viverra, libero ut blandit condimentum, velit orci finibus turpis, vel accumsan nibh eros vel eros. Fusce libero sapien, accumsan eu massa quis, efficitur iaculis elit. Sed sed tincidunt enim, quis faucibus massa. Vestibulum vel risus vitae enim sagittis ornare sed et est.<\/p>",
-        "TSBlock":{
-           "id":2991
+        "maps": {
+          "zoom": 14,
+          "latitude": 12.54933,
+          "longitude": -70.05699300000003
         },
-        "flightInfo":[
-
+        "media": [
+          {
+            "id": 1,
+            "sourceType": "mediaspirit",
+            "sourceId": "ac8578de3e3721c2ee5f693c1b64c775",
+            "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/aruba-beach.jpg",
+            "description": null
+          },
+          {
+            "id": 2,
+            "sourceType": "mediaspirit",
+            "sourceId": "f74f2c27696639656b9d43296dcb18d3",
+            "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/shutterstock_560607745.jpg",
+            "description": null
+          },
+          {
+            "id": 3,
+            "sourceType": "mediaspirit",
+            "sourceId": "2858947d41ccbd4830d02b37447bbd6d",
+            "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/shutterstock_1303093018.jpg",
+            "description": null
+          },
+          {
+            "id": 4,
+            "sourceType": "mediaspirit",
+            "sourceId": "9080a02be1c563e8d5e0cb177f43aa33",
+            "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/shutterstock_260392208.jpg",
+            "description": null
+          },
+          {
+            "id": 5,
+            "sourceType": "mediaspirit",
+            "sourceId": "10bd5841485268c1d377c16d8e9559ca",
+            "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/shutterstock_417807550.jpg",
+            "description": null
+          }
         ],
-        "media":[
-           {
-              "sourceType":"mediaspirit",
-              "sourceId":"09eea36db78f48a52450481ffc13c3b3",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Zuid-Afrika-Krugerpark-Neushoorn.JPG"
-           },
-           {
-              "id":2,
-              "sourceType":"mediaspirit",
-              "sourceId":"6ef21317bb6a50e1ede18bb9bd13d16d",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Krugerpark%20(1).JPG",
-              "description":""
-           },
-           {
-              "sourceType":"mediaspirit",
-              "sourceId":"804f8c2ccbce001f14a2b3640bf28b0c",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Krugerpark%20selfdrive%20(1).JPG"
-           }
+        "elements": [
+          {
+            "id": 300,
+            "TSProduct": {
+              "id": 300,
+              "tag": "MVC",
+              "bookableDays": [
+                
+              ]
+            },
+            "unitId": 1,
+            "unitAmount": 5,
+            "bookableDays": [
+              
+            ],
+            "internalInfo": "<html><head><title><\/title><\/head><body>SPECIAL: 15% korting indien geboekt voor 23 september en reizen voor 30 november 2019<br \/>A <strong><span style=\"background-color:#afeeee;\">minimum stay of 7 nights<\/span><\/strong> applies for the following dates: <span style=\"background-color:#afeeee;\">December 23rd, 2018 - January 2nd, 2019<\/span>. A <strong><span style=\"background-color:#afeeee;\">minimum stay of 5 nights<\/span><\/strong> applies for the following dates: <span style=\"background-color:#afeeee;\">February 19th - March 5th, 2019 and April 19th &ndash; April 22nd, 2019<\/span>.<\/body><\/html>",
+            "internalInfoClean": "SPECIAL: 15% korting indien geboekt voor 23 september en reizen voor 30 november 2019A minimum stay of 7 nights applies for the following dates: December 23rd, 2018 - January 2nd, 2019. A minimum stay of 5 nights applies for the following dates: February 19th - March 5th, 2019 and April 19th &ndash; April 22nd, 2019.",
+            "title": "MVC eagle bech autohuu\n\n\u00a0\n",
+            "maps": {
+              "heading": "0",
+              "pitch": "0",
+              "longitude": -70.05699300000003,
+              "latitude": 12.54933,
+              "fieldofview": "84.46979999999999",
+              "zoom": 14,
+              "searchplace": "J.E. Irausquin Blvd 240, Aruba",
+              "static_image_zoom": false,
+              "address_info": {
+                "housenum": "240",
+                "street": "J.E. Irausquin Boulevard",
+                "county": "Aruba"
+              },
+              "enabled": true
+            },
+            "media": [
+              
+            ],
+            "roomTypes": [
+              {
+                "defaultPrice": "167.9000",
+                "description": "Quad room o.b.v. logies en ontbijt",
+                "minPerson": 2,
+                "maxPerson": 4,
+                "minUnit": null,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "142.9000",
+                "description": "Double room o.b.v. logies en ontbijt",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": null,
+                "maxUnit": null,
+                "note": ""
+              }
+            ],
+            "sellingAmount": "25.000",
+            "sellingMarkupType": "percentage",
+            "nights": 5,
+            "TSOrderline": [
+              
+            ],
+            "vtbElementId": "4dn36m2nxat010eeg5zw",
+            "vtbObjectId": "xg9tkfcnacdamo21dx3ccb",
+            "additionalText": "<p>Waar mariniers ooit kwamen om te relaxen, is het MVC Eagle Beach nu een knus familiehotel op Aruba! Dit voormalige Marine Verlofcentrum werd volledig omgebouwd tot een klein resort voor de perfecte strandvakantie. Met een warm welkom door de Nederlandse Theo en Christy voelt het hier meteen als een tweede thuis. Verwacht geen luxe, maar een charmant hotel dat met vrolijke kleuren, fris opgeknapte kamers en een gezellig team helemaal in Arubaanse stijl is. Duik in het zwembad of wandel naar de overkant, waar het (hele!) brede strand van Eagle Beach op je wacht. En als de ober een frisse cocktail naar de palapa brengt, verschijnt er als vanzelf een big smile op je gezicht!<\/p>\n",
+            "olPrices": {
+              "participants": {
+                "26978": {
+                  "id": "26978",
+                  "costPrice": 0,
+                  "salesPrice": 0
+                },
+                "36128": {
+                  "id": "36128",
+                  "costPrice": 0,
+                  "salesPrice": 0
+                },
+                "40797": {
+                  "id": "40797",
+                  "costPrice": "350.105",
+                  "salesPrice": "437.635"
+                }
+              },
+              "purchaseCurrency": "USD",
+              "margin": "20.00069",
+              "costPrice": "700.210",
+              "exchangeRate": "0.980000000",
+              "salesTotal": "875.270"
+            },
+            "not_calculated": true,
+            "offset": 0,
+            "optional": false,
+            "typeId": 1,
+            "elements": [
+              
+            ],
+            "flightInfo": [
+              
+            ],
+            "dataType": "elementSegment",
+            "newElement": true,
+            "subTitle": "Quad room o.b.v. logies en ontbijt",
+            "roomTypeMatchesParticipants": true,
+            "hasPreviousElementParticipantOverlap": true,
+            "day": 1,
+            "date": "2019-07-17",
+            "endDate": "2019-07-22",
+            "subAdditionalText": "",
+            "segmentNights": 0,
+            "missingBookableDays": [
+              
+            ],
+            "needsOffsetRecalculation": true,
+            "oldPricesUsed": false,
+            "manual_calc": false
+          }
         ],
-        "elements":[
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":0,
-              "unitId":1,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Nam mollis hendrerit",
-              "TSProduct":{
-                 "id":199,
-                 "tag":"GUATRAAN2",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8010
-              },
-              "media":[
-
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Nam mollis hendrerit",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000"
-              },
-              "additionalText":"In nec iaculis ligula. Donec viverra, libero ut blandit condimentum",
-              "subAdditionalText":null,
-              "roomTypes":[
-
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "needsOffsetRecalculation":true,
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false
-           },
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":2,
-              "unitId":5,
-              "optional":true,
-              "not_calculated":true,
-              "title":"Proin et dolor",
-              "TSProduct":{
-                 "id":200,
-                 "tag":"GUAACCELP",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8011
-              },
-              "media":[
-
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Proin et dolor",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"20.000"
-              },
-              "additionalText":"Proin et dolor vel dui tincidunt sodales",
-              "subAdditionalText":null,
-              "roomTypes":[
-                 {
-                    "defaultPrice":"0.0000",
-                    "description":"Incl Ontbijt",
-                    "minPerson":null,
-                    "maxPerson":null,
-                    "minUnit":null,
-                    "maxUnit":null
-                 }
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "needsOffsetRecalculation":true,
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false
-           },
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":0,
-              "unitId":5,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Etiam a lorem a mi pulvinar condimentum",
-              "TSProduct":{
-                 "id":201,
-                 "tag":"GUAACTRAF",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8012
-              },
-              "media":[
-
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Etiam a lorem a mi pulvinar condimentum",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"75.000"
-              },
-              "additionalText":"Phasellus pulvinar arcu dolor, et mollis quam maximus quis",
-              "subAdditionalText":null,
-              "roomTypes":[
-
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "needsOffsetRecalculation":true,
-              "manual_calc":false,
-              "oldPricesUsed":false
-           }
+        "inViewport": false,
+        "vtbObjectId": "1g40faoap0qxfcn4xzzo4",
+        "carRentalElements": [
+          
         ],
-        "inViewport":false,
-        "maps":{
-           "latitude":52.212853,
-           "longitude":5.2886923,
-           "zoom":15
+        "date": "2019-07-17",
+        "missingBookableDays": false,
+        "elementsOrder": "xg9tkfcnacdamo21dx3ccb",
+        "elementsMapActive": "xg9tkfcnacdamo21dx3ccb",
+        "hasElementsOverlap": false,
+        "endDate": "2019-07-17"
+      },
+      {
+        "isFlight": true,
+        "typeId": 4,
+        "title": "Vliegticket Aruba - Cura\u00e7ao",
+        "subTitle": null,
+        "content": null,
+        "TSBlock": {
+          "id": 49573
         },
-        "carRentalElements":[
-
+        "flightInfo": [
+          {
+            "id": 585,
+            "airlineCode": "KLM",
+            "flightNumber": "1234",
+            "departureAirport": "AMS",
+            "departureDt": "2019-11-08 04:00:00",
+            "arrivalAirport": "BON",
+            "arrivalDt": "2019-08-30 09:00:00",
+            "arrivalDate": "2019-08-30",
+            "arrivalTime": "09:00",
+            "departureDate": "2019-11-08",
+            "departureTime": "04:00",
+            "stopoverAirport": null,
+            "duration": 0,
+            "farebase": null
+          }
         ],
-        "date":"2018-11-14T23:00:00.000Z",
-        "missingBookableDays":false,
-        "elementsOrder":"8010|8011|8012",
-        "elementsMapActive":"",
-        "hasElementsOverlap":false,
-        "carRentalEnd":null,
-        "carRentalStart":null,
-        "endDate":"2018-11-14T23:00:00.000Z"
-     },
-     {
-        "nights":0,
-        "day":3,
-        "isFlight":false,
-        "typeId":12,
-        "title":"Sed porttitor lacus",
-        "subTitle":"In pellentesque",
-        "content":"<p>Praesent accumsan eros vel odio semper, sed porttitor lacus pellentesque. In pellentesque, orci ut porta porttitor, felis ipsum varius ligula, a facilisis nunc orci eu sapien. Proin et dolor vel dui tincidunt sodales ac ut augue. Aliquam malesuada sodales enim et efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris vulputate luctus nisl, ut finibus lectus ultricies at. Cras vulputate velit eu libero volutpat commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi eu tellus a nunc ullamcorper facilisis. Ut ut luctus sapien, eget convallis ex. Proin elementum ultrices augue, id gravida urna porta eu. Phasellus nunc risus, bibendum non pharetra eu, vulputate ut leo. Donec viverra faucibus elit eu scelerisque. Morbi eu gravida turpis. Aenean ultrices arcu non quam tempor, ut vulputate nisi ultricies.<\/p>",
-        "TSBlock":{
-           "id":2992
+        "media": [
+          
+        ],
+        "elements": [
+          
+        ],
+        "inViewport": false,
+        "maps": [
+          
+        ],
+        "vtbObjectId": "nachwp4f1zod4nb4tqxfb",
+        "carRentalElements": [
+          
+        ],
+        "day": 1,
+        "date": "2019-07-17",
+        "missingBookableDays": false,
+        "nights": 0,
+        "endDate": "2019-07-17"
+      },
+      {
+        "nights": 4,
+        "day": 1,
+        "isFlight": false,
+        "typeId": 13,
+        "title": "Cura\u00e7ao\n",
+        "subTitle": "Bon Bini",
+        "content": "<p>Cura\u00e7ao is een eiland waar iedereen zich thuis zal voelen. Cura\u00e7ao heeft op veel terreinen wat te bieden. Of je nou tijdens je vakantie vooral rust wilt, romantiek in priv\u00e9 omgeving zoekt, een fervent duiker bent, je gaat met het gezin, of je drinkt graag een cocktail aan het strand van een beachclub. Voor iedereen is er wat wils op Cura\u00e7ao. De onderwater wereld is net als haar buur Bonaire prachtig, alleen iets minder toegankelijk. Er zijn romantische rustige baaitjes maar ook stranden met hippe clubs. Of ontdek het kleurrijke en kolonialistische Willemstad.<\/p>",
+        "TSBlock": {
+          "id": 49574
         },
-        "flightInfo":[
-
+        "flightInfo": [
+          
         ],
-        "media":[
-           {
-              "sourceType":"mediaspirit",
-              "sourceId":"3dd2a2bb0d796cb070ee31b1c16113de",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Zuid-Afrika-Krugerpark-olifanten.JPG"
-           },
-           {
-              "id":4,
-              "sourceType":"mediaspirit",
-              "sourceId":"518ab2b45169dd25618fb08c3019a2c4",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Krugerpark%20safari%20(3).jpg",
-              "description":""
-           },
-           {
-              "sourceType":"mediaspirit",
-              "sourceId":"0fc160a85361066719014f668aadd86d",
-              "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Krugerpark%20wrattenzwijn.jpg"
-           }
-        ],
-        "elements":[
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":0,
-              "unitId":4,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Luctus libero gravida",
-              "TSProduct":{
-                 "id":202,
-                 "tag":"GUATRASEM",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8013
-              },
-              "media":[
-
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Luctus libero gravida",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000"
-              },
-              "additionalText":"Class aptent taciti sociosqu",
-              "subAdditionalText":null,
-              "roomTypes":[
-
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "needsOffsetRecalculation":true,
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false
-           },
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":1,
-              "unitId":3,
-              "optional":true,
-              "not_calculated":true,
-              "title":"Nunc ullamcorper ipsum eu",
-              "TSProduct":{
-                 "id":203,
-                 "tag":"GUAACCLOS",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8014
-              },
-              "media":[
-
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Nunc ullamcorper ipsum eu",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000"
-              },
-              "additionalText":"-",
-              "subAdditionalText":null,
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "needsOffsetRecalculation":true,
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "manual_calc":false,
-              "oldPricesUsed":false
-           },
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":0,
-              "unitId":3,
-              "optional":true,
-              "not_calculated":true,
-              "title":"Nullam sed lectus felis",
-              "TSProduct":{
-                 "id":204,
-                 "tag":"GUAACTJOR",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8015
-              },
-              "media":[
-
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Nullam sed lectus felis",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000"
-              },
-              "additionalText":"Sed commodo mattis orci at viverra",
-              "subAdditionalText":null,
-              "roomTypes":[
-
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "needsOffsetRecalculation":true,
-              "maps":{
-                 "latitude":52.212853,
-                 "longitude":5.2886923,
-                 "zoom":13
-              },
-              "manual_calc":false,
-              "oldPricesUsed":false
-           },
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":0,
-              "unitId":1,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Proin elementum ultrices",
-              "TSProduct":{
-                 "id":205,
-                 "tag":"GUAACTSUN",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8016
-              },
-              "media":[
-
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Proin elementum ultrices",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000"
-              },
-              "additionalText":"Sed commodo mattis orci at viverra",
-              "subAdditionalText":null,
-              "roomTypes":[
-
-              ],
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "needsOffsetRecalculation":true,
-              "manual_calc":false,
-              "oldPricesUsed":false
-           },
-           {
-              "offset":0,
-              "nights":0,
-              "unitAmount":0,
-              "unitId":1,
-              "optional":false,
-              "not_calculated":true,
-              "title":"Donec aliquam purus interdum eros",
-              "TSProduct":{
-                 "id":206,
-                 "tag":"GUAACCJAG",
-                 "bookableDays":[
-
-                 ]
-              },
-              "TSOrderline":{
-                 "id":8017
-              },
-              "media":[
-
-              ],
-              "olPrices":{
-                 "costPrice":"0.000",
-                 "discount":null,
-                 "title":"Donec aliquam purus interdum eros",
-                 "discountMethod":null,
-                 "exchangeRate":"1.000000000",
-                 "purchaseCurrency":"EUR",
-                 "salesCurrency":"EUR",
-                 "participants":{
-                    "5271":{
-                       "costPrice":"0.000",
-                       "salesPrice":"0.000"
-                    }
-                 },
-                 "salesTotal":"0.000"
-              },
-              "additionalText":"Donec aliquam purus interdum eros",
-              "subAdditionalText":null,
-              "supplierComment":null,
-              "missingBookableDays":[
-
-              ],
-              "day":3,
-              "date":"2018-11-14T23:00:00.000Z",
-              "endDate":"2018-11-14T23:00:00.000Z",
-              "roomTypeMatchesParticipants":true,
-              "needsOffsetRecalculation":true,
-              "manual_calc":false,
-              "oldPricesUsed":false
-           }
-        ],
-        "inViewport":true,
-        "maps":{
-           "latitude":52.212853,
-           "longitude":5.2886923,
-           "zoom":15
+        "maps": {
+          "addressInfo": [
+            
+          ],
+          "fiendOfView": 0,
+          "heading": 0,
+          "latitude": 12.1021753,
+          "longitude": -68.92629620000002,
+          "pitch": 0,
+          "searchPlace": null,
+          "staticImageZoom": null,
+          "zoom": 14
         },
-        "carRentalElements":[
-
+        "media": [
+          {
+            "id": 10,
+            "sourceType": "mediaspirit",
+            "sourceId": "09b5d2e3bf8716f1856c183b7bc9f4ec",
+            "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/shutterstock_134110148.jpg",
+            "description": null
+          },
+          {
+            "id": 11,
+            "sourceType": "mediaspirit",
+            "sourceId": "147a0b098616eff9b71b03720f4bdf1a",
+            "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/Scuba-lodge-suites 1.jpg",
+            "description": null
+          },
+          {
+            "id": 12,
+            "sourceType": "mediaspirit",
+            "sourceId": "09b5d2e3bf8716f1856c183b7bcc9200",
+            "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/shutterstock_681320854.jpg",
+            "description": null
+          },
+          {
+            "id": 13,
+            "sourceType": "mediaspirit",
+            "sourceId": "10bd5841485268c1d377c16d8ea276ea",
+            "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/shutterstock_541725052.jpg",
+            "description": null
+          }
         ],
-        "date":"2018-11-14T23:00:00.000Z",
-        "missingBookableDays":false,
-        "elementsOrder":"8013|8014|8015|8016|8017",
-        "elementsMapActive":"",
-        "hasElementsOverlap":false,
-        "carRentalEnd":null,
-        "carRentalStart":null,
-        "endDate":"2018-11-14T23:00:00.000Z"
-     }
-  ],
-  "liborderId":594,
-  "cover":[
-     {
-        "id":145,
-        "sourceType":"mediaspirit",
-        "sourceId":"fc159151e390154a9bcd3e7fcd5ae741",
-        "url":"https:\/\/s3-eu-west-1.amazonaws.com\/demo.mediaspirit.io\/original\/lg\/Krugerpark%20safari%20(1).jpg"
-     }
-  ],
-  "hasNotCalculated":true,
-  "totalDays":3,
-  "totalDaysAllocated":3,
-  "endDate":"2018-11-14T23:00:00.000Z",
-  "notifications":[
-
-  ],
-  "salesPriceAfterRounding":0,
-  "salesPriceBeforeRounding":0,
-  "costPriceBeforeRounding":0,
-  "title":"Pretium cursus justo",
-  "subTitle":"Augue"
-}
+        "elements": [
+          {
+            "emptyOlStartDT": false,
+            "offset": 0,
+            "nights": 4,
+            "unitAmount": 4,
+            "unitId": 2,
+            "optional": false,
+            "not_calculated": true,
+            "subTitle": "Standard room o.b.v. logies",
+            "title": "Geen Idee\n",
+            "TSProduct": {
+              "id": 98,
+              "tag": "SCUBAL",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 118058,
+              "extraFieldValues": [
+                {
+                  "id": 15,
+                  "name": "Persoonlijke noot",
+                  "type_id": 16,
+                  "valid_regex": "",
+                  "defaults": null,
+                  "category_id": null,
+                  "sort_order": null,
+                  "field_width": null,
+                  "field_type": "Orderline_TextArea",
+                  "display_at": "both",
+                  "show_in_product": 0,
+                  "layout_data": null,
+                  "maxlength": null,
+                  "maxlength_enforce": 0,
+                  "translated_name": "kamertype"
+                },
+                {
+                  "id": 29,
+                  "name": "Personal Touch",
+                  "type_id": 16,
+                  "valid_regex": "",
+                  "defaults": null,
+                  "category_id": null,
+                  "sort_order": null,
+                  "field_width": null,
+                  "field_type": "Orderline_TextArea",
+                  "display_at": "both",
+                  "show_in_product": 0,
+                  "layout_data": null,
+                  "maxlength": null,
+                  "maxlength_enforce": 0,
+                  "translated_name": "Personal Touch"
+                }
+              ]
+            },
+            "maps": {
+              "addressInfo": [
+                
+              ],
+              "fiendOfView": 84.46979999999999,
+              "heading": 0,
+              "latitude": 12.1021753,
+              "longitude": -68.92629620000002,
+              "pitch": 0,
+              "searchPlace": "104 Pietermaai, Willemstad Pietermaai, Cura\u00e7ao",
+              "staticImageZoom": null,
+              "zoom": 14
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": "486.080",
+              "discount": null,
+              "title": "Scuba Lodge Boutique Hotel Cura\u00e7ao [Standard room o.b.v. logies]",
+              "discountMethod": null,
+              "exchangeRate": "0.980000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": {
+                "26978": {
+                  "costPrice": "243.040",
+                  "salesPrice": "303.800"
+                },
+                "40797": {
+                  "costPrice": "243.040",
+                  "salesPrice": "303.800"
+                }
+              },
+              "salesTotal": "607.600",
+              "margin": "20.00000"
+            },
+            "additionalText": "<html>\n<head>\n\t<title><\/title>\n<\/head>\n<body>Het toonaangevende boutique hotel op Curacao! Bekend om haar mooie ligging aan zee, de onovertroffen atmosfeer en een oprecht, toegewijd en professioneel team. Een stukje paradijs, speciaal voor jou! Het kleine hotel met appartementen en hotelkamers is gevestigd in monumentale panden in het historische centrum van Willemstad, de kleurrijke hoofdstad van Cura&ccedil;ao. En dat direct aan zee, met eigen strand en een prachtige infinity pool.<br \/>\n<br \/>\nGeniet van de gezellige bar, voetjes in het zand en het heerlijke restaurant. Bij aankomst krijg je een verfrissend welkomstdrankje en gedurende je verblijf kun je gratis gebruik maken van de snorkelsets.<\/body>\n<\/html>",
+            "subAdditionalText": "",
+            "roomTypes": [
+              {
+                "defaultPrice": "124.0000",
+                "description": "Standard room o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": null,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "140.0000",
+                "description": "Superior room o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": null,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "183.0000",
+                "description": "1 Bedroom City apartment o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 3,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "231.0000",
+                "description": "2 Bedroom City apartment o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 5,
+                "minUnit": 3,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "279.0000",
+                "description": "2 Bedroom Ocean apartment o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 3,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "335.0000",
+                "description": "3 Bedroom Ocean apartment o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 6,
+                "minUnit": 3,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "159.0000",
+                "description": "Superior Deluxe City room o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": null,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "175.0000",
+                "description": "Superior Deluxe Ocean room o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": null,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "140.0000",
+                "description": "Superior Kamer o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "124.0000",
+                "description": "Standaard kamer o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "159.0000",
+                "description": "Superior Deluxe Kamer o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "175.0000",
+                "description": "Superior Deluxe Ocean Kamer o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "183.0000",
+                "description": "1 slaapkamer CITY appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "231.0000",
+                "description": "2 slaapkamer CITY appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 1,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "279.0000",
+                "description": "2 slaapkamer OCEAN appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 1,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "335.0000",
+                "description": "3 slaapkamer OCEAN appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 6,
+                "minUnit": 1,
+                "maxUnit": null,
+                "note": ""
+              }
+            ],
+            "supplierComment": null,
+            "sellingAmount": null,
+            "sellingMarkupType": null,
+            "missingBookableDays": [
+              
+            ],
+            "vtbObjectId": "xk75uowk0xb7zxfu6efpe",
+            "hasPreviousElementParticipantOverlap": true,
+            "day": 1,
+            "date": "2019-07-17",
+            "endDate": "2019-07-21",
+            "roomTypeMatchesParticipants": true,
+            "needsOffsetRecalculation": true,
+            "oldPricesUsed": false,
+            "manual_calc": false,
+            "segmentNights": 4
+          },
+          {
+            "emptyOlStartDT": false,
+            "offset": 4,
+            "nights": 5,
+            "unitAmount": 5,
+            "unitId": 1,
+            "optional": false,
+            "not_calculated": true,
+            "subTitle": "Pick up: Nissan Frontier standaard <AIRPORT>",
+            "title": "<National Carrental> autohuur Cura\u00e7ao",
+            "TSProduct": {
+              "id": 9,
+              "tag": "NATION",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 118059,
+              "extraFieldValues": [
+                {
+                  "id": 15,
+                  "name": "Persoonlijke noot",
+                  "type_id": 16,
+                  "valid_regex": "",
+                  "defaults": null,
+                  "category_id": null,
+                  "sort_order": null,
+                  "field_width": null,
+                  "field_type": "Orderline_TextArea",
+                  "display_at": "both",
+                  "show_in_product": 0,
+                  "layout_data": null,
+                  "maxlength": null,
+                  "maxlength_enforce": 0,
+                  "translated_name": "kamertype"
+                },
+                {
+                  "id": 29,
+                  "name": "Personal Touch",
+                  "type_id": 16,
+                  "valid_regex": "",
+                  "defaults": null,
+                  "category_id": null,
+                  "sort_order": null,
+                  "field_width": null,
+                  "field_type": "Orderline_TextArea",
+                  "display_at": "both",
+                  "show_in_product": 0,
+                  "layout_data": null,
+                  "maxlength": null,
+                  "maxlength_enforce": 0,
+                  "translated_name": "Personal Touch"
+                }
+              ]
+            },
+            "media": [
+              
+            ],
+            "olPrices": {
+              "costPrice": "98.000",
+              "discount": null,
+              "title": "<National Carrental> autohuur Cura\u00e7ao [Pick up <#BDD AIRPORT>: Nissan Frontier standaard]",
+              "discountMethod": null,
+              "exchangeRate": "0.980000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": {
+                "26978": {
+                  "costPrice": "49.000",
+                  "salesPrice": "61.250"
+                },
+                "40797": {
+                  "costPrice": "49.000",
+                  "salesPrice": "61.250"
+                }
+              },
+              "salesTotal": "122.500",
+              "hasError": "Bad Request: failed fetching live prices: error_no_matrixline_found",
+              "usedParams": {
+                "productId": 9,
+                "startDate": "2019-7-26",
+                "nrOfItems": 5,
+                "nrOfAdults": 2,
+                "nrOfChildren": 0,
+                "nrOfBabies": 0,
+                "nrOfAdolescent": 0,
+                "matrixDescription": "Pick up: Nissan Frontier standaard <AIRPORT>"
+              },
+              "margin": "20.00000"
+            },
+            "additionalText": "<html>\n<head>\n\t<title><\/title>\n<\/head>\n<body>Ontdek prachtig Cura&ccedil;ao met je eigen huurauto. Ga naar het groene Westpunt, bezoek de vele prachtige baaien die het eiland heeft. De huurauto staat voor jullie op het vliegveld klaar, jullie kunnen bij aankomst makkelijk naar de accommodatie rijden. Voor meer informatie verwijzen we jullie graag naar de bijlage van deze offerte. De afbeelding is informatief, houdt er rekening mee dat het autotype en de kleur afwijkend zijn van de afbeelding. De eerste bestuurder is ...<\/body>\n<\/html>",
+            "subAdditionalText": null,
+            "roomTypes": [
+              {
+                "defaultPrice": "61.0000",
+                "description": "Pick up: Nissan Frontier standaard <AIRPORT>",
+                "minPerson": 1,
+                "maxPerson": 5,
+                "minUnit": 1,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "56.0000",
+                "description": "Pick up <#BDD AIRPORT>: Nissan Frontier standaard",
+                "minPerson": 1,
+                "maxPerson": 5,
+                "minUnit": 1,
+                "maxUnit": null,
+                "note": ""
+              }
+            ],
+            "supplierComment": null,
+            "sellingAmount": "25.000",
+            "sellingMarkupType": "percentage",
+            "missingBookableDays": [
+              
+            ],
+            "vtbObjectId": "gjl0pjz4rykvdqia5gc3mi",
+            "hasPreviousElementParticipantOverlap": true,
+            "day": 5,
+            "date": "2019-07-21",
+            "endDate": "2019-07-26",
+            "roomTypeMatchesParticipants": true,
+            "manual_calc": true,
+            "oldPricesUsed": false
+          }
+        ],
+        "inViewport": false,
+        "vtbObjectId": "2mooc0k5l8k0khf8wnqrqw",
+        "carRentalElements": [
+          
+        ],
+        "date": "2019-07-17",
+        "missingBookableDays": false,
+        "elementsOrder": "xk75uowk0xb7zxfu6efpe|gjl0pjz4rykvdqia5gc3mi",
+        "elementsMapActive": "",
+        "hasElementsOverlap": false,
+        "endDate": "2019-07-21"
+      },
+      {
+        "isFlight": true,
+        "typeId": 4,
+        "title": "vliegticket Cura\u00e7ao - Bonaire",
+        "subTitle": "",
+        "content": "",
+        "TSBlock": {
+          "id": 49575
+        },
+        "flightInfo": [
+          
+        ],
+        "media": [
+          
+        ],
+        "elements": [
+          
+        ],
+        "inViewport": false,
+        "maps": [
+          
+        ],
+        "vtbObjectId": "4577v3i0i6ew40sfgvonxo",
+        "carRentalElements": [
+          
+        ],
+        "day": 5,
+        "date": "2019-07-21",
+        "missingBookableDays": false,
+        "nights": 0,
+        "endDate": "2019-07-21"
+      },
+      {
+        "nights": 5,
+        "day": 5,
+        "isFlight": false,
+        "typeId": 13,
+        "title": "Bonaire",
+        "subTitle": "Once a visitor always a friend",
+        "content": "<p>Ontdek al snorkelend een van de mooiste onderwaterwerelden op aarde. Heb je een duikbrevet? Ga hier dan zeker duiken! Je zult versteld staan van de prachtige kleurrijke vissen. Bonaire kent de veelzeggende slogan &lsquo;Divers Paradise&rsquo;. Op Bonaire ligt het rif dichtbij het eiland. Daarom kun je op Bonaire een uniek aantal kantduiken maken. Met je pick-up huurauto rij je door de drive-through om duikflessen in te laden. En vervolgens kun je je eigen tijd indelen en zelfstandig duiken op Bonaire. Het zicht is vaak meer dan 20 meter, het water is tropisch warm en er is een rijke diversiteit aan tropische vissen. Van adelaarsroggen, groene murenen, papegaaivissen, schildpadden tot de kleinste brutale blennies, je kunt ze allemaal tegenkomen in de wateren rondom Bonaire.<\/p>\n\n<p>Of&nbsp;misschien is surfen meer jouw ding? Ook dan zullen de mogelijkheden&nbsp;op Bonaire een glimlach op je gezicht toveren. Ga windsurfen bij lac bay en drink na afloop een sangria of polar (het lokale biertje) bij de&nbsp;laid-back strandbar Jibe City. Kitesurfen kan bij Atlantis beach en je wordt al snel opgenomen in de gezellige kitesurfscene van Bonaire<\/p>\n",
+        "TSBlock": {
+          "id": 49576
+        },
+        "flightInfo": [
+          
+        ],
+        "maps": {
+          "addressInfo": [
+            
+          ],
+          "fiendOfView": 0,
+          "heading": 0,
+          "latitude": 12.154685350000001,
+          "longitude": -68.27039350000001,
+          "pitch": 0,
+          "searchPlace": null,
+          "staticImageZoom": null,
+          "zoom": 14
+        },
+        "media": [
+          {
+            "id": 20,
+            "sourceType": "mediaspirit",
+            "sourceId": "05aa5d7c28941755f3b586868ffaed69",
+            "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/shutterstock_1092174713.jpg",
+            "description": null
+          },
+          {
+            "id": 21,
+            "sourceType": "mediaspirit",
+            "sourceId": "e1ed1f3352ea293de5ca6ba3ae5dbfd0",
+            "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/shutterstock_459861331.jpg",
+            "description": null
+          },
+          {
+            "id": 22,
+            "sourceType": "mediaspirit",
+            "sourceId": "dd13fde4cf4a1b9c5e6915a3c2c3e754",
+            "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/Bonaire 015-386cfd49.jpg",
+            "description": null
+          },
+          {
+            "id": 23,
+            "sourceType": "mediaspirit",
+            "sourceId": "6e3daface38aa1a82748c6020f6ec7cd",
+            "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/shutterstock_663628300.jpg",
+            "description": null
+          },
+          {
+            "id": 24,
+            "sourceType": "mediaspirit",
+            "sourceId": "7e35a18f0e72443a69c99674042771ed",
+            "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/Bonaire 027-402ee593.jpg",
+            "description": null
+          }
+        ],
+        "elements": [
+          {
+            "emptyOlStartDT": false,
+            "offset": 0,
+            "nights": 5,
+            "unitAmount": 5,
+            "unitId": 2,
+            "optional": false,
+            "not_calculated": true,
+            "subTitle": "",
+            "title": "Djambo Apartments Bonaire",
+            "TSProduct": {
+              "id": 36,
+              "tag": "DJAMBO",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 118060,
+              "extraFieldValues": [
+                {
+                  "id": 15,
+                  "name": "Persoonlijke noot",
+                  "type_id": 16,
+                  "valid_regex": "",
+                  "defaults": null,
+                  "category_id": null,
+                  "sort_order": null,
+                  "field_width": null,
+                  "field_type": "Orderline_TextArea",
+                  "display_at": "both",
+                  "show_in_product": 0,
+                  "layout_data": null,
+                  "maxlength": null,
+                  "maxlength_enforce": 0,
+                  "translated_name": "kamertype",
+                  "value": "persoonlijke noot"
+                },
+                {
+                  "id": 29,
+                  "name": "Personal Touch",
+                  "type_id": 16,
+                  "valid_regex": "",
+                  "defaults": null,
+                  "category_id": null,
+                  "sort_order": null,
+                  "field_width": null,
+                  "field_type": "Orderline_TextArea",
+                  "display_at": "both",
+                  "show_in_product": 0,
+                  "layout_data": null,
+                  "maxlength": null,
+                  "maxlength_enforce": 0,
+                  "translated_name": "Personal Touch",
+                  "value": "personal touch\n"
+                }
+              ]
+            },
+            "maps": {
+              "addressInfo": [
+                
+              ],
+              "fiendOfView": 84.4698,
+              "heading": 0,
+              "latitude": 12.1422348,
+              "longitude": -68.2731018,
+              "pitch": 0,
+              "searchPlace": "11 Kaya Finlandia, Kralendijk, Caribisch Nederland",
+              "staticImageZoom": false,
+              "zoom": 14
+            },
+            "media": [
+              {
+                "sourceType": "mediaspirit",
+                "sourceId": "09b5d2e3bf8716f1856c183b7bc76e51",
+                "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/Djambo (13)-737ea231.jpg"
+              },
+              {
+                "sourceType": "mediaspirit",
+                "sourceId": "147a0b098616eff9b71b03720f486c90",
+                "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/djambo24.jpg"
+              },
+              {
+                "sourceType": "mediaspirit",
+                "sourceId": "1d5d745340e46f862fd8bd812bf1a30c",
+                "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/djambo 22.jpg"
+              },
+              {
+                "sourceType": "mediaspirit",
+                "sourceId": "1d747fca974c20a3eda9115e5ef8a244",
+                "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/djambo 10.jpg"
+              }
+            ],
+            "olPrices": {
+              "costPrice": "0.000",
+              "discount": null,
+              "title": "Djambo Apartments Bonaire [SPECIAL 1 slaapkamer appartement o.b.v. logies]",
+              "discountMethod": null,
+              "exchangeRate": "0.980000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": {
+                "26978": {
+                  "costPrice": "0.000",
+                  "salesPrice": "0.000"
+                },
+                "40797": {
+                  "costPrice": "0.000",
+                  "salesPrice": "0.000"
+                }
+              },
+              "salesTotal": "0.000",
+              "hasError": "Bad Request: failed fetching live prices: error_no_matrixline_found",
+              "usedParams": {
+                "productId": 36,
+                "startDate": "2019-7-31",
+                "nrOfItems": 5,
+                "nrOfAdults": 2,
+                "nrOfChildren": 0,
+                "nrOfBabies": 0,
+                "nrOfAdolescent": 0,
+                "matrixDescription": "SPECIAL 1 slaapkamer appartement o.b.v. logies"
+              },
+              "margin": "0.00000"
+            },
+            "additionalText": "<p>Djambo&rsquo;s motto is <em>Happy Paradise<\/em>, geniet van het heerlijke eiland Bonaire in dit relaxe resortje. Het kleinschalige complex is vooral voor mensen die rust en gezelligheid zoeken, of dit nu boven of onder water is. De minimum leeftijd is 16 jaar. Djambo Bonaire is een nieuw gebouwd resort, bestaande uit 5 gebouwen geheel in de Bonairiaanse stijl. De vier Nederlandse eigenaren wonen zelf op het complex, waardoor er altijd iemand aanwezig is om vragen te beantwoorden, lokale tips te geven of gezellig een drankje mee te drinken in de Djambar. De 17 appartementen zijn rondom een tropsiche tuin met zwembad gebouwd. Alle appartementen hebben een buitenliving met keuken. De slaapkamers hebben airconditioning. Djambo ligt op loopafstand Kralendijk en ongeveer 350 meter van de Caribische zee. Willen jullie een kingsize bed of enkele bedden? Djambo wil graag jullie roepnamen weten zodat ze jullie persoonlijk kunnen verwelkomen. Willen jullie deze bij boeking aan ons doorgeven? Bedankt!<\/p>\n",
+            "subAdditionalText": "",
+            "roomTypes": [
+              {
+                "defaultPrice": "84.0000",
+                "description": "1 slaapkamer appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 1,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "104.0000",
+                "description": "2 slaapkamer appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 1,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "80.0000",
+                "description": "SPECIAL 1 slaapkamer appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 6,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "104.0000",
+                "description": "SPECIAL 2 slaapkamer appartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 6,
+                "maxUnit": null,
+                "note": ""
+              }
+            ],
+            "supplierComment": null,
+            "sellingAmount": "25.000",
+            "sellingMarkupType": "percentage",
+            "missingBookableDays": [
+              
+            ],
+            "vtbObjectId": "n3tawwtl2ocb9729tpcjqt",
+            "hasPreviousElementParticipantOverlap": true,
+            "day": 5,
+            "date": "2019-07-21",
+            "endDate": "2019-07-26",
+            "roomTypeMatchesParticipants": true,
+            "needsOffsetRecalculation": true,
+            "manual_calc": false,
+            "oldPricesUsed": false,
+            "segmentNights": 5
+          },
+          {
+            "emptyOlStartDT": false,
+            "offset": 0,
+            "nights": 5,
+            "unitAmount": 5,
+            "unitId": 2,
+            "optional": true,
+            "not_calculated": true,
+            "subTitle": "Studio o.b.v. logies<#BDD 7 = 6>",
+            "title": "Hillside Apartments Bonaire",
+            "TSProduct": {
+              "id": 346,
+              "tag": "HILLS",
+              "bookableDays": [
+                
+              ]
+            },
+            "TSOrderline": {
+              "id": 118061,
+              "extraFieldValues": [
+                {
+                  "id": 15,
+                  "name": "Persoonlijke noot",
+                  "type_id": 16,
+                  "valid_regex": "",
+                  "defaults": null,
+                  "category_id": null,
+                  "sort_order": null,
+                  "field_width": null,
+                  "field_type": "Orderline_TextArea",
+                  "display_at": "both",
+                  "show_in_product": 0,
+                  "layout_data": null,
+                  "maxlength": null,
+                  "maxlength_enforce": 0,
+                  "translated_name": "kamertype"
+                },
+                {
+                  "id": 29,
+                  "name": "Personal Touch",
+                  "type_id": 16,
+                  "valid_regex": "",
+                  "defaults": null,
+                  "category_id": null,
+                  "sort_order": null,
+                  "field_width": null,
+                  "field_type": "Orderline_TextArea",
+                  "display_at": "both",
+                  "show_in_product": 0,
+                  "layout_data": null,
+                  "maxlength": null,
+                  "maxlength_enforce": 0,
+                  "translated_name": "Personal Touch"
+                }
+              ]
+            },
+            "maps": {
+              "addressInfo": [
+                
+              ],
+              "fiendOfView": 84.46979999999999,
+              "heading": 0,
+              "latitude": 12.1671359,
+              "longitude": -68.26768520000002,
+              "pitch": 0,
+              "searchPlace": "Kaya Linda 19, Kralendijk, Caribisch Nederland",
+              "staticImageZoom": null,
+              "zoom": 14
+            },
+            "media": [
+              {
+                "sourceType": "mediaspirit",
+                "sourceId": "1d747fca974c20a3eda9115e5ef934cf",
+                "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/hillside-resort 6.jpg"
+              },
+              {
+                "sourceType": "mediaspirit",
+                "sourceId": "81f43cbbd66af23ff52623de465bf573",
+                "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/hillside-resort 19.jpg"
+              },
+              {
+                "sourceType": "mediaspirit",
+                "sourceId": "1d747fca974c20a3eda9115e5ef93767",
+                "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/hillside-resort 13.jpg"
+              },
+              {
+                "sourceType": "mediaspirit",
+                "sourceId": "09b5d2e3bf8716f1856c183b7bc87fd5",
+                "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/hillside-resort 8.jpg"
+              }
+            ],
+            "olPrices": {
+              "costPrice": "0.000",
+              "discount": null,
+              "title": "Hillside Apartments Bonaire [Studio o.b.v. logies<#BDD 7 = 6>]",
+              "discountMethod": null,
+              "exchangeRate": "0.980000000",
+              "purchaseCurrency": "USD",
+              "salesCurrency": "EUR",
+              "participants": {
+                "26978": {
+                  "costPrice": "0.000",
+                  "salesPrice": "0.000"
+                },
+                "40797": {
+                  "costPrice": "0.000",
+                  "salesPrice": "0.000"
+                }
+              },
+              "salesTotal": "0.000",
+              "hasError": "Bad Request: failed fetching live prices: error_no_matrixline_found",
+              "usedParams": {
+                "productId": 346,
+                "startDate": "2019-7-31",
+                "nrOfItems": 5,
+                "nrOfAdults": 2,
+                "nrOfChildren": 0,
+                "nrOfBabies": 0,
+                "nrOfAdolescent": 0,
+                "matrixDescription": "Studio o.b.v. logies<#BDD 7 = 6>"
+              },
+              "margin": "0.00000"
+            },
+            "additionalText": "<p>Voor degenen die een mooi uitzicht kunnen waarderen is Hillside Apartments de plek bij uitstek. Dankzij de hoge ligging van het resort kijk je uit over Kralendijk, de zee en Klein Bonaire en zie je in de verte de heuvels van het natuurpark Washington Slagbaai. Vanaf het zonneterras of je balkon kun je bij helder weer zelfs&nbsp;Cura\u00e7ao ontdekken aan de horizon. Bij Hillside Apartments is het iedere dag een feestje. De eigenaren zijn altijd in voor een gezellig praatje of grapje. En de bar is altijd goed gevuld (met mensen \u00e9n Polar). De appartementen zijn ruim opgezet, net als het zwembad. Dit is bij uitstek het grootste en lekkerste zwembad op het eiland! Hillside ontvangt graag families met kinderen. De studio's hebben 1 tweepersoonsbed (hier kunnen geen 2 enkele bedden van gemaakt worden), de 2 slaapkamerappartementen hebben 1 tweepersoonsbed en 2 enkele bedden.<\/p>",
+            "subAdditionalText": "",
+            "roomTypes": [
+              {
+                "defaultPrice": "80.0000",
+                "description": "Studio o.b.v. logies<#BDD 7 = 6>",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 5,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "116.0000",
+                "description": "2 slaapkamerappartement o.b.v. logies<#BDD 7 = 6>",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 5,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "80.0000",
+                "description": "Studio o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 2,
+                "minUnit": 5,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "116.0000",
+                "description": "2 slaapkamerappartement o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 5,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "148.0000",
+                "description": "2 slaapkamerappartement Deluxe o.b.v. logies",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 5,
+                "maxUnit": null,
+                "note": ""
+              },
+              {
+                "defaultPrice": "148.0000",
+                "description": "2 slaapkamerappartement Deluxe o.b.v. logies<#BDD 7 = 6>",
+                "minPerson": 1,
+                "maxPerson": 4,
+                "minUnit": 5,
+                "maxUnit": null,
+                "note": ""
+              }
+            ],
+            "supplierComment": null,
+            "sellingAmount": "25.000",
+            "sellingMarkupType": "percentage",
+            "missingBookableDays": [
+              
+            ],
+            "vtbObjectId": "nqqqvh6hw93jz6n73tcvl",
+            "hasPreviousElementParticipantOverlap": true,
+            "day": 5,
+            "date": "2019-07-21",
+            "endDate": "2019-07-26",
+            "roomTypeMatchesParticipants": true,
+            "needsOffsetRecalculation": true,
+            "manual_calc": false,
+            "oldPricesUsed": false,
+            "segmentNights": 5
+          }
+        ],
+        "inViewport": true,
+        "vtbObjectId": "m6wq8bsyopo3q0qdc9tfps",
+        "carRentalElements": [
+          
+        ],
+        "date": "2019-07-21",
+        "missingBookableDays": false,
+        "elementsOrder": "n3tawwtl2ocb9729tpcjqt|nqqqvh6hw93jz6n73tcvl",
+        "elementsMapActive": "",
+        "hasElementsOverlap": false,
+        "endDate": "2019-07-26"
+      },
+      {
+        "isFlight": true,
+        "typeId": 4,
+        "title": "Vliegticket Bonaire - Amsterdam",
+        "subTitle": null,
+        "content": null,
+        "TSBlock": {
+          "id": 49577
+        },
+        "flightInfo": [
+          
+        ],
+        "media": [
+          
+        ],
+        "elements": [
+          
+        ],
+        "inViewport": true,
+        "maps": [
+          
+        ],
+        "vtbObjectId": "1l1tembhigismke5n6cdbk",
+        "carRentalElements": [
+          
+        ],
+        "day": 10,
+        "date": "2019-07-26",
+        "missingBookableDays": false,
+        "nights": 0,
+        "endDate": "2019-07-26"
+      }
+    ],
+    "liborderId": 6170,
+    "departmentName": "Combinatiereis Benedenwinds",
+    "departmentId": 12,
+    "officeId": 1,
+    "officeName": "BON travel",
+    "costPriceBeforeRounding": 0,
+    "salesPriceBeforeRounding": 0,
+    "vtbObjectId": "e37jwjcv7fghtryhselxc",
+    "cover": [
+      {
+        "sourceType": "mediaspirit",
+        "sourceId": "09b5d2e3bf8716f1856c183b7bd0df31",
+        "url": "https:\/\/media.bontravel.nl\/wordpress\/medium\/shutterstock_456237418.jpg"
+      }
+    ],
+    "bookableDaysWarning": false,
+    "hasNotCalculated": true,
+    "totalDays": 10,
+    "totalDaysAllocated": 10,
+    "endDate": "2019-07-26",
+    "notifications": [
+      
+    ],
+    "salesPriceAfterRounding": 0,
+    "title": "ABCtje",
+    "subTitle": "lekker chill",
+    "pdfVtbId": 58
+  }
