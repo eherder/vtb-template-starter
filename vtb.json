@@ -2,9 +2,17 @@
   "dataTransformer": {
     "customFileLocation": "customTransforms",
     "methods": [
-      {"function": "test", "params": {"test1": "test1a"}},
-      {"function": "test2", "params": {"test2": "test2a"}},
-      {"function": "test3", "params": {"test3": "test3a"}}
+      {"function": "hasFlights", "params": {}},
+      {"function": "priceInfo", "params": {}},
+      {"function": "polylines", "params": {}},
+      {"function": "extraField", "params": {"attributeName": "voorwaarden", "extraFieldValueID": 10, "fieldID": 20}},
+      {"function": "extraField", "params": {"attributeName": "NaamReisgezelschap", "extraFieldValueID": 7, "fieldID": 27}},
+      {"function": "extraField", "params": {"attributeName": "AantalReisgezelschap", "extraFieldValueID": 7, "fieldID": 28}},
+      {"function": "extraField", "params": {"attributeName": "praktisch", "extraFieldValueID": 10, "fieldID": 25}},
+      {"function": "extraField", "params": {"attributeName": "verzekering", "extraFieldValueID": 10, "fieldID": 26}},
+      {"function": "extraField", "params": {"attributeName": "medewerkerimage", "extraFieldValueID": 10, "fieldID": 19}},
+      {"function": "elementExtraField", "params": {"attributeName": "personaltouch", "fieldID": 15}},
+      {"function": "addImageToEmployeeText", "params":{}}
     ],
     "startWithEmptyObject": false
   }

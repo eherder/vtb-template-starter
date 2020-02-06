@@ -1,676 +1,1788 @@
+@import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Oswald|Merriweater|Roboto&display=swap');
+
 /*********************
  *                   *
- *       RESET       *
+ *       BASIS       *
  *                   *
  *********************/
 
  body {
-  width: 100%;
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: #333;
+  background:#F3F8FB;
+  font-size:16px;
+  line-height: 2em;
 }
 
-h1,h2,h3,h4,h5,h6,ul,ol {
+p {
+  margin:0;
+  padding:0;
+  text-align: justify;
+}
+
+ul {
+  list-style: none;
+  margin:0;
+}
+
+li::before {
+  content:"\2022";
+  color:black;
+  font-size:18px;
+  padding-right:10px;
+  margin-left: -17px;
+} 
+
+.menu li::before {
+    display:none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-weight: 100;
 }
 
-h1,h2,h3 {
+h1 {
+  letter-spacing: 1px;
+  padding:40px 0px 10px;
+  text-align:center;
+  font-size:2em;
+  font-weight:bold;
+  line-height:1.4em;
+  text-transform: uppercase;
+}
+
+h2 {
+  letter-spacing: 1px;
+  padding:10px 0px;
+  font-size:28px;
+  font-weight:bold;
+  line-height:1.4em;
+  text-align:left;
+}
+
+h3 {
+  letter-spacing: 1px;
+  padding:15px 0px;
+  text-align:left;
+  font-size:30px;
+  font-weight:bold;
+}
+
+h4 {
+  letter-spacing: 1px;
+  padding:5px 0px;
+  text-align:left;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.titles {
+  letter-spacing: 1px;
+  padding:20px 0px;
+  text-align:left;
+  font-size:46px;
+  font-weight:bold;
+  line-height:1.4em;
+  font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
+}
+
+#border {
+  position: relative;
+  width: 20%;
+  height: 7px;
+  background-color: black;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+a {
+  color: #5abfc5;
   font-weight: bold;
+}
+
+/*********************
+ *                   *
+ *       GRIDS       *
+ *                   *
+ *********************/
+
+ 
+ .grid-container {
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "menu"
+  "reisintroductie"
+  "salesspecialist"
+  "reisschema"
+  "vluchtschema"
+  "reisonderdelen"
+  "reissom"
+  "reissomoptioneel"
+  "voorwaarden"
+  "afsluiting"
+  "footer1"
+  "footer"
+  "maingrid"
+  ;
+}
+
+.grid-container {
+}
+
+.grid-container > div {
+  padding:0px;
+  background-image: url(https://media.bontravel.nl/wordpress/large/lightpaperfibers_2X.png);
+}
+
+/*********************
+ *       HEADER       *
+ *********************/
+
+.grid-container .header {
+padding:0px;
+}
+
+
+
+.header {
+  grid-area: header;
+  background: lightgrey;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 40vw;
+}
+
+.header .logo-bg {
+  height: 125px;
+  position: absolute;
+  z-index: 3;
+  top: 25px;
+  right: 25px;
+}
+
+.header .header-text {
+  text-align: left;
+  position: absolute;
+  color: white;
+  align-self: center;
+  margin: 0;
+  width: 100%;
+  margin-left: 75px;
+  bottom: 25px;
+  z-index: 3;
+}
+
+
+.header .gradient {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 65%, rgba(0,0,0,1) 100%);
+}
+
+
+.header h3 {
+  margin: 0px 0 0 0 ;
+  font-size: 1.5em;
+  padding: 0 0 25px 0;
+  text-align: center;
+  font-weight: 100;
+  font-family: 'Beth Ellen', cursive;
+  color: yellow;
+  text-transform: none;
+
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 55px;
+  letter-spacing: 8px;
+  padding: 0 0 5px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cover-images {
+  width:100%;
+}
+
+.cover-images vtb-media {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  border:1px solid #f0f0f0;
+  border-radius: 5px;
+  padding-bottom:56%;
+  overflow: hidden;
+}
+
+.cover-images vtb-media img {
+  height: 100%;
+}
+
+.cover-images vtb-media > div.media-items > div {
+  position: absolute !important;
+  top:10%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  display: none;
+  max-width: calc(100% - 2px);
+  width:100%;
+}
+
+.cover-images vtb-media > div.media-items > div.slide-active {
+  display: block;
+  left:-50%;
+  animation: slide 0.5s forwards;
+}
+
+.cover-images vtb-media > div.media-items.slide-dir-right > div.slide-active {
+  left:150%;
+}
+
+.cover-images vtb-media > div.media-items.slide-dir-left > div.last-active-slide {
+  animation: slideAwayRight 0.5s forwards;
+  display: block;
+}
+
+.cover-images vtb-media > div.media-items.slide-dir-right > div.last-active-slide {
+  animation: slideAwayLeft 0.5s forwards;
+  display: block;
+}
+
+.cover-images vtb-media > div.media-items img {
+  max-width: 100%;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 50%; }
+}
+
+@-webkit-keyframes slideAwayLeft {
+  100% { left: -50%; }
+}
+
+@-webkit-keyframes slideAwayRight {
+  100% { left: 150%; }
+}
+
+.cover-images .media-slider-control {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.cover-images .media-slider-control:after {
+  font-family: "Font Awesome 5 Free";
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-weight: 900;
+  font-size:30px;
+  cursor: pointer;
+}
+
+.cover-images .media-slider-control:hover:after {
+  color: #f0f0f0;
+}
+
+.cover-images .media-slider-prev {
+  left:10px;
+}
+
+.cover-images .media-slider-prev:after {
+  content: "\f053";
+}
+
+.cover-images .media-slider-next {
+  right:10px;
+}
+
+.cover-images .media-slider-next:after {
+  content: "\f054";
+}
+
+.header .cover-images img {
+  display: block;
+  width:100%;
+}
+
+/*********************
+ *       MENU       *
+ *********************/
+
+.grid-container .menu {
+  padding:0px;
+  background-image: none;
+  text-align: left;
+  }
+
+  .grid-container .menu ul{
+    display: flex;
+    justify-content: center; 
+  }
+
+.menu.sticky ul {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width:100%;
+  background-color: black;
+  background-image: url("https://media.bontravel.nl/square/size1/bonlogo.jpg");
+  background-repeat: no-repeat;
+  padding: 10px;
+  margin: 0 auto;
+  overflow:hidden;
+  z-index: 3;
+  background-position:5% 5%;
+  image-rendering: pixelated;
+} 
+
+.menu .menu-toggle {
+  display:none;
+}
+
+.menu {
+  background-color: black;
+}
+
+.menu button {
+-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+}
+
+.menu button:hover {
+background-color: #ffffff; 
+color:#5abfc5;
+}
+
+.menu button:active {
+  color:#5abfc5;
+  }
+
+.menu button {
+display: inline-block;
+float:left;
+margin:10px;
+padding: 11px 18px;
+border: none;
+background: transparent;
+border-radius: 25px;
+font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+letter-spacing: 1px;
+color: #FFFFFF;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+
+
+/*********************
+ *       REISINTRO       *
+ *********************/
+
+
+ .reisintroductie {
+  display:grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: 
+    "reistitel reistitel"
+    "brief reisspecialist"
+    ;
+  grid-area: reisintroductie;
+  background-color: #ffffff;
+}
+
+.reisintroductie .reistitel {
+    grid-area: reistitel;
+    padding:20px;
+  }
+
+  .reisintroductie .brief {
+    grid-area: brief;
+    padding:15%;
+  }
+
+  .reisintroductie .reisspecialist {
+    grid-area: reisspecialist;
+    padding-right:10%;
+  }
+
+  .reisintroductie .reisspecialist .medewerker_foto {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .reisintroductie .reisspecialist .medewerker_foto img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+      width: 150px;
+      padding: 10%;
+  }
+
+  .reisintroductie .reisspecialist .titel-gemaaktdoor {
+    background-image: url(https://media.bontravel.nl/original/lg/medewerker-bg-d05888d2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 170px;
+}
+
+.reisintroductie .reisspecialist .titel-gemaaktdoor h1 {
+  letter-spacing: 1px;
+  padding:0 0px 0;
+  text-align:left;
+  left: 50px;
+  top: 80px;
+  position: relative;
+  font-size:1.3em;
+  font-weight:bold;
+  line-height:1.4em;
+  text-transform: uppercase;
+}
+.reisintroductie .reisspecialist .titel-gemaaktdoor h2 {
+  margin: 0;
+  font-size: 1.2em;
+  padding: 0;
+  text-align: left;
+  font-weight: 100;
+  font-family: 'Beth Ellen', cursive;
+  text-transform: none;
+  left: 50px;
+  top: 60px;
+  position: relative;
+}
+
+
+  .reisintroductie .reisspecialist .medewerker_tekst {
+    border-left: 5px solid black;
+    padding-left: 5%;
+    margin-left: 50px;
+}
+
+
+
+/*********************
+ *       REISROUTE       *
+ *********************/
+ .maingrid {
+  display:grid;
+  grid-template-columns: 75% 25%;
+  grid-template-areas: 
+    "reistitel reistitel"
+    "kaart kaart"
+    "sublinks subrechts"
+    ;
+  grid-area: reisschema;
+  background-color: #ffffff;
+}
+
+.subrechts {
+  padding-top: 100px;
+  grid-area: subrechts;
+justify-content: space-around;
+}
+
+.maingrid .kaart {
+  grid-area: kaart;
+  height:100%;
+  width:100%;
+}
+
+.maingrid .kaart .agm-map-container-inner {
+  height: 60vh;
+}
+
+.subrechts .reisperiode::before{
+content: "Reisperiode";
+letter-spacing: 1px;
+clear: both;
+display: block;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.subrechts .reisperiode::after{
+  content: "";
+  display: block;
+  padding-bottom: 20px;
+  }
+
+  .subrechts .reisduur::before{
+    content: "reisduur";
+    letter-spacing: 1px;
+    clear: both;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+    
+.subrechts .reisduur::after{
+      content: "";
+      display: block;
+      padding-bottom: 20px;
+      }
+
+.subrechts .persoon::before{
+content: "Aantal personen";
+letter-spacing: 1px;
+clear: both;
+display: block;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.subrechts .persoon::after{
+  content: "";
+  display: block;
+  padding-bottom: 20px;
+  }
+
+.maingrid .reistitel {
+  grid-area: reistitel;
+}
+
+.maingrid .reistitel {
+  background-image: url(https://media.bontravel.nl/original/lg/reisschema-4ae51a53.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  height: 170px;
+}
+
+.reistitel h1 {
+  letter-spacing: 1px;
+  padding: 60px 0px 0;
+  text-align: center;
+  position: relative;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.4em;
+  text-transform: uppercase;
+}
+
+.sublinks {
+  grid-area: sublinks;
+  padding: 5%;
+}
+
+.sublinks  vtb-segment{
+  display:grid;
+  grid-template-columns: 40% 20% 40%;
+  grid-template-areas: 
+    "travelroute-date travelroute-timeline travelroute-content"
+    "travelroute-date travelroute-timeline travelroute-element"
+    ;
+}
+
+.sublinks .title .segment-type-4::after {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f072";
+  font-size: 1.2em;
+  color: #65e0c5;
+  margin: 0 0 0 50px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+}
+
+
+
+/*===== Vertical Timeline =====*/
+#conference-timeline {
+  grid-area: travelroute-timeline;
+  position: relative;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 2;
+}
+#conference-timeline .timeline-start,
+#conference-timeline .timeline-end {
+  display: table;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 15px 23px;
+  color: #fff;
+  max-width: 5%;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  -webkit-transform: translateX(-15px); /* 10px to left */
+  -moz-transform: translateX(-15px); /* 10px to left */
+  -ms-transform: translateX(-15px); /* 10px to left */
+   transform: translateX(-15px); /* 10px to left */}
+
+#conference-timeline .timeline-start {
+  background-color: #65e0c5
+}
+
+#conference-timeline .timeline-end {
+  background-color: #65e0c5
+}
+
+#conference-timeline .conference-center-line {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -15px;
+  background-image: linear-gradient(to bottom,#65e0c5 ,#65e0c5);
+  z-index: -1;
+}
+#conference-timeline .conference-timeline-content {
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+.sublinks  vtb-segment {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 30px 0;
+}
+.sublinks  vtb-segment .title {
+  grid-area: travelroute-content;
+  font-weight: 900;
+   font-size: 1.2em;
+   padding-top: 10px;
+  width: 100%;
+  position: relative;
+  width: auto;
+  clear: both;
+  text-transform: capitalize;
+}
+
+.sublinks vtb-segment .element-field.title {
+  font-size: 1em;
+}
+
+.sublinks  vtb-segment .title,
+.sublinks  vtb-segment .splittable,
+.sublinks  vtb-segment .segment-elements
+ {
+justify-self: start;
+}
+
+.sublinks  vtb-segment .date {
+  justify-self: end;
+}
+
+.sublinks vtb-segment .date {
+  grid-area: travelroute-date;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.sublinks vtb-segment .day {
+  grid-area: travelroute-date;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 20px;
+  justify-self: center;
+  width: 150px;
+}
+
+.sublinks vtb-segment .day:before {
+content: "Dag ";
+display: inline-block;
+padding-right: 5px;
+}
+
+.sublinks .splittable {
+  grid-area: travelroute-element;
+  align-self: center;
+  font-weight: 200;
+}
+
+.sublinks .splittable .nights {
+  grid-area: travelroute-nights;
+  display: inline;
+  padding-top: 10px;
+  float:left;
+  margin-left:5px;
+}
+
+.sublinks .segment-elements .title{
+  grid-area: travelroute-element;
+  display: inline;
+  float:left;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.sublinks vtb-segment .date {
+  text-align: right;
+}
+
+.sublinks  vtb-segment .content-left-container {
+  float: left;
+}
+.sublinks  vtb-segment .content-right-container {
+  float: right;
+}
+.sublinks  vtb-segment .content-left:before,
+.sublinks  vtb-segment .content-right:before{
+  position: absolute;
+  top: 20px;
+  font-size: 23px;
+  font-family: "FontAwesome";
+  color: #fff;
+}
+
+.sublinks  vtb-segment .content-left:before {
+  content: "\f0da";
+  right: -8px;
+}
+
+.sublinks  vtb-segment .content-right:before {
+  content: "\f0d9";
+  left: -8px;
+}
+
+
+.sublinks  vtb-segment.segment-type-4::before {
+  transition: transform 1s;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f072";
+  font-size: 2.2em;
+  color: rgba(138, 138, 138, 0.12);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-left: -45px;
+  color: #fff;
+  border-radius: 100%;
+  background: #65e0c5;
+  text-align: center;
+  font-weight: 900;
+  text-align: center;
+  font-size: 25px;
+  line-height: 62px;
+}
+
+.sublinks  vtb-segment.segment-type-4:first-child:before {
+  transition: transform 1s;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f5b0";
+  font-size: 2.2em;
+  color: rgba(138, 138, 138, 0.12);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-left: -45px;
+  color: #fff;
+  border-radius: 100%;
+  background: #65e0c5;
+  text-align: center;
+  font-weight: 900;
+  text-align: center;
+  font-size: 25px;
+  line-height: 62px;
+}
+
+.sublinks  vtb-segment.segment-type-4:last-child:before {
+  transition: transform 1s;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f5af";
+  font-size: 2.2em;
+  color: rgba(138, 138, 138, 0.12);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-left: -45px;
+  color: #fff;
+  border-radius: 100%;
+  background: #65e0c5;
+  text-align: center;
+  font-weight: 900;
+  text-align: center;
+  font-size: 25px;
+  line-height: 62px;
+}
+
+.sublinks  vtb-segment.segment-type-13::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f015";
+  font-size: 2.2em;
+  color: rgba(138, 138, 138, 0.12);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-left: -45px;
+  color: #fff;
+  border-radius: 100%;
+  background: #65e0c5;
+  text-align: center;
+  font-weight: 900;
+  text-align: center;
+  font-size: 25px;
+  line-height: 62px;
+}
+
+/*===== // Vertical Timeline =====*/
+
+/*===== Resonsive Vertical Timeline =====*/
+@media only screen and (max-width: 870px) {
+  #conference-timeline .timeline-start,
+  #conference-timeline .timeline-end {
+    margin: 0;
+  }
+  #conference-timeline .conference-center-line {
+    margin-left: 0;
+    left: 50px;
+  }
+  .sublinks  vtb-segment .meta-date {
+    margin-left: 0;
+    left: 20px;
+  }
+  .sublinks  vtb-segment .content-left-container,
+  .sublinks  vtb-segment .content-right-container {
+    max-width: 100%;
+    width: auto;
+    float: none;
+    margin-left: 110px;
+    min-height: 53px;
+  }
+  .sublinks  vtb-segment .content-left-container {
+    margin-bottom: 20px;
+  }
+  .sublinks  vtb-segment .content-left,
+  .sublinks  vtb-segment .content-right {
+    padding: 10px 25px;
+    min-height: 65px;
+  }
+  .sublinks  vtb-segment .content-left:before {
+    content: "\f0d9";
+    right: auto;
+    left: -8px;
+  }
+  .sublinks  vtb-segment .content-right:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .sublinks  vtb-segment p {
+    margin: 0;
+  }
+  .sublinks  vtb-segment p span.article-number {
+    display: none;
+  }
+  
+}
+/*===== // Resonsive Vertical Timeline =====*/
+
+/*********************
+ *       REISONDERDELEN       *
+ *********************/
+ 
+
+ .reisonderdelen .reistitel {
+  background-image: url(https://media.bontravel.nl/original/lg/pakketonderdelen.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  height: 160px;
+  margin-bottom: 30px;
+}
+
+.reisonderdelen .reistitel {
+padding-top: 70px;}
+
+ .reisonderdelen {
+  grid-area: reisonderdelen;
+  background: white;
+  clear:both;
+  grid-template-areas: 
+      "reisonderdelen-fotogrid"
+      "reisonderdelen-nights"
+      "reisonderdelen-date"
+      "reisonderdelen-title"
+      "reisonderdelen-subtitle"
+      "reisonderdelen-content"
+      "reisonderdelen-splittable" !important
+      ;
+}
+
+.reisonderdelen vtb-segment {
+    transition-delay: 5s;
+}
+
+.reisonderdelen vtb-segment > div {
+    z-index:1;
+}
+
+
+.reisonderdelen .segment-field.title {
+  grid-area: reisonderdelen-title;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 55px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+  background: black;
+  color: white;
+  padding-top: 50px;
+}
+
+.reisonderdelen .segment-field.subTitle  {
+ grid-area: reisonderdelen-subtitle;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  color: #65e0c5;
+  font-family: 'Beth Ellen', cursive;
+  background: black;
+
+}
+
+.reisonderdelen .segment-field.date {
+  grid-area: reisonderdelen-date;
+  font-weight:bold;
+  font-size:20px;
+}
+
+.reisonderdelen .segment-field.nights {
+  grid-area: reisonderdelen-nights;
+  font-weight:bold;
+  font-size:20px;
+}
+
+
+.reisonderdelen .content {
+  grid-area: reisonderdelen-content;
+  padding: 5% 15%;
+  background: black;
+}
+
+.reisonderdelen .content p {
+  padding-top: 2%;
+  color: white;
+}
+
+.reisonderdelen .splittable  {
+  grid-area: reisonderdelen-splittable;
+}
+
+
+/***********************************
+ *       REISONDERDEEL ACCOMMODATIE       *
+ ***********************************/
+
+.reisonderdelen .accommodatie_elements {
+  display: grid;
+  border-top: 3px dotted black;
+  padding: 5%;
+  grid-template-areas:
+  "acco-element"
+  ;
+}
+
+.reisonderdelen .accommodatie_element {
+  grid-area: acco-element;
+  grid-template-areas: "acco-element";
+}
+
+.reisonderdelen .accommodatie_elements vtb-element {
+  display: grid;
+grid-template-columns: minmax(50%, 60%) 1fr minmax(40%, 50%);
+overflow: visible;
+clear: both;
+min-height: 400px;
+margin-top: 40px;
+row-gap: 10px;
+column-gap: 30px;
+grid-template-areas:
+"personaltouch personaltouch personaltouch"
+"acco-image nights acco-title"
+"acco-image nights acco-subTitle"
+"acco-image nights acco-date"
+"acco-image nights additionalText"
+"acco-image nights acco-splittable"
+;
+}
+
+.reisonderdelen .accommodatie_elements .personaltouch {
+  display: grid;
+  grid-area: personaltouch;
+  padding: 0% 10%;
+}
+
+.reisonderdelen .accommodatie_elements .personaltouch .personaltouch-text:before {
+  color: black;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f10d";
+  padding-right: 10px;
+}
+
+
+.reisonderdelen .accommodatie_elements .personaltouch .personaltouch-text {
+  max-width: 70%;
+  float: left;
+  display: block;
+  font-size: 21px;
+  color: black;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  -webkit-transform: translate(10%, 0%);
+  padding-bottom: 100px;
+}
+
+.reisonderdelen .accommodatie_elements .personaltouch .personaltouch-medewerkernaam {
+  max-width: 70%;
+  display: block;
+  font-size: 21px;
+  padding-bottom: 10px;
+  color: black;
+  font-family: 'Beth Ellen', cursive;
+  font-style: italic;
+  font-weight: 200;
+  -webkit-transform: translate(10%, 0%);
+}
+
+
+.reisonderdelen .accommodatie_elements .personaltouch .personaltouchimage {
+  display: inline-block;
+  float: left;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  max-width: 200px;
+  -webkit-transform: translate(20%,-20%);
+}
+.reisonderdelen .accommodatie_elements .personaltouch .personaltouchimage img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  z-index: -3;
+
+  width: 150px;
+  padding: 10%;
+}
+
+
+.reisonderdelen .accommodatie_elements .title {
+  grid-area: acco-title;
+  position: relative;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 35px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 30px;
+  z-index: 2;
+}
+
+.reisonderdelen .accommodatie_elements .title::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f015";
+  font-size: 2.2em;
+  color: rgba(138, 138, 138, 0.12);
+  -webkit-transform: translate(-20%,-120%);
+  translate: (-20%,-100%);
+  width: 1.25em;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.reisonderdelen .accommodatie_elements.acco-optional  .title::before {
+  content: "Of kies ook uit onze schatkist...";
+  font-size: 25px;
+  color: #65e0c5;
+  font-family: 'Beth Ellen', cursive;
+  text-transform: lowercase;
+  position: relative;
+}
+
+.reisonderdelen .accommodatie_elements.acco-optional  {
+  color: rgba(29, 29, 29, 0.78);
+}
+
+
+.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(6) {
+  grid-area: acco-subTitle;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.reisonderdelen .accommodatie_elements .nights:nth-child(odd) {
+  grid-area: nights;
+  /* border: 1px solid green; */
+  font-size: 19px;
+  font-weight: bold;
+  background: #65e0c5c7;
+  border-radius: 40px;
+  height: 48px;
+  color: #fff;
+  width: 55px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 7px 0 0px 0;
+  margin-left: -61px;
+  line-height: 40px;
+  margin-top: 20px;
+}
+
+.reisonderdelen .accommodatie_elements .nights:nth-child(even) {
+  padding: 7px 0 0px 0;
+  margin-right: -61px;
+  line-height: 40px;
+  margin-top: 20px;
+}
+
+
+.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(4) {
+  grid-area: acco-date;
+}
+
+.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(8) {
+  grid-area: additionalText;
+}
+
+.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(1) {
+  grid-area: acco-image;
+  clear:both;
+  overflow:hidden;
+}
+
+.reisonderdelen .accommodatie_elements .splittable  {
+  grid-area: acco-splittable;
+}
+
+.reisonderdelen .accommodatie_elements .media-1 vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-2  vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-3 vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-4  vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-5 vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-6 vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-7 vtb-media .media-items
+ {
+  grid-area:acco-image;
+  grid-template-rows: 400px;
+  grid-template-areas: 
+    "gallery1" 
+  ;
+ }
+
+.reisonderdelen .accommodatie_elements {
+}
+
+.reisonderdelen .accommodatie_elements vtb-media .media-items {
+  margin:0 ;
+  grid-area: acco-image;
+  width:100%;
+  height: 100%;
+  overflow:hidden;
+  column-gap: 3px;
+  row-gap: 3px;
+}
+
+.reisonderdelen .accommodatie_elements vtb-media {
+  grid-area: acco-image;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  border:1px solid #f0f0f0;
+  border-radius: 5px;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.reisonderdelen .accommodatie_elements vtb-media > div.media-items > div {
+  position: absolute !important;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  display: none;
+  max-width: calc(100% - 2px);
+  width:100%;
+}
+
+.reisonderdelen .accommodatie_elements vtb-media div.media-items > div {
+  grid-area: acco-image;
+  overflow: hidden;
+}
+
+.reisonderdelen .accommodatie_elements vtb-media > div.media-items > div.slide-active {
+  display: block;
+  left:-50%;
+  animation: slide 0.5s forwards;
+}
+
+.reisonderdelen .accommodatie_elements vtb-media > div.media-items.slide-dir-right > div.slide-active {
+  left:150%;
+}
+
+.reisonderdelen .accommodatie_elements vtb-media > div.media-items.slide-dir-left > div.last-active-slide {
+  animation: slideAwayRight 0.5s forwards;
+  display: block;
+}
+
+.reisonderdelen .accommodatie_elements vtb-media > div.media-items.slide-dir-right > div.last-active-slide {
+  animation: slideAwayLeft 0.5s forwards;
+  display: block;
+}
+
+.reisonderdelen .accommodatie_elements vtb-media > div.media-items img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.reisonderdelen .accommodatie_elements .media-slider-control {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.reisonderdelen .accommodatie_elements .media-slider-control:after {
+  font-family: "Font Awesome 5 Free";
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-weight: 900;
+  font-size:30px;
+  cursor: pointer;
+}
+
+.reisonderdelen .accommodatie_elements.media-slider-control:hover:after {
+  color: #f0f0f0;
+}
+
+.reisonderdelen .accommodatie_elements .media-slider-prev {
+  left:10px;
+}
+
+.reisonderdelen .accommodatie_elements .media-slider-prev:after {
+  content: "\f053";
+}
+
+.reisonderdelen .accommodatie_elements .media-slider-next {
+  right:10px;
+}
+
+.reisonderdelen .accommodatie_elements .media-slider-next:after {
+  content: "\f054";
+}
+
+
+
+/***********************************
+ *       REISONDERDEEL DEFAULT       *
+ ***********************************/
+
+ .reisonderdelen .default_elements {
+   padding:5%;
+  display: grid;
+  grid-template-areas:
+  "default-element"
+  ;
+}
+
+.reisonderdelen .accommodatie_element {
+  grid-area: acco-element;
+  grid-template-areas:
+  "default-element"
+  ;
+}
+
+.reisonderdelen .default_elements vtb-element {
+display: grid;
+grid-template-columns: 3fr;
+overflow:visible;
+clear: both;
+margin-top: 40px;
+row-gap: 10px;
+column-gap: 30px;
+grid-template-areas:
+"default-image iconbar default-title"
+"default-image iconbar default-subTitle"
+"default-image iconbar default-date"
+"default-image iconbar default-additionalText"
+"default-image iconbar default-subadditionalText"
+"default-image iconbar default-splittable"
+;
+}
+
+.reisonderdelen .default_elements vtb-element-field:nth-child(3) {
+  grid-area: default-title;
+  position: relative;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 35px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 30px;
+  z-index: 2;
+}
+
+.reisonderdelen .default_elements vtb-element-field:nth-child(4) {
+  grid-area: default-subTitle;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.reisonderdelen .default_elements .nights {
+  grid-area: iconbar;
+  /* border: 1px solid green; */
+  font-size: 19px;
+  font-weight: bold;
+  background: #65e0c5c7;
+  border-radius: 40px;
+  height: 48px;
+  color: #fff;
+  width: 55px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 7px 0 0px 0;
+  margin-left: -61px;
+  line-height: 40px;
+  margin-top: 20px;
+}
+
+.reisonderdelen .default_elements .element-unit-1 .title:before{
+  grid-area: iconbar;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f5de";
+  font-size: 2.2em;
+  color: rgba(138, 138, 138, 0.12);
+  -webkit-transform: translate(-20%,-120%);
+  translate: (-20%,-100%);
+  width: 1.25em;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+}
+
+
+.reisonderdelen .default_elements vtb-element-field:nth-child(2) {
+  grid-area: default-date;
+}
+
+.reisonderdelen .default_elements vtb-element-field:nth-child(6) {
+  grid-area: default-additionalText;
+}
+
+.reisonderdelen .default_elements vtb-element-field:nth-child(7) {
+  grid-area: default-subadditionalText;
+}
+
+
+
+.reisonderdelen blockquote {
+  position: relative;
+  font-family: 'Beth Ellen', cursive;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-style: italic;
+  z-index: ;
+}
+
+.reisonderdelen blockquote:before {
+  content: '\201C';
+  position: absolute;
+  top: 0.25em;
+  left: -0.8em;
+    color: rgba(211, 211, 211, 0.377);
+  font-size: 6em;
+}
+
+.reisonderdelen .default_elements .media {
+  grid-area: default-image;
+  clear:both;
+  overflow:hidden;
+}
+
+.reisonderdelen .default_elements .splittable  {
+  grid-area: default-splittable;
+}
+
+.reisonderdelen vtb-element > div.media img {
+  max-width:100%;
+  min-height:100%;
+  object-fit:cover;
+margin: 0 auto;
+zoom: 2;
+width:100%;
+}
+
+.reisonderdelen .default_elements vtb-media .media-items {
+  margin:0 ;
+  display:grid;
+  grid-area: default-image;
+  width:100%;
+  overflow:hidden;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(200px , 400px) minmax(30vh , auto)  minmax(30vh , auto) ;
+  column-gap: 3px;
+  row-gap: 3px;
+}
+
+.reisonderdelen .default_elements vtb-media .media-items {
+  grid-area:default-image;
+}
+
+.reisonderdelen .media-1 .default_elements vtb-media .media-items {
+  grid-area:default-image;
+  grid-template-rows: minmax(80vh , auto) ;
+  grid-template-areas: 
+    "gallery1" 
+  ;
+}
+
+.reisonderdelen .media-2 .default_elements vtb-media .media-items {
+  grid-area:default-image;
+  grid-template-rows: minmax(40vh , auto) minmax(40vh , auto) ;
+  grid-template-areas: 
+    "gallery1" 
+    "gallery2" 
+  ;
+}
+
+.reisonderdelen .default_elements .media-3 vtb-media .media-items,
+.reisonderdelen .default_elements .media-4 vtb-media .media-items,
+.reisonderdelen .default_elements .media-5 vtb-media .media-items,
+.reisonderdelen .default_elements .media-6 vtb-media .media-items,
+.reisonderdelen .default_elements .media-7 vtb-media .media-items
+ {
+  grid-area:default-image;
+  grid-template-rows: minmax(30vh , auto) minmax(30vh , auto)  minmax(30vh , auto) ;
+  grid-template-areas: 
+    "gallery1" 
+    "gallery2" 
+    "gallery3"
+  ;
+}
+
+.reisonderdelen .default_elements .media-items  > div:nth-child(1) {
+  grid-area: gallery1;
+  overflow: hidden;
+}
+
+.reisonderdelen .default_elements .media-items > div {
+  grid-area: gallery1;
+  overflow: hidden;
+}
+/***********************************
+ *       MEDIAGRID BESTEMMING       *
+ ***********************************/
+
+ .reisonderdelen vtb-segment > div.media {
+ }
+
+.reisonderdelen vtb-segment > div.media img {
+  max-width:100%;
+  min-height:100%;
+  object-fit:cover !important;
+  object-position: 50% 50%; /* default value: image is centered*/
+  margin: 0 auto;
+  zoom: 2;
+  width:100%;
+  height: 100%;
+}
+
+
+
+.reisonderdelen .media-items > div {
+  grid-area: gallery1;
+  overflow: hidden;
+}
+
+.reisonderdelen vtb-media .media-items {
+  margin:0 ;
+  display:grid;
+  width:100%;
+  height: 800px;
+  overflow:hidden;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: minmax(150px , 400px) minmax(150px , 400px)  minmax(150px , 400px) minmax(150px , 400px);
+  column-gap: 3px;
+  row-gap: 3px;
+}
+
+.reisonderdelen vtb-media .media-items:empty {
+ display:none;
+}
+
+.reisonderdelen .media-3 vtb-media .media-items {
+  grid-area:grid-3;
+  grid-template-areas: 
+    "gallery1 gallery1 gallery2" 
+    "gallery1 gallery1 gallery2" 
+    "gallery1 gallery1 gallery3"
+    "gallery1 gallery1 gallery3"
+  ;
+}
+
+.reisonderdelen .media-4 vtb-media .media-items {
+  grid-area:grid-4;
+  grid-template-areas: 
+    "gallery1 gallery2 gallery4" 
+    "gallery1 gallery2 gallery4" 
+    "gallery1 gallery3 gallery3"
+    "gallery1 gallery3 gallery3"
+  ;
+}
+
+.reisonderdelen .media-5 vtb-media .media-items {
+  grid-area:grid-5;
+  grid-template-areas: 
+    "gallery1 gallery1 gallery4" 
+    "gallery1 gallery1 gallery4" 
+    "gallery2 gallery3 gallery4"
+    "gallery2 gallery3 gallery5"
+  ;
+}
+
+.reisonderdelen .media-6 vtb-media .media-items {
+  grid-area:grid-6;
+  grid-template-areas: 
+    "gallery1 gallery3 gallery5" 
+    "gallery1 gallery3 gallery5" 
+    "gallery2 gallery3 gallery6"
+    "gallery2 gallery4 gallery6"
+  ;
+}
+
+.reisonderdelen .media-7 vtb-media .media-items {
+  grid-area:grid-7;
+  grid-template-areas: 
+    "gallery1 gallery1 gallery1" 
+    "gallery2 gallery5 gallery5" 
+    "gallery2 gallery3 gallery6"
+    "gallery2 gallery4 gallery7"
+  ;
+}
+
+
+.reisonderdelen .media-items > div:nth-child(1) {
+  grid-area: gallery1;
+  overflow: hidden;
+}
+
+.reisonderdelen .media-items > div:nth-child(2) {
+  grid-area: gallery2;
+}
+
+.reisonderdelen .media-items > div:nth-child(3) {
+  grid-area: gallery3;
+}
+
+.reisonderdelen .media-items > div:nth-child(4) {
+  grid-area: gallery4;
+}
+.reisonderdelen .media-items > div:nth-child(5) {
+  grid-area: gallery5;
+}
+
+.reisonderdelen .media-items > div:nth-child(6) {
+  grid-area: gallery6;
+}
+
+.reisonderdelen .media-items > div:nth-child(7) {
+  grid-area: gallery7;
+}
+
+/***********************************
+ *       REISSOM     *
+ ***********************************/
+
+.reissom {
+  grid-template-columns: 1fr;
+  grid-area: reissom;
+  grid-template-areas:
+  " reissom-inclusief "
+  " reissom-exclusief "
+  " reissom-tekst "
+  ;
+}
+
+.reissom #border2 {
+  position: relative;
+  width: 60%;
+  max-width: 700px;
+  height: 3px;
+  background-color: black;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.reissom .reissom-perpersoon .exclusief-tekst {
+  text-align: center;
+font-style: italic;
+padding-top: 20px;
+position: relative;
+    width: 60%;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+.reissom .reissom-perpersoon {
+  grid-area: reissom-tekst;
+  text-align: center;
+  }
+
+.reissom .reissom-perpersoon h4 {
+    text-align: center;
+    margin: -20px 0px 20px 0px;
+    padding: 0px 0px;
+  }
+
+  .reissom .reissom-perpersoon h1 {
+color: #65e0c5;
+  }
+
+.reissom .reistitel {
+  background-image: url(https://media.bontravel.nl/original/lg/money-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  height: 160px;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.reissom .reistitel {
+padding-top: 60px;}
+
+.reissom .reissom-inclusief {
+}
+
+
+.reissom .reissom-inclusief vtb-elements-list vtb-element {
+  display: grid;
+  padding: 0px 0;
+  grid-area: reissom-inclusief;
+  grid-template-columns: 45% 55%;
+  grid-template-areas:
+  "reissom-nights reissom-titel "
+}
+
+.reissom .reissom-inclusief div {
+  padding: 5px 5px;
+}
+
+.reissom .reissom-inclusief .title {
+  grid-area: reissom-titel;
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  align-items: center;
+  line-height: 20px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 2;
+  letter-spacing: 1px;
+}
+
+.reissom .reissom-inclusief .nights {
+  grid-area: reissom-nights;
+  position: relative;
+  font-weight: bold;
+  align-items: center;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: right;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-p {
-  line-height: 1.8;
-  font-size: 15px;
-  color: #555555;
-}
-
-
-/*********************
- *                   *
- *       GRID        *
- *                   *
- *********************/
-
-
-
- app-template {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-.menu {
-  grid-column: span 12;
-  height: 24vh;
-  display: grid;
-  z-index: 3;
-}
-
-  .menu img:first-child {
-    height: 13vh;
-    justify-self: center;
-  }
-
-.header {
-  grid-column: span 12;
-
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: 76vh;
-}
-
-  .header > vtb-media,
-  .header > .youtube-wrapper {
-    grid-area: 1 / 1 / span 1 / span 12;
-  }
-
-  .header vtb-youtube > div {
-    display:none;
-  }
-
-  .header .header-text {
-    grid-area: 1 / 1 / span 1 / span 12;
-  }
-
-.map {
-  grid-column: span 12;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-  .map .titles {
-    grid-column: span 12;
-  }
-
-  .map agm-map {
-    grid-area: 2 / 1 / span 12 / span 12
-  }
-
-.program {
-  grid-column: 1 / span 12;
-}
-
-  .program vtb-segment {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 4vh 60px 30px 50px auto;
-    column-gap: 100px;
-  }
-
-  .program vtb-segment .media {
-    grid-column: 1 / span 6;
-    grid-row: 1 / -1;
-  }
-
-  .program vtb-segment .media vtb-media > div {
-    overflow: hidden;
-    position: relative!important;
-    padding-bottom: 56.25%;
-  }
-
-  .program vtb-segment .media vtb-media > div:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    transition: transform 0.6s ease-out 0.3s;
-    transition-delay: .3s;
-    transform-origin: right;
-    transform: scaleX(1);
-  }
-
-  .program vtb-segment .media vtb-media > div.is-shown:before {
-    transform: scaleX(0);
-  }
-
-  .program vtb-segment .media vtb-media > div > .ng-star-inserted {
-    position: absolute;
-    left:0;
-    right:0;
-  }
-
-  .program vtb-segment .media img {
-    width: 100%;
-    display: block;
-    transition: transform 0.25s ease-in-out;
-  }
-
-  .program vtb-segment .media img:hover {
-    transform: scale(1.25);
-  }
-
-  .program vtb-media > div:nth-child(2),
-  .program vtb-media > div:nth-child(3) {
-    width: 50%;
-    float: left;
-    box-shadow: 0 0 50px 0 rgba(0,0,0,0.1);
-    padding-bottom:28.1% !important;
-  }
-
-  .program vtb-media > div:nth-child(2) {
-    transform: scale(1.2) translate(10px, -40px);
-  }
-
-  /* .program vtb-segment:nth-child(1) .day,
-  .program vtb-segment:nth-child(1) .title,
-  .program vtb-segment:nth-child(1) .subTitle,
-  .program vtb-segment:nth-child(1) .content {
-    grid-column: 2 / 10;
-  } */
-
-  .program vtb-segment:nth-child(even) .media {
-    grid-column: 7 / span 6;
-  }
-
-  .program vtb-segment:nth-child(even) .media vtb-media > div:before {
-    transform-origin: left;
-  }
-
-  .program vtb-segment .day,
-  .program vtb-segment .title,
-  .program vtb-segment .subTitle,
-  .program vtb-segment .content {
-    grid-column: 7 / -2;
-    opacity: 0.25;
-   
-    transition: all 1s ease-out;
-    transition-delay: .3s;
-    transform: translateY(100px);
-  }
-
-  .program vtb-segment:nth-child(even) .day,
-  .program vtb-segment:nth-child(even) .title,
-  .program vtb-segment:nth-child(even) .subTitle,
-  .program vtb-segment:nth-child(even) .content {
-    grid-column: 2 / span 5;
-  }
-
-  .program vtb-segment.is-shown .day,
-  .program vtb-segment.is-shown .title,
-  .program vtb-segment.is-shown .subTitle,
-  .program vtb-segment.is-shown .content {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-
-  .program vtb-segment.no-media .day,
-  .program vtb-segment.no-media .title,
-  .program vtb-segment.no-media .subTitle,
-  .program vtb-segment.no-media .content {
-    grid-column: 2 / 12;
-  }
-
-  .program vtb-segment .day {
-    grid-row: 2 / span 1;
-    align-self: center;
-  }
-
-  .program vtb-segment .title {
-    grid-row: 3 / span 1;
-  }
-
-  .program vtb-segment .subTitle {
-    grid-row: 4 / span 1;
-
-  }
-
-  .program vtb-segment .content {
-    grid-row: 5 / span 1;
-  }
-
-.accommodations {
-  grid-column: 1 / span 12;
-}
-
-  .accommodations .titles {
-    grid-column: span 12;
-  }
-
-  .accommodations vtb-elements {
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .accommodations vtb-element {
-    grid-row: span 3;
-    position: relative;
-    height: 24.8vw;
-  }
-
-.overview {
-  display: grid;
-  grid-column: 1 / span 12;
-  grid-template-columns: repeat(12, 1fr);
-  background-size: cover;
-}
-
-.overview .titles {
-  grid-column: 2 / span 10;
-}
-
-  .overview .lists {
-    grid-column: 3 / span 9;
-  }
-
-
-.social-media {
-  grid-column: 1 / span 12;
-  padding: 80px 0;
-}
-
-.footer {
-  grid-column: 1 / span 12;
-}
-
-
-/*********************
- *                   *
- *    BEAUTIFYING    *
- *                   *
- *********************/
-
-
-
-/* Texts */
-h1 {
-  color: #2d2d2c;
-  font-size: 1.8em;
-  text-transform: uppercase;
-}
-
-.titles {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.titles h1 {
+.reissom .reissom-inclusief .nights::before {
   position: relative;
-  display: inline-block;
-  font-size:2em;
+ font-family: "Font Awesome 5 Free";
+ content: "\f00c";
+ padding-right: 15px;
+font-size: 25px;
+color: #65e0c5;
 }
 
-.titles h1:before,
-.titles h1:after {
-  content: " ";
-  display: inline-block;
-  height: 2px;
-  margin: 0 10px;
-  top: 50%;
-  width: 80px;
-  zoom: 1;
-  position: absolute;
-  background-color: #2d2d2c;
-}
-
-.titles h1:before {
-  left:-100px;
-}
-
-.titles h1:after {
-  right:-100px;
-}
-
-.titles h3 {
-  color: #0f4a62;
-  font-weight: 100;
-  line-height: 2em;
-}
-
-.titles p {
-  font-size:1.17em;
-  font-weight: 100;
-  letter-spacing: -1px;
-}
-
-/* Menu */
-
-.menu {
-  position: relative;
-  box-shadow: 1px 1px 3px rgba(0,0,0,.3);
-}
-
-.menu .menu-toggle {
-  display: none;
-}
-
-.menu.sticky {
-  position: fixed;
-  top:-15vh;
-  left:0;
-}
-
-.menu .logo {
-  max-width: 100%;
-  max-height: 150px;
-}
-
-.menu vtb-menu {
-  text-align: center;
-}
-
-  .menu vtb-menu ul {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-  }
-
-    .menu vtb-menu ul li {
-      float: left;
-      list-style: none;
-      margin: 0 20px;
-      line-height: 10vh;
-    }
-
-    .menu vtb-menu ul li button {
-      color:#678;
-      text-decoration: none;
-      font-weight:100;
-      text-transform: uppercase;
-      border:none;
-      background:none;
-      cursor:pointer;
-      font-size:1.1em;
-    }
-
-    .menu vtb-menu ul li button:focus {
-      border:none;
-      outline:none;
-    }
-
-/* Header */
-.header {
-  text-align: center;
-  overflow: hidden;
-}
-  
-  .header > vtb-media {
-    z-index:-1;
-    position:relative;
-  }
-
-  .header > .youtube-wrapper {
-    position:relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
-  }
-
-  .header > .youtube-wrapper iframe {
-    position: absolute;
-    top:-10%;
-    left:0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .header > .youtube-wrapper:before {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    content: "";
-    z-index: 1;
-  }
-  
-  vtb-media > div {
-    position: static !important;
-  }
-  
-  .header vtb-media > div {
-    position: absolute !important;
-    width: 100%;
-    left:0;
-  }
-  
-  .header img {
-    display: block;
-    object-fit: cover;
-    width: 100%;
-    height: 76vh;
-  }
-  
-  .header .header-text {
-    align-self: center;
-    margin: 0;
-    z-index: 2;
-  }
-  
-    .header vtb-text h1,
-    .header vtb-text h2 {
-      color: #fff;
-      text-shadow: 0 1px 2px rgba(0,0,0,.2);
-      line-height:2em;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      -webkit-animation-name: fadeInUp;
-      animation-name: fadeInUp;
-    }
-
-    .header vtb-text h1 {
-      font-size:2.8em;
-      animation-delay: 0.5s;
-    }
-
-    .header vtb-text h2 {
-      font-size:1.6em;
-    }
-  
-    .header .header-text h1:before,
-    .header .header-text h1:after,
-    .overview .titles h1:before,
-    .overview .titles h1:after {
-      background-color: #fff;
-    }
-
-.map,
-.program,
-.overview {
-  padding: 80px 0;
-}
-
-.accommodations {
-  padding-bottom:80px;
-}
-
-.accommodations vtb-element {
-  background-color: #222;
-}
-.accommodations vtb-element .element-field:nth-child(1) {
-  position: absolute;
-  width: 100%;
-}
-.accommodations vtb-element .element-field:nth-child(1) img {
-  transition: 0.3s ease-in-out;
-}
-
-.accommodations vtb-element .element-field:nth-child(1):after {
-  content: "";
-  background-color: #fff;
-  width: 200px;
-  left: 50%;
-  margin-left: -100px;
-  top: 50%;
-  height: 1px;
-  position: absolute;
-  transition: transform 0.3s ease-out 0.3s;
-  transform: scaleX(0);
-
-}
-.accommodations vtb-element .element-field:nth-child(2) {
-  position: relative;
-  margin-top: calc(12.5vw - 32px);
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-  transform: translateY(-50px);
-}
-
-.accommodations vtb-element .element-field:nth-child(3) {
-  position: relative;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-  transform: translateY(50px);
-}
-.accommodations vtb-element:hover .element-field:nth-child(1) img {
-  opacity: 0.4;
-  }
-.accommodations vtb-element:hover .element-field:nth-child(1):after {
-  transform: scaleX(1);
-}
-.accommodations vtb-element:hover .element-field:nth-child(2), 
-.accommodations vtb-element:hover .element-field:nth-child(3)  {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-/* Map */
-.map {
-  padding: 80px 0 0 0;
-}
-
-  .map agm-map {
-    height: 60vh;
-  }
-
-
-/* Program */
-.program vtb-segment {
-  margin-bottom: 40px;
-}
-
-.program vtb-segment .day {
-  color: #0f4a62;
-  font-size: 1em;
-  text-transform: uppercase;
-}
-
-.program vtb-segment .subTitle h4 {
-  color:#0f4a62;
-  font-size: 1em;
-  opacity: 0.5;
-}
-
-
-.program vtb-segment .content p {
-  text-align: justify;
-}
-
-/* Accommodations */
-
-.accommodations {
-  text-align:center;
-}
-
-.accommodations h5 {
-  color: #fff;
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 20px 0;
-}
-
-.accommodations h6 {
-  font-size: 1.1em; 
-  color:#fff;
-}
-
-.accommodations vtb-media,
-.circled-images .consultant-image {
-  display: block;
-	position: relative;
-	width: 100%;		/* desired width */
-  overflow: hidden;
-}
-
-.circled-images .consultant-image {
-  border-radius: 100%;
-}
-
-.accommodations vtb-media:before,
-.circled-images .consultant-image:before {
-	content: "";
-	display: block;
-	padding-top: 100%; 	/* initial ratio of 1:1*/
-}
-
-.circled-images img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  object-fit: cover;
-  top: 0;
-}
-
-/* Overzicht */
-.overview {
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-image: url(https://updates.fluffymedia.nl/sitespirit/globe-background.jpg);
-  background-attachment: fixed;
-}
-
-  .overview h1,
-  .overview h3,
-  .overview .titles p {
-    color: #fff;
-  }
-
-  .overview .lists {
-    column-gap:25px;
-  }
-
-
-  
-.lists div {
-  padding:20px 22px;
-}
-
-.lists h3 {
-  display: block;
-  clear: both;
-}
-
-.lists ul {
+.reissom .reissom-inclusief ul {
   margin: 0;
-  padding: 30px  0;
-  font-size:.9em;
+  padding: 30px 0;
+  font-size: 0.9em;
   clear: both;
 }
 
-.lists ul:after {
+.reissom .reissom-inclusief ul:after {
   content: "";
   display: block;
   clear: both;
 }
 
-.lists > div {
-  width: 50%;
-  float: left;
+.reissom .reissom-inclusief > div {
+  width: 100%;
   box-sizing: border-box;
 }
 
-
-.lists div ul li,
-.lists div ul li a {
+.reissom .reissom-inclusief div ul li,
+.reissom .reissom-inclusief div ul li a {
   color: #fff;
   font-size: 1.1em;
   line-height: 1.7;
 }
 
-.lists div ul li {
+.reissom .reissom-inclusief div ul li {
   list-style-type: none;
   position: relative;
   padding-left: 24px;
@@ -678,328 +1790,1304 @@ h1 {
   box-sizing: border-box;
 }
 
-.lists div ul li:before {
+/***********************************
+ *       Reissom Optioneel     *
+ ***********************************/
+
+ .reissomoptioneel {
+  grid-area: reissomoptioneel;
+  grid-template-areas:
+  "reissomoptioneel-inclusief"
+  "reissomoptioneel-exclusief"
+  ;
+}
+
+
+.reissomoptioneel #border2 {
+  position: relative;
+  max-width: 700px;
+  height: 3px;
+  width: 60%;
+  background-color: black;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.reissomoptioneel .reissomoptioneel-perpersoon {
+  text-align: center;
+  }
+
+.reissomoptioneel .reissomoptioneel-perpersoon h4 {
+    text-align: center;
+  }
+
+
+.reissomoptioneel .reistitel {
+  background-image: url(https://media.bontravel.nl/original/lg/optional-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  height: 160px;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.reissomoptioneel .reistitel {
+padding-top: 60px;}
+
+.reissomoptioneel .reissomoptioneel-inclusief {
+}
+
+
+.reissomoptioneel .reissomoptioneel-inclusief vtb-elements-list vtb-element {
+  display: grid;
+  padding: 20px 0;
+  grid-area: reissomoptioneel-inclusief;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas:
+  "reissomoptioneel-nights reissomoptioneel-titel reissomoptioneel-prijs"
+}
+
+.reissomoptioneel .reissomoptioneel-inclusief div {
+  padding: 5px 5px;
+}
+
+.reissomoptioneel .reissomoptioneel-inclusief .title {
+  grid-area: reissomoptioneel-titel;
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  align-items: center;
+  line-height: 20px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.reissomoptioneel .reissomoptioneel-inclusief .nights {
+  grid-area: reissomoptioneel-nights;
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.reissomoptioneel .reissomoptioneel-inclusief .addedValue {
+  grid-area: reissomoptioneel-prijs;
+  position: relative;
+  font-weight: bold;
+  color: #65e0c5;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.reissomoptioneel .reissomoptioneel-inclusief .addedValue:before {
+  content: "€ ";
+}
+
+.reissomoptioneel .reissomoptioneel-inclusief .nights::before {
+  position: relative;
+ font-family: "Font Awesome 5 Free";
+ content: "\f3a5";
+ padding-right: 15px;
+font-size: 25px;
+color: #65e0c5;
+}
+
+
+.reissomoptioneel .reissomoptioneel-inclusief ul {
+  margin: 0;
+  padding: 0px 0;
+  font-size: 0.9em;
+  clear: both;
+}
+
+.reissomoptioneel .reissomoptioneel-inclusief ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.reissomoptioneel .reissomoptioneel-inclusief > div {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.reissomoptioneel .reissomoptioneel-inclusief div ul li,
+.reissomoptioneel .reissomoptioneel-inclusief div ul li a {
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.7;
+}
+
+.reissomoptioneel .reissomoptioneel-inclusief div ul li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 24px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.reissomoptioneel .reissomoptioneel-inclusief div ul li:before {
   content: "";
   font-family: "Font Awesome 5 Free";
   display: block;
   position: absolute;
-  color: #AFA;
+  color: #afa;
   left: 0;
   top: 0px;
   font-weight: bold;
 }
 
-.lists div:nth-child(2) ul li:before {
-  color: #FAA;
+.reissomoptioneel .reissomoptioneel-inclusief div:nth-child(2) ul li:before {
+  color: #faa;
   font-family: "Font Awesome 5 Free";
   content: "";
 }
+/***********************************
+ *       Voorwaarden     *
+ ***********************************/
 
-.social-media {
-  padding-top: 100px;
-  background-color: #eee;
+.voorwaarden {
+  grid-area: voorwaarden;
+  display: grid;
+  grid-template-areas: 
+  "voorwaarden-tekst"
+  "voorwaarden-link";
 }
 
-.socials {
+.voorwaarden > div {
+  padding: 5%;
+}
+
+.voorwaarden .voorwaarden-tekst {
+  text-align: left;
+  padding-top: 20px;
+  position: relative;
+  margin: auto;
+}
+
+.voorwaarden .reistitel {
+  background-image: url(https://media.bontravel.nl/original/lg/voorwaarden.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  height: 160px;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.voorwaarden .reistitel {
+padding-top: 20px;}
+
+/*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 2px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+  color: #5abfc5;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #5abfc5;
+}
+
+.tabset > input:checked + label {
+  border-color: #5abfc5;
+  border-bottom: 2px solid #fff;
+  margin-bottom: -2px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 2px solid #5abfc5;
+}
+
+
+
+/***********************************
+ *       afsluiting     *
+ ***********************************/
+
+ .afsluiting {
+  grid-area: afsluiting;
+  display: grid;
+  padding: 5%;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: 
+  "afsluiting-titel afsluiting-titel"
+  "afsluiting-tekst afsluiting-medewerker"
+  ;
+}
+
+.afsluiting .fas {
+padding: 15px;
+} 
+
+.afsluiting li {
+  clear: both;
+  text-align: left;
+  font-size: 14px;
+  list-style-type: none;
+}
+
+.afsluiting .afsluiting-tekst {
+  grid-area: afsluiting-tekst;
   text-align: center;
+  padding-top: 20px;
+  position: relative;
+  max-width: 900px;
+  margin-bottom: 10%;
+  padding: 15%;
 }
 
-  .socials div {
-    display: inline-block;
-    text-align: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    background-color: #2d2d2c;
-    margin: 20px;
-    position: relative;
-  }
+.afsluiting h2 {
+  font-size: 1em;
+  padding-top: 10px;
+}
 
-  .socials div:before {
-    content: "";
+.afsluiting h3 {
+  font-size: 1em;
+  padding-top: 10px;
+}
+
+.afsluiting ul li::before {
+  list-style-position: outside;
+  font-family: "Font Awesome 5 Free"; font-weight: 600; content: "\f00c";
+}
+
+.afsluiting .reistitel {
+  grid-area: afsluiting-titel;
+  background-image: url(https://media.bontravel.nl/custom6/size6/ennu.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  height: 300px;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.afsluiting .reistitel {
+padding-top: 20px;}
+
+.afsluiting .reistitel h1 {
+  padding-top: 100px;
+}
+  
+.afsluiting .reisspecialist {
+  grid-area: afsluiting-medewerker;
+  padding: 5% 15%;
+
+}
+  .afsluiting .reisspecialist .medewerker_foto {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .afsluiting .reisspecialist .medewerker_foto img {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+      width: 150px;
+      padding: 10%;
+  }
+
+  .afsluiting .reisspecialist .titel-gemaaktdoor {
+    background-image: url(https://media.bontravel.nl/original/lg/medewerker-bg-d05888d2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 170px;
+}
+
+.afsluiting .reisspecialist .titel-gemaaktdoor h1 {
+  letter-spacing: 1px;
+  padding:0 0px 0;
+  text-align:left;
+  left: 50px;
+  top: 80px;
+  position: relative;
+  font-size:1.3em;
+  font-weight:bold;
+  line-height:1.4em;
+  text-transform: uppercase;
+}
+.afsluiting .reisspecialist .titel-gemaaktdoor h2 {
+  margin: 0;
+  font-size: 1.2em;
+  padding: 0;
+  text-align: left;
+  font-weight: 100;
+  font-family: 'Beth Ellen', cursive;
+  text-transform: none;
+  left: 50px;
+  top: 60px;
+  position: relative;
+}
+
+  .afsluiting .reisspecialist .medewerker_tekst {
+    border-left: 5px solid black;
+    padding-left: 5%;
+    margin-left: 50px;
+}
+/***********************************
+ *       Vluchtschema     *
+ ***********************************/
+
+
+ .vluchtschema .reistitel {
+  background-image: url(https://media.bontravel.nl/original/lg/vluchtschema.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  height: 220px;
+  margin-bottom: 30px;
+}
+
+.vluchtschema .reistitel {
+padding-top: 110px;}
+
+
+.vluchtschema {
+  grid-area: vluchtschema;
+  overflow:hidden;
+
+}
+
+.vluchtschema .flight table{
+  display: table;
+  width: 80%;
+  margin-left:10%; 
+  margin-right:10%;
+  padding: 0% 5%;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+td, th {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  text-transform: capitalize;
+  background-color: black;
+  color: white;
+}
+
+.vluchtschema .flight tr.seperator {
+display: none;
+}
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+.vluchtschema .flight th.airlinecode:before{
+  content: "airlinecode";
+}
+
+.vluchtschema .flight th.flightnumber:before{
+  content: "vluchtnummer";
+}
+
+.vluchtschema .flight th.departureairport:before{
+  content: "Van";
+}
+
+.vluchtschema .flight th.arrivalairport:before{
+  content: "Naar";
+}
+
+.vluchtschema .flight th.departuredate:before{
+  content: "Vertrekdatum";
+}
+
+.vluchtschema .flight th.arrivaldate:before{
+  content: "Aankomstdatum";
+}
+
+.vluchtschema .flight th.departuretime:before{
+  content: "tijdstip";
+}
+
+.vluchtschema .flight th.arrivaltime:before{
+  content: "tijdstip";
+}
+
+
+
+@media screen and (max-width: 870px) {
+
+  
+.vluchtschema .flight table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
     position: absolute;
-    background-color: #fff;
-    top: 0;
-    left: 0;
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;  
-    transition: transform 0.2s ease-in;
-    transform: scale(0);
-    z-index: 1;
+    width: 1px;
   }
 
-  .socials div i {
-    font-size: 40px;
-    color: #fff;
-    line-height: 100px;      
-    position: relative;
-    z-index: 2;
+  .vluchtschema .flight table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  .vluchtschema .flight table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
   }
 
-  .socials div:hover:before {
-    transform: scale(1);
+  .vluchtschema .flight table td.departureairport:before {
+    content: "vertrek";
+  }
+  
+  .vluchtschema .flight  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .vluchtschema .flight  table td:last-child {
+    border-bottom: 0;
   }
 
-  .socials div:hover i {
-    color: #2d2d2c;
+  .vluchtschema .flight td.airlinecode:before{
+    content: "airlinecode";
   }
+  
+  .vluchtschema .flight td.flightnumber:before{
+    content: "vluchtnummer";
+  }
+  
+  .vluchtschema .flight td.departureairport:before{
+    content: "Van";
+  }
+  
+  .vluchtschema .flight td.arrivalairport:before{
+    content: "Naar";
+  }
+  
+  .vluchtschema .flight td.departuredate:before{
+    content: "Vertrekdatum";
+  }
+  
+  .vluchtschema .flight td.arrivaldate:before{
+    content: "Aankomstdatum";
+  }
+  
+  .vluchtschema .flight td.departuretime:before{
+    content: "tijdstip";
+  }
+  
+  .vluchtschema .flight td.arrivaltime:before{
+    content: "tijdstip";
+  }
+
+}
+
+/***********************************
+ *       FOOTER     *
+ ***********************************/
+
+ .footerimagegrid {
+  grid-area: footer1;
+  margin:0 ;
+  display:grid;
+  width:100%;
+  overflow:hidden;
+  grid-template-columns: repeat(6, minmax(300px, 450px));
+  column-gap: 3px;
+  row-gap: 1px;
+  z-index: 
+ }
+
+ .footerimagegrid > div {
+   display: grid;
+   width: auto;
+ }
+
+ .footerimagegrid > div img {
+  max-width:100%;
+  min-height:100%;
+  object-fit:cover;
+ margin: 0 auto;
+ zoom: 2;
+ width:100%;
+ }
+
+ .footer {
+  display:grid;
+  row-gap:15px;
+  column-gap:15px;
+  overflow: hidden;
+  clear: both;
+  margin-top: 0px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+    "footer-col1 footer-col2 footer-col3 footer-col4"
+    ;
+}
 
 
 .footer {
-  text-align: center;
-  background-color: #2d2d2c;
+  grid-area: footer;
+  padding:20px 40px !important;
+  background-color:rgb(0, 0, 0);
+  color:#ffffff;
 }
 
-.footer p {
-  max-width: 800px;
-  font-size: 0.7em;
-  color: #777;
-  margin: 50px auto;
+.footer .footer-col1 {
+  grid-area: footer-col1;
 }
 
-body .footer p a {
-  color: #eee;
+.footer .footer-col2 {
+  grid-area: footer-col2;
 }
 
-
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+.footer .footer-col3 {
+  grid-area: footer-col3;
+  padding-right:30px;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+.footer .footer-col4 {
+  grid-area: footer-col4;
 }
 
 
-/* Mobile */
-@media only screen and (max-width: 600px) {
-  app-template {
-    max-width: 100vw;
-    overflow: hidden;
-  }
 
-  .menu img:first-child {
-    justify-self: left;
-  }
-  
+
+/****************************************
+ *     @MEDIA CSS 870PX SCREEN WIDTH     *
+ ****************************************/
+
+ @media only screen and (max-width: 1000px) {
+
+  /* MENU @MEDIA  */
+
   .menu {
-    height: 100px;
-  }
-
-    .menu .logo {
-      max-height:100px;
-    }
-
-  .header > .youtube-wrapper {
-    height: 120vh;
-    margin-top: -5vh;
-  }
-
-  .header vtb-youtube > div {
-    display:block;
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position-y: -80px;
-    background-position-x: 50%;
+    position: fixed;
+    background-color: black;
+    z-index: 999;
+    padding:10px 20px !important;
   }
 
-  .header vtb-youtube > iframe {
-    display:none;
+  .menu .sticky {
+    display: none;
   }
 
-  .map agm-map {
-    grid-column: 1 / span 12;
+  .grid-container .menu ul {
+    display: none;
   }
 
-  .program {
-    grid-column: 1 / -1;
+  .menu .menu-toggle {
+    display:block !important;
   }
-    
-    .program vtb-segment {
-      column-gap: 10px;
-      grid-template-rows: auto;
-    }
-    .program vtb-segment div {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(6, auto);
-    }
 
-
-    .program vtb-segment vtb-text {
-      grid-column: 1 / span 12;
-    }
-
-    .program vtb-segment .day,
-    .program vtb-segment .title,
-    .program vtb-segment .subTitle,
-    .program vtb-segment .content {
-      grid-column: 2 / span 10 !important;
-    }
-
-    .program vtb-segment .media {
-      grid-column: 1 / span 12 !important;
-      margin-bottom: 30px;
-    }
-
-    .program vtb-segment .subTitle {
-      
-    }
-
-    .program vtb-segment .content {
-
-    }
-
-    .overview .lists {
-      grid-column: 2 / 12;
-      grid-template-columns: repeat(1, 1fr);
-    }
-
-    .consultants-overview {
-      grid-template-columns: repeat(1, 1fr);
-      column-gap: 0;
-    }
-
-    .consultants-overview .consultant:first-child {
-      grid-column: 1 / span 4;
-      margin-bottom: 40px;
-    }
-
-    .accommodations vtb-elements {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .accommodations vtb-element {
-      height: 50vw;
-    }
-
-    .header {
-      grid-auto-rows: calc(100vh - 100px);
-    }
-
-    .header img {
-      height: calc(100vh - 100px);
-    }
-
-    .menu:after {
-      display: none;
-    }
-
-    .menu .menu-toggle {
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 0;
-      font-size: 30px;
-      width: 100px;
-      height: 100px;
-      line-height: 100px;
-      text-align: center;
-    }
-    
-    .menu vtb-menu ul {
-      position: fixed;
-      background-color: #222;
-      width: 100%;
-      height: 100vh;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      z-index: 10;
-      transition: all 0.6s ease-out;
-      transform: translateY(-100vh);
-    }
-
-    .menu vtb-menu ul {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  
-    .menu vtb-menu ul li button{
-      color: #fff;
-    }
-  
-    .menu vtb-menu ul.toggled {
-      transform: translateY(0);
-    } 
-
-    .menu .menu-toggle.toggled {
-      z-index: 20;
-      color: #fff;
-      position: fixed;
-    }
-
-    .menu .menu-toggle.toggled i:before {
-      content: '';
-    }
-  
-    .titles h1 {
-      font-size: 1.4em;
-    }
-  
-    .titles h3 {
-      font-size: 0.75em;
-    }
-  
-    .titles h1:before,
-    .titles h1:after {
-      width: 60px !important;
-    }
-  
-    .titles h1:before {
-      left: -80px !important;
-    }
-  
-    .titles h1:after {
-      right: -80px !important;
-    }
-  
-    .lists > div {
-      width: 100%;
-    }
-  
-    .accommodations vtb-element .element-field:nth-child(1):after {
-      width: 100px;
-      margin-left: -50px;
-    }
-    .accommodations vtb-element .element-field:nth-child(2) {
-      margin-top: calc(19.5vw - 12px);
-    }
-
-  .footer p {
-    margin:20px;
+  .menu .fas {
+    color: white;
   }
-  
+
+  .menu button {
+    float: none !important;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .menu ul.toggled{
+    display: block;
+    left: 100px;
+    max-width: 300px;
+
+  }
+
+  .header .logo-bg {
+    height: 125px;
+    position: absolute;
+    z-index: 3;
+    top: 75px;
+    right: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 870px) {
+
+
+  h1, 
+  .titles {
+    font-size:1.6em !important;
+  }
+
+  h2 {
+    font-size:20px !important;
+  }
+
+  .header {
+    height: 76vw;
+}
+
+  .header .header-text {
+    margin-left:35px;
+    bottom:19px !important;
+  }
+
+  .header .cover-period {
+    font-size:14px !important;
+    margin-bottom:5px !important;
+  }
+
+  .header .cover-duration,
+  .header .cover-pax {
+    font-size:14px !important;
+    margin-bottom:0px !important;
+  }
+
+  .cover-images {
+      height:76vw;
+  }
+
+  .cover-images vtb-media {
+      padding-bottom:90% !important;
+  }
+
+.footer {
+  display:grid;
+  padding:20px 40px !important;
+  overflow: hidden;
+  clear: both;
+  margin-top: 0px;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "footer-col1"
+    "footer-col2"
+    "footer-col3" 
+    "footer-col4"
+    ;
+}
+
+/* @MEDIA REISINTRO */
+
+.reisintroductie {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "reistitel" 
+  "brief"
+  "reisspecialist"
+  ;
+  grid-area: reisintroductie;
+  background-color: #ffffff;
+}
+
+.reisintroductie .brief {
+  padding: 5%;
+}
+
+.reisintroductie .reisspecialist {
+  grid-area: reisspecialist;
+  padding: 5%;
+  margin: 10%;
+  border: 1px solid black;
+}
+
+.reisintroductie .reisspecialist .medewerker_tekst {
+  border-left: 0px solid black;
+  padding-left: 0%;
+}
+
+/* @MEDIA REISROUTE */
+
+.maingrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "reistitel" 
+  "subrechts"
+  "sublinks"
+  ;
+  grid-area: reisschema;
+  background-color: #ffffff;
+}
+
+.subrechts {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "reisperiode reisduur persoon"
+  "kaart kaart kaart"
+
+}
+
+.subrechts vtb-text {
+  display: none;
+}
+
+.subrechts .reisperiode {
+ grid-area: reisperiode;
+ padding: 2%;
+}
+
+.subrechts .reisduur {
+  grid-area: reisduur; 
+  padding: 2%;
+}
+
+.subrechts .persoon {
+  grid-area: persoon;
+  padding: 2%;
+ }
+
+ .subrechts .kaart {
+  grid-area: kaart;
+  padding: 0%;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 80px;
+ }
+
+ .subrechts .kaart .agm-map-container-inner {
+   height: 300px;
+ }
+ 
+
+
+ #conference-timeline .conference-center-line {
+  margin-left: 0;
+  left: 40px;
+}
+
+.sublinks {
+  padding: 5%;
+  justify-self: center;
+
+}
+ .sublinks vtb-segment {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  margin: 30px 40px;
+  grid-template-areas: 
+  "travelroute-timeline travelroute-date" 
+  "travelroute-timeline travelroute-title" 
+  "travelroute-timeline travelroute-day"
+  "travelroute-timeline travelroute-element"
+  ;
+}
+
+.sublinks vtb-segment.segment-type-4:before,
+.sublinks vtb-segment.segment-type-13:before
+ {
+  grid-area: travelroute-timeline;
+  display: grid;
+  justify-self: center;
+}
+
+.sublinks vtb-segment .day {
+  grid-area: travelroute-day;
+  justify-self: start;
+  padding-left: 20px;
+}
+.sublinks vtb-segment .date {
+  grid-area: travelroute-date;
+  justify-self: start;
+  padding-left: 20px;
+
+}
+
+.sublinks vtb-segment .title {
+grid-area: travelroute-title;
+justify-self: start;
+max-width: 60vw;
+padding-left: 20px;
+}
+
+.sublinks .splittable {
+  grid-area: travelroute-element;
+  align-self: center;
+  font-weight: 200;
+}
+
+.reisonderdelen vtb-segment {
+  padding: 5%;
+}
+
+
+.reisonderdelen .accommodatie_elements vtb-element {
+grid-template-columns: 100%;
+padding: 5%;
+grid-template-areas:
+"personaltouch"
+"acco-image"
+"nights"
+"acco-title"
+"acco-subTitle"
+"acco-date"
+"additionalText"
+"acco-splittable"
+;
+}
+
+.reisonderdelen .accommodatie_elements .personaltouch .personaltouch-text {
+  font-size: 20px;
+  max-width: 90%;
+}
+
+
+
+.reisonderdelen .default_elements vtb-element {
+  display: grid;
+  grid-template-columns: 100%;
+  overflow: visible;
+  clear: both;
+  min-height: 300px;
+  margin-top: 40px;
+  row-gap: 10px;
+  padding-right:5%;
+  -webkit-column-gap: 30px;
+  column-gap: 30px;
+  grid-template-areas:
+  "personaltouch"
+  "default-image" 
+  "iconbar" 
+  "default-subTitle" 
+  "default-date" 
+  "default-additionalText"
+  "default-subadditionalText" 
+  "default-splittable";
+}
+
+
+.reisonderdelen .accommodatie_elements vtb-media .media-items {
+  margin:0 ;
+  display:grid;
+  grid-area: acco-image;
+  width:100%;
+  overflow:hidden;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1px;
+  row-gap: 1px;
+}
+
+
+.reisonderdelen .accommodatie_elements vtb-media .media-items {
+  grid-area:acco-image;
+}
+
+.reisonderdelen .media-1 .accommodatie_elements vtb-media .media-items {
+  grid-area:acco-image;
+  grid-template-rows: minmax(250px , auto) ;
+  grid-template-areas: 
+    "gallery1" 
+  ;
+}
+
+.reisonderdelen .media-2 .accommodatie_elements vtb-media .media-items {
+  grid-area:acco-image;
+  grid-template-rows: minmax(250px , auto) ;
+  grid-template-areas: 
+    "gallery1" 
+  ;
+}
+
+.reisonderdelen .accommodatie_elements .media-3 vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-4 vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-5 vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-6 vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-7 vtb-media .media-items
+ {
+  grid-area:acco-image;
+  grid-template-rows: minmax(250px , auto) ;
+  grid-template-areas: 
+    "gallery1" 
+  ;
+}
+
+
+.footerimagegrid {
+  display:none;
+  grid-template-columns: repeat(2, minmax(100px, 450px));
+}
+
+
+.afsluiting {
+  grid-area: afsluiting;
+  display: grid;
+  padding: 5%;
+  grid-template-columns: 100%;
+  grid-template-areas: 
+  "afsluiting-titel"
+  "afsluiting-tekst" 
+  "afsluiting-medewerker";
+}
+
+
+.afsluiting .reisspecialist {
+  grid-area: afsluiting-medewerker;
+  padding: 5%;
+  margin: 10%;
+  border: 1px solid black;
+}
+
+.afsluiting .reisspecialist .medewerker_tekst {
+  border-left: 0px solid black;
+  padding-left: 0%;
+  margin-left: 0px;
+}
+
+.afsluiting .afsluiting-tekst {
+  padding: 5%;
+}
+
+.reissom .reissom-inclusief .nights {
+  font-size: 15px;
+}
+
+.reissom .reissom-inclusief .nights,
+.reissom .reissom-inclusief .title {
+  font-size: 15px;
+}
+
 
 }
 
 
-@media only screen and (min-width: 1600px) {
+
+
+
+/****************************************
+ *    PRINT CSS    *
+ ****************************************/
+
+
+
+/* override styles when printing */
+
+
+@media print {
+  
+ 
+
+  * {
+    -webkit-print-color-adjust: exact;
+}
+  body {
+    margin: 0;
+    width: 210mm;
+    height: 297mm;
+    color: #000;
+    background-color: #fff;
+    font-size: 12px;
+    background: #FFF;
+    overflow:visible;
+      font: 11pt Georgia, "Times New Roman", Times, serif;
+      line-height: 1.3;
+  }
+
+  .grid-container {
+    width: 210mm;
+    height: 297mm;
+  }
+
+  .grid-container > div {
+    padding:0px;
+    background-image: none;
+}
+
+img {
+  display: block;
+  page-break-inside: avoid;
+}
+
+p {
+  page-break-inside: avoid;
+}
+
+.reisonderdelen vtb-media {
+  page-break-before: always;
+}
+.reisonderdelen vtb-media .media-items {
+  page-break-inside: avoid;
+  height: 100mm;
+  overflow: hidden;
+}
+
+.reissom {
+      page-break-inside: avoid;
+}
+
+.reisintroductie .reisspecialist .medewerker_foto {
+  page-break-after: always;
+}
+
+.maingrid {
+  width: 210mm;
+  display: grid;
+  grid-template-columns: 1fr;
+  page-break-before: always !important;
+  grid-template-areas: 
+  "reistitel" 
+  "subrechts"
+  "sublinks"
+  ;
+  grid-area: reisschema;
+  background-color: #ffffff;
+}
+
+#conference-timeline .timeline-start, #conference-timeline .timeline-end {
+  margin: 0px;
+}
+
+.subrechts {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "reisperiode reisduur persoon"
+  "kaart kaart kaart"
+
+}
+
+.subrechts vtb-text {
+  display: none;
+}
+
+.subrechts .reisperiode {
+ grid-area: reisperiode;
+ padding: 2%;
+}
+
+.subrechts .reisduur {
+  grid-area: reisduur; 
+  padding: 2%;
+}
+
+.subrechts .persoon {
+  grid-area: persoon;
+  padding: 2%;
+ }
+
+ .subrechts .kaart {
+ display:none;
+ }
+
+ .subrechts .kaart .agm-map-container-inner {
+   height: 300px;
+ }
+
+ #conference-timeline .conference-center-line {
+  margin-left: 0;
+  left: 40px;
+}
+
+.sublinks {
+  padding: 5%;
+  justify-self: center;
+
+}
+ .sublinks vtb-segment {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  margin: 5mm 40px;
+  grid-template-areas: 
+  "travelroute-timeline travelroute-date" 
+  "travelroute-timeline travelroute-title" 
+  "travelroute-timeline travelroute-day"
+  "travelroute-timeline travelroute-element"
+  ;
+}
+
+.sublinks vtb-segment.segment-type-4:before,
+.sublinks vtb-segment.segment-type-13:before
+ {
+  grid-area: travelroute-timeline;
+  display: grid;
+  justify-self: center;
+}
+
+.sublinks vtb-segment .day {
+  grid-area: travelroute-day;
+  font-size: 12pt;
+  justify-self: start;
+  padding-left: 20px;
+}
+.sublinks vtb-segment .date {
+  grid-area: travelroute-date;
+  font-size: 12pt;
+  justify-self: start;
+  padding-left: 20px;
+
+}
+
+.sublinks vtb-segment .title {
+grid-area: travelroute-title;
+justify-self: start;
+font-size: 12pt;
+max-width: 60vw;
+padding-left: 20px;
+}
+
+.sublinks .splittable {
+  grid-area: travelroute-element;
+  align-self: center;
+  font-weight: 200;
+}
+
+.reisonderdelen .accommodatie_elements {
+  page-break-before: always;
+}
+
+.reisonderdelen .accommodatie_elements .subadditionalText {
+  display: none;
+}
+
+  h1 {
+  font-size: 24pt;
+  page-break-before: always !important;
+  }
+
+  .reissom .reissom-perpersoon h1 {
+    page-break-before: avoid;
+  }  
+  h2, h3, h4 {
+  font-size: 14pt;
+  margin-top: 25px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .header {
+   display: none;
+  }
+  
+  .header .logo-bg {
+    display: block;
+    height: 12pt;
+    position: absolute;
+    z-index: 3;
+    top: 25px;
+    right: 25px;
+  }
+
+  .reissom .reistitel {
+    background-image: url(https://media.bontravel.nl/original/lg/money-bg.png);
+  }
+
+
+  .reisintroductie {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "reistitel" 
+    "brief"
+    "reisspecialist"
+    ;
+    grid-area: reisintroductie;
+    background-color: #ffffff;
+  }
+
+  .reisintroductie .brief {
+padding: 15mm;
+  }
+
+  .reisintroductie .reisspecialist {
+    grid-area: reisspecialist;
+    padding: 05mm;
+    margin: 5mm;
+    border: 0mm solid black;
+    page-break-inside: avoid;
+  }
+  
+  .reisintroductie .reisspecialist .medewerker_tekst {
+    border-left: 0px solid black;
+    padding-left: 0%;
+    margin-left: 0px;
+    display: none;
+  }
+
+  .reisintroductie .reisspecialist .medewerker_foto img {
+    margin-left: 10mm;
+    padding: 5mm;
+  }
+  .reisonderdelen .content {
+    padding: 10mm;
+  }
+ 
+
+  .vluchtschema {
+    page-break-before: always !important;
+    page-break-after: always !important; 
+  }
+
+  .footer{
+    display: block;
+  }
 
 }
