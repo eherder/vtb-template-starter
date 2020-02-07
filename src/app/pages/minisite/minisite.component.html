@@ -134,17 +134,7 @@
         
     </div>
 </div>
-<div class="program" data-block="program">
-  <div class="titles">
-    <h1>Programma</h1>
-    <h3>Lees hieronder het programma van dag tot dag</h3>
-  </div>
 
-  <vtb-segments
-    [dataSource]="itinerary.segments"
-    [segmentFields]="['media', {name: 'day', prefix: 'Dag ', tag: 'span'}, {name: 'title', tag: 'h2'},{name: 'subTitle', tag: 'h4'},{name: 'date', tag: 'p'},{name: 'content', tag: 'p'}]"
-  ></vtb-segments>
-</div>
 
 
 <div class="reisonderdelen">

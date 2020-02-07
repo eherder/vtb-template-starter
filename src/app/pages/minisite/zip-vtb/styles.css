@@ -1004,23 +1004,6 @@ padding-top: 70px;}
   grid-area: reisonderdelen-splittable;
 }
 
-.reisonderdelen .accommodatie_elements .sn-viewport--out,
-.reisonderdelen .default_elements .sn-viewport--out
- {
-  opacity: 0.25;
-  transition: all 1s ease-out;
-  transition-delay: .3s;
-  transform: translateY(50px);
-  }
-  
-  .reisonderdelen .accommodatie_elements .sn-viewport--in,
-  .reisonderdelen .default_elements .sn-viewport--in
- {
-    opacity: 1;
-    transition: all 1s ease-in;
-    transition-delay: .3s;
-    transform: translateY(-50px);
-    }
 
 /***********************************
  *       REISONDERDEEL ACCOMMODATIE       *
@@ -1034,8 +1017,6 @@ padding-top: 70px;}
   "acco-element"
   ;
 }
-
-
 
 .reisonderdelen .accommodatie_element {
   grid-area: acco-element;
@@ -1300,7 +1281,6 @@ grid-template-areas:
   width: 100%;
 }
 
-
 .reisonderdelen .accommodatie_elements .media-slider-control {
   position: absolute;
   top:50%;
@@ -1548,18 +1528,6 @@ width:100%;
  .reisonderdelen vtb-segment > div.media {
  }
 
- .reisonderdelen vtb-segment .sn-viewport--out {
-  opacity: 0.25;
-  transition: all 1s ease-out;
-  transition-delay: .3s;
-}
-
-.reisonderdelen vtb-segment .sn-viewport--in {
-  opacity: 1;
-  transition: all 1s ease-in;
-  transition-delay: .3s;
-}
-
 .reisonderdelen vtb-segment > div.media img {
   max-width:100%;
   min-height:100%;
@@ -1570,6 +1538,8 @@ width:100%;
   width:100%;
   height: 100%;
 }
+
+
 
 .reisonderdelen .media-items > div {
   grid-area: gallery1;
@@ -1751,7 +1721,6 @@ padding-top: 60px;}
   padding: 5px 5px;
 }
 
-
 .reissom .reissom-inclusief .title {
   grid-area: reissom-titel;
   position: relative;
@@ -1794,7 +1763,6 @@ color: #65e0c5;
   font-size: 0.9em;
   clear: both;
 }
-
 
 .reissom .reissom-inclusief ul:after {
   content: "";
@@ -5943,33 +5911,6 @@ grid-template-areas:
 
 
 
-@-webkit-keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
 
 
 /****************************************
