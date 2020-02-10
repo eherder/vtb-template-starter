@@ -1,0 +1,340 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+
+<div class="grid-container">
+  <div class="header">
+      <div class="gradient"></div>
+      <div class="logo-bg"><img height="100%" src="https://media.tico.nl/original/md/TICO_REIZEN_logo_wit.png" alt="Logo bg white"></div>
+    <div class="header-text">
+      <vtb-text
+        *ngIf="itinerary.title"
+        [config]="{name: 'title', tag: 'h2', class: 'cover-title'}"
+        [dataSource]="itinerary"
+      ></vtb-text>
+      <vtb-text
+        *ngIf="itinerary.subTitle"
+        [config]="{name: 'subTitle', tag: 'h1', class: 'cover-subTitle'}"
+        [dataSource]="itinerary"
+      ></vtb-text>
+      <vtb-text
+        *ngIf="itinerary.startDate"
+        [config]="{name: 'startDate', dateFormat:'d MMM', class: 'cover-period'}"
+        [dataSource]="itinerary.startDate"
+      ></vtb-text>
+        <div class="cover-period"> <img class="clock-icon" src="http://media.sitespirit.nl/travelspirit-assets/tico-reizen/mini-site-assets/icon_clock.svg"> {{(itinerary.startDate | dateFormat: 'd MMMM y')}} - {{(itinerary.endDate | dateFormat: 'd MMMM y')}}</div>
+        <div class="cover-duration">{{(itinerary.totalDays)}} dagen / {{(itinerary.totalDays-1)}} nachten</div>
+        <div class="cover-pax">voor {{(itinerary.participants | totalParticipants)}} personen</div>
+    </div>
+
+    <div class="cover-images">
+      <vtb-media
+        [dataSource]="itinerary.cover"
+        [slider]="true"
+        [sliderControls]="false"
+        [sliderInterval]="8000"
+        [config]="{crop: 'original/lg'}"
+      ></vtb-media>
+    </div>
+	</div>
+	
+  <div class="menu" [ngClass]="{'active': showMobileMenu}">
+    <vtb-menu
+      [toggle]="true"
+      [stickyAt]="300"
+      [dataSource]="[{name: 'Uw reis in het kort en routekaart', selector: '.travelshort'}, {name: 'Beknopte reisroute', selector: '.travelroute'}, {name: 'Uw reis', selector: '.traveldescription'}, {name: 'Vluchtenschema', selector: '.flightschedule'}, {name: 'Reissom', selector: '.travelprice'}, {name: 'Uw reisspecialist', selector: '.salesspecialist'}]"
+    ></vtb-menu>
+  </div>
+  <div class="travelshort">
+    <div class="introtext">
+        <div class="titles">
+          Uw reis in het kort
+        </div>
+      <div [innerHTML]="itinerary.extraFieldValues | extraField : 6 : 16"></div>
+    </div>
+    <agm-map class="travelmap"
+      [fitBounds]="true" 
+      [scrollwheel]="false" 
+      [zoomControl]="false"
+      [streetViewControl]="false"
+      [styles]="[{'featureType': 'all', 'stylers': [{'visibility': 'off'}]},{'featureType': 'all', 'elementType': 'geometry.fill','stylers': [{'visibility': 'off'}]},{'featureType': 'landscape.natural.landcover', 'elementType': 'geometry.fill','stylers': [{'visibility': 'on'},{'color': '#F9D641'}]}]">
+      <agm-marker *ngFor="let marker of (itinerary.segments | markers : false : [1,4])" [iconUrl]="'http://media.sitespirit.nl/travelspirit-assets/tico-reizen/mini-site-assets/tico-maps-marker.png'" [latitude]="marker.latitude" [longitude]="marker.longitude" [agmFitBounds]="true"></agm-marker>
+  </agm-map>
+  </div>
+  
+  <div class="travelroute">
+    <div class="titles">
+      Beknopte reisroute
+    </div>
+  <vtb-segments [dataSource]="itinerary.segments"
+      [segmentTypeIds]="[1,4]"
+      [unitIds]="[2]"
+      [reverseUnitIds]="false"
+      [optional]="false"
+      [segmentFields]="['dayNumbers',[{'name':'date', dateFormat:'d MMMM'}, {'name':'endDate', dateFormat:'d MMMM', prefix:' - '}], 'title']"
+      [elementFields]="[{'name':'title'},{name: 'nights', prefix:'(', postfix: 'n)'}]"
+  ></vtb-segments>
+</div>
+<div class="traveldescription">
+  <div class="titles">
+    Uw reis
+  </div>
+  <vtb-segments [dataSource]="itinerary.segments"
+    [segmentTypeIds]="[1,4,12,13]"
+    [unitIds]="[6,7,8,9]"
+    [reverseUnitIds]="true"
+    [segmentFields]="['dayNumbers',[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content', {name: 'media', crop: 'original/lg', max: '4'}]"
+    [segmentFieldsPerType]="{'12':['title','subTitle','content', {name: 'media', crop: 'original/lg', max: '4'}], '13':[{name: 'media', crop: 'original/lg', max: '5'}]}">
+    <ng-template #elementTemplate let-elements="elements">
+        <div class="text_elements">
+            <vtb-elements [dataSource]="elements" [unitIds]="[17]" [optional]="false" [elementFields]="[{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
+        </div>
+        <div class="default_elements">
+            <vtb-elements [dataSource]="elements" [unitIds]="[1,4,3,5,10,11,12,13,14,15,16,18]" [optional]="false" [elementFields]="[[{'name':'date', dateFormat:'d MMM'}, {'name':'endDate', dateFormat:'d MMM', prefix: ' - ', if: 'nights'}], 'subTitle', 'subAdditionalText']"></vtb-elements>
+        </div>
+        <div class="night_elements">
+            <vtb-elements [dataSource]="elements" [unitIds]="[2]" [optional]="false" [elementFields]="['title', {name: 'nights', prefix:'(', postfix: 'n - '}, {'name':'subTitle', postfix: ')'}, 'subAdditionalText']"></vtb-elements>
+        </div>
+        <div class="night_elements_optional">
+            <vtb-elements [dataSource]="elements" [unitIds]="[2]" [optional]="true" [elementFields]="[{name: 'title', prefix: 'Optioneel - '}, {'name':'subTitle', prefix: '(', postfix: ')'}]"></vtb-elements>
+        </div>
+        <div class="optional_elements">
+          <vtb-elements [dataSource]="elements" [unitIds]="[1,3,4,5,10,11,12,13,14,15,16,17]" [optional]="true" [elementFields]="[{name: 'title', prefix: 'Optioneel - '}, {'name':'subTitle', prefix: '(', postfix: ')'}, 'subAdditionalText']"></vtb-elements>
+        </div>
+    </ng-template>
+  </vtb-segments>
+</div>
+  <div class="optionals" *ngIf="itinerary.hasOptionalElements">
+    <div class="titles">
+      Optionele toeslagen
+    </div>
+    <div class="segments">
+        <vtb-segments [dataSource]="itinerary.segments"
+        [segmentTypeIds]="[1,10]"
+        [unitIds]="[100]"
+        [reverseUnitIds]="true"
+        [optional]="true"
+        [elementFields]="[{'name':'date', dateFormat:'d MMM'},{'name':'title'}, {'name':'salesPrice', numberFormat : '1.2-2', prefix:'&euro; '}]"
+        [elementFieldsPerUnit]="{'2':[{'name':'date', dateFormat:'d MMM'},[{'name':'nights', postfix:' nachten '},{'name':'title'}], {'name':'addedValue', numberFormat : '1.2-2', prefix:'&euro; ', postfix:' meerprijs'}]}"
+        ></vtb-segments>
+    </div>
+  </div>
+  <div class="flightschedule" *ngIf="itinerary.hasFlights">
+    <div class="titles">
+        Vluchtenschema
+    </div>
+    <div class="flight">
+      <vtb-flights-overview
+      [dataSource]="itinerary.segments"
+      [segmentTypeIds]="[4]"
+      [flightFields]="[{fields: ['flightNumber'], class: 'flightnumber'}, {fields: [{name: 'departureDate', 'dateFormat': 'd MMM'}], class: 'departuredate'}, {fields: ['departureAirport'], class: 'departureairport'}, {fields: ['arrivalAirport'], class: 'arrivalairport'}, {fields: [{name: 'arrivalTime', 'format': 'h:mm a'}], class: 'arrivaltime'}, {fields: [{name: 'departureTime', 'format': 'h:mm a'}], class: 'departuretime'}]">
+    </vtb-flights-overview> 
+    </div>
+  </div>
+  <div class="travelprice">
+    <div class="titles">
+      Indicatie reissom
+    </div>
+    <div class="travelsum">
+        <h1>&euro; {{itinerary.averagePrice | number : '1.0-2' : 'nl-nl' }} </h1> 
+        <h4>per persoon</h4>
+        <div class="travelsum_text">bij deelname van {{(itinerary.totalParticipants)}} personen</div>
+    </div>
+  </div>
+  <div class="include-text">
+    <div class="titles">
+      Inbegrepen
+    </div>
+    <div [innerHTML]="itinerary.extraFieldValues | extraField : 6 : 18"></div>
+  </div>
+  <div class="hotels">
+    <div class="titles">
+        Hotels
+    </div>
+    <vtb-elements [dataSource]="itinerary.segments"
+        [segmentTypeIds]="[1,4]"
+        [unitIds]="[2]"
+        [uniqueElements]="true"
+        [reverseUnitIds]="false"
+        [optional]="false"
+        [elementFields]="[{name: 'media', crop: 'original/lg', max: '1'},{'name':'title', tag: 'h2'},'additionalText']">
+    </vtb-elements>
+</div>
+  <div class="exclude-text">
+    <div class="titles">
+      Niet inbegrepen
+    </div>
+    <div [innerHTML]="itinerary.extraFieldValues | extraField : 6 : 19"></div>
+  </div>
+  <div class="remarks">
+    <div class="titles">
+      Opmerkingen
+    </div>
+    <div [innerHTML]="itinerary.extraFieldValues | extraField : 6 : 20"></div>
+  </div>
+  <div class="salesspecialist">
+    <ng-container [ngSwitch]="(itinerary.extraFieldValues | extraField : 2 : 17)">
+      <div *ngSwitchCase="'Gemma Hanrath'" class="sales_travelspecialist">
+          <div class="medewerker_foto"><img src="https://media.tico.nl/square/md/gemma-hanrath.jpg"></div>
+          <div class="medewerker_tekst"><h1>Samengesteld door <br />{{(itinerary.extraFieldValues | extraField : 2 : 17)}}</h1><br />
+            <p>"Het ‘reisvirus’ begon voor mij met een prachtige reis van 5 maanden door Midden-Amerika vlak na mijn afstuderen. Hierna had ik de smaak te pakken en volgde een periode als reisbegeleider van groepsreizen (onder andere ook voor familiereizen) en vele privé gemaakte reizen in Midden en Zuid-Amerika. Sinds 2008 ben ik werkzaam bij Tico als productmanager en is mijn reiservaring uitgebreid met enkele schitterende bestemmingen. Zo heb ik in Latijns-Amerika tijdens inspectiereizen onder andere Chili, Argentinië, Uruguay, Colombia, Ecuador, Costa Rica en Panama beter leren kennen. In Afrika volgde er prachtige reizen naar Botswana, Mauritius, Namibië en Zuid-Afrika en tijdens een Antarctica en een Arctic cruise heb ik kennis gemaakt met de poolgebieden. Ik ben nog steeds met veel plezier werkzaam als productmanager voor deze prachtige en afwisselende bestemmingen!
+              <br /><br />
+              Bij Tico kan ik als productmanager mijn kennis van en liefde voor Latijns-Amerika, Zuidelijk Afrika, Mauritius, de Seychellen én de poolgebieden overbrengen en mijn uiterste best doen te zorgen voor onvergetelijk mooie reisprogramma’s en ervaringen.
+            "</p>
+            <br />
+            <p>Ik ben reisspecialist op de volgende bestemmingen: 
+                <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/poolreizen/antarctica-cruise">Antarctica</a>, 
+                <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Arctic</a>,
+                <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/latijns-amerika/argentinie-reizen">Argentinië</a>, 
+                <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Botswana</a>, 
+                <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/latijns-amerika/rondreis-chili-individueel">Chili</a>, 
+                <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Colombia</a>,
+                <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Costa Rica</a>, 
+                <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Mauritius</a>, 
+                <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Peru</a>, 
+                <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Namibië</a>,
+                <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Panama</a>, 
+                <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Seychellen</a> en
+                <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Zuid-Afrika</a>.
+              </p>
+              <br />
+            <p>Bent u benieuwd naar mijn reiservaringen? Lees dan <a style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/blog/filter/alle-bestemmingen/gemma-hanrath#berichten">hier</a> mijn blogs!</p>
+          
+          </div>
+      </div>
+      <div *ngSwitchCase="'Charissa Martens'" class="sales_travelspecialist">
+          <div class="medewerker_foto"><img src="https://media.tico.nl/square/md/charissa-martens.jpg"></div>
+          <div class="medewerker_tekst"><h1>Samengesteld door <br /> {{(itinerary.extraFieldValues | extraField : 2 : 17)}}</h1><br />
+            <p style="font-style:italic;">"In 2003 pakte ik het voor het eerst mijn rugzak en reisde ik voor mijn studie (NHTV, International Tourism Management & Consultancy) alleen richting Ecuador in Latijns-Amerika; het was de start van een zeer reislustig bestaan. Een jaar later schreef ik mijn scriptie op het Argentijnse platteland en woonde ik enige tijd in Buenos Aires. Latijns-Amerika had mijn hart gestolen. In de jaren na mijn afstuderen werkte ik enige tijd als reisleider voor één van Nederlands grotere reisorganisaties en reisde ik (ook privé) naar vele bestemmingen wereldwijd. Ik kwam er al snel achter dat mijn hart ligt bij de ontdekking van juist die unieke locaties en het delen van mijn ervaring met anderen. Sinds 2007 ben ik onderdeel van het kleine en zeer gedreven team van Tico en ben ik werkzaam als reisspecialist en productmanager voor vele bestemmingen. Het is fantastisch om altijd weer tot een uniek reisplan te komen!
+            "</p>
+            <br />
+            <p>Ik ben reisspecialist op de volgende bestemmingen: 
+              <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/poolreizen/antarctica-cruise">Antarctica</a>, 
+              <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/latijns-amerika/argentinie-reizen">Argentinië</a>, 
+              <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/oceanie/australie-reizen-op-maat">Australië</a>, 
+              <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/azie/borneo-reizen">Borneo</a>, 
+              <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/latijns-amerika/brazilie-reizen">Brazilië</a>, 
+              <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/latijns-amerika/rondreis-chili-individueel">Chili</a>, 
+              <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/azie/indonesie-reizen">Indonesië</a>,
+              <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/azie/japan-reizen">Japan</a>, 
+              <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/azie/malediven-reizen">Malediven</a>, 
+              <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/latijns-amerika/peru-reizen">Peru</a>, 
+              <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/azie/sri-lanka-reizen">Sri Lanka</a> en
+              <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/azie/maleisie-reizen">West-Maleisië</a>.
+            </p>
+            <br />
+            <p>Bent u benieuwd naar mijn reiservaringen? Lees dan <a style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/blog/filter/alle-bestemmingen/charissa-martens#berichten">hier</a> mijn blogs!</p>
+          </div>
+    </div>
+    <div *ngSwitchCase="'Alexander Paalman'" class="sales_travelspecialist">
+        <div class="medewerker_foto"><img src="https://media.tico.nl/square/md/alexander-paalman.jpg"></div>
+        <div class="medewerker_tekst"><h1>Samengesteld door <br /> {{(itinerary.extraFieldValues | extraField : 2 : 17)}}</h1><br />
+          <p style="font-style:italic;">"Tijdens een studiereis van drie maanden naar Tanzania in 2012 is mijn passie voor verre reizen begonnen. Na het afronden van mijn studie ben ik gestart met werken, maar de drang naar reizen bleef toch bestaan. Ik heb altijd al een buitengewone interesse in Latijns-Amerika gehad en een reis naar dit deel van de wereld stond dan dus ook bovenaan mijn lijstje. In 2017 heb ik besloten mijn hart te volgen en ben ik in het vliegtuig gestapt voor een avontuur naar Zuid-Amerika. In zes maanden tijd heb ik dit prachtige continent doorkruist en daarmee de meest bijzondere plekken mogen bezoeken. Een reis die mij voor altijd bij zal blijven! Eenmaal terug in Nederland besefte ik dat het reisvirus nog steeds aanwezig was en ik mijn passie voor Latijns-Amerika met iedereen wilde delen. Als reisexpert voor Tico Reizen ben ik dagelijks bezig met de meest prachtige bestemmingen en hoop ik nog veel meer mensen enthousiast te kunnen maken voor het maken van schitterende reizen!
+            "</p>
+          <br />
+          <p>Ik ben reisspecialist op de volgende bestemmingen: 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/latijns-amerika/argentinie-reizen">Argentinië</a>, 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/latijns-amerika/bolivia-reizen">Bolivia</a>, 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/latijns-amerika/brazilie-reizen">Brazilië</a>, 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/latijns-amerika/rondreis-chili-individueel">Chili</a>, 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/latijns-amerika/rondreis-colombia">Colombia</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/latijns-amerika/individuele-rondreis-costa-rica">Costa Rica</a>, 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/latijns-amerika/ecuador-reizen">Ecuador</a> en 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/latijns-amerika/peru-reizen">Peru</a>.
+            Mijn favoriete bestemmingen zijn Patagonië, Peru en Brazilië, waar de natuur zo ontzettend ruig, ongerept en wonderschoon kan zijn.
+          </p>
+          <br />
+          <p>Bent u benieuwd naar mijn reiservaringen? Lees dan <a style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/blog/filter/alle-bestemmingen/alexander-paalman#berichten">hier</a> mijn blogs!</p>
+        </div>
+    </div>
+    <div *ngSwitchCase="'Fraukje van Nes'" class="sales_travelspecialist">
+        <div class="medewerker_foto"><img src="https://media.tico.nl/square/md/fraukje-van-nes.jpg"></div>
+        <div class="medewerker_tekst"><h1>Samengesteld door <br /> {{(itinerary.extraFieldValues | extraField : 2 : 17)}}</h1><br />
+          <p style="font-style:italic;">"Al van jongs af aan wist ik dat ik een wereldreis wilde maken en direct nadat ik het VWO had afgerond, reisde ik dan ook vol enthousiasme voor langere tijd af naar Midden-Amerika. Vanaf dat moment werd de drang om te reizen steeds groter en enkele maanden na thuiskomst vertrok ik dan ook voor een half jaar naar Australië & Zuidoost-Azië.
+            <br /><br />Begin 2013 ben ik, nadat ik de Hogere Hotelschool heb afgerond, aan de slag gegaan bij Tico. Tijdens mijn studie en nu ook voor Tico heb ik nog vele andere kortere, maar tevens zeer indrukwekkende reizen mogen maken. De reis voor Tico naar Nieuw-Zeeland is mij het meeste bijgebleven. Wat een ongekend mooi land! Daarnaast behoren ook Myanmar & Zuid-Afrika tot mijn favorieten en het is dan ook fantastisch om als productmanager voor Tico op dagelijkse basis te mogen werken met deze bijzondere reisbestemmingen.
+          "</p>
+          <br />
+          <p>Ik ben reisspecialist op de volgende bestemmingen: 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Nieuw-Zeeland</a>, 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Australië</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Bangkok</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Bolivia</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Borneo</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Cambodja</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Dubai</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Ecuador</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Hong Kong</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Indonesië</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Kuala Lumpur</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Laos</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Myanmar</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Panama</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Peru</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Singapore</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Thailand</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Vietnam</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">West-Maleisië</a> en
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Zuid-Afrika</a>.
+          </p>
+          <br />
+          <p>Bent u benieuwd naar mijn reiservaringen? Lees dan <a style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/blog/filter/alle-bestemmingen/fraukje-van-nes#berichten">hier</a> mijn blogs!</p>
+        </div>
+    </div>
+    <div *ngSwitchCase="'Jelisa Davids'" class="sales_travelspecialist">
+        <div class="medewerker_foto"><img src="https://media.tico.nl/square/md/jelisa-davids.jpg"></div>
+        <div class="medewerker_tekst"><h1>Samengesteld door <br /> {{(itinerary.extraFieldValues | extraField : 2 : 17)}}</h1><br />
+          <p style="font-style:italic;">"Bij een kampvuur, ergens in Swaziland (Afrika) in het jaar 2009 is mijn liefde voor reizen ontstaan. Ik was vrijwilligerswerk aan het doen en hoorde van andere reizigers verhalen over de mooiste plekken op aarde. Ik besloot toen dat ik na mijn studie op reis mocht gaan.
+            <br /><br />
+            Ongeveer 5 jaar later was het zover, ik vertrok met mijn rugzak naar Zuidoost-Azië. De 3 maanden die ik in gedachten had, werden er uiteindelijk 6. Ik werd verliefd op de landen, het eten en de verschillende culturen! Eenmaal terug in Nederland besloot ik dat ik nog geen genoeg had van het reizen. Dit keer vertrok ik voor langere tijd naar Australië waar ik 6 maanden heb gewerkt en gereisd. Na Australië was het tijd om weer terug te keren naar Zuidoost-Azië. Het was net als thuiskomen, wat voelde dat fijn! Tijdens deze 9 maanden besloot ik dat ik niets liever wil dan mijn liefde voor het reizen en mijn reiservaringen delen met andere mensen. Zo kan ik ervoor zorgen dat ook anderen van deze prachtige wereld kunnen genieten!
+          "</p>
+          <br />
+          <p>Ik ben reisspecialist op de volgende bestemmingen: 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/oceanie/australie-reizen-op-maat">Australië</a>, 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Bangkok</a>, 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Cambodja</a>, 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/azie/indonesie-reizen">Indonesië</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/azie/japan-reizen">Japan</a>, 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Laos</a>, 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Myanmar</a>, 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Singapore</a>, 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/azie/sri-lanka-reizen">Sri Lanka</a>,
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Thailand</a>, 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="#">Vietnam</a>, 
+            <a target="_blank" style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/bestemmingen/azie/maleisie-reizen">West-Maleisië</a>.
+          </p>
+          <br />
+          <p>Bent u benieuwd naar mijn reiservaringen? Lees dan <a style="font-weight:bold;text-decoration:none;color:#1576AC;" href="https://www.tico.nl/blog/filter/alle-bestemmingen/jelisa-davids#berichten">hier</a> mijn blogs!</p>
+        </div>
+  </div>
+    </ng-container>
+  </div>
+  <div class="footer">
+    <div class="footer-col1">
+      <h4>CONTACTGEGEVENS</h4>
+      T: +31 (0)20 788 77 77<br />
+      F: +31 (0)20 788 77 78<br />
+      E: info@tico.nl<br />
+    </div>
+    <div class="footer-col2">
+        <h4>ADRESGEGEVENS</h4>
+        Tico Reizen <br />
+        Keizersgracht 75 III<br />
+        1015 CE Amsterdam<br />
+        (Bezoek op afspraak)<br />
+        KvK: 34187242<br />
+        BTW: NL8240.98.171.B01
+    </div>
+    <div class="footer-col3">
+        <h4>Zorgeloos op reis</h4>
+        U wilt natuurlijk onbezorgd op vakantie. Tico Reizen is aangesloten bij de belangrijkste kwaliteitskeurmerken binnen de reisbranche. Zo zorgt de ANVR voor de regelgeving, het SGR voor financiële zekerheid en het Calamiteitenfonds voor assistentie bij overmachtssituaties ter plaatse.
+        <br />
+        
+    </div>
+    <div class="footer-col4">
+        <h4>Reviews</h4>
+        Onze klanten geven ons een 9,8. Bekijk hier de <a style="color:#ffffff;" href="https://www.feedbackcompany.com/nl-nl/reviews/tico-reis-consult/">reviews</a>.
+        <br /><br />
+        <a style="text-decoration:none;margin-right:5px;" target="_blank" href="https://www.anvr.nl/default.aspx"><img width="40px" src="https://media.tico.nl/original/sm/logo-anvr.png"></a>
+        <a style="text-decoration:none;margin-right:5px;" target="_blank" href="https://www.sgr.nl/"><img width="40px" src="https://media.tico.nl/original/sm/logo-sgr.png"></a>
+        <a style="text-decoration:none;margin-right:5px;" target="_blank" href="https://www.calamiteitenfonds.nl/"><img width="40px" src="https://media.tico.nl/original/sm/logo-calamiteitenfonds.png"></a>
+    </div>
+  </div>
+</div>

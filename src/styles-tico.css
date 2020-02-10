@@ -1,0 +1,1540 @@
+/*********************
+ *                   *
+ *       BASIS       *
+ *                   *
+ *********************/
+
+ body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  color: #333;
+  background:#F3F8FB;
+  font-size:14px;
+  line-height: 1.8em;
+}
+
+p {
+  margin:0;
+  padding:0;
+  text-align: justify;
+}
+
+ul {
+  list-style: none;
+  margin:0;
+}
+
+li::before {
+  content:"\2022";
+  color:#FFDB3D;
+  font-size:18px;
+  padding-right:10px;
+  margin-left: -17px;
+} 
+
+.menu li::before {
+    display:none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  letter-spacing: 1px;
+  padding:10px 0px;
+  text-align:left;
+  font-size:46px;
+  font-weight:bold;
+  line-height:1.4em;
+}
+
+h2 {
+  letter-spacing: 1px;
+  padding:10px 0px;
+  font-size:28px;
+  font-weight:bold;
+  line-height:1.4em;
+  text-align:left;
+}
+
+h3 {
+  letter-spacing: 1px;
+  padding:15px 0px;
+  text-align:left;
+  font-size:30px;
+  font-weight:bold;
+}
+
+h4 {
+  letter-spacing: 1px;
+  padding:5px 0px;
+  text-align:left;
+  font-size:18px;
+  font-weight:bold;
+}
+
+.titles {
+  letter-spacing: 1px;
+  padding:20px 0px;
+  text-align:left;
+  font-size:46px;
+  font-weight:bold;
+  line-height:1.4em;
+  font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
+}
+
+/*********************
+ *                   *
+ *       GRIDS       *
+ *                   *
+ *********************/
+
+ 
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "menu"
+  "travelshort"
+  "travelroute"
+  "traveldescription"
+  "optionals"
+  "flightschedule"
+  "travelprice"
+  "include-text"
+  "hotels"
+  "exclude-text"
+  "remarks"
+  "salesspecialist"
+  "footer"
+  ;
+}
+
+.grid-container > div {
+    padding:20px 60px;
+}
+
+.grid-container .header {
+  padding:0px;
+}
+
+.grid-container .travelshort {
+  padding:0px;
+}
+
+.travelshort {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "introtext travelmap"
+    ;
+  grid-area: travelshort;
+  background-color: #ffffff;
+  background-image: url(http://media.sitespirit.nl/travelspirit-assets/tico-reizen/mini-site-assets/patroon_wit.svg);
+}
+
+.travelroute vtb-segment {
+  display:grid;
+  grid-template-columns: 1fr 2fr 4fr 3fr;
+  grid-template-areas: 
+    "travelroute-day travelroute-date travelroute-title travelroute-element"
+    ;
+}
+
+.traveldescription vtb-segment:nth-child(odd) {
+  display:grid;
+  overflow:hidden;
+  clear: both;
+  min-height:600px;
+  margin-top: 40px;
+  row-gap: 10px;
+  column-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px max-content max-content max-content max-content min-content;
+  grid-template-areas: 
+    "traveldescription-day traveldescription-media"
+    "traveldescription-date traveldescription-media"
+    "traveldescription-title traveldescription-media"
+    "traveldescription-subtitle traveldescription-media"
+    "traveldescription-content traveldescription-media"
+    "traveldescription-splittable traveldescription-media"
+    ;
+}
+
+.traveldescription vtb-segment:nth-child(even) {
+  display:grid;
+  overflow:hidden;
+  clear: both;
+  min-height:600px;
+  margin-top: 40px;
+  row-gap: 10px;
+  column-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 50px max-content max-content max-content max-content min-content;
+  grid-template-areas: 
+    "traveldescription-media traveldescription-day"
+    "traveldescription-media traveldescription-date"
+    "traveldescription-media traveldescription-title"
+    "traveldescription-media traveldescription-subtitle"
+    "traveldescription-media traveldescription-content"
+    "traveldescription-media traveldescription-splittable"
+    ;
+}
+
+.traveldescription .segment-type-12:nth-child(even) {
+  display:grid;
+  overflow:hidden;
+  clear: both;
+  min-height:600px;
+  margin-top: 40px;
+  row-gap: 10px;
+  font-style:italic;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto 1fr;
+  grid-template-areas: 
+    "traveldescription-media traveldescription-title"
+    "traveldescription-media traveldescription-subtitle"
+    "traveldescription-media traveldescription-content"
+    "traveldescription-media traveldescription-splittable"
+    !important ;
+}
+
+.traveldescription .segment-type-12:nth-child(odd) {
+  display:grid;
+  overflow:hidden;
+  clear: both;
+  min-height:600px;
+  margin-top: 40px;
+  row-gap: 10px;
+  font-style:italic;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto 1fr;
+  grid-template-areas: 
+    "traveldescription-title  traveldescription-media"
+    "traveldescription-subtitle traveldescription-media"
+    "traveldescription-content traveldescription-media"
+    "traveldescription-splittable traveldescription-media"
+    !important ;
+}
+
+.traveldescription .segment-type-12 .segment-field.title {
+  padding-top:45px;
+  font-style:normal;
+}
+
+.traveldescription .media {
+  grid-area:traveldescription-media;
+  height:600px;
+  clear:both;
+  overflow:hidden;
+}
+
+.traveldescription vtb-segment:nth-child(even) .media {
+  margin-right:30px;
+}
+
+.traveldescription vtb-segment:nth-child(odd) .media {
+  margin-left:30px;
+}
+
+.traveldescription vtb-media .media-items {
+  grid-area:traveldescription-media;
+  display:grid;
+  overflow:hidden;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 450px 140px;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-areas: 
+    "gallery-media1 gallery-media1 gallery-media1"
+    "gallery-media2 gallery-media3 gallery-media4"
+} 
+
+.traveldescription .segment-type-13:nth-child(even),
+.traveldescription .segment-type-13:nth-child(odd) {
+  display:grid;
+  overflow:hidden;
+  clear: both;
+  height:700px;
+  margin-top: 40px;
+  row-gap: 10px;
+  column-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px;
+  grid-template-areas: 
+    "traveldescription-fotoblok" 
+    ;
+}
+
+.traveldescription .segment-type-13 .media {
+  grid-area: traveldescription-fotoblok;
+  margin:0 ;
+  display:grid;
+  height:700px;
+  grid-template-areas: 
+    "gallery-grid";
+}
+
+.traveldescription .segment-type-13 vtb-media .media-items {
+  grid-area: traveldescription-fotoblok ;
+  margin:0 ;
+  display:grid;
+  overflow:hidden;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  height:700px;
+  grid-template-areas: 
+    "gallery1 gallery2 gallery4" 
+    "gallery1 gallery2 gallery4" 
+    "gallery1 gallery3 gallery4"
+    "gallery1 gallery3 gallery5"
+  ;
+}
+
+.traveldescription .segment-type-13 .media-items > div:nth-child(1) {
+  grid-area: gallery1;
+}
+
+.traveldescription .segment-type-13 .media-items > div:nth-child(2) {
+  grid-area: gallery2;
+}
+
+.traveldescription .segment-type-13 .media-items > div:nth-child(3) {
+  grid-area: gallery3;
+}
+
+.traveldescription .segment-type-13 .media-items > div:nth-child(4) {
+  grid-area: gallery4;
+}
+
+.traveldescription .segment-type-13 .media-items > div:nth-child(5) {
+  grid-area: gallery5;
+}
+
+
+.traveldescription .segment-type-13 .splittable {
+    display:none;
+}
+
+.hotels vtb-elements {
+  display:grid;
+  overflow: hidden;
+  clear: both;
+  margin-top: 40px;
+  grid-gap:40px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+    "hotels-area hotels-area hotels-area"
+    ;
+}
+
+.hotels vtb-element {
+  display:grid;
+  overflow: hidden;
+  clear: both;
+  background: #ffffff;
+  row-gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 230px min-content max-content;
+  grid-template-areas: 
+    "hotels-image"
+    "hotels-title"
+    "hotels-text"
+    ;
+}
+
+.optionals vtb-element {
+  display:grid;
+  overflow: hidden;
+  clear: both;
+  grid-template-columns: 10% 20% 40% 30%;
+  grid-template-areas: 
+    "optionals-date optionals-title optionals-price"
+    ;
+}
+
+.salesspecialist .sales_travelspecialist {
+  display:grid;
+  overflow: hidden;
+  clear: both;
+  row-gap: 15px;
+  column-gap: 25px;
+  margin-top: 40px;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: 
+    "salesspecialist-image salesspecialist-text"
+    ;
+}
+
+.footer {
+  display:grid;
+  row-gap:15px;
+  column-gap:15px;
+  overflow: hidden;
+  clear: both;
+  margin-top: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+    "footer-col1 footer-col2 footer-col3 footer-col4"
+    ;
+}
+
+
+/*********************
+ *                   *
+ *       STYLES      *
+ *                   *
+ *********************/
+
+.header {
+  grid-area: header;
+  background: lightgrey;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 40vw;
+}
+
+.header .logo-bg {
+  height: 400px;
+  position: absolute;
+  z-index: 2;
+  top: -80px;
+  right: -45px;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+.header .header-text {
+  text-align: left;
+  position: absolute;
+  color: white;
+  align-self: center;
+  margin: 0;
+  width: 100%;
+  margin-left: 75px;
+  bottom: 25px;
+  z-index: 2;
+}
+
+
+.header .gradient {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 70%, rgba(0,0,0,0.7) 100%);
+}
+
+.header .cover-duration,
+.header .cover-pax {
+  display:block;
+  margin-bottom:5px;
+  font-size:18px;
+  font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+
+.header .cover-period {
+  display:block;
+  margin-bottom:10px;
+  font-size:18px;
+  font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
+.header .clock-icon {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 60px;
+  padding: 0 0 25px 0;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 36px;
+  padding: 0 0 5px 0;
+}
+
+.cover-images {
+  width:100%;
+}
+
+.cover-images vtb-media {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  border:1px solid #f0f0f0;
+  border-radius: 5px;
+  padding-bottom:56%;
+  overflow: hidden;
+}
+
+.cover-images vtb-media > div.media-items > div {
+  position: absolute !important;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  display: none;
+  max-width: calc(100% - 2px);
+  width:100%;
+}
+
+.cover-images vtb-media > div.media-items > div.slide-active {
+  display: block;
+  left:-50%;
+  animation: slide 0.5s forwards;
+}
+
+.cover-images vtb-media > div.media-items.slide-dir-right > div.slide-active {
+  left:150%;
+}
+
+.cover-images vtb-media > div.media-items.slide-dir-left > div.last-active-slide {
+  animation: slideAwayRight 0.5s forwards;
+  display: block;
+}
+
+.cover-images vtb-media > div.media-items.slide-dir-right > div.last-active-slide {
+  animation: slideAwayLeft 0.5s forwards;
+  display: block;
+}
+
+.cover-images vtb-media > div.media-items img {
+  max-width: 100%;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 50%; }
+}
+
+@-webkit-keyframes slideAwayLeft {
+  100% { left: -50%; }
+}
+
+@-webkit-keyframes slideAwayRight {
+  100% { left: 150%; }
+}
+
+.cover-images .media-slider-control {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.cover-images .media-slider-control:after {
+  font-family: "Font Awesome 5 Free";
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-weight: 900;
+  font-size:30px;
+  cursor: pointer;
+}
+
+.cover-images .media-slider-control:hover:after {
+  color: #f0f0f0;
+}
+
+.cover-images .media-slider-prev {
+  left:10px;
+}
+
+.cover-images .media-slider-prev:after {
+  content: "\f053";
+}
+
+.cover-images .media-slider-next {
+  right:10px;
+}
+
+.cover-images .media-slider-next:after {
+  content: "\f054";
+}
+
+.header .cover-images img {
+  display: block;
+  width:100%;
+}
+
+.menu {
+  grid-area: menu;
+  background: #ffffff;
+  border-top: solid 1px #DEE7E9;
+  border-bottom: solid 1px #DEE7E9;
+  padding: 10px 20px !important;
+}
+
+.menu vtb-menu {
+  display: block;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+
+  .grid-container > div {
+    padding:0px 40px;
+  }
+
+  h1, 
+  .titles {
+    font-size:28px !important;
+  }
+
+  h2 {
+    font-size:20px !important;
+  }
+
+  .header {
+    height: 76vw;
+}
+
+  .header .header-text {
+    margin-left:35px;
+    bottom:19px !important;
+  }
+
+  .header .cover-period {
+    font-size:14px !important;
+    margin-bottom:5px !important;
+  }
+
+  .header .cover-duration,
+  .header .cover-pax {
+    font-size:14px !important;
+    margin-bottom:0px !important;
+  }
+
+  .cover-images {
+      height:76vw;
+  }
+
+  .cover-images vtb-media {
+      padding-bottom:90% !important;
+  }
+
+  .header .logo-bg {
+      height:210px !important;
+      bottom:-50px !important;
+  }
+
+  .menu {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 999;
+    padding:10px 20px !important;
+  }
+
+  .menu .menu-toggle {
+    display:block !important;
+  }
+
+  .menu button {
+    float: none !important;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .menu ul.toggled{
+    display: block;
+  }
+
+  .travelshort {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      "introtext"
+      "travelmap"
+      ;
+    grid-area: travelshort;
+    background-color: #ffffff;
+    background-image: url(http://media.sitespirit.nl/travelspirit-assets/tico-reizen/mini-site-assets/patroon_wit.svg);
+  }
+
+  .travelshort .introtext {
+    padding:20px 40px !important;
+  }
+
+  .travelshort .introtext .titles {
+    padding:20px 0px !important;
+  }
+
+  .travelroute vtb-segment {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+      "travelroute-day travelroute-date"
+      "travelroute-title travelroute-title" 
+      "travelroute-element travelroute-element"
+      ;
+  }
+
+  .travelroute vtb-segment {
+    margin: 5px 40px !important;
+  }
+
+  .travelroute .date {
+      margin-left:-32px !important;
+  }
+
+  .travelroute .title {
+      padding-left:25px !important;
+  }
+
+  .travelroute .splittable {
+    margin-top:10px;
+    padding-left:25px !important;
+  }
+
+  .travelroute .splittable .title {
+    padding-left:10px !important;
+  }
+
+  .travelroute .splittable .element-unit-2::before {
+      margin-right:0px !important;
+  }
+
+  .travelroute .segment-type-4::after {
+      right:40px !important;
+  }
+
+  .traveldescription .segment-type-12:nth-child(odd),
+  .traveldescription .segment-type-12:nth-child(even),
+  .traveldescription vtb-segment:nth-child(odd),
+  .traveldescription vtb-segment:nth-child(even) {
+    margin-top: 10px;
+    grid-template-columns: 1fr !important;
+    row-gap:5px !important;
+    min-height:300px !important;
+    grid-template-rows: 225px max-content max-content max-content max-content min-content !important;
+    grid-template-areas: 
+      "traveldescription-media"
+      "traveldescription-day"
+      "traveldescription-date"
+      "traveldescription-title"
+      "traveldescription-subtitle"
+      "traveldescription-content"
+      "traveldescription-splittable" !important
+      ;
+  }
+
+  .traveldescription vtb-media .media-items {
+    grid-area: traveldescription-media;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 170px 65px !important;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: 
+    "gallery-media1 gallery-media1 gallery-media1" 
+    "gallery-media2 gallery-media3 gallery-media4";
+  }
+
+  .traveldescription vtb-segment:nth-child(even) .media,
+  .traveldescription vtb-segment:nth-child(odd) .media {
+    margin-left:0px !important;
+    margin-right:0px !important;
+  }
+
+  .traveldescription .media,
+  .traveldescription .media-1 .media-items > div:nth-child(1) {
+    height:245px !important;
+  }
+
+  .traveldescription .dayNumbers {
+      font-size:80px !important;
+      margin-top: 30px !important;
+      margin-bottom: -30px !important;
+  }
+
+  .traveldescription .segment-type-12 .segment-field.title {
+      padding-top:20px !important;
+  }
+
+  .traveldescription .optional_elements,
+  .traveldescription .segment-type-12 .night_elements {
+    padding-top:0px !important;
+}
+
+.traveldescription .segment-type-13:nth-child(even),
+.traveldescription .segment-type-13:nth-child(odd) {
+  display:grid;
+  overflow:hidden;
+  clear: both;
+  height:500px !important;
+  margin-top: 0px !important;
+  row-gap: 10px;
+  column-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px;
+  grid-template-areas: 
+    "traveldescription-fotoblok" !important
+    ;
+}
+
+.traveldescription .segment-type-13 .media {
+  grid-area: traveldescription-fotoblok;
+  margin:0 ;
+  display:grid;
+  height:500px !important;
+  grid-template-areas: 
+    "gallery-grid" !important;
+}
+
+.traveldescription .segment-type-13 vtb-media .media-items {
+  grid-area: gallery-grid-fotoblok ;
+  margin:0 ;
+  display:grid;
+  overflow:hidden;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr !important;
+  column-gap: 10px;
+  row-gap: 10px;
+  height:500px !important;
+  grid-template-areas: 
+    "gallery1 gallery1"
+    "gallery2 gallery3"
+    "gallery4 gallery5" !important
+  ;
+}
+
+.traveldescription .segment-type-13 .splittable {
+    display:none;
+}
+
+.traveldescription .segment-field.date {
+    font-size:14px !important;
+}
+
+.traveldescription .segment-field.title {
+    font-size:26px !important;
+    line-height: 33px !important;
+}
+
+.traveldescription .element-field.title {
+  float:none !important;
+}
+
+.traveldescription .night_elements {
+    padding-top:10px !important;
+}
+
+.hotels vtb-elements {
+  display:grid;
+  overflow: hidden;
+  clear: both;
+  margin-top: 40px;
+  grid-gap:40px;
+  grid-template-columns: 1fr !important;
+  grid-template-areas: 
+    "hotels-area" !important
+    ;
+  }
+
+.footer {
+  display:grid;
+  padding:20px 40px !important;
+  overflow: hidden;
+  clear: both;
+  margin-top: 40px;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "footer-col1"
+    "footer-col2"
+    "footer-col3" 
+    "footer-col4"
+    ;
+}
+
+
+.salesspecialist .sales_travelspecialist {
+  display:grid;
+  overflow: hidden;
+  clear: both;
+  margin-top: 40px;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "salesspecialist-image"
+    "salesspecialist-text"
+    ;
+}
+
+}
+
+/* 
+.menu .sticky {
+  display:block;
+  width:100%;
+  background-color:#ffffff;
+  margin: 0 auto;
+  overflow:hidden;
+} */
+
+.menu .menu-toggle {
+    display:none;
+}
+.menu button {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.menu button:hover {
+  background-color: #ffffff; 
+  color:#1576AC;
+}
+
+.menu button {
+  display: inline-block;
+  float:left;
+  margin:10px;
+  padding: 11px 18px;
+  border: solid 1px #1576AC;
+  background: #1576AC;
+  border-radius: 25px;
+  font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+.travelshort .introtext {
+  grid-area: introtext;
+  padding:20px 60px 40px 60px;
+}
+
+.travelshort .travelmap {
+  grid-area: travelmap;
+  height:100%;
+  width:100%;
+}
+
+.travelshort .agm-map-container-inner > div {
+  background-color:transparent !important;
+}
+
+.travelroute {
+  grid-area: travelroute;
+}
+
+.travelroute vtb-segment {
+  margin: 5px 75px;
+  padding: 15px 10px;
+  border-left: 5px dotted #1576AC;
+  border-bottom: 1px solid #1576ac24;
+}
+
+.travelroute .dayNumbers {
+  grid-area: travelroute-day;
+  font-size: 14px;
+  font-weight: bold;
+  background: #1576AC;
+  border-radius: 40px;
+  height: 48px;
+  color: #fff;
+  width: 55px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 7px 0 0px 0;
+  margin-left: -41px;
+  line-height: 40px;
+  margin-top: -5px;
+}
+
+.travelroute .segment-type-4::after {
+  content: "";
+  font-size: 35px;
+  color: #add8e64d;
+  margin: 0 0 0 50px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  background-color: #add8e659;
+  -webkit-mask-size: 30px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-image: url(http://media.sitespirit.nl/travelspirit-assets/tico-reizen/mini-site-assets/icon_airplane.svg);
+}
+
+.travelroute .date {
+  grid-area: travelroute-date;
+  align-self: center;
+}
+
+.travelroute .title {
+  grid-area: travelroute-title;
+  font-weight:bold;
+  align-self: center;
+}
+
+.travelroute .splittable {
+  grid-area: travelroute-element;
+  align-self: center;
+}
+
+.travelroute .splittable .nights {
+  display: inline;
+  float:left;
+  margin-left:5px;
+}
+
+.travelroute .splittable .title {
+  display: inline;
+  float:left;
+  font-weight:bold;
+}
+
+.travelroute .splittable .element-unit-2::before {
+  content: "";
+  background-color:#FFDB3D;
+  background-image: url(http://media.sitespirit.nl/travelspirit-assets/tico-reizen/mini-site-assets/icon_overnachting.svg);
+  display:block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  padding:5px;
+  margin-top:-4px;
+  border-radius: 20px;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.traveldescription {
+  grid-area: traveldescription;
+  overflow:hidden;
+  background: white;
+  clear:both;
+}
+
+.traveldescription vtb-segment > div {
+  z-index:2;
+}
+
+.traveldescription .dayNumbers {
+  grid-area: traveldescription-day;
+  color: #f2f7fa;
+  font-size: 150px;
+  text-align: right;
+  padding-right: 20px;
+  margin-top: 100px;
+  font-weight: bold;
+  z-index:1;
+  font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
+}
+
+.traveldescription .segment-field.date {
+  grid-area: traveldescription-date;
+  font-weight:bold;
+  font-size:20px;
+}
+
+.traveldescription .segment-field.title {
+  grid-area: traveldescription-title;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 55px;
+  font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
+}
+
+.traveldescription .segment-field.subTitle  {
+  grid-area: traveldescription-subtitle;
+  font-weight:bold;
+}
+
+.traveldescription .content {
+  grid-area: traveldescription-content;
+}
+
+.traveldescription .splittable  {
+  grid-area: traveldescription-splittable;
+}
+
+/* 
+.traveldescription vtb-elements,
+.traveldescription vtb-element,
+.traveldescription div,
+.traveldescription p {
+  display:inline;
+}
+
+.traveldescription div:after {
+  content: "";
+} */
+
+.traveldescription .element-field.date {
+  font-size:16px;
+  float:left;
+  margin-right:4px;
+  font-weight:bold;
+}
+
+.traveldescription .element-field.date::after {
+  content:":";
+}
+
+.traveldescription .default_elements {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.traveldescription .default_elements vtb-element {
+  margin-bottom: 10px;
+  display:block;
+}
+
+.traveldescription .element-field.subAdditionalText {
+  font-style:italic;
+}
+
+.traveldescription .optional_elements .element-field.subAdditionalText {
+  display:block;
+  margin-left:40px;
+}
+
+.traveldescription .night_elements {
+  padding-top: 20px;
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.traveldescription .night_elements_optional {
+  margin-top: 10px;
+  margin-left:40px;
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.traveldescription .night_elements .element-unit-2::before,
+.traveldescription .night_elements_optional .element-unit-2::before {
+  display:block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 0;
+  padding:5px;
+  border-radius: 20px;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.traveldescription .night_elements .element-unit-2::before  {
+  content: "";
+  background-color:#FFDB3D;
+  background-image: url(http://media.sitespirit.nl/travelspirit-assets/tico-reizen/mini-site-assets/icon_overnachting.svg);
+}
+
+.traveldescription .night_elements_optional .element-unit-2::before  {
+  content: "";
+  display:none;
+  background-color:#ffdb3d6b;
+  background-image: url(http://media.sitespirit.nl/travelspirit-assets/tico-reizen/mini-site-assets/icon_overnachting.svg);
+}
+
+.traveldescription .optional_elements {
+  margin-top: 40px;
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.traveldescription .optional_elements vtb-element > div {
+  font-weight:normal !important;
+}
+
+
+.traveldescription .optional_elements vtb-element::before {
+  content: "+";
+  background-color: #ffdb3d6b;
+  font-size: 20px;
+  text-align: center;
+  width: 20px;
+  height: 22px;
+  padding: 3px 5px 5px 5px;
+  border-radius: 20px;
+  float: left;
+  display: block;
+  margin-right: 10px;
+}
+
+.traveldescription .element-field.title {
+  font-size:16px;
+  float:left;
+  font-weight:bold;
+  margin-right:4px;
+}
+
+.traveldescription .night_elements_optional .element-field.title {
+  font-weight:normal;
+}
+
+.traveldescription .element-field.nights {
+  float:left;
+}
+
+.traveldescription .element-field.subTitle {
+  margin-left:4px;
+}
+
+.traveldescription vtb-segment > div.media img {
+  max-width:100%;
+  min-height:100%;
+  object-fit:cover;
+}
+
+.traveldescription .media-1 .media-items > div:nth-child(1) {
+  grid-area: gallery-media1;
+  width:100%;
+  overflow:hidden;
+  height:600px;
+}
+
+.traveldescription .media-items > div:nth-child(1) {
+  grid-area: gallery-media1;
+  width:100%;
+  overflow:hidden;
+}
+
+.traveldescription .media-items > div:nth-child(2) {
+  grid-area: gallery-media2;
+  width:100%;
+  overflow:hidden;
+}
+
+.traveldescription .media-items > div:nth-child(3) {
+  grid-area: gallery-media3;
+  width:100%;
+  overflow:hidden;
+}
+
+.traveldescription .media-items > div:nth-child(4) {
+  grid-area: gallery-media4;
+  width:100%;
+  overflow:hidden;
+}
+
+.optionals {
+  grid-area: optionals;
+  overflow:hidden;
+  background-image: url(http://media.sitespirit.nl/travelspirit-assets/tico-reizen/mini-site-assets/TICO_Reizen_patroon_wit.jpg);
+}
+
+.optionals .date {
+  grid-area:optionals-date;
+}
+
+.optionals .title {
+  grid-area:optionals-title;
+}
+
+.optionals .costPrice {
+  grid-area:optionals-price;
+}
+
+.travelprice {
+  grid-area: travelprice;
+  overflow:hidden;
+  background-image: url(http://media.sitespirit.nl/travelspirit-assets/tico-reizen/mini-site-assets/TICO_Reizen_patroon_wit.jpg);
+}
+
+.travelprice .travelsum {
+  display:block;
+  overflow:hidden;
+  background:#1576AC;
+  padding:40px;
+  color:#ffffff;
+  max-width: 450px;
+  margin-bottom:40px;
+}
+
+.travelprice h1 {
+  padding:0;
+}
+
+.travelprice .travelsum::before {
+  content: "";
+  display:block;
+  float:left;
+  width: 150px;
+  height: 130px;
+  margin-right: 20px;
+  background-image: url(http://media.sitespirit.nl/travelspirit-assets/tico-reizen/mini-site-assets/icon_price.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+
+.flightschedule {
+  grid-area: flightschedule;
+  overflow:hidden;
+}
+
+.flightschedule .flight {
+  display:block;
+  overflow:hidden;
+  background:#1576AC;
+  padding:40px;
+  color:#ffffff;
+  margin-bottom:40px;
+}
+
+.flightschedule .flight table::before {
+  content: "";
+  display:block;
+  float:left;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  background-color: #FFDB3D;
+  background-image: url(http://media.sitespirit.nl/travelspirit-assets/tico-reizen/mini-site-assets/icon_airplane.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px;
+  margin-right:25px;
+}
+
+.flightschedule vtb-flights-overview {
+  display: block;
+  width:100%
+}
+
+.flightschedule table {
+  display:block;
+  width:100%;
+}
+
+.flightschedule .flightnumber {
+    display:block;
+    float:left;
+    width:70px;
+}
+
+.flightschedule .departuredate,
+.flightschedule .arrivaldate {
+  display:block;
+  float: left;
+  width:150px;
+}
+
+.flightschedule .departuretime,
+.flightschedule .arrivaltime {
+  display:block;
+  float: right;
+  width:60px;
+}
+
+.flightschedule .departureairport,
+.flightschedule .arrivalairport {
+  display:block;
+  float: left;
+  width:170px;
+}
+
+
+
+.include-text {
+  grid-area: include-text;
+  overflow:hidden;
+}
+
+.exclude-text {
+  grid-area: exclude-text;
+  overflow:hidden;
+}
+
+.remarks {
+  grid-area: remarks;
+  overflow:hidden;
+}
+
+.hotels {
+  grid-area: hotels;
+  overflow:hidden;
+}
+
+.hotels vtb-element > div {
+  padding:0px 15px 15px 15px;
+}
+
+.hotels .title {
+  padding:15px 15px 0px 15px;
+}
+
+.hotels .media {
+  grid-area: hotels-image;
+  display:block;
+  overflow: hidden;
+  height:230px;
+  padding:0px;
+}
+
+.hotels h2 {
+  padding:0px;
+  font-size:24px;
+}
+
+.hotels .media img {
+  width: 100%;
+  height: 230px;
+  object-position: center center;
+  object-fit: cover;
+}
+
+.hotels .element-field.title {
+  grid-area: hotels-title;
+  display:block;
+  overflow: hidden;
+}
+
+.hotels .element-field.additionalText {
+  grid-area: hotels-text;
+  display:block;
+  overflow: hidden;
+}
+
+.salesspecialist {
+  grid-area: salesspecialist;
+  overflow:hidden;
+}
+
+.salesspecialist .medewerker_foto {
+  grid-area: salesspecialist-image;
+  display:block;
+  overflow:hidden;
+}
+
+.salesspecialist .medewerker_foto img {
+  width:100%;
+}
+
+.salesspecialist .medewerker_tekst {
+  grid-area: salesspecialist-text;
+  display:block;
+  overflow:hidden;
+}
+
+.footer {
+  grid-area: footer;
+  background-color:#1576AC;
+  color:#ffffff;
+  background-image: url(http://media.sitespirit.nl/travelspirit-assets/tico-reizen/mini-site-assets/patroon_blauw.svg);
+}
+
+.footer .footer-col1 {
+  grid-area: footer-col1;
+}
+
+.footer .footer-col2 {
+  grid-area: footer-col2;
+}
+
+.footer .footer-col3 {
+  grid-area: footer-col3;
+  padding-right:30px;
+}
+
+.footer .footer-col4 {
+  grid-area: footer-col4;
+}
+
+
+
+
+
+
+
+.menu button {
+  display: inline-block;
+  font-family: 'Fjalla One', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: rgba(56, 56, 56, 0.981);
+  padding: .7em 1em;
+  float: left;
+  text-decoration: none;
+  color:white;
+  position: relative;
+  margin: 0 .5em 0 1em;
+  border: none;
+  
+}
+
+.menu button:hover{
+  background:#86e0c5;
+}
+
+.menu button:before,
+.menu button:after{
+  content:'';
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  width: 1em;
+  background: rgba(56, 56, 56, 0.981);
+  transform: skew(-10deg);  
+}
+
+.menu button:hover:before,
+.menu button:hover:after{
+  background:#86e0c5;
+}
+
+.menu button:before {
+left: -.5em;
+border-radius: 5px 0 0 5px;
+}
+
+.menu button:after {
+  right: -.5em;
+  border-radius: 0 5px 5px 0;
+  }
+
+.menu vtb-menu {
+  display: block;
+}
