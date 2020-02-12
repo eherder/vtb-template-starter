@@ -1254,6 +1254,7 @@ grid-template-areas:
   grid-template-areas: 
     "gallery1" 
   ;
+  transition-delay: 0s;
  }
 
 .reisonderdelen .accommodatie_elements {
@@ -1293,12 +1294,14 @@ grid-template-areas:
 .reisonderdelen .accommodatie_elements vtb-media div.media-items > div {
   grid-area: acco-image;
   overflow: hidden;
+  transition-delay: 0s;
 }
 
 .reisonderdelen .accommodatie_elements vtb-media > div.media-items > div.slide-active {
   display: block;
   left:-50%;
   animation: slide 0.5s forwards;
+  transition-delay: 0s;
 }
 
 .reisonderdelen .accommodatie_elements vtb-media > div.media-items.slide-dir-right > div.slide-active {
