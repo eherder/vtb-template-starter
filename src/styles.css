@@ -1742,6 +1742,31 @@ position: relative;
   }
 
   .reissom .reissom-perpersoon vtb-prices-grouped {
+    color: #65e0c5;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding:40px 0px 10px;
+    text-align:center;
+    font-size:2em;
+    font-weight:bold;
+    line-height:1.4em;
+    text-transform: uppercase;
+    grid-area: reissom-tekst;
+    text-align: center;
+  }
+
+  .reissom .reissom-perpersoon vtb-prices-grouped .ng-reflect-postfix{
+    color: #black;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding:40px 0px 10px;
+    text-align:center;
+    font-size:1em;
+    font-weight:bold;
+    line-height:1.4em;
+    text-transform: uppercase;
     grid-area: reissom-tekst;
     text-align: center;
   }
