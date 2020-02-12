@@ -1,0 +1,17 @@
+{
+  "dataTransformer": {
+    "customFileLocation": "customTransforms",
+    "methods": [
+      {"function": "hasFlights", "params": {}},
+      {"function": "priceInfo", "params": {}},
+      {"function": "polylines", "params": {}},
+      {"function": "extraField", "params": {"attributeName": "voorwaarden", "extraFieldValueID": 10, "fieldID": 20}},
+      {"function": "extraField", "params": {"attributeName": "NaamReisgezelschap", "extraFieldValueID": 7, "fieldID": 27}},
+      {"function": "extraField", "params": {"attributeName": "AantalReisgezelschap", "extraFieldValueID": 7, "fieldID": 28}},
+      {"function": "extraField", "params": {"attributeName": "praktisch", "extraFieldValueID": 10, "fieldID": 25}},
+      {"function": "extraField", "params": {"attributeName": "verzekering", "extraFieldValueID": 10, "fieldID": 26}},
+      {"function": "elementExtraField", "params": {"attributeName": "elementNam", "fieldID": 15}}
+    ],
+    "startWithEmptyObject": false
+  }
+}

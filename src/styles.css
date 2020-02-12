@@ -187,6 +187,7 @@ padding:0px;
   bottom: 25px;
   z-index: 3;
   padding: 30px;
+  
 }
 
 
@@ -610,6 +611,18 @@ text-transform: uppercase;
   position: absolute;
 }
 
+.sublinks .title .segment-type-24::after {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f21a";
+  font-size: 1.2em;
+  color: #65e0c5;
+  margin: 0 0 0 50px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+}
+
+
 
 
 /*===== Vertical Timeline =====*/
@@ -995,6 +1008,7 @@ padding-top: 70px;}
   padding: 0%;
   background: black;
   color: white;
+  max-width: 100vh;
 }
 
 .reisonderdelen .content p {
@@ -1004,6 +1018,7 @@ padding-top: 70px;}
 
 .reisonderdelen .content img {
   width: 100%;
+  height: auto;
   max-width: 100%;
 }
 
@@ -2681,6 +2696,7 @@ tr:nth-child(odd) {background: #FFF}
 }
 
 .sublinks vtb-segment.segment-type-4:before,
+.sublinks vtb-segment.segment-type-24:before,
 .sublinks vtb-segment.segment-type-13:before
  {
   grid-area: travelroute-timeline;
@@ -3003,6 +3019,7 @@ p {
 }
 
 .sublinks vtb-segment.segment-type-4:before,
+.sublinks vtb-segment.segment-type-24:before,
 .sublinks vtb-segment.segment-type-13:before
  {
   grid-area: travelroute-timeline;
@@ -3315,8 +3332,7 @@ padding:0px;
   color: white;
   align-self: center;
   margin: 0;
-  width: 100%;
-  margin-left: 75px;
+  width: 80vw;
   bottom: 25px;
   z-index: 3;
 }
@@ -3742,6 +3758,17 @@ text-transform: uppercase;
   position: absolute;
 }
 
+.sublinks .title .segment-type-24::after {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f21a";
+  font-size: 1.2em;
+  color: #65e0c5;
+  margin: 0 0 0 50px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+}
+
 
 
 /*===== Vertical Timeline =====*/
@@ -3899,6 +3926,28 @@ padding-right: 5px;
   left: -8px;
 }
 
+.sublinks  vtb-segment.segment-type-24::before {
+  transition: transform 1s;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  content: "\f21a";
+  font-size: 2.2em;
+  color: rgba(138, 138, 138, 0.12);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-left: -45px;
+  color: #fff;
+  border-radius: 100%;
+  background: #65e0c5;
+  text-align: center;
+  font-weight: 900;
+  text-align: center;
+  font-size: 25px;
+  line-height: 62px;
+}
 
 .sublinks  vtb-segment.segment-type-4::before {
   transition: transform 1s;
@@ -5790,6 +5839,7 @@ tr:nth-child(odd) {background: #FFF}
 }
 
 .sublinks vtb-segment.segment-type-4:before,
+.sublinks vtb-segment.segment-type-24:before,
 .sublinks vtb-segment.segment-type-13:before
  {
   grid-area: travelroute-timeline;
@@ -6139,6 +6189,7 @@ p {
 }
 
 .sublinks vtb-segment.segment-type-4:before,
+.sublinks vtb-segment.segment-type-24:before,
 .sublinks vtb-segment.segment-type-13:before
  {
   grid-area: travelroute-timeline;
