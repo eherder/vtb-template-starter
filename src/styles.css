@@ -183,9 +183,10 @@ padding:0px;
   align-self: center;
   margin: 0;
   width: 100%;
-  margin-left: 75px;
+  margin-left: 0px;
   bottom: 25px;
   z-index: 3;
+  padding: 30px;
 }
 
 
@@ -999,6 +1000,11 @@ padding-top: 70px;}
 .reisonderdelen .content p {
   padding-top: 2%;
   color: white;
+}
+
+.reisonderdelen .content img {
+  width: 100%;
+  max-width: 100%;
 }
 
 .reisonderdelen .splittable  {
@@ -4125,6 +4131,17 @@ padding-top: 70px;}
 .reisonderdelen .content p {
   padding-top: 2%;
   color: white;
+}
+
+.reisonderdelen .content li {
+  list-style: circle;
+}
+
+.reissom .reissom-inclusief div ul li,
+.reissom .reissom-inclusief div ul li a {
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.7;
 }
 
 .reisonderdelen .content ul li:before {
