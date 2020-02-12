@@ -1281,6 +1281,10 @@ grid-template-areas:
   overflow: hidden;
 }
 
+.reisonderdelen .accommodatie_elements vtb-media .sn-viewport--in {
+  transition-delay: 0s;
+}
+
 .reisonderdelen .accommodatie_elements vtb-media > div.media-items > div {
   position: absolute !important;
   top:50%;
