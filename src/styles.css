@@ -991,8 +991,9 @@ padding-top: 70px;}
 
 .reisonderdelen .content {
   grid-area: reisonderdelen-content;
-  padding: 5% 15%;
+  padding: 0%;
   background: black;
+  color: white;
 }
 
 .reisonderdelen .content p {
@@ -1558,6 +1559,7 @@ width:100%;
   opacity: 1;
   transition: all 1s ease-in;
   transition-delay: .3s;
+  transform: translateY(50px);
 }
 
 .reisonderdelen vtb-segment > div.media img {
@@ -4123,6 +4125,11 @@ padding-top: 70px;}
 .reisonderdelen .content p {
   padding-top: 2%;
   color: white;
+}
+
+.reisonderdelen .content ul li:before {
+  list-style-position: outside;
+  font-family: "Font Awesome 5 Free"; font-weight: 600; content: "\f00c";
 }
 
 .reisonderdelen .splittable  {
