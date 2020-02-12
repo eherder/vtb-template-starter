@@ -185,7 +185,12 @@
             </div>
             <div id="border2"></div>
             <div class="reissom-perpersoon">
-                <h1>&euro; {{itinerary.salesPriceAfterRounding | number : '1.0-2' : 'nl-nl' }} </h1> 
+                    <vtb-prices-grouped 
+                    [dataSource]="itinerary" 
+                    [decimals]="0" 
+                    [postfix]="',- euro p.p., based on [persons] persons'" 
+                    [singlePostfix]="',- euro p.p., based on [persons] person'"></vtb-prices-grouped>
+                    
                 <h4>per persoon</h4>
                 <div class="reissom-tekst">bij deelname van {{(itinerary.participants | totalParticipants)}} personen</div>
                 <div class="exclusief-tekst"> Bovenstaande prijsopgaaf is exclusief: eventuele vertrekbelasting. {{(itinerary.extraFieldValues | extraField : 10 : 20)}} </div>
@@ -243,12 +248,10 @@
       <section id="praktisch" class="tab-panel">
         <h2>Praktische informatie</h2>
         <div class="voorwaarden-tekst" [innerHTML]="itinerary.praktisch"></div> 
-        <p><strong>History:</strong> A historical specialty of the city of Bamberg, in the Franconian region of Bavaria in Germany. Beechwood-smoked malt is used to make a Märzen-style amber lager. The smoke character of the malt varies by maltster; some breweries produce their own smoked malt (rauchmalz).</p>
       </section>
       <section id="verzekering" class="tab-panel">
         <h2>Verzekering</h2>
         <div class="voorwaarden-tekst" [innerHTML]="itinerary.verzekering"></div> 
-        <p><strong>History:</strong> Originated in the Northern German city of Einbeck, which was a brewing center and popular exporter in the days of the Hanseatic League (14th to 17th century). Recreated in Munich starting in the 17th century. The name “bock” is based on a corruption of the name “Einbeck” in the Bavarian dialect, and was thus only used after the beer came to Munich. “Bock” also means “Ram” in German, and is often used in logos and advertisements.</p>
       </section>
     </div>
     
@@ -262,27 +265,12 @@
         <div class="reistitel"><h1>Tot Slot...</h1>
             <div id="border"></div>
         </div>
-        <ng-container [ngSwitch]="(itinerary.extraFieldValues | extraField : 10 : 19)">
-            <div *ngSwitchCase="'Milou van Steen'" class="reisspecialist">
-                <div class="titel-gemaaktdoor">
-                  <h1>Jouw reisadviseur</h1> 
-                  <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
-                <div class="medewerker_tekst">
-      <p>Met veel plezier heb ik dit reisvoorstel gemaakt. Bij het maken van het voorstel heb ik zoveel mogelijk rekening gehouden met de wensen. Zijn er onduidelijkheden, heb je aanvullende wensen of vind je het gewoon prettig om even telefonisch de reis door te nemen? Dan hoor ik het graag. Ik heb dit voorstel met veel plezier voor jullie gemaakt. Ik benadruk graag nog eens dat aan dit voorstel nog volop gesleuteld kan worden. BON travel organiseert graag een reis die helemaal bij je past. Daarom leveren we reizen op maat. We luisteren daarom graag naar je wensen en dan gaan wij op zoek naar jouw droomreis. 
-Ik ben telefonisch bereikbaar via +31 035 542 60 71 of stuur een e-mail naar info@bontravel.nl. </p>
-                  
-                  <p><i class="fas fa-envelope"></i>  <a style="font-weight:bold;text-decoration:none;color:#5abfc5;" mailto="info@bontravel.nl">info@bontravel.nl</a></p>
-                  <p><i class="fas fa-phone"></i>  <a style="font-weight:bold;text-decoration:none;color:#5abfc5;" callto="+31 035 542 60 71">+31 035 542 60 71</a></p>
-
-                </div>
-                <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/Milou-8dd93be8.jpg"></div>
-            </div>
-            
-        </ng-container>
         <div class="afsluiting-tekst">
-        <div> <h2>Deze reis boeken</h2>
+       
+          <div> <h2>Deze reis boeken</h2>
       <p> Is de reis zoals voorgesteld helemaal naar wens en willen jullie deze graag boeken? Dan vernemen wij dit graag zo spoedig mogelijk. Laat dit ons telefonisch of per e-mail weten. Zodra we op de hoogte zijn gaan wij direct aan de slag om de reis definitief te maken. </p>
       <br></div>
+
           <div *ngIf="(itinerary.extraFieldValues | extraField : 11 : 22)">
             <h2>Opties plaatsen</h2>
             <p>Spreekt de offerte je in grote lijnen aan maar twijfel je nog over bepaalde onderdelen of moet je het nog bespreken met je medereizigers? In zo'n geval kan het een goed idee zijn om alvast opties te plaatsen. Tijdens het maken van dit reisplan is nog geen optie geplaatst op de vluchten en het landarrangement. De beschikbaarheid van beide is dan ook nog onder voorbehoud. BON travel kan geheel vrijblijvend en kosteloos deze reis voor jullie in optie nemen. Hierdoor ben je er zeker van dat deze combinatiereis ook zo kan worden gemaakt zoals aangegeven. Het zou toch jammer zijn als dit niet zou kunnen.
@@ -293,11 +281,14 @@ Ik ben telefonisch bereikbaar via +31 035 542 60 71 of stuur een e-mail naar inf
                 <li>geboortedatum</li>
                 <li>Nationaliteit</li>
               </ul>   <br>       </div>
+
           <div *ngIf="(itinerary.extraFieldValues | extraField : 11 : 23)">
              <h2>Dit voorstel face-to-face bespreken?</h2>
              <p>Als je vragen hebt, de reis zou willen aanpassen of andere inspiratie zou willen opdoen dan ben je ook altijd bij ons op kantoor van harte welkom. We zijn in Stroe gevestigd (Stroe ligt centraal in Nederland aan de A1 tussen Amersfoort en Apeldoorn). We zijn aanwezig op alle werkdagen, van 10.00 tot 16.00 uur staat de koffie voor je klaar. Wil je langskomen dan kun je het beste even een afspraak maken zodat je er zeker van bent dat een van de reisexperts voor jouw reis ook op deze dag aanwezig is. Kun je vanwege je werk of andere verplichtingen niet langskomen tijdens onze openingstijden, vraag dan naar de mogelijkheden. Ons telefoonnummer is 035-5426071 of mail naar info@bontravel.nl.</p>
           </div>
+
           <div [innerHTML]="(itinerary.extraFieldValues | extraField : 11 : 24)"></div>
+
         </div>
     </div>
 
@@ -316,7 +307,6 @@ Ik ben telefonisch bereikbaar via +31 035 542 60 71 of stuur een e-mail naar inf
 
 
 <div class="footer">
- 
         <div class="footer-col1">
             <h4>OPENINGSTIJDEN</h4>
             

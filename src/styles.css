@@ -1741,6 +1741,11 @@ position: relative;
   text-align: center;
   }
 
+  .reissom .reissom-perpersoon vtb-prices-grouped {
+    grid-area: reissom-tekst;
+    text-align: center;
+  }
+
 .reissom .reissom-perpersoon h4 {
     text-align: center;
     margin: -20px 0px 20px 0px;
@@ -1993,7 +1998,7 @@ color: #65e0c5;
   list-style-type: none;
   position: relative;
   padding-left: 24px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   box-sizing: border-box;
 }
 
@@ -5046,7 +5051,7 @@ padding-top: 60px;}
 
 .reissomoptioneel .reissomoptioneel-inclusief vtb-elements-list vtb-element {
   display: grid;
-  padding: 20px 0;
+  padding: 0px 0;
   grid-area: reissomoptioneel-inclusief;
   grid-template-columns: 33% 33% 33%;
   grid-template-areas:
@@ -5886,7 +5891,7 @@ padding-left: 20px;
 
 .reisonderdelen .accommodatie_elements vtb-element {
 grid-template-columns: 100%;
-padding: 5%;
+padding: 8%;
 grid-template-areas:
 "personaltouch"
 "acco-image"
