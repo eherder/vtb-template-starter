@@ -126,6 +126,7 @@ a {
   "salesspecialist"
   "reisschema"
   "vluchtschema"
+  "bestemming"
   "reisonderdelen"
   "reissom"
   "reissomoptioneel"
@@ -4134,9 +4135,32 @@ padding-right: 5px;
  *      Bestemming     *
  ***********************************/
 
-
+}
 .bestemming {
 border: solid 1px red;
+grid-area: bestemming;
+}
+
+.thegrid {
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  grid-gap: 10px;
+}
+
+.thegrid > div {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.thegrid > div:nth-child(even) {
+  background-color: #ccc;
+  color: #000;
+}
+
 }
 
 
