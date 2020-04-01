@@ -4140,14 +4140,14 @@ border: solid 1px red;
 grid-area: bestemming;
 }
 
-.bestemming .thegrid {
+.thegrid {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
 }
 
-.bestemming .thegrid > div {
+.thegrid > div {
   background-color: #444;
   color: #fff;
   border-radius: 5px;
@@ -4155,12 +4155,12 @@ grid-area: bestemming;
   font-size: 150%;
 }
 
-.bestemming .thegrid > div:nth-child(even) {
+.thegrid > div:nth-child(even) {
   background-color: #ccc;
   color: #000;
 }
 
-.bestemming .thegrid .vtb-mediaspirit-image {
+.thegrid vtb-mediaspirit-image {
   width: 100%;
   border: 1px solid red; 
 }
