@@ -4135,20 +4135,19 @@ padding-right: 5px;
  *      Bestemming     *
  ***********************************/
 
-}
 .bestemming {
 border: solid 1px red;
 grid-area: bestemming;
 }
 
-.thegrid {
-  width: 1000px;
+.bestemming .thegrid {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(6, 100px);
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
 }
 
-.thegrid > div {
+.bestemming .thegrid > div {
   background-color: #444;
   color: #fff;
   border-radius: 5px;
@@ -4156,13 +4155,15 @@ grid-area: bestemming;
   font-size: 150%;
 }
 
-.thegrid > div:nth-child(even) {
+.bestemming .thegrid > div:nth-child(even) {
   background-color: #ccc;
   color: #000;
 }
 
+.bestemming .thegrid .vtb-mediaspirit-image {
+  width: 100%;
+  border: 1px solid red; 
 }
-
 
 /*********************
  *       REISONDERDELEN       *
