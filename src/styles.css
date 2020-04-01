@@ -1482,7 +1482,6 @@ grid-template-areas:
   font-size: $base-font-size;
   line-height: $base-line-height;
   font-style: italic;
-  z-index: ;
 }
 
 .reisonderdelen blockquote:before {
@@ -4668,7 +4667,6 @@ grid-template-areas:
   font-size: $base-font-size;
   line-height: $base-line-height;
   font-style: italic;
-  z-index: ;
 }
 
 .reisonderdelen blockquote:before {
