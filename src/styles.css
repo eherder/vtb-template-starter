@@ -3868,7 +3868,7 @@ text-transform: uppercase;
 .sublinks  vtb-segment .title {
   grid-area: travelroute-content;
   font-weight: 900;
-   font-size: 1.2em;
+   font-size: 0.8em;
    padding-top: 10px;
   width: 100%;
   position: relative;
@@ -5541,7 +5541,7 @@ tr:nth-child(odd) {background: #FFF}
 
 
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 1250px) {
 
   
 .vluchtschema .flight table thead {
