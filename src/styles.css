@@ -1053,7 +1053,7 @@ padding-top: 70px;}
 
 .reisonderdelen .accommodatie_elements {
   display: grid;
-  border-top: 3px dotted black;
+  border-top: 0px dotted black;
   padding: 5%;
   grid-template-areas:
   "acco-element"
@@ -1069,7 +1069,7 @@ padding-top: 70px;}
 
 .reisonderdelen .accommodatie_elements vtb-element {
   display: grid;
-grid-template-columns: minmax(50%, 60%) 1fr minmax(40%, 50%);
+grid-template-columns: minmax(50%, 60%) minmax(40%, 50%) 1fr;
 overflow: visible;
 clear: both;
 min-height: 400px;
@@ -1078,11 +1078,12 @@ row-gap: 10px;
 column-gap: 30px;
 grid-template-areas:
 "personaltouch personaltouch personaltouch"
-"acco-image nights acco-title"
-"acco-image nights acco-subTitle"
-"acco-image nights acco-date"
-"acco-image nights additionalText"
-"acco-image nights acco-splittable"
+"acco-image acco-image acco-image"
+"acco-title acco-title nights"
+"acco-subTitle acco-subTitle acco-subTitle"
+"acco-date acco-date acco-date"
+"additionalText additionalText additionalText"
+"acco-splittable acco-splittable acco-splittable"
 ;
 }
 
