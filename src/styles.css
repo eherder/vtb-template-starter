@@ -3439,12 +3439,12 @@ padding:0px;
   transform:translate(-50%, -50%);
   display: none;
   max-width: calc(100% - 2px);
-  width:auto;
+  width:100%;
 }
 
 .cover-images vtb-media > div.media-items > div.slide-active {
   display: block;
-  left:-20%;
+  left:-50%;
   animation: slide 0.5s forwards;
 }
 
@@ -4525,7 +4525,7 @@ grid-template-areas:
   transform:translate(-50%, -50%);
   display: none;
   max-width: calc(100% - 2px);
-  width:100%;
+  width:auto;
 }
 
 .reisonderdelen .accommodatie_elements vtb-media div.media-items > div {
@@ -4589,6 +4589,9 @@ grid-template-areas:
 
 .reisonderdelen .accommodatie_elements .media-slider-next {
   right:10px;
+  position: absolute !important;
+  top:50%;
+  right:10%;
 }
 
 .reisonderdelen .accommodatie_elements .media-slider-next:after {
