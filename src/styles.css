@@ -3439,12 +3439,12 @@ padding:0px;
   transform:translate(-50%, -50%);
   display: none;
   max-width: calc(100% - 2px);
-  width:100%;
+  width:auto;
 }
 
 .cover-images vtb-media > div.media-items > div.slide-active {
   display: block;
-  left:-50%;
+  left:-20%;
   animation: slide 0.5s forwards;
 }
 
