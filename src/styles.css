@@ -1306,7 +1306,7 @@ grid-template-areas:
 
 .reisonderdelen .accommodatie_elements vtb-media div.media-items > div {
   grid-area: acco-image;
-  overflow: hidden;
+  overflow: shows;
   transition-delay: 0s;
 }
 
