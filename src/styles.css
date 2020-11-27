@@ -1314,7 +1314,7 @@ grid-template-areas:
 ;
 }
 
-.reisonderdelen .accommodatie_elements vtb-element-field.title {
+.reisonderdelen .accommodatie_elements .title {
   grid-area: acco-title;
   position: relative;
   font-weight: bold;
