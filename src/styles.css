@@ -1073,7 +1073,7 @@ co
 }
 
 .reisonderdelen .accommodatie_elements vtb-element {
-  display: grid;
+display: grid;
 grid-template-columns: minmax(50%, 60%) minmax(40%, 50%) 1fr;
 overflow: visible;
 clear: both;
@@ -4254,7 +4254,7 @@ padding-top: 70px;}
   grid-area: reisonderdelen-content;
   padding: 5% 15%;
   background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center; 
 }
@@ -4315,12 +4315,12 @@ row-gap: 10px;
 column-gap: 30px;
 grid-template-areas:
 "personaltouch personaltouch personaltouch"
-"acco-image"
-"acco-title nights"
-"acco-subTitle"
-"acco-date"
-"additionalText"
-"acco-splittable"
+"acco-image acco-image acco-image"
+"acco-date acco-date nights"
+"acco-title acco-title acco-title""
+"acco-subTitle acco-subTitle"
+"additionalText additionalText additionalText"
+"acco-splittable acco-splittable acco-splittable"
 ;
 }
 
