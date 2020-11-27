@@ -1287,8 +1287,23 @@ width:100%;
   background-position: center; 
 }
 
-.reisonderdelen .accommodatie_elements vtb-element {
+.reisonderdelen .accommodatie_elements {
   display: grid;
+  border-top: 0px dotted black;
+  padding: 5%;
+  grid-template-areas:
+  "acco-element"
+  ;
+  background: white;
+}
+
+.reisonderdelen .accommodatie_elements {
+  grid-area: acco-element;
+  grid-template-areas: "accommodatie";
+}
+
+.reisonderdelen .accommodatie_elements vtb-element {
+  grid-area: accommodatie;
   grid-template-columns: minmax(50%, 60%) 1fr minmax(40%, 50%);
   overflow: visible;
   clear: both;
@@ -1298,7 +1313,6 @@ width:100%;
   row-gap: 10px;
   column-gap: 30px;
   grid-template-areas:
-  "personaltouch personaltouch personaltouch"
   "acco-date acco-date nights"
   "acco-title acco-title acco-title""
   "acco-subTitle acco-subTitle"
@@ -1317,6 +1331,20 @@ width:100%;
   text-transform: uppercase;
   padding-top: 30px;
   z-index: 2;
+}
+
+.reisonderdelen .accommodatie_elements .title::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f015";
+  font-size: 2.2em;
+  color: rgba(138, 138, 138, 0.12);
+  -webkit-transform: translate(-20%,-120%);
+  translate: (-20%,-100%);
+  width: 1.25em;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field:nth-child(6) {
