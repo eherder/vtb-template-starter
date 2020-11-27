@@ -1095,7 +1095,6 @@ grid-template-areas:
 }
 
 .reisonderdelen .accommodatie_elements .personaltouch {
-  display: grid;
   grid-area: personaltouch;
   padding: 0% 10%;
 }
