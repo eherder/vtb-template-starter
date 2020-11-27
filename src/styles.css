@@ -4253,9 +4253,20 @@ padding-top: 70px;}
 .reisonderdelen .segment-field.content {
   grid-area: reisonderdelen-content;
   padding: 5% 15%;
+  position: relative;
+  z-index: 2;
 }
 
 .reisonderdelen .segment-field.content:before{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.6;
   background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -4265,6 +4276,7 @@ padding-top: 70px;}
 .reisonderdelen .content p {
   padding-top: 2%;
   color:black;
+  z-index: 2;
 }
 
 .reisonderdelen .content li {
