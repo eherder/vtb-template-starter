@@ -4307,11 +4307,10 @@ row-gap: 10px;
 column-gap: 30px;
 grid-template-areas:
 "personaltouch personaltouch personaltouch"
-"acco-image acco-image acco-image"
 "acco-date acco-date nights"
 "acco-title acco-title acco-title""
 "acco-subTitle acco-subTitle"
-"additionalText additionalText additionalText"
+"acco-image additionalText additionalText"
 "acco-splittable acco-splittable acco-splittable"
 ;
 }
