@@ -1316,7 +1316,6 @@ grid-template-areas:
 
 .reisonderdelen .accommodatie_elements vtb-element-field .title {
   grid-area: acco-title;
-  position: relative;
   font-weight: bold;
   font-size: 25px;
   line-height: 35px;
