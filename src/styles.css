@@ -1076,6 +1076,7 @@ co
 display: grid;
 grid-template-columns: minmax(50%, 60%) minmax(40%, 50%) 1fr;
 overflow: visible;
+border:1px solid pink;
 clear: both;
 min-height: 400px;
 margin-top: 40px;
