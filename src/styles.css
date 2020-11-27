@@ -1305,14 +1305,16 @@ margin-top: 40px;
 row-gap: 10px;
 column-gap: 30px;
 grid-template-areas:
-"acco-image iconbar acco-title"
-"acco-image iconbar acco-subTitle"
-"acco-image iconbar acco-date"
-"acco-image iconbar acco-additionalText"
-"acco-image iconbar acco-subadditionalText"
-"acco-image iconbar acco-splittable"
+"acco-image nights acco-title"
+"acco-image nights acco-subTitle"
+"acco-image nights acco-date"
+"acco-image nights additionalText"
+"acco-image nights acco-subadditionalText"
+"acco-image nights acco-splittable"
 ;
 }
+
+
 
 .reisonderdelen .accommodatie_elements vtb-element-field:nth-child(3) {
  grid-area: acco-title;
@@ -1339,7 +1341,7 @@ grid-template-areas:
 }
 
 .reisonderdelen .accommodatie_elements .nights {
- grid-area: iconbar;
+ grid-area: nights;
  /* border: 1px solid green; */
  font-size: 19px;
  font-weight: bold;
@@ -1357,7 +1359,7 @@ grid-template-areas:
 }
 
 .reisonderdelen .accommodatie_elements .element-unit-1 .title:before{
- grid-area: iconbar;
+ grid-area: nights;
  font-family: "Font Awesome 5 Free";
  font-weight: 900;
  content: "\f5de";
@@ -1371,19 +1373,24 @@ grid-template-areas:
  z-index: 1;
 }
 
-
-.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(2) {
- grid-area: default-date;
+ 
+.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(4) {
+  grid-area: acco-date;
 }
 
-.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(6) {
- grid-area: default-additionalText;
+.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(8) {
+  grid-area: additionalText;
 }
 
-.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(7) {
- grid-area: default-subadditionalText;
+.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(1) {
+  grid-area: acco-image;
+  clear:both;
+  overflow:hidden;
 }
 
+.reisonderdelen .accommodatie_elements .splittable  {
+  grid-area: acco-splittable;
+}
 
 /***********************************
  *       REISSOM     *
