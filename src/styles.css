@@ -625,6 +625,125 @@ text-transform: uppercase;
   position: absolute;
 }
 
+/*********************
+ *       REISONDERDELEN       *
+ *********************/
+ 
+
+ .reisonderdelen .reistitel {
+  background-image: url(https://media.bontravel.nl/original/lg/pakketonderdelen.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+  height: 160px;
+  margin-bottom: 30px;
+}
+
+.reisonderdelen .reistitel {
+padding-top: 70px;}
+
+.reisonderdelen {
+  grid-area: reisonderdelen;
+  background: white;
+  clear:both;
+  grid-template-areas: 
+      "reisonderdelen-fotogrid"
+      "reisonderdelen-nights"
+      "reisonderdelen-date"
+      "reisonderdelen-title"
+      "reisonderdelen-subtitle"
+      "reisonderdelen-content"
+      "reisonderdelen-splittable" !important
+      ;
+}
+
+.reisonderdelen vtb-segment {
+    transition-delay: 5s;
+    background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+co
+.reisonderdelen vtb-segment > div {
+    z-index:1;
+}
+
+
+.reisonderdelen .segment-field.title {
+  grid-area: reisonderdelen-title;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 55px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+  color: black;
+  padding-top: 50px;
+}
+
+.reisonderdelen .segment-field.subTitle  {
+ grid-area: reisonderdelen-subtitle;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  color: #b2d6cf;
+  font-family: 'Beth Ellen', cursive;
+}
+
+.reisonderdelen .segment-field.date {
+  grid-area: reisonderdelen-date;
+  font-weight:bold;
+  font-size:20px;
+}
+
+.reisonderdelen .segment-field.nights {
+  grid-area: reisonderdelen-nights;
+  font-weight:bold;
+  font-size:20px;
+}
+
+
+.reisonderdelen .content {
+  grid-area: reisonderdelen-content;
+  padding: 0%;
+  color:black;
+  max-width: 100%;
+}
+
+.reisonderdelen .content p {
+  padding-top: 2%;
+  color: black;
+}
+
+.reisonderdelen .content img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.reisonderdelen .splittable  {
+  grid-area: reisonderdelen-splittable;
+}
+
+.reisonderdelen .accommodatie_elements .sn-viewport--out,
+.reisonderdelen .default_elements .sn-viewport--out
+ {
+  opacity: 0.85;
+  transition: all 0.3s ease-out;
+  transition-delay: .3s;
+  transform: translateY(50px);
+  }
+  
+  .reisonderdelen .accommodatie_elements .sn-viewport--in,
+  .reisonderdelen .default_elements .sn-viewport--in
+ {
+    opacity: 1;
+    transition: all 0.3s ease-in;
+    transition-delay: .3s;
+    transform: translateY(-50px);
+    }
 
 
 
