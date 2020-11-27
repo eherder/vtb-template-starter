@@ -967,7 +967,12 @@ padding-top: 70px;}
     z-index:1;
 }
 
-
+.reisonderdelen {
+  background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
 .reisonderdelen .segment-field.title {
   grid-area: reisonderdelen-title;
   font-weight: bold;
@@ -977,11 +982,7 @@ padding-top: 70px;}
   text-align: center;
   text-transform: uppercase;
   padding-top: 30px;
-  background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; 
-  color: white;
+  color: black;
   padding-top: 50px;
 }
 
@@ -992,7 +993,6 @@ padding-top: 70px;}
   font-size: 20px;
   color: #b2d6cf;
   font-family: 'Beth Ellen', cursive;
-  background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
 }
 
 .reisonderdelen .segment-field.date {
@@ -1011,14 +1011,13 @@ padding-top: 70px;}
 .reisonderdelen .content {
   grid-area: reisonderdelen-content;
   padding: 0%;
-  background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
-  color: white;
+  color:black;
   max-width: 100%;
 }
 
 .reisonderdelen .content p {
   padding-top: 2%;
-  color: white;
+  color: black;
 }
 
 .reisonderdelen .content img {
