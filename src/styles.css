@@ -1305,17 +1305,17 @@ margin-top: 40px;
 row-gap: 10px;
 column-gap: 30px;
 grid-template-areas:
-"default-image iconbar default-title"
-"default-image iconbar default-subTitle"
-"default-image iconbar default-date"
-"default-image iconbar default-additionalText"
-"default-image iconbar default-subadditionalText"
-"default-image iconbar default-splittable"
+"acco-image iconbar acco-title"
+"acco-image iconbar acco-subTitle"
+"acco-image iconbar acco-date"
+"acco-image iconbar acco-additionalText"
+"acco-image iconbar acco-subadditionalText"
+"acco-image iconbar acco-splittable"
 ;
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field:nth-child(3) {
- grid-area: default-title;
+ grid-area: acco-title;
  position: relative;
  font-weight: bold;
  font-size: 25px;
@@ -1328,7 +1328,7 @@ grid-template-areas:
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field:nth-child(4) {
- grid-area: default-subTitle;
+ grid-area: acco-subTitle;
  font-weight: 200;
  font-size: 15px;
  line-height: 25px;
