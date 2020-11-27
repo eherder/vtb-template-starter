@@ -961,14 +961,15 @@ padding-top: 70px;}
 
 .reisonderdelen vtb-segment {
     transition-delay: 5s;
-}
-
-.reisonderdelen vtb-segment > div {
-    z-index:1;
     background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
+}
+
+.reisonderdelen vtb-segment > div {
+    z-index:1;
+
 }
 
 
