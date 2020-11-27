@@ -4180,7 +4180,6 @@ grid-area: bestemming;
  
 
  .reisonderdelen .reistitel {
-  background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; 
@@ -4192,7 +4191,6 @@ grid-area: bestemming;
 padding-top: 70px;}
 
  .reisonderdelen {
-  background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
   grid-area: reisonderdelen;
   clear:both;
   grid-template-areas: 
@@ -4208,6 +4206,7 @@ padding-top: 70px;}
 
 .reisonderdelen vtb-segment {
     transition-delay: 5s;
+    background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
 }
 
 .reisonderdelen vtb-segment > div {
