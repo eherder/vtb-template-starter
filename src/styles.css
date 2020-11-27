@@ -967,7 +967,7 @@ padding-top: 70px;}
     z-index:1;
 }
 
-.reisonderdelen {
+.reisonderdelen vtb-segment {
   background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -4222,7 +4222,6 @@ padding-top: 70px;}
   text-align: center;
   text-transform: uppercase;
   padding-top: 30px;
-  background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
   color: white;
   padding-top: 50px;
 }
