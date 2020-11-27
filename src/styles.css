@@ -1061,13 +1061,7 @@ co
   background: white;
 }
 
-.reisonderdelen. .accommodatie_elements .content {
-  display: none;
-}
-
-
-
-.reisonderdelen .accommodatie_element {
+.reisonderdelen .accommodatie_elements {
   grid-area: acco-element;
   grid-template-areas: "accommodatie";
 }
@@ -4384,7 +4378,6 @@ padding-top: 70px;}
 
 .reisonderdelen .accommodatie_elements .title {
   grid-area: acco-title;
-  position: relative;
   font-weight: bold;
   font-size: 25px;
   line-height: 35px;
