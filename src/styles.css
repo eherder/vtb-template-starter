@@ -4190,22 +4190,23 @@ grid-area: bestemming;
 padding-top: 70px;}
 
  .reisonderdelen {
-  grid-area: reisonderdelen;
-  clear:both;
-  grid-template-areas: 
-      "reisonderdelen-fotogrid"
-      "reisonderdelen-nights"
-      "reisonderdelen-date"
-      "reisonderdelen-subtitle"
-      "reisonderdelen-content"
-      "reisonderdelen-title"
-      "reisonderdelen-splittable" !important
-      ;
+
 }
 
 .reisonderdelen vtb-segment {
     transition-delay: 5s;
     background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
+    grid-area: reisonderdelen;
+    clear:both;
+    grid-template-areas: 
+        "reisonderdelen-fotogrid"
+        "reisonderdelen-nights"
+        "reisonderdelen-date"
+        "reisonderdelen-subtitle"
+        "reisonderdelen-content"
+        "reisonderdelen-title"
+        "reisonderdelen-splittable" !important
+        ;
 }
 
 .reisonderdelen vtb-segment > div {
