@@ -1287,7 +1287,7 @@ width:100%;
   background-position: center; 
 }
 
-.reisonderdelen .accommodatie_elements {
+.reisonderdelen .accommodatie_elements vtb-element {
 display: grid;
   grid-template-columns: minmax(50%, 60%) 1fr minmax(40%, 50%);
   overflow: visible;
