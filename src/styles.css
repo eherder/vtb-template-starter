@@ -4296,23 +4296,27 @@ padding-top: 70px;}
   padding: 5%;
 }
 
+.reisonderdelen .accommodatie_elements {
+  display: grid;
+  grid-template-columns: minmax(50%, 60%) 1fr minmax(40%, 50%);
+  overflow: visible;
+  clear: both;
+  min-height: 400px;
+  margin-top: 40px;
+  row-gap: 10px;
+  column-gap: 30px;
+  grid-template-areas:
+  "personaltouch personaltouch personaltouch"
+  "acco-date acco-date nights"
+  "acco-title acco-title acco-title""
+  "acco-subTitle acco-subTitle"
+  "acco-image additionalText additionalText"
+  "acco-splittable acco-splittable acco-splittable"
+  ;
+}
+
 .reisonderdelen .accommodatie_elements vtb-element {
-display: grid;
-grid-template-columns: minmax(50%, 60%) 1fr minmax(40%, 50%);
-overflow: visible;
-clear: both;
-min-height: 400px;
-margin-top: 40px;
-row-gap: 10px;
-column-gap: 30px;
-grid-template-areas:
-"personaltouch personaltouch personaltouch"
-"acco-date acco-date nights"
-"acco-title acco-title acco-title""
-"acco-subTitle acco-subTitle"
-"acco-image additionalText additionalText"
-"acco-splittable acco-splittable acco-splittable"
-;
+
 }
 
 .reisonderdelen .accommodatie_elements .personaltouch {
