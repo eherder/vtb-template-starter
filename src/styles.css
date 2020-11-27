@@ -1306,6 +1306,48 @@ width:100%;
   "acco-splittable acco-splittable acco-splittable"
   ;
 }
+
+.reisonderdelen .accommodatie_elements .title {
+  grid-area: acco-title;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 35px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 30px;
+  z-index: 2;
+}
+
+.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(6) {
+  grid-area: acco-subTitle;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.reisonderdelen .accommodatie_elements .nights:nth-child(odd) {
+  grid-area: nights;
+  /* border: 1px solid green; */
+  font-size: 19px;
+  font-weight: bold;
+  background: #b2d6cfc7;
+  border-radius: 40px;
+  height: 48px;
+  color: #fff;
+  width: 55px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 7px 0 0px 0;
+  margin-left: -61px;
+  line-height: 40px;
+  margin-top: 20px;
+}
+
 /***********************************
  *       REISSOM     *
  ***********************************/
