@@ -1069,11 +1069,11 @@ co
 
 .reisonderdelen .accommodatie_element {
   grid-area: acco-element;
-  grid-template-areas: "acco-element";
+  grid-template-areas: "accommodatie";
 }
 
 .reisonderdelen .accommodatie_elements vtb-element {
-display: grid;
+grid-area: accommodatie;
 grid-template-columns: minmax(50%, 60%) minmax(40%, 50%) 1fr;
 overflow: visible;
 border:1px solid pink;
