@@ -944,7 +944,7 @@ padding-right: 5px;
 .reisonderdelen .reistitel {
 padding-top: 70px;}
 
- .reisonderdelen {
+.reisonderdelen {
   grid-area: reisonderdelen;
   background: white;
   clear:both;
@@ -969,7 +969,6 @@ padding-top: 70px;}
 
 .reisonderdelen vtb-segment > div {
     z-index:1;
-
 }
 
 
@@ -4251,7 +4250,7 @@ padding-top: 70px;}
 }
 
 
-.reisonderdelen .content {
+.reisonderdelen .segment-field.content {
   grid-area: reisonderdelen-content;
   padding: 5% 15%;
 }
