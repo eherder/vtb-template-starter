@@ -1254,7 +1254,7 @@ width:100%;
 /***********************************
  *       REISONDERDELEN      *
  ***********************************/
- 
+
  .reisonderdelen .segment-field.title {
   grid-area: reisonderdelen-title;
   font-weight: bold;
@@ -1287,6 +1287,25 @@ width:100%;
   background-position: center; 
 }
 
+.reisonderdelen .accommodatie_elements vtb-element {
+  display: grid;
+  grid-template-columns: minmax(50%, 60%) 1fr minmax(40%, 50%);
+  overflow: visible;
+  clear: both;
+  border: 1px solid pink;
+  min-height: 400px;
+  margin-top: 40px;
+  row-gap: 10px;
+  column-gap: 30px;
+  grid-template-areas:
+  "personaltouch personaltouch personaltouch"
+  "acco-date acco-date nights"
+  "acco-title acco-title acco-title""
+  "acco-subTitle acco-subTitle"
+  "acco-image additionalText additionalText"
+  "acco-splittable acco-splittable acco-splittable"
+  ;
+}
 /***********************************
  *       REISSOM     *
  ***********************************/
