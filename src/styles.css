@@ -4292,21 +4292,11 @@ padding-top: 70px;}
  ***********************************/
 
 .reisonderdelen .accommodatie_elements {
-  display: grid;
   border-top: 0px dotted black;
   padding: 5%;
-  grid-template-areas:
-  "acco-element"
-  ;
-}
-
-.reisonderdelen .accommodatie_element {
-  grid-area: acco-element;
-  grid-template-areas: "acco-element";
 }
 
 .reisonderdelen .accommodatie_elements vtb-element {
-grid-area: acco-element;
 display: grid;
 grid-template-columns: minmax(50%, 60%) 1fr minmax(40%, 50%);
 overflow: visible;
