@@ -978,6 +978,9 @@ padding-top: 70px;}
   text-transform: uppercase;
   padding-top: 30px;
   background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; 
   color: white;
   padding-top: 50px;
 }
@@ -990,7 +993,6 @@ padding-top: 70px;}
   color: #b2d6cf;
   font-family: 'Beth Ellen', cursive;
   background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
-
 }
 
 .reisonderdelen .segment-field.date {
