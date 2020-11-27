@@ -1074,6 +1074,7 @@ co
 
 .reisonderdelen .accommodatie_elements vtb-element {
 grid-area: accommodatie;
+display: grid;
 grid-template-columns: minmax(50%, 60%) minmax(40%, 50%) 1fr;
 overflow: visible;
 border:1px solid pink;
