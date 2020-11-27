@@ -965,14 +965,9 @@ padding-top: 70px;}
 
 .reisonderdelen vtb-segment > div {
     z-index:1;
+    background-image: url(https://media.bontravel.nl/original/lg/pakketonderdelen.png);
 }
 
-.reisonderdelen vtb-segment {
-  background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; 
-}
 
 .reisonderdelen .segment-field.title {
   grid-area: reisonderdelen-title;
@@ -4191,7 +4186,7 @@ grid-area: bestemming;
 padding-top: 70px;}
 
  .reisonderdelen {
-  background-image: url(https://media.bontravel.nl/original/lg/pakketonderdelen.png);
+  background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
   grid-area: reisonderdelen;
   clear:both;
   grid-template-areas: 
@@ -4217,11 +4212,12 @@ padding-top: 70px;}
 .reisonderdelen .segment-field.title {
   grid-area: reisonderdelen-title;
   font-weight: bold;
-  font-size: 46px;
+  font-size: 36px;
   line-height: 55px;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: 'playfair display', Helvetica, Arial, sans-serif;
   text-align: center;
-  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  text-transform: None;
   padding-top: 30px;
   padding-top: 50px;
 }
