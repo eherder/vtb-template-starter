@@ -1287,78 +1287,103 @@ width:100%;
   background-position: center; 
 }
 
-.reisonderdelen .accommodatie_elements vtb-element {
-display: grid;
-  grid-template-columns: minmax(50%, 60%) 1fr minmax(40%, 50%);
-  overflow: visible;
-  clear: both;
-  border: 1px solid pink;
-  min-height: 400px;
-  margin-top: 40px;
-  row-gap: 10px;
-  column-gap: 30px;
-  grid-template-areas:
-  "acco-date acco-date nights"
-  "acco-title acco-title acco-title""
-  "acco-subTitle acco-subTitle"
-  "acco-image additionalText additionalText"
-  "acco-splittable acco-splittable acco-splittable"
-  ;}
-
-.reisonderdelen .accommodatie_elements .title {
-  grid-area: acco-title;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 35px;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  text-align: left;
-  text-transform: uppercase;
-  padding-top: 30px;
-  z-index: 2;
+.reisonderdelen .accommodatie_elements  {
+  padding:5%;
+ display: grid;
+ background: white;
+ grid-template-areas:
+ "default-element"
+ ;
 }
 
-.reisonderdelen .accommodatie_elements .title::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f015";
-  font-size: 2.2em;
-  color: rgba(138, 138, 138, 0.12);
-  -webkit-transform: translate(-20%,-120%);
-  translate: (-20%,-100%);
-  width: 1.25em;
-  text-align: center;
-  position: absolute;
-  z-index: 1;
+.reisonderdelen .accommodatie_elements  vtb-element {
+display: grid;
+grid-template-columns: 3fr;
+overflow:visible;
+clear: both;
+margin-top: 40px;
+row-gap: 10px;
+column-gap: 30px;
+grid-template-areas:
+"default-image iconbar default-title"
+"default-image iconbar default-subTitle"
+"default-image iconbar default-date"
+"default-image iconbar default-additionalText"
+"default-image iconbar default-subadditionalText"
+"default-image iconbar default-splittable"
+;
+}
+
+.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(3) {
+ grid-area: default-title;
+ position: relative;
+ font-weight: bold;
+ font-size: 25px;
+ line-height: 35px;
+ font-family: 'Roboto', Helvetica, Arial, sans-serif;
+ text-align: left;
+ text-transform: uppercase;
+ padding-top: 30px;
+ z-index: 2;
+}
+
+.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(4) {
+ grid-area: default-subTitle;
+ font-weight: 200;
+ font-size: 15px;
+ line-height: 25px;
+ font-family: 'Roboto', Helvetica, Arial, sans-serif;
+ text-align: left;
+ text-transform: uppercase;
+ padding-top: 10px;
+}
+
+.reisonderdelen .accommodatie_elements .nights {
+ grid-area: iconbar;
+ /* border: 1px solid green; */
+ font-size: 19px;
+ font-weight: bold;
+ background: #b2d6cfc7;
+ border-radius: 40px;
+ height: 48px;
+ color: #fff;
+ width: 55px;
+ vertical-align: middle;
+ text-align: center;
+ padding: 7px 0 0px 0;
+ margin-left: 0px;
+ line-height: 40px;
+ margin-top: 20px;
+}
+
+.reisonderdelen .accommodatie_elements .element-unit-1 .title:before{
+ grid-area: iconbar;
+ font-family: "Font Awesome 5 Free";
+ font-weight: 900;
+ content: "\f5de";
+ font-size: 2.2em;
+ color: rgba(138, 138, 138, 0.12);
+ -webkit-transform: translate(-20%,-120%);
+ translate: (-20%,-100%);
+ width: 1.25em;
+ text-align: center;
+ position: absolute;
+ z-index: 1;
+}
+
+
+.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(2) {
+ grid-area: default-date;
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field:nth-child(6) {
-  grid-area: acco-subTitle;
-  font-weight: 200;
-  font-size: 15px;
-  line-height: 25px;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  text-align: left;
-  text-transform: uppercase;
-  padding-top: 10px;
+ grid-area: default-additionalText;
 }
 
-.reisonderdelen .accommodatie_elements .nights:nth-child(odd) {
-  grid-area: nights;
-  /* border: 1px solid green; */
-  font-size: 19px;
-  font-weight: bold;
-  background: #b2d6cfc7;
-  border-radius: 40px;
-  height: 48px;
-  color: #fff;
-  width: 55px;
-  vertical-align: middle;
-  text-align: center;
-  padding: 7px 0 0px 0;
-  margin-left: -61px;
-  line-height: 40px;
-  margin-top: 20px;
+.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(7) {
+ grid-area: default-subadditionalText;
 }
+
 
 /***********************************
  *       REISSOM     *
