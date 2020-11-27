@@ -4253,6 +4253,9 @@ padding-top: 70px;}
 .reisonderdelen .segment-field.content {
   grid-area: reisonderdelen-content;
   padding: 5% 15%;
+}
+
+.reisonderdelen .segment-field.content::before{
   background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
   background-size: contain;
   background-repeat: no-repeat;
