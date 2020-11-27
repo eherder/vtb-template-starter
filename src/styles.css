@@ -4307,6 +4307,7 @@ padding-top: 70px;}
 
 .reisonderdelen .accommodatie_elements vtb-element {
 grid-area: acco-element;
+display: grid;
 grid-template-columns: minmax(50%, 60%) 1fr minmax(40%, 50%);
 overflow: visible;
 clear: both;
