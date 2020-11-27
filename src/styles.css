@@ -1088,12 +1088,12 @@ grid-template-areas:
 ;
 }
 
-.reisonderdelen .accommodatie_elements .personaltouch {
+.reisonderdelen .accommodatie_elements vtb-element .personaltouch {
   grid-area: personaltouch;
   padding: 0% 10%;
 }
 
-.reisonderdelen .accommodatie_elements .personaltouch .personaltouch-text:before {
+.reisonderdelen .accommodatie_elements vtb-element .personaltouch .personaltouch-text:before {
   color: black;
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
@@ -1102,7 +1102,7 @@ grid-template-areas:
 }
 
 
-.reisonderdelen .accommodatie_elements .personaltouch .personaltouch-text {
+.reisonderdelen .accommodatie_elements vtb-element .personaltouch .personaltouch-text {
   max-width: 70%;
   float: left;
   display: block;
@@ -1115,7 +1115,7 @@ grid-template-areas:
   padding-bottom: 100px;
 }
 
-.reisonderdelen .accommodatie_elements .personaltouch .personaltouch-medewerkernaam {
+.reisonderdelen .accommodatie_elements vtb-element .personaltouch .personaltouch-medewerkernaam {
   max-width: 70%;
   display: block;
   font-size: 21px;
@@ -1128,7 +1128,7 @@ grid-template-areas:
 }
 
 
-.reisonderdelen .accommodatie_elements .personaltouch .personaltouchimage {
+.reisonderdelen .accommodatie_elements vtb-element .personaltouch .personaltouchimage {
   display: inline-block;
   float: left;
   align-items: center;
@@ -1137,7 +1137,7 @@ grid-template-areas:
   max-width: 200px;
   -webkit-transform: translate(20%,-20%);
 }
-.reisonderdelen .accommodatie_elements .personaltouch .personaltouchimage img {
+.reisonderdelen .accommodatie_elements vtb-element  .personaltouch .personaltouchimage img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1148,7 +1148,7 @@ grid-template-areas:
 }
 
 
-.reisonderdelen .accommodatie_elements .title {
+.reisonderdelen .accommodatie_elements vtb-element .title {
   grid-area: acco-title;
   position: relative;
   font-weight: bold;
@@ -1161,7 +1161,7 @@ grid-template-areas:
   z-index: 2;
 }
 
-.reisonderdelen .accommodatie_elements .title::before {
+.reisonderdelen .accommodatie_elements vtb-element .title::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f015";
