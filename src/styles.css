@@ -1220,7 +1220,7 @@ grid-template-areas:
   vertical-align: middle;
   text-align: center;
   padding: 7px 0 0px 0;
-  margin-left: -61px;
+  margin-left: 0px;
   line-height: 40px;
   margin-top: 20px;
 }
@@ -1452,7 +1452,7 @@ grid-template-areas:
   vertical-align: middle;
   text-align: center;
   padding: 7px 0 0px 0;
-  margin-left: -61px;
+  margin-left: 0px;
   line-height: 40px;
   margin-top: 20px;
 }
@@ -4306,7 +4306,7 @@ padding-top: 70px;}
 }
 
 .reisonderdelen .accommodatie_elements vtb-element {
-grid-area: acco-ement;
+grid-area: acco-element;
 grid-template-columns: minmax(50%, 60%) 1fr minmax(40%, 50%);
 overflow: visible;
 clear: both;
