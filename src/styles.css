@@ -1314,31 +1314,32 @@ grid-template-areas:
 ;
 }
 
-
-
-.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(3) {
- grid-area: acco-title;
- position: relative;
- font-weight: bold;
- font-size: 25px;
- line-height: 35px;
- font-family: 'Roboto', Helvetica, Arial, sans-serif;
- text-align: left;
- text-transform: uppercase;
- padding-top: 30px;
- z-index: 2;
+.reisonderdelen .accommodatie_elements vtb-element.title {
+  grid-area: acco-title;
+  position: relative;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 35px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 30px;
+  z-index: 2;
 }
 
-.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(4) {
- grid-area: acco-subTitle;
- font-weight: 200;
- font-size: 15px;
- line-height: 25px;
- font-family: 'Roboto', Helvetica, Arial, sans-serif;
- text-align: left;
- text-transform: uppercase;
- padding-top: 10px;
+
+.reisonderdelen .accommodatie_elements vtb-element-field:nth-child(6) {
+  grid-area: acco-subTitle;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 10px;
+  letter-spacing: 1.3px;
 }
+
 
 .reisonderdelen .accommodatie_elements .nights {
  grid-area: nights;
