@@ -966,6 +966,9 @@ padding-top: 70px;}
 .reisonderdelen vtb-segment > div {
     z-index:1;
     background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
 }
 
 
@@ -1055,6 +1058,7 @@ padding-top: 70px;}
   grid-template-areas:
   "acco-element"
   ;
+  background: white;
 }
 
 .reisonderdelen. .accommodatie_elements .content {
@@ -1379,6 +1383,7 @@ grid-template-areas:
  .reisonderdelen .default_elements {
    padding:5%;
   display: grid;
+  background: white;
   grid-template-areas:
   "default-element"
   ;
