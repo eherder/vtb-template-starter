@@ -1032,8 +1032,8 @@ co
 .reisonderdelen .accommodatie_elements .sn-viewport--out,
 .reisonderdelen .default_elements .sn-viewport--out
  {
-  opacity: 0.25;
-  transition: all 1s ease-out;
+  opacity: 0.85;
+  transition: all 0.3s ease-out;
   transition-delay: .3s;
   transform: translateY(50px);
   }
@@ -1042,7 +1042,7 @@ co
   .reisonderdelen .default_elements .sn-viewport--in
  {
     opacity: 1;
-    transition: all 1s ease-in;
+    transition: all 0.3s ease-in;
     transition-delay: .3s;
     transform: translateY(-50px);
     }
@@ -1588,14 +1588,14 @@ width:100%;
  }
 
  .reisonderdelen vtb-segment .sn-viewport--out {
-  opacity: 0.25;
-  transition: all 1s ease-out;
+  opacity: 0.45;
+  transition: all 0.3s ease-out;
   transition-delay: .3s;
 }
 
 .reisonderdelen vtb-segment .sn-viewport--in {
   opacity: 1;
-  transition: all 1s ease-in;
+  transition: all 0.3s ease-in;
   transition-delay: .3s;
   transform: translateY(50px);
 }
