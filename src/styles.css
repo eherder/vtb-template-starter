@@ -4306,7 +4306,7 @@ padding-top: 70px;}
 }
 
 .reisonderdelen .accommodatie_elements vtb-element {
-  display: grid;
+grid-area: acco-ement;
 grid-template-columns: minmax(50%, 60%) 1fr minmax(40%, 50%);
 overflow: visible;
 clear: both;
@@ -4328,6 +4328,8 @@ grid-template-areas:
 .reisonderdelen .accommodatie_elements .personaltouch {
   grid-area: personaltouch;
   padding: 0% 10%;
+  position: relative;
+
 }
 
 .reisonderdelen .accommodatie_elements .personaltouch .personaltouch-text:before {
