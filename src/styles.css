@@ -1390,6 +1390,62 @@ grid-template-areas:
   overflow:hidden;
 }
 
+.reisonderdelen .accommodatie_elements .media-1 vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-2  vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-3 vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-4  vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-5 vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-6 vtb-media .media-items,
+.reisonderdelen .accommodatie_elements .media-7 vtb-media .media-items
+ {
+  grid-area:acco-image;
+  grid-template-rows: 400px;
+  grid-template-areas: 
+    "gallery1" 
+  ;
+  transition-delay: 0s;
+ }
+
+ .reisonderdelen .accommodatie_elements .media-1 vtb-media .media-items,
+ .reisonderdelen .accommodatie_elements .media-2  vtb-media .media-items,
+ .reisonderdelen .accommodatie_elements .media-3 vtb-media .media-items,
+ .reisonderdelen .accommodatie_elements .media-4  vtb-media .media-items,
+ .reisonderdelen .accommodatie_elements .media-5 vtb-media .media-items,
+ .reisonderdelen .accommodatie_elements .media-6 vtb-media .media-items,
+ .reisonderdelen .accommodatie_elements .media-7 vtb-media .media-items
+  {
+   grid-area:acco-image;
+   grid-template-rows: 400px;
+   grid-template-areas: 
+     "gallery1" 
+   ;
+   transition-delay: 0s;
+  }
+ 
+ .reisonderdelen .accommodatie_elements {
+ }
+ 
+ .reisonderdelen .accommodatie_elements vtb-media .media-items {
+   margin:0 ;
+   grid-area: acco-image;
+   width:100%;
+   height: 80vh;
+   overflow:hidden;
+   column-gap: 3px;
+   row-gap: 3px;
+ }
+ 
+ .reisonderdelen .accommodatie_elements vtb-media {
+   grid-area: acco-image;
+   position: relative;
+   display: block;
+   box-sizing: border-box;
+   border:1px solid #f0f0f0;
+   border-radius: 5px;
+   padding-bottom: 0;
+   overflow: hidden;
+ }
+
 .reisonderdelen .accommodatie_elements .splittable  {
   grid-area: acco-splittable;
 }
@@ -4154,7 +4210,6 @@ width:100%;
   ;
 }
 
-
 .reisonderdelen .media-items > div:nth-child(1) {
   grid-area: gallery1;
   overflow: hidden;
@@ -5241,8 +5296,6 @@ grid-template-areas:
   font-size: 20px;
   max-width: 90%;
 }
-
-
 
 .reisonderdelen .default_elements vtb-element {
   display: grid;
