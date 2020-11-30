@@ -1676,14 +1676,18 @@ padding-top: 60px;
 
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 18px;
+  align-items: center;
+  line-height: 20px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 2;
+  letter-spacing: 1px;
   padding: 0px 0;
-  grid-area: reissom-inclusief;
-  grid-template-columns: 20% 40% 40%;
-  grid-template-areas:
-  " reissom-nights reissom-titel reissom-titel "
-  " reissom-nights reissom-subtitle reissom-subtitle "
-  " reissom-nights inclusief inclusief "
 }
 
 .reissom .reissom-inclusief div {
@@ -1692,56 +1696,24 @@ padding-top: 60px;
 
 
 .reissom .reissom-inclusief .title {
-  grid-area: reissom-titel;
-  position: relative;
-  font-weight: bold;
-  font-size: 18px;
-  align-items: center;
-  line-height: 20px;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  text-align: left;
-  text-transform: uppercase;
-  z-index: 2;
-  letter-spacing: 1px;
+  flex: 50%
 }
 
 .reissom .reissom-inclusief .subTitle {
-  grid-area: reissom-subtitle;
-  position: relative;
-  font-weight: bold;
-  font-size: 18px;
-  align-items: center;
-  line-height: 20px;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  text-align: left;
-  text-transform: uppercase;
-  z-index: 2;
-  letter-spacing: 1px;
 }
 
 .reissom .reissom-inclusief .inclusief {
-  grid-area: inclusief;
-  position: relative;
-  font-weight: bold;
-  font-size: 18px;
-  align-items: center;
-  line-height: 20px;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  text-align: left;
-  text-transform: uppercase;
-  z-index: 2;
-  letter-spacing: 1px;
 }
 
 .reissom .reissom-inclusief .nights {
-  grid-area: reissom-nights;
+  flex: 50%;
   position: relative;
   font-weight: bold;
   align-items: center;
   font-size: 18px;
   line-height: 25px;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
