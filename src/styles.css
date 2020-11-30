@@ -1296,7 +1296,8 @@ width:100%;
  ;
 }
 
-.reisonderdelen .accommodatie_elements > divs {
+
+.reisonderdelen .accommodatie_elements vtb-element > divs {
   display: grid;
 }
 
@@ -1318,6 +1319,10 @@ grid-template-areas:
 "acco-image nights acco-subadditionalText"
 "acco-image nights acco-splittable"
 ;
+}
+
+.reisonderdelen .accommodatie_elements vtb-element-field {
+  display: grid;
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field .title {
