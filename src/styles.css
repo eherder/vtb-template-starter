@@ -1694,15 +1694,15 @@ justify-content: center;
   padding: 10%;
 }
 
-.reissom .reissom-inclusief vtb-elements-list vtb-element:nth-child(1) {
+.reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(1) {
   flex: 1 1 100%;
 }
 
-.reissom .reissom-inclusief vtb-elements-list vtb-element:nth-child(1) {
+.reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(2) {
   flex: 1 1 50%;
 }
 
-.reissom .reissom-inclusief vtb-elements-list vtb-element:nth-child(1) {
+.reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(3) {
   flex: 1 1 50%;
 }
 
