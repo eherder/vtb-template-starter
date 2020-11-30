@@ -1682,8 +1682,9 @@ padding-top: 60px;
   grid-template-columns: 20% 40% 40%;
   grid-template-areas:
   "
-  reissom-nights reissom-titel reissom-subtitle
-  inclusief inclusief inclusief
+  reissom-nights reissom-titel
+  reissom-nights reissom-subtitle
+  reissom-nights inclusief
   "
 }
 
