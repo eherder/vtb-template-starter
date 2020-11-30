@@ -1696,15 +1696,19 @@ font-weight: bold;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(1) {
-  flex: 1 1 100%;
+  flex: 1 1 200px;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(2) {
-  flex: 1 1 50%;
+  flex: 1 1 200px;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(3) {
-  flex: 1 1 50%;
+  flex: 1 1 auto;
+}
+
+.reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(4) {
+  flex: 1 1 100%;
 }
 
 
