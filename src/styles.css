@@ -1704,7 +1704,7 @@ padding-top: 60px;
   letter-spacing: 1px;
 }
 
-.reissom .reissom-inclusief .subtitle {
+.reissom .reissom-inclusief .subTitle {
   grid-area: reissom-subtitel;
   position: relative;
   font-weight: bold;
