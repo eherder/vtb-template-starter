@@ -1678,7 +1678,8 @@ padding-top: 60px;
 
 }
 
-s  display: flex;
+.reissom .reissom-inclusief vtb-elements-list vtb-element {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -1750,7 +1751,7 @@ color: #b2d6cf;
 
 .reissom .reissom-inclusief ul {
   margin: 0;
-  padding: 5px 0;
+  padding: 10px 0;
   font-size: 0.9em;
   clear: both;
 }
