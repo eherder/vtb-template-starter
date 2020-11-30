@@ -1301,6 +1301,10 @@ width:100%;
   display: grid;
 }
 
+.reisonderdelen .accommodatie_elements vtb-element + divs {
+  display: grid;
+}
+
 .reisonderdelen .accommodatie_elements  vtb-element {
 display: grid;
 grid-area: accommodatie-element;
