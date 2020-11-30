@@ -2510,7 +2510,7 @@ tr:nth-child(odd) {background: #FFF}
 
 .reisintroductie .brief {
   padding: 5%;
-}
+;}
 
 .reisintroductie .reisspecialist {
   grid-area: reisspecialist;
@@ -3479,6 +3479,11 @@ text-decoration: none;
   .reisintroductie .brief {
     grid-area: brief;
     padding:15%;
+    background-color: white;
+    border: 1px solid;
+    padding: 10px;
+    margin: 5%;
+    box-shadow: 5px 5px 20px #888888;
   }
 
   .reisintroductie .reisspecialist {
