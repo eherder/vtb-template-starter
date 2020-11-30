@@ -1292,12 +1292,13 @@ width:100%;
  display: grid;
  background: white;
  grid-template-areas:
- "default-element"
+ "accommodatie-element"
  ;
 }
 
 .reisonderdelen .accommodatie_elements  vtb-element {
 display: grid;
+grid-area: accommodatie-element;
 grid-template-columns: 3fr;
 overflow:visible;
 clear: both;
