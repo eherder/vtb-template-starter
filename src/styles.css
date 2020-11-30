@@ -644,7 +644,6 @@ padding-top: 70px;}
 
 .reisonderdelen {
   grid-area: reisonderdelen;
-  background: white;
   clear:both;
   grid-template-areas: 
       "reisonderdelen-fotogrid"
@@ -1055,7 +1054,6 @@ padding-right: 5px;
  .reisonderdelen .default_elements {
    padding:5%;
   display: grid;
-  background: white;
   grid-template-areas:
   "default-element"
   ;
