@@ -1395,6 +1395,30 @@ grid-template-areas:
   grid-area: gallery1;
   overflow: hidden;
  }
+
+ .reisonderdelen vtb-media {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  border:1px solid #f0f0f0;
+  border-radius: 5px;
+  padding-bottom:56%;
+  overflow: hidden;
+}
+
+.reisonderdelenvtb-media img {
+  height: 100%;
+}
+
+.reisonderdelen vtb-media > div.media-items > div {
+  position: absolute !important;
+  top:10%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  display: none;
+  max-width: calc(100% - 2px);
+  width:100%;
+}
  
  .reisonderdelen vtb-media .media-items {
   margin:0 ;
