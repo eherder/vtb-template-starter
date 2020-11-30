@@ -1311,6 +1311,8 @@ clear: both;
 margin-top: 0px;
 row-gap: 10px;
 column-gap: 30px;
+border: 1px solid black;
+padding: 10px;
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field {
@@ -1559,7 +1561,7 @@ column-gap: 30px;
 
 
 .reisonderdelen .accommodatie_elements.acco-optional  .title::before {
-  content: "Of kies ook uit onze schatkist...";
+  content: "Alternatief verblijf";
   font-size: 25px;
   color: #b2d6cf;
   font-family: 'Beth Ellen', cursive;
@@ -4050,7 +4052,7 @@ grid-area: bestemming;
   ;
 }
 
-.reisonderdelen .accommodatie_element {
+.reisonderdelen .default_elements {
   grid-area: acco-element;
   grid-template-areas:
   "default-element"
