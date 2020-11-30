@@ -1681,7 +1681,10 @@ padding-top: 60px;
   grid-area: reissom-inclusief;
   grid-template-columns: 20% 40% 40%;
   grid-template-areas:
-  "reissom-nights reissom-titel reissom-subtitle"
+  "
+  reissom-nights reissom-titel reissom-subtitle
+  inclusief inclusief inclusief
+  "
 }
 
 .reissom .reissom-inclusief div {
@@ -1705,6 +1708,20 @@ padding-top: 60px;
 
 .reissom .reissom-inclusief .subTitle {
   grid-area: reissom-subtitle;
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  align-items: center;
+  line-height: 20px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 2;
+  letter-spacing: 1px;
+}
+
+.reissom .reissom-inclusief .inclusief {
+  grid-area: reissom-inclusief;
   position: relative;
   font-weight: bold;
   font-size: 18px;
