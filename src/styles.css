@@ -1679,6 +1679,7 @@ padding-top: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   font-weight: bold;
   font-size: 18px;
   align-items: center;
@@ -1688,27 +1689,30 @@ padding-top: 60px;
   text-transform: uppercase;
   z-index: 2;
   letter-spacing: 1px;
-  padding: 0px 0;
+  padding: 10%;
 }
 
 .reissom .reissom-inclusief div {
   padding: 5px 5px;
+  width: 1s00px;
 }
 
 
 .reissom .reissom-inclusief .title {
-  flex: 50%
+  flex: 1 1 auto;
 }
 
 .reissom .reissom-inclusief .subTitle {
+  flex: 1 1 auto;
 }
 
 .reissom .reissom-inclusief .inclusief {
+  flex: 2 1 auto;
 }
 
 .reissom .reissom-inclusief .nights {
-  flex: 50%;
-  position: relative;
+  flex: 1 1 auto;
+    position: relative;
   font-weight: bold;
   align-items: center;
   font-size: 18px;
