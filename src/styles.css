@@ -1394,6 +1394,7 @@ border: 1px solid purple;
   clear:both;
   overflow:hidden;
   background-color: lightblue;
+  grid-column: 1 / 3;
 }
 
 
