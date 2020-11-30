@@ -1292,8 +1292,9 @@ width:100%;
  display: grid;
  background: white;
  grid-template-areas:
- "accommodatie-element"
- ;
+ "accommodatie-element";
+ border-bottom: 1px solid black;
+padding: 10px;
 }
 
 .reisonderdelen .accommodatie_elements vtb-element > divs {
@@ -1311,8 +1312,7 @@ clear: both;
 margin-top: 0px;
 row-gap: 10px;
 column-gap: 30px;
-border: 1px solid black;
-padding: 10px;
+
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field {
