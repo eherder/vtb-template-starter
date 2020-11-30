@@ -1696,24 +1696,25 @@ padding-top: 60px;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(1) {
-  flex: 1 1 200px;
+  flex: 1 2 auto;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(2) {
-  flex: 1 1 200px;
+  flex: 1 5 auto;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(3) {
-  flex: 1 1 auto;
+  flex: 1 9 auto;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(4) {
   flex: 1 1 100%;
 }
-
+s
 
 .reissom .reissom-inclusief div {
   padding: 5px 5px;
+  width: 100px;
 }
 
 
