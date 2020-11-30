@@ -1288,7 +1288,6 @@ width:100%;
 .reisonderdelen .accommodatie_elements  {
 padding:10%;
  display: grid;
- background: white;
  grid-template-areas:
  "accommodatie-element";
  border-bottom: 1px solid black;
@@ -1555,7 +1554,7 @@ column-gap: 30px;
  ***********************************/
 
  .reisonderdelen .accommodatie_elements.acco-optional {
-   padding: 10%
+   padding: 10%;
    background-image: url(https://media.bontravel.nl/original/original/shutterstock_578658502.jpg(https://media.bontravel.nl/original/original/shutterstock_578658502.jpg);
  }
 
@@ -2819,7 +2818,6 @@ grid-template-areas:
 
   .grid-container > div {
     padding:0px;
-    background-image: none;
 }
 
 img {
