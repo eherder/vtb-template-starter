@@ -1278,7 +1278,7 @@ width:100%;
 }
  .reisonderdelen .segment-field.content {
   grid-area: reisonderdelen-content;
-  padding: 5% 15%;
+  padding: 5% 10%;
   background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1556,7 +1556,7 @@ column-gap: 30px;
 
  .reisonderdelen .accommodatie_elements.acco-optional {
    padding: 10%
-   background-color: lightgrey;
+   background-image: url(https://media.bontravel.nl/original/original/shutterstock_578658502.jpg(https://media.bontravel.nl/original/original/shutterstock_578658502.jpg);
  }
 
 
