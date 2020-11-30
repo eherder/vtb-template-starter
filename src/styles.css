@@ -1679,10 +1679,9 @@ padding-top: 60px;
   display: grid;
   padding: 0px 0;
   grid-area: reissom-inclusief;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 20% 40% 40%;
   grid-template-areas:
-  "reissom-nights reissom-titel "
-  "reissom-nights reissom-subtitle "
+  "reissom-nights reissom-titel reissom-subtitle"
 }
 
 .reissom .reissom-inclusief div {
