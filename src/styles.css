@@ -1694,6 +1694,19 @@ justify-content: center;
   padding: 10%;
 }
 
+.reissom .reissom-inclusief vtb-elements-list vtb-element:nth-child(1) {
+  flex: 1 1 100%;
+}
+
+.reissom .reissom-inclusief vtb-elements-list vtb-element:nth-child(1) {
+  flex: 1 1 50%;
+}
+
+.reissom .reissom-inclusief vtb-elements-list vtb-element:nth-child(1) {
+  flex: 1 1 50%;
+}
+
+
 .reissom .reissom-inclusief div {
   padding: 5px 5px;
   width: 1s00px;
@@ -1701,20 +1714,15 @@ justify-content: center;
 
 
 .reissom .reissom-inclusief .title {
-  flex: 1 1 auto;
 }
 
 .reissom .reissom-inclusief .subTitle {
-  flex: 1 1 auto;
 }
 
 .reissom .reissom-inclusief .inclusief {
-  flex: 2 1 auto;
 }
 
 .reissom .reissom-inclusief .nights {
-  flex: 1 1 auto;
-    position: relative;
   font-weight: bold;
   align-items: center;
   font-size: 18px;
