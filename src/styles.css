@@ -1674,12 +1674,14 @@ padding-top: 60px;
 .reissom .reissom-inclusief {
 }
 
+.reissom .reissom-inclusief vtb-elements-list {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
   font-weight: bold;
   font-size: 18px;
   align-items: center;
