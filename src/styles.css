@@ -1305,15 +1305,12 @@ width:100%;
 }
 
 .reisonderdelen .accommodatie_elements  vtb-element {
-display: grid;
 grid-area: accommodatie-element;
-grid-template-columns: 3fr;
 overflow:visible;
 clear: both;
-margin-top: 40px;
+margin-top: 0px;
 row-gap: 10px;
 column-gap: 30px;
-border: 1px solid purple;
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field {
@@ -1321,15 +1318,15 @@ border: 1px solid purple;
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field .title {
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 25px;
   line-height: 35px;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   text-align: left;
   text-transform: uppercase;
   padding-top: 30px;
   z-index: 2;
-  letter-spacing: 1.3px;
+  letter-spacing: 2px;
 }
 
 

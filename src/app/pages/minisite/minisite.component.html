@@ -153,7 +153,7 @@
                 <vtb-elements [dataSource]="elements" [unitIds]="[2]" [reverseUnitIds]="true" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/lg', max: '3'},[{'name':'date', dateFormat:'d MMM'}, {'name':'endDate', dateFormat:'d MMM', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
             </div>
             <div class="accommodatie_elements acco-optional">
-                    <vtb-elements [dataSource]="elements" [unitIds]="[2]" [optional]="true" [elementFields]="[{name: 'media', crop: 'original/lg', max: '3'},'dayNumbers',{name: 'nights', prefix:'', postfix: 'n'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
+                    <vtb-elements [dataSource]="elements" [unitIds]="[2]" [optional]="true" [elementFields]="[{name: 'media', crop: 'original/lg', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},'dayNumbers',{name: 'nights', prefix:'', postfix: 'n'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
                 </div>
         </ng-template>
       </vtb-segments>
