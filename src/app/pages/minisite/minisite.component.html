@@ -147,7 +147,7 @@
         [segmentFieldsPerType]="{'13':[{name: 'media', crop: 'original/lg', max: '6'},'subTitle','content','title']}">
         <ng-template #elementTemplate let-elements="elements">
             <div class="accommodatie_elements">
-                <vtb-elements [dataSource]="elements" [unitIds]="[2]" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/lg', max: '8', slider:'true', sliderAutoPlay: false, sliderInterval: '1000'},{name: 'nights', prefix:'', postfix: 'n'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}, 'medewerkernaam']"></vtb-elements>
+                <vtb-elements [dataSource]="elements" [unitIds]="[2]" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/lg', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},{name: 'nights', prefix:'', postfix: 'n'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}, 'medewerkernaam']"></vtb-elements>
             </div>
             <div class="default_elements">
                 <vtb-elements [dataSource]="elements" [unitIds]="[2]" [reverseUnitIds]="true" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/lg', max: '3'},[{'name':'date', dateFormat:'d MMM'}, {'name':'endDate', dateFormat:'d MMM', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
