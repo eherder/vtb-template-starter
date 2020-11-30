@@ -1558,6 +1558,11 @@ column-gap: 30px;
  *       Optional ACCO     *
  ***********************************/
 
+ .reisonderdelen .accommodatie_elements.acco-optional {
+   padding: 10%
+   background-color: lightgrey;
+ }
+
 
 .reisonderdelen .accommodatie_elements.acco-optional  .title::before {
   content: "Alternatief verblijf";
@@ -1569,7 +1574,7 @@ column-gap: 30px;
 }
 
 .reisonderdelen .accommodatie_elements.acco-optional  {
-  color: rgba(29, 29, 29, 0.78);
+  color: black
 }
 
 /***********************************
