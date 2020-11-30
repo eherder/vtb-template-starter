@@ -1288,7 +1288,7 @@ width:100%;
 }
 
 .reisonderdelen .accommodatie_elements  {
-  padding:5%;
+padding:10%;
  display: grid;
  background: white;
  grid-template-areas:
@@ -1437,8 +1437,6 @@ column-gap: 30px;
    transition-delay: 0s;
   }
  
- .reisonderdelen .accommodatie_elements {
- }
  
  .reisonderdelen .accommodatie_elements vtb-media .media-items {
    margin:0 ;
