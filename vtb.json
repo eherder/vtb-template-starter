@@ -12,6 +12,7 @@
       {"function": "extraField", "params": {"attributeName": "verzekering", "extraFieldValueID": 10, "fieldID": 26}},
       {"function": "extraField", "params": {"attributeName": "medewerkerimage", "extraFieldValueID": 10, "fieldID": 19}},
       {"function": "elementExtraField", "params": {"attributeName": "personaltouch", "fieldID": 15}},
+      {"function": "elementExtraField", "params": {"attributeName": "inclusief", "fieldID": 40}},
       {"function": "addImageToEmployeeText", "params":{}}
     ],
     "startWithEmptyObject": false
