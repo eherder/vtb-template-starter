@@ -1570,7 +1570,6 @@ column-gap: 30px;
   font-family: 'Beth Ellen', cursive;
   text-transform: lowercase;
   position: relative;
-  background-color: black;
   padding: 5px;
 }
 
@@ -1669,7 +1668,8 @@ color: #b2d6cf;
 }
 
 .reissom .reistitel {
-padding-top: 60px;}
+padding-top: 60px;
+}
 
 .reissom .reissom-inclusief {
 }
@@ -1682,6 +1682,7 @@ padding-top: 60px;}
   grid-template-columns: 45% 55%;
   grid-template-areas:
   "reissom-nights reissom-titel "
+  "reissom-nights reissom-subtitel "
 }
 
 .reissom .reissom-inclusief div {
@@ -1691,6 +1692,20 @@ padding-top: 60px;}
 
 .reissom .reissom-inclusief .title {
   grid-area: reissom-titel;
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  align-items: center;
+  line-height: 20px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 2;
+  letter-spacing: 1px;
+}
+
+.reissom .reissom-inclusief .subtitle {
+  grid-area: reissom-subtitel;
   position: relative;
   font-weight: bold;
   font-size: 18px;
