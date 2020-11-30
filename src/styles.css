@@ -1724,11 +1724,12 @@ s
 
 .reissom .reissom-inclusief .subTitle {
   font-weight: 500;
-
+padding: 10px;
 }
 
 .reissom .reissom-inclusief .inclusief {
   font-weight: 500;
+  border-bottom: 1px solid black;
 }
 
 .reissom .reissom-inclusief .nights {
