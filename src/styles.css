@@ -1678,21 +1678,20 @@ padding-top: 60px;
 
 }
 
-.reissom .reissom-inclusief vtb-elements-list vtb-element {
-  display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-font-weight: bold;
-  font-size: 18px;
+s  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
   align-items: center;
   line-height: 20px;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: 'montserrat', Helvetica, Arial, sans-serif;
   text-align: left;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   z-index: 2;
-  letter-spacing: 1px;
-  padding: 10%;
+  letter-spacing: 1.2px;
+  bottom-border: 1px solid grey;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(1) {
@@ -1714,7 +1713,7 @@ font-weight: bold;
 
 .reissom .reissom-inclusief div {
   padding: 5px 5px;
-  width: 1s00px;
+  width: 100px;
 }
 
 
@@ -1722,9 +1721,12 @@ font-weight: bold;
 }
 
 .reissom .reissom-inclusief .subTitle {
+  font-weight: 400;
+
 }
 
 .reissom .reissom-inclusief .inclusief {
+  font-weight: 400;
 }
 
 .reissom .reissom-inclusief .nights {
@@ -1732,7 +1734,6 @@ font-weight: bold;
   align-items: center;
   font-size: 18px;
   line-height: 25px;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1749,7 +1750,7 @@ color: #b2d6cf;
 
 .reissom .reissom-inclusief ul {
   margin: 0;
-  padding: 30px 0;
+  padding: 5px 0;
   font-size: 0.9em;
   clear: both;
 }
