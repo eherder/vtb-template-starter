@@ -1558,18 +1558,20 @@ column-gap: 30px;
  ***********************************/
 
  .reisonderdelen .accommodatie_elements.acco-optional {
-   padding: 10%;
+   padding: 5%;
    background-image: url(https://media.bontravel.nl/original/original/shutterstock_578658502.jpg(https://media.bontravel.nl/original/original/shutterstock_578658502.jpg);
  }
 
 
-.reisonderdelen .accommodatie_elements.acco-optional  .title::before {
+.reisonderdelen .accommodatie_elements.acco-optional:before {
   content: "Alternatief verblijf";
   font-size: 25px;
   color: #b2d6cf;
   font-family: 'Beth Ellen', cursive;
   text-transform: lowercase;
   position: relative;
+  background-color: black;
+  padding: 5px;
 }
 
 .reisonderdelen .accommodatie_elements.acco-optional  {
