@@ -1327,6 +1327,7 @@ grid-template-areas:
   padding-top: 30px;
   z-index: 2;
   letter-spacing: 1.3px;
+  background-color: purple;
 }
 
 
@@ -1340,6 +1341,8 @@ grid-template-areas:
   text-transform: uppercase;
   padding-top: 10px;
   letter-spacing: 1.3px;
+  background-color: blue;
+
 }
 
 
@@ -1359,6 +1362,8 @@ grid-template-areas:
  margin-left: 0px;
  line-height: 40px;
  margin-top: 20px;
+ background-color: GREEN;
+
 }
 
 .reisonderdelen .accommodatie_elements .element-unit-1 .title:before{
@@ -1379,16 +1384,22 @@ grid-template-areas:
  
 .reisonderdelen .accommodatie_elements vtb-element-field .date, .reisonderdelen .accommodatie_elements vtb-element-field .enddate {
   grid-area: acco-date;
+  background-color:red;
+
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field .additionalText {
   grid-area: additionalText;
+  background-color: pink;
+
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field .media {
   grid-area: acco-image;
   clear:both;
   overflow:hidden;
+  background-color: lightblue;
+
 }
 
 
@@ -1513,6 +1524,15 @@ grid-template-areas:
 }
 
 
+.reisonderdelen .accommodatie_elements .splittable  {
+  grid-area: acco-splittable;
+}
+
+
+/***********************************
+ *       SlIDER ACCO     *
+ ***********************************/
+
 .reisonderdelen .accommodatie_elements .media-slider-control {
   position: absolute;
   top:50%;
@@ -1549,13 +1569,9 @@ grid-template-areas:
 }
 
 
-
-
-
-.reisonderdelen .accommodatie_elements .splittable  {
-  grid-area: acco-splittable;
-}
-
+/***********************************
+ *       Optional ACCO     *
+ ***********************************/
 
 
 .reisonderdelen .accommodatie_elements.acco-optional  .title::before {
