@@ -1422,22 +1422,6 @@ grid-template-areas:
   height: 100%;
  }
 
-.reisonderdelen .accommodatie_elements .media-1 vtb-media .media-items,
-.reisonderdelen .accommodatie_elements .media-2  vtb-media .media-items,
-.reisonderdelen .accommodatie_elements .media-3 vtb-media .media-items,
-.reisonderdelen .accommodatie_elements .media-4  vtb-media .media-items,
-.reisonderdelen .accommodatie_elements .media-5 vtb-media .media-items,
-.reisonderdelen .accommodatie_elements .media-6 vtb-media .media-items,
-.reisonderdelen .accommodatie_elements .media-7 vtb-media .media-items
- {
-  grid-area:acco-image;
-  grid-template-rows: 400px;
-  grid-template-areas: 
-    "gallery1" 
-  ;
-  transition-delay: 0s;
- }
-
  .reisonderdelen .accommodatie_elements .media-1 vtb-media .media-items,
  .reisonderdelen .accommodatie_elements .media-2  vtb-media .media-items,
  .reisonderdelen .accommodatie_elements .media-3 vtb-media .media-items,
@@ -1478,8 +1462,112 @@ grid-template-areas:
    overflow: hidden;
  }
 
+
+ .reisonderdelen .accommodatie_elements vtb-media .sn-viewport--in {
+  transition-delay: 0s;
+}
+
+.reisonderdelen .accommodatie_elements vtb-media > div.media-items > div {
+  position: absolute !important;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  display: none;
+  max-width: calc(100% - 2px);
+  width:100%;
+}
+
+.reisonderdelen .accommodatie_elements vtb-media div.media-items > div {
+  grid-area: acco-image;
+  overflow: shows;
+  transition-delay: 0s;
+}
+
+.reisonderdelen .accommodatie_elements vtb-media > div.media-items > div.slide-active {
+  display: block;
+  left:-50%;
+  animation: slide 0.5s forwards;
+  transition-delay: 0s;
+}
+
+.reisonderdelen .accommodatie_elements vtb-media > div.media-items.slide-dir-right > div.slide-active {
+  left:150%;
+}
+
+.reisonderdelen .accommodatie_elements vtb-media > div.media-items.slide-dir-left > div.last-active-slide {
+  animation: slideAwayRight 0.5s forwards;
+  display: block;
+}
+
+.reisonderdelen .accommodatie_elements vtb-media > div.media-items.slide-dir-right > div.last-active-slide {
+  animation: slideAwayLeft 0.5s forwards;
+  display: block;
+}
+
+.reisonderdelen .accommodatie_elements vtb-media > div.media-items img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+.reisonderdelen .accommodatie_elements .media-slider-control {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.reisonderdelen .accommodatie_elements .media-slider-control:after {
+  font-family: "Font Awesome 5 Free";
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+  font-weight: 900;
+  font-size:30px;
+  cursor: pointer;
+}
+
+.reisonderdelen .accommodatie_elements.media-slider-control:hover:after {
+  color: #f0f0f0;
+}
+
+.reisonderdelen .accommodatie_elements .media-slider-prev {
+  left:10px;
+}
+
+.reisonderdelen .accommodatie_elements .media-slider-prev:after {
+  content: "\f053";
+}
+
+.reisonderdelen .accommodatie_elements .media-slider-next {
+  right:10px;
+}
+
+.reisonderdelen .accommodatie_elements .media-slider-next:after {
+  content: "\f054";
+}
+
+
+
+
+
 .reisonderdelen .accommodatie_elements .splittable  {
   grid-area: acco-splittable;
+}
+
+
+
+.reisonderdelen .accommodatie_elements.acco-optional  .title::before {
+  content: "Of kies ook uit onze schatkist...";
+  font-size: 25px;
+  color: #b2d6cf;
+  font-family: 'Beth Ellen', cursive;
+  text-transform: lowercase;
+  position: relative;
+}
+
+.reisonderdelen .accommodatie_elements.acco-optional  {
+  color: rgba(29, 29, 29, 0.78);
 }
 
 /***********************************
