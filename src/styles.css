@@ -1315,14 +1315,6 @@ margin-top: 40px;
 row-gap: 10px;
 column-gap: 30px;
 border: 1px solid purple;
-grid-template-areas:
-"acco-image nights acco-title"
-"acco-image nights acco-subTitle"
-"acco-image nights acco-date"
-"acco-image nights additionalText"
-"acco-image nights acco-subadditionalText"
-"acco-image nights acco-splittable"
-;
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field {
@@ -1330,7 +1322,6 @@ grid-template-areas:
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field .title {
-  grid-area: acco-title;
   font-weight: bold;
   font-size: 15px;
   line-height: 35px;
@@ -1345,7 +1336,6 @@ grid-template-areas:
 
 
 .reisonderdelen .accommodatie_elements vtb-element-field .subTitle {
-  grid-area: acco-subTitle;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
@@ -1355,12 +1345,10 @@ grid-template-areas:
   padding-top: 10px;
   letter-spacing: 1.3px;
   background-color: blue;
-
 }
 
 
 .reisonderdelen .accommodatie_elements vtb-element-field .nights {
- grid-area: nights;
  /* border: 1px solid green; */
  font-size: 19px;
  font-weight: bold;
@@ -1375,8 +1363,6 @@ grid-template-areas:
  margin-left: 0px;
  line-height: 40px;
  margin-top: 20px;
- background-color: GREEN;
-
 }
 
 .reisonderdelen .accommodatie_elements .element-unit-1 .title:before{
@@ -1396,23 +1382,18 @@ grid-template-areas:
 
  
 .reisonderdelen .accommodatie_elements vtb-element-field .date, .reisonderdelen .accommodatie_elements vtb-element-field .enddate {
-  grid-area: acco-date;
   background-color:red;
-
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field .additionalText {
-  grid-area: additionalText;
   background-color: pink;
 
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field .media {
-  grid-area: acco-image;
   clear:both;
   overflow:hidden;
   background-color: lightblue;
-
 }
 
 
