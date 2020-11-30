@@ -1384,7 +1384,7 @@ grid-template-areas:
   grid-area: additionalText;
 }
 
-.reisonderdelen .accommodatie_elements vtb-media {
+.reisonderdelen .accommodatie_elements vtb-element-field .media {
   grid-area: acco-image;
   clear:both;
   overflow:hidden;
