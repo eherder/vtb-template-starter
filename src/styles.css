@@ -1296,6 +1296,10 @@ width:100%;
  ;
 }
 
+.reisonderdelen .accommodatie_elements > divs {
+  display: grid;
+}
+
 .reisonderdelen .accommodatie_elements  vtb-element {
 display: grid;
 grid-area: accommodatie-element;
