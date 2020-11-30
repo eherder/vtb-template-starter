@@ -1678,6 +1678,7 @@ padding-top: 60px;
 .reissom .reissom-inclusief vtb-elements-list vtb-element {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   font-weight: bold;
   font-size: 18px;
   align-items: center;
