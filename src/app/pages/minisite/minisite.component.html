@@ -153,12 +153,11 @@
                 <vtb-elements [dataSource]="elements" [unitIds]="[2]" [reverseUnitIds]="true" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/lg', max: '3'},[{'name':'date', dateFormat:'d MMM'}, {'name':'endDate', dateFormat:'d MMM', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
             </div>
             <div class="accommodatie_elements acco-optional">
-                    <vtb-elements [dataSource]="elements" [unitIds]="[2]" [optional]="true" [elementFields]="[{name: 'media', crop: 'original/lg', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},'dayNumbers',{name: 'nights', prefix:'', postfix: 'n'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
-                </div>
+                    <vtb-elements [dataSource]="elements" [unitIds]="[2]" [optional]="true" [elementFields]="[{name: 'media', crop: 'original/lg', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},{name: 'nights', prefix:'', postfix: 'n'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
+            </div>
         </ng-template>
       </vtb-segments>
     </div>
-
 
 
   <div class="vluchtschema" *ngIf="itinerary.hasFlights">
@@ -189,7 +188,7 @@
                     [decimals]="0" 
                     [prefix]="'€'" 
                     [postfix]="',- p.p., op basis van  [persons] personen'" 
-                    [singlePostfix]="',- euro p.p., op basis van [persons] persoon'"></vtb-prices-grouped>
+                    ></vtb-prices-grouped>
                 <div class="exclusief-tekst"> Bovenstaande prijsopgaaf is exclusief: eventuele vertrekbelasting. {{(itinerary.extraFieldValues | extraField : 10 : 20)}} </div>
             </div>
     </div>
