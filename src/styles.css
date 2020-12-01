@@ -1733,11 +1733,6 @@ padding: 10px;
 }
 
 .reissom .reissom-inclusief .nights {
-  font-weight: bold;
-  align-items: center;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: left;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -1747,7 +1742,6 @@ padding: 10px;
  font-family: "Font Awesome 5 Free";
  content: "\f00c";
  padding-right: 15px;
-font-size: 25px;
 color: #b2d6cf;
 }
 
