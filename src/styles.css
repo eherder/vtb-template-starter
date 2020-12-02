@@ -1702,20 +1702,22 @@ padding-top: 60px;
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(1) {
   flex: 0 0 auto;
+  padding-right: 5px;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(2) {
-  flex: 1 5 auto;
+  flex: 0 5 auto;
+  padding-right: 5px;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(3) {
-  flex: 1 9 auto;
+  flex: 0 9 auto;
+  padding-right: 5px;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(4) {
-  flex: 1 1 100%;
+  flex: 0 1 100%;
 }
-s
 
 .reissom .reissom-inclusief div {
   padding: 5px 5px;
@@ -1727,8 +1729,7 @@ s
 }
 
 .reissom .reissom-inclusief .subTitle {
-  font-weight: 400;
-padding: 10px;
+font-weight: 600;
 }
 
 .reissom .reissom-inclusief .inclusief {
@@ -3797,18 +3798,21 @@ justify-self: start;
 
 .sublinks vtb-segment .date {
   grid-area: travelroute-date;
-  font-weight: 900;
+  font-weight: 400;
   text-transform: uppercase;
   padding-top: 20px;
+  font-size: 16px;
 }
 
 .sublinks vtb-segment .day {
   grid-area: travelroute-date;
-  font-weight: 900;
+  font-weight: 500;
   text-transform: uppercase;
   padding-top: 20px;
-  justify-self: center;
-  width: 150px;
+  padding-right: 5px;
+  font-size: 16px;
+  justify-self: left;
+  width: auto;
 }
 
 .sublinks vtb-segment .day:before {
