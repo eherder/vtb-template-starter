@@ -1676,13 +1676,13 @@ padding-top: 60px;
 }
 
 .reissom .reissom-inclusief {
-  margin: 10%;
 }
 
 .reissom .reissombrief{
   background-color: white;
   padding: 5%;
   box-shadow: 5px 5px 20px #888888;
+  margin: 10%;
 }
 
 .reissom .reissom-inclusief vtb-elements-list {
