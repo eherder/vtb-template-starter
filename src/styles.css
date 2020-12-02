@@ -1687,7 +1687,8 @@ padding-top: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  align-content: flex-start;
+  justify-content: start;
   font-weight: 600;
   font-size: 16px;
   align-items: center;
@@ -1705,15 +1706,15 @@ padding-top: 60px;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(2) {
-  flex: 1 5 auto;
+  flex: 0 5 auto;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(3) {
-  flex: 1 9 auto;
+  flex: 0 9 auto;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(4) {
-  flex: 1 1 100%;
+  flex: 0 1 100%;
 }
 
 .reissom .reissom-inclusief div {
