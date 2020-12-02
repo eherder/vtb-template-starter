@@ -1562,6 +1562,10 @@ column-gap: 30px;
    background-image: url(https://media.bontravel.nl/original/original/shutterstock_578658502.jpg(https://media.bontravel.nl/original/original/shutterstock_578658502.jpg);
  }
 
+ .reisonderdelen .accommodatie_elements.acco-optional:empty {
+   display: none;
+ }
+
 
 .reisonderdelen .accommodatie_elements.acco-optional:before {
   content: "Alternatief verblijf";
