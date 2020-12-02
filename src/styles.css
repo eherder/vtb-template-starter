@@ -1701,7 +1701,7 @@ padding-top: 60px;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(1) {
-  flex: 0 0 auto;
+  flex: 0 4 auto;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(2) {
@@ -1718,9 +1718,6 @@ padding-top: 60px;
 
 .reissom .reissom-inclusief div {
   padding: 5px 5px;
-  min-width: 100px;
-  width: 200px;
-  max-width: 300px;
 }
 
 .reissom .reissom-inclusief .title {
@@ -1764,7 +1761,6 @@ color: #b2d6cf;
 }
 
 .reissom .reissom-inclusief > div {
-  width: 100%;
   box-sizing: border-box;
 }
 
