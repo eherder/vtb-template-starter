@@ -1363,6 +1363,10 @@ column-gap: 30px;
  margin: 0 5% 0 5%;
 }
 
+.reisonderdelen .accommodatie_elements vtb-element-field .personaltouch {
+  display: block;
+}
+
 .reisonderdelen .accommodatie_elements .element-unit-1 .title:before{
  grid-area: nights;
  font-family: "Font Awesome 5 Free";
@@ -2692,9 +2696,6 @@ grid-template-areas:
 ;
 }
 
-.reisonderdelen .accommodatie_elements .personaltouch {
-  display: block;
-}
 
 .reisonderdelen .accommodatie_elements .personaltouch .personaltouch-text {
   font-size: 20px;
