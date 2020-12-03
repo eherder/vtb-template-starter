@@ -3371,11 +3371,11 @@ padding:0px;
   width: auto;
 }
 
-.cover-images vtb-media vtb-mediaspirit-image {
+.cover-images vtb-media > div.media-items vtb-mediaspirit-image {
   heigt: 50vh;
 }
 
-.cover-images vtb-media vtb-mediaspirit-image img {
+.cover-images vtb-media > div.media-items vtb-mediaspirit-image img {
   max-width: 100%;
   height: auto;
   width: auto;
