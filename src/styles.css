@@ -1615,11 +1615,10 @@ column-gap: 30px;
     border: 1px solid lightgrey;
     margin: 5%;
     box-shadow: none;
-    float: right;
   }
 
   .reisonderdelen .accommodatie_elements.acco-optional vtb-element:before {
-    position: relative;
+    position: absolute;
     font-family: "Font Awesome 5 Free";
     content: "\f005";
     padding-right: 15px;
