@@ -15,6 +15,21 @@ const customTransforms = {
     return obj;
   },
 
+  'hasProduct': (obj, params) => {
+    obj.dst.segments.forEach(segment => {
+      segment.hasOptionalHotel = false; //assume segment doesn't have optional hotel
+
+      segment.elements.forEach(element => {
+
+        if(element.unitId == 2 && element.optional) //if segment has optional hotel
+          segment.hasOptionalHotel = true;
+      });
+    });
+
+    return obj;
+  },
+
+
   'addImageToEmployeeText': (obj, params) => {
     obj.dst.segments.forEach(segment => {
       segment.elements.forEach(element => {

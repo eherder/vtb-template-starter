@@ -1673,6 +1673,9 @@ position: relative;
     margin: auto;
 }
 
+.reissom .reissom-perpersoon .exclusief-tekst p {
+  display:inline;
+}
 
 .reissom .reissom-perpersoon {
   grid-area: reissom-tekst;
