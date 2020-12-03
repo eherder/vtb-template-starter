@@ -3372,14 +3372,15 @@ padding:0px;
 }
 
 .cover-images vtb-media > div.media-items vtb-mediaspirit-image {
-  heigt: 50vh;
+  height: 60vh;
+
 }
 
 .cover-images vtb-media > div.media-items vtb-mediaspirit-image img {
-  max-width: 100%;
-  height: auto;
+  height: auto !important;
   width: auto;
-  object-fit: cover;
+  object-fit: cover !important;   
+  max-width: 100%;
 }
 
 .cover-images vtb-media > div.media-items img {
