@@ -2692,6 +2692,10 @@ grid-template-areas:
 ;
 }
 
+.reisonderdelen .accommodatie_elements .personaltouch {
+  display: block;
+}
+
 .reisonderdelen .accommodatie_elements .personaltouch .personaltouch-text {
   font-size: 20px;
   max-width: 90%;
