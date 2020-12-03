@@ -1595,7 +1595,7 @@ column-gap: 30px;
 
   .reisonderdelen .accommodatie_elements.acco-optional vtb-element {
     background-image: url(https://media.bontravel.nl/original/original/shutterstock_578658502.jpg(https://media.bontravel.nl/original/original/shutterstock_578658502.jpg);
-    padding: 5% 5% 5% 5%;
+    padding: 0% 5% 5% 5%;
     display: grid;
     grid-template-areas:
     "accommodatie-element";
