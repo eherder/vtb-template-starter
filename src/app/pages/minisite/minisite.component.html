@@ -180,9 +180,10 @@
             </div>
             <div class="reissombrief">
             <div class="reissom-inclusief">
-                    <vtb-elements-list [optional]="false" [segmentTypeIds]="[1,2,13,4,25,24]" [reverseSegmentTypeIds]="false" [dataSource]="itinerary.segments" [elementFields]="[{name: 'nights', prefix:'', postfix: ' nachten'},'title', 'subTitle', 'inclusief']"></vtb-elements-list>
+                    <vtb-elements-list [optional]="false" [segmentTypeIds]="[1,2,13,4,25,24]" [elementTypeIds="[]" [reverseSegmentTypeIds]="false" [dataSource]="itinerary.segments" [elementFields]="[{name: 'nights', prefix:'', postfix: ' nachten'},'title', 'subTitle', 'inclusief']"></vtb-elements-list>
             </div>
             <div id="border2"></div>
+            <vtb-price-calculator><vtb-price-calculator>
             <div class="reissom-perpersoon">
                     <vtb-prices-grouped 
                     [dataSource]="itinerary" 
