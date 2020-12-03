@@ -1313,7 +1313,7 @@ width:100%;
   background-position: center; 
 }
 
-.reisonderdelen .accommodatie_elements  {
+.reisonderdelen .accommodatie_elements vtb-element  {
  padding: 0% 5% 5% 5%;
  display: grid;
  grid-template-areas:
@@ -1593,7 +1593,20 @@ column-gap: 30px;
  .reisonderdelen .accommodatie_elements.acco-optional {
    padding: 5%;
    background-image: url(https://media.bontravel.nl/original/original/shutterstock_578658502.jpg(https://media.bontravel.nl/original/original/shutterstock_578658502.jpg);
- }
+  }
+
+  .reisonderdelen .accommodatie_elements.acco-optional vtb-element {
+    background-image: url(https://media.bontravel.nl/original/original/shutterstock_578658502.jpg(https://media.bontravel.nl/original/original/shutterstock_578658502.jpg);
+    padding: 5% 5% 5% 5%;
+    display: grid;
+    grid-template-areas:
+    "accommodatie-element";
+    border-bottom: 1px solid black;
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin: 5%;
+    box-shadow: none;
+  }
 
  .reisonderdelen .accommodatie_elements.acco-optional:empty {
    display: none;
