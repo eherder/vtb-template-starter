@@ -1161,7 +1161,6 @@ grid-template-areas:
 .reisonderdelen .default_elements .element-unit-11{
  background-image: url(https://media.bontravel.nl/wordpress/full/shutterstock_293763260.jpg);
  padding: 5%;
- margin: 10%;
  box-shadow: 1px 1px 10px #888888;
 }
 
@@ -1615,12 +1614,13 @@ column-gap: 30px;
 
 .reisonderdelen .accommodatie_elements.acco-optional:before {
   content: "Alternatief verblijf";
-  font-size: 25px;
-  color: #b2d6cf;
+  font-size: 35px;
+  color: black;
   font-family: 'Beth Ellen', cursive;
   text-transform: lowercase;
   position: relative;
   padding: 5px;
+  margin: 5%;
 }
 
 .reisonderdelen .accommodatie_elements.acco-optional  {
