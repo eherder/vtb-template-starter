@@ -1142,6 +1142,13 @@ grid-template-areas:
   z-index: 1;
 }
 
+.reisonderdelen .default_elements .element-unit-11{
+ background-image: url(https://media.bontravel.nl/wordpress/full/shutterstock_293763260.jpg);
+ padding: 5%;
+ margin: 10%;
+ box-shadow: 1px 1px 10px #888888;
+}
+
 
 .reisonderdelen .default_elements vtb-element-field:nth-child(2) {
   grid-area: default-date;
