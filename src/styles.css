@@ -3368,6 +3368,7 @@ padding:0px;
 
 .cover-images vtb-media > div.media-items img {
   max-width: 100%;
+  object-fit: cover;
 }
 
 @-webkit-keyframes slide {
