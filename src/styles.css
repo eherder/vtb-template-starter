@@ -1628,6 +1628,11 @@ column-gap: 30px;
   ;
 }
 
+.reissom .element-unit-11 {
+  display: none;
+}
+
+
 .reissom #border2 {
   position: relative;
   width: 60%;
