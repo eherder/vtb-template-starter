@@ -3276,7 +3276,7 @@ padding:0px;
   align-self: center;
   margin: 0;
   width: 80vw;
-  bottom: 25px;
+  bottom: 50%;
   z-index: 3;
 }
 
@@ -3298,9 +3298,9 @@ padding:0px;
   padding: 0 0 25px 0;
   text-align: center;
   font-weight: 100;
-  font-family: 'Beth Ellen', cursive;
-  color: yellow;
-  text-transform: none;
+  font-family: 'montserrat', cursive;
+  color: white;
+  text-transform: uppercase;
 
 }
 
