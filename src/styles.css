@@ -242,6 +242,7 @@ padding:0px;
 
 .cover-images vtb-media img {
   height: 100%;
+  
 }
 
 .cover-images vtb-media > div.media-items > div {
@@ -3314,6 +3315,12 @@ padding:0px;
   width:100%;
 }
 
+
+.cover-images img{
+  width:100%;
+  object-fit: cover;
+}
+
 .cover-images vtb-media {
   position: relative;
   display: block;
@@ -3326,6 +3333,7 @@ padding:0px;
 
 .cover-images vtb-media img {
   height: 100%;
+  object-fit: cover;
 }
 
 .cover-images vtb-media > div.media-items > div {
