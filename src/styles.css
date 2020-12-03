@@ -3366,8 +3366,16 @@ padding:0px;
   display: block;
 }
 
+.cover-images vtb-media > div.media-items {
+  max-width: 100%;
+  height: 40vh;
+  width: auto;
+}
+
 .cover-images vtb-media > div.media-items img {
   max-width: 100%;
+  height: 40vh;
+  width: auto;
   object-fit: cover;
 }
 
