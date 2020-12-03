@@ -3366,28 +3366,16 @@ padding:0px;
   display: block;
 }
 
-.cover-images vtb-media > div.media-items {
-  max-width: 100%;
-  width: auto;
-}
-
 .cover-images vtb-media > div.media-items vtb-mediaspirit-image {
-  height: 60vh;
-
+  height: 100vh;
+display: block;
 }
 
 .cover-images vtb-media > div.media-items vtb-mediaspirit-image img {
   height: auto !important;
-  width: auto;
+  width: 100%;
   object-fit: cover !important;   
   max-width: 100%;
-}
-
-.cover-images vtb-media > div.media-items img {
-  max-width: 100%;
-  height: auto;
-  width: auto;
-  object-fit: cover;
 }
 
 @-webkit-keyframes slide {
