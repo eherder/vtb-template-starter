@@ -1619,15 +1619,14 @@ column-gap: 30px;
   }
 
   .reisonderdelen .accommodatie_elements.acco-optional vtb-element:before {
-    content: "Optie";
-    font-size: 35px;
-    color: black;
-    font-family: 'Beth Ellen', cursive;
-    text-transform: lowercase;
     position: relative;
-    padding: 5px;
-    width: 100px;
-    float: left;
+    font-family: "Font Awesome 5 Free";
+    content: "\f005";
+    padding-right: 15px;
+   color: #b2d6cf;
+   top: 20px;
+   left: 20px;
+    z-index: 2;
   }
 
  .reisonderdelen .accommodatie_elements.acco-optional:empty {
