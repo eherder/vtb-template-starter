@@ -1382,10 +1382,11 @@ column-gap: 30px;
 
  
 .reisonderdelen .accommodatie_elements vtb-element-field .date, .reisonderdelen .accommodatie_elements vtb-element-field .enddate {
+  margin: 0% 5% 5% 2%;
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field .additionalText {
-
+margin: 0% 5% 5% 5%;
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field .media {
