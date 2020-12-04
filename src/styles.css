@@ -4777,13 +4777,8 @@ padding-top: 20px;}
 
  .afsluiting {
   grid-area: afsluiting;
-  display: grid;
+  display: block;
   padding: 5%;
-  grid-template-columns: 60% 40%;
-  grid-template-areas: 
-  "afsluiting-titel afsluiting-titel"
-  "afsluiting-tekst afsluiting-medewerker"
-  ;
 }
 
 .afsluiting .fas {
@@ -4798,11 +4793,9 @@ padding: 15px;
 }
 
 .afsluiting .afsluiting-tekst {
-  grid-area: afsluiting-tekst;
   text-align: center;
   padding-top: 20px;
   position: relative;
-  max-width: 900px;
   width: 100%;
   margin-bottom: 10%;
   padding: 15%;
@@ -4826,7 +4819,6 @@ padding: 15px;
 }
 
 .afsluiting .reistitel {
-  grid-area: afsluiting-titel;
   background-image: url(https://media.bontravel.nl/custom6/size6/ennu.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -4844,7 +4836,6 @@ padding-top: 20px;}
 }
   
 .afsluiting .reisspecialist {
-  grid-area: afsluiting-medewerker;
 }
 
   .afsluiting .reisspecialist .medewerker_foto {
