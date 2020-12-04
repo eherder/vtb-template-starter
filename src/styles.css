@@ -4769,7 +4769,7 @@ padding-top: 20px;}
  .afsluiting {
   grid-area: afsluiting;
   display: grid;
-  padding: 5%;
+  padding: 2%;
   grid-template-columns: 100%;
   grid-template-areas: 
   "afsluiting-titel"
@@ -4794,7 +4794,7 @@ padding: 15px;
   text-align: center;
   padding-top: 20px;
   position: relative;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   padding: 10%;
   background-color: white;
   box-shadow: 5px 5px 10px #888888;
