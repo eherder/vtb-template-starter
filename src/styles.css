@@ -2199,14 +2199,15 @@ padding-top: 20px;}
 .afsluiting .reisspecialist {
   grid-area: afsluiting-medewerker;
   padding: 5% 15%;
-
 }
-  .afsluiting .reisspecialist .medewerker_foto {
+
+  .afsluiting .afsluiting-tekst .reisspecialist .medewerker_foto {
     align-items: center;
     align-content: center;
     justify-content: center;
   }
-  .afsluiting .reisspecialist .medewerker_foto img {
+
+  .afsluiting .afsluiting-tekst .reisspecialist .medewerker_foto img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -2215,26 +2216,7 @@ padding-top: 20px;}
       padding: 10%;
   }
 
-  .afsluiting .reisspecialist .titel-gemaaktdoor {
-    background-image: url(https://media.bontravel.nl/original/lg/medewerker-bg-d05888d2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 170px;
-}
-
-.afsluiting .reisspecialist .titel-gemaaktdoor h1 {
-  letter-spacing: 1px;
-  padding:0 0px 0;
-  text-align:left;
-  left: 50px;
-  top: 80px;
-  position: relative;
-  font-size:1.3em;
-  font-weight:bold;
-  line-height:1.4em;
-  text-transform: uppercase;
-}
-.afsluiting .reisspecialist .titel-gemaaktdoor h2 {
+.afsluiting .afsluiting-tekst .reisspecialist .titel-gemaaktdoor h2 {
   margin: 0;
   font-size: 1.2em;
   padding: 0;
@@ -2247,7 +2229,7 @@ padding-top: 20px;}
   position: relative;
 }
 
-  .afsluiting .reisspecialist .medewerker_tekst {
+  .afsluiting .afsluiting-tekst .reisspecialist .medewerker_tekst {
     border-left: 5px solid black;
     padding-left: 5%;
     margin-left: 50px;
@@ -2255,12 +2237,12 @@ padding-top: 20px;}
 
 
 
-.afsluiting .reisspecialist .medewerker_foto {
+.afsluiting .afsluiting-tekst .reisspecialist .medewerker_foto {
   align-items: center;
   align-content: center;
   justify-content: center;
 }
-.afsluiting .reisspecialist .medewerker_foto img {
+.afsluiting .afsluiting-tekst .reisspecialist .medewerker_foto img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -2269,14 +2251,14 @@ padding-top: 20px;}
     padding: 10%;
 }
 
-.afsluiting .reisspecialist .titel-gemaaktdoor {
+.afsluiting .afsluiting-tekst .reisspecialist .titel-gemaaktdoor {
   background-image: url(https://media.bontravel.nl/original/lg/medewerker-bg-d05888d2.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 170px;
 }
 
-.afsluiting .reisspecialist .titel-gemaaktdoor h1 {
+.afsluiting .afsluiting-tekst .reisspecialist .titel-gemaaktdoor h1 {
 letter-spacing: 1px;
 padding:0 0px 0;
 text-align:left;

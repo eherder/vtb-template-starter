@@ -286,7 +286,7 @@
           </div>
 
           <div [innerHTML]="(itinerary.extraFieldValues | extraField : 11 : 24)"></div>
-
+          <div class="reisspecialist">
           <ng-container [ngSwitch]="(itinerary.extraFieldValues | extraField : 10 : 19)">
             <div *ngSwitchCase="'Milou van Steen'" class="sales_travelspecialist">
                 <div class="titel-gemaaktdoor">
@@ -305,7 +305,7 @@
                 <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/DSC00715kopie.jpg"></div>
             </div>
           </ng-container>
-
+          </div>
         </div>
     </div>
 
