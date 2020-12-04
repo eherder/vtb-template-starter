@@ -4779,10 +4779,11 @@ padding-top: 20px;}
   grid-area: afsluiting;
   display: grid;
   padding: 5%;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: %100;
   grid-template-areas: 
-  "afsluiting-titel afsluiting-titel"
-  "afsluiting-tekst afsluiting-medewerker"
+  "afsluiting-titel"
+  "afsluiting-tekst"
+  "afsluiting-medewerker"
   ;
 }
 
