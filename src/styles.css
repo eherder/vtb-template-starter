@@ -4794,10 +4794,8 @@ padding: 15px;
   text-align: center;
   padding-top: 20px;
   position: relative;
-  max-width: 900px;
-  width: 100%;
   margin-bottom: 10%;
-  padding: 15%;
+  padding: 10%;
   background-color: white;
   box-shadow: 5px 5px 10px #888888;
 }
