@@ -2056,12 +2056,13 @@ padding-top: 20px;}
 }
 
 .voorwaarden img {
-  width: 250px;
+  width: 100px;
   max-width: 250px;
   height: auto;
-  float: left;
-  margin-right: 20px;
+  float: right;
+  margin-right: 0px;
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 /*
@@ -2140,13 +2141,9 @@ padding-top: 20px;}
 
  .afsluiting {
   grid-area: afsluiting;
-  display: grid;
+  display: block;
   padding: 5%;
-  grid-template-columns: 60% 40%;
-  grid-template-areas: 
-  "afsluiting-titel afsluiting-titel"
-  "afsluiting-tekst afsluiting-medewerker"
-  ;
+  width: 100%;
 }
 
 .afsluiting .fas {
@@ -2161,13 +2158,10 @@ padding: 15px;
 }
 
 .afsluiting .afsluiting-tekst {
-  grid-area: afsluiting-tekst;
   text-align: center;
   padding-top: 20px;
   position: relative;
-  max-width: 900px;
-  margin-bottom: 10%;
-  padding: 15%;
+  margin: 10%;
 }
 
 .afsluiting h2 {
@@ -2186,7 +2180,6 @@ padding: 15px;
 }
 
 .afsluiting .reistitel {
-  grid-area: afsluiting-titel;
   background-image: url(https://media.bontravel.nl/custom6/size6/ennu.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -4787,6 +4780,8 @@ padding: 15px;
   width: 100%;
   margin-bottom: 10%;
   padding: 15%;
+  background-color: white;
+  box-shadow: 5px 5px 10px #888888;
 }
 
 .afsluiting h2 {
@@ -4878,6 +4873,8 @@ padding-top: 20px;}
     padding-left: 5%;
     margin-left: 50px;
 }
+
+
 /***********************************
  *       Vluchtschema     *
  ***********************************/
