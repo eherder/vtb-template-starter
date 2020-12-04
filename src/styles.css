@@ -2211,8 +2211,8 @@ padding-top: 20px;}
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-      width: 150px;
-      padding: 10%;
+    width: 150px;
+    padding: 0%;
   }
 
 .afsluiting .afsluiting-tekst .reisspecialist .titel-gemaaktdoor h2 {
@@ -2240,15 +2240,6 @@ padding-top: 20px;}
   align-items: center;
   align-content: center;
   justify-content: center;
-}
-.afsluiting .afsluiting-tekst .reisspecialist .medewerker_foto img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-  width: 150px;
-  padding: 10%;
-  float: left;
 }
 
 .afsluiting .afsluiting-tekst .reisspecialist .titel-gemaaktdoor {
@@ -4779,7 +4770,7 @@ padding-top: 20px;}
   grid-area: afsluiting;
   display: grid;
   padding: 5%;
-  grid-template-columns: %100;
+  grid-template-columns: 100%;
   grid-template-areas: 
   "afsluiting-titel"
   "afsluiting-tekst"
