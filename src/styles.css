@@ -2890,8 +2890,6 @@ grid-template-areas:
 
 .afsluiting .reisspecialist {
   grid-area: afsluiting-medewerker;
-  padding: 5%;
-  margin: 10%;
   border: 1px solid black;
 }
 
@@ -4847,9 +4845,8 @@ padding-top: 20px;}
   
 .afsluiting .reisspecialist {
   grid-area: afsluiting-medewerker;
-  padding: 5% 15%;
-
 }
+
   .afsluiting .reisspecialist .medewerker_foto {
     align-items: center;
     align-content: center;
@@ -4862,6 +4859,7 @@ padding-top: 20px;}
     border-radius: 50%;
       width: 150px;
       padding: 10%;
+      float: left;
   }
 
   .afsluiting .reisspecialist .titel-gemaaktdoor {
