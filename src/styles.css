@@ -2247,8 +2247,9 @@ padding-top: 20px;}
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
-    width: 150px;
-    padding: 10%;
+  width: 150px;
+  padding: 10%;
+  float: left;
 }
 
 .afsluiting .afsluiting-tekst .reisspecialist .titel-gemaaktdoor {
@@ -2262,23 +2263,23 @@ padding-top: 20px;}
 letter-spacing: 1px;
 padding:0 0px 0;
 text-align:left;
-left: 50px;
+left: 0px;
 top: 80px;
 position: relative;
 font-size:1.3em;
-font-weight:bold;
+font-weight:300;
 line-height:1.4em;
-text-transform: uppercase;
+text-transform: None;
 }
 .afsluiting .reisspecialist .titel-gemaaktdoor h2 {
 margin: 0;
-font-size: 1.2em;
+font-size: 1.3em;
 padding: 0;
 text-align: left;
 font-weight: 100;
 font-family: 'Beth Ellen', cursive;
 text-transform: none;
-left: 50px;
+left: 0px;
 top: 60px;
 position: relative;
 }
@@ -3445,7 +3446,7 @@ padding:0px;
 .cover-images vtb-media > div.media-items > div {
   position: absolute !important;
   top:50%;
-  left:50%;
+  left:0%;
   transform:translate(-50%, -50%);
   display: none;
   max-width: calc(100% - 2px);
