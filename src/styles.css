@@ -2252,6 +2252,55 @@ padding-top: 20px;}
     padding-left: 5%;
     margin-left: 50px;
 }
+
+
+
+.afsluiting .reisspecialist .medewerker_foto {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.afsluiting .reisspecialist .medewerker_foto img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+    width: 150px;
+    padding: 10%;
+}
+
+.afsluiting .reisspecialist .titel-gemaaktdoor {
+  background-image: url(https://media.bontravel.nl/original/lg/medewerker-bg-d05888d2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 170px;
+}
+
+.afsluiting .reisspecialist .titel-gemaaktdoor h1 {
+letter-spacing: 1px;
+padding:0 0px 0;
+text-align:left;
+left: 50px;
+top: 80px;
+position: relative;
+font-size:1.3em;
+font-weight:bold;
+line-height:1.4em;
+text-transform: uppercase;
+}
+.afsluiting .reisspecialist .titel-gemaaktdoor h2 {
+margin: 0;
+font-size: 1.2em;
+padding: 0;
+text-align: left;
+font-weight: 100;
+font-family: 'Beth Ellen', cursive;
+text-transform: none;
+left: 50px;
+top: 60px;
+position: relative;
+}
+
 /***********************************
  *       Vluchtschema     *
  ***********************************/
