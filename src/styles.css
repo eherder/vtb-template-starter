@@ -666,7 +666,7 @@ padding-top: 70px;}
     background-repeat: no-repeat;
     background-position: center; 
 }
-co
+
 .reisonderdelen vtb-segment > div {
     z-index:1;
 }
@@ -1000,10 +1000,12 @@ padding-right: 5px;
 
 /*===== Resonsive Vertical Timeline =====*/
 @media only screen and (max-width: 870px) {
+
   #conference-timeline .timeline-start,
   #conference-timeline .timeline-end {
     margin: 0;
   }
+
   #conference-timeline .conference-center-line {
     margin-left: 0;
     left: 50px;
@@ -1037,6 +1039,7 @@ padding-right: 5px;
     display: none;
   }
 }
+
 @media only screen and (max-width: 400px) {
   .sublinks  vtb-segment p {
     margin: 0;
