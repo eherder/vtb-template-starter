@@ -2639,15 +2639,14 @@ tr:nth-child(odd) {background: #FFF}
 /* @MEDIA REISROUTE */
 
 .maingrid {
+  grid-area: reisschema;
+  background-color: #ffffff;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: 
   "reistitel" 
   "subrechts"
   "sublinks"
-  ;
-  grid-area: reisschema;
-  background-color: #ffffff;
 }
 
 .subrechts {
@@ -2659,6 +2658,7 @@ tr:nth-child(odd) {background: #FFF}
   "reisduur"
   "persoon"
   "kaart"
+  ;
 }
 
 .subrechts vtb-text {
@@ -2752,6 +2752,7 @@ padding-left: 20px;
 
 .reisonderdelen vtb-segment {
   padding: 5%;
+  max-width: 100%;
 }
 
 
