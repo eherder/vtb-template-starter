@@ -3417,7 +3417,7 @@ padding:0px;
 
 .cover-images vtb-media > div.media-items > div {
   position: absolute !important;
-  top:50%;
+  top:40%;
   left:0%;
   transform:translate(-50%, -50%);
   display: none;
@@ -5475,7 +5475,6 @@ grid-template-areas:
   grid-area: afsluiting-medewerker;
   padding: 5%;
   margin: 10%;
-  border: 1px solid black;
 }
 
 .afsluiting .reisspecialist .medewerker_tekst {
