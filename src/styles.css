@@ -659,6 +659,9 @@ padding-top: 70px;}
 
 .reisonderdelen vtb-segment {
     transition-delay: 5s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
 }
 
 .reisonderdelen vtb-segment > div {
