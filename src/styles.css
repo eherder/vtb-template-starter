@@ -2793,7 +2793,8 @@ grid-template-areas:
   grid-template-areas:
   "personaltouch"
   "default-image" 
-  "iconbar" 
+  "iconbar"
+  "default-title" 
   "default-subTitle" 
   "default-date" 
   "default-additionalText"
@@ -5396,7 +5397,8 @@ grid-template-areas:
   grid-template-areas:
   "personaltouch"
   "default-image" 
-  "iconbar" 
+  "iconbar"
+  "default-title"
   "default-subTitle" 
   "default-date" 
   "default-additionalText"
