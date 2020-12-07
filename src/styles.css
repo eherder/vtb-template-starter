@@ -1308,12 +1308,14 @@ width:100%;
 
 }
  .reisonderdelen .segment-field.content {
+  background-size: 100%;
   grid-area: reisonderdelen-content;
   padding: 5% 10%;
-  background-image: url(https://media.bontravel.nl/original/original/shutterstock_578030752.jpg);
-  background-size: cover;
+  background-color: #fafafa;
+  background-image: url(https://media.bontravel.nl/original/original/background-vtb-palm.jpg);
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: bottom;
+  overflow: hidden;
 }
 
 .reisonderdelen .accommodatie_elements vtb-element  {
