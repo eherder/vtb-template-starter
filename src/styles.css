@@ -2653,11 +2653,12 @@ tr:nth-child(odd) {background: #FFF}
 .subrechts {
   display: grid;
   justify-self: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas: 
-  "reisperiode reisduur persoon"
-  "kaart kaart kaart"
-
+  "reisperiode"
+  "reisduur"
+  "persoon"
+  "kaart"
 }
 
 .subrechts vtb-text {
