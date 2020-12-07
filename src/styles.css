@@ -4175,14 +4175,15 @@ grid-area: bestemming;
 }
 
 .reisonderdelen .default_elements {
-  grid-area: acco-element;
+  grid-area: default-element;
   grid-template-areas:
-  "default-element"
+  "default-elements"
   ;
 }
 
 .reisonderdelen .default_elements vtb-element {
 display: grid;
+grid-area: default-elements;
 grid-template-columns: 3fr;
 overflow:visible;
 clear: both;
@@ -4201,7 +4202,6 @@ grid-template-areas:
 
 .reisonderdelen .default_elements vtb-element-field:nth-child(3) {
   grid-area: default-title;
-  position: relative;
   font-weight: bold;
   font-size: 25px;
   line-height: 35px;
@@ -4210,6 +4210,7 @@ grid-template-areas:
   text-transform: uppercase;
   padding-top: 30px;
   z-index: 2;
+  display: none;
 }
 
 .reisonderdelen .default_elements vtb-element-field:nth-child(4) {
