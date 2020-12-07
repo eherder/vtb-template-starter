@@ -69,6 +69,26 @@
           </div>
           <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/DSC00715kopie.jpg"></div>
       </div>
+      <div *ngSwitchCase="'Frank Bijsterbosch'" class="sales_travelspecialist">
+        <div class="titel-gemaaktdoor">
+          <h1>Samengesteld door</h1> 
+          <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
+        <div class="medewerker_tekst">
+            <p>   Frank houdt net zoveel van een gastronomisch 5 sterren diner op het mondaine St. Barth als een pittige hike door het regenwoud van Dominica. Zo’n veelzijdige interesse is ideaal om de mooiste plekjes te ontdekken voor jou. Frank is reisspecialist en eigenaar van Bon Travel. Het zal je dan ook niet verwonderen dat Frank nagenoeg alle bestemmingen uit het aanbod van BON travel al meermaals bezocht heeft. Hij kan je er dan ook alles over vertellen. 
+              </p>
+        </div>
+        <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/Frank-indianriver.jpg"></div>
+       </div>
+       <div *ngSwitchCase="'Sharone Davelaar'" class="sales_travelspecialist">
+        <div class="titel-gemaaktdoor">
+          <h1>Samengesteld door</h1> 
+          <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
+        <div class="medewerker_tekst">
+            <p>  Sharone is een echte liefhebber van het eilandgevoel. En laat de Caribbean nou net uit honderden verschillende eilanden bestaan! Sharone mixt gevoel voor mensenkennis met een flinke dosis Caribische reiservaring om jouw droomreis te maken. 
+              </p>
+        </div>
+        <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/DSC05305.JPG"></div>
+       </div>
     </ng-container>
   </div>
 </div>
@@ -303,6 +323,18 @@
                 </div>
                 <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/DSC00715kopie.jpg"></div>
             </div>
+            <div *ngSwitchCase="'Frank Bijsterbosch'" class="sales_travelspecialist">
+              <div class="titel-gemaaktdoor">
+                <h1>Samengesteld door</h1> 
+                <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
+              <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/Frank-indianriver.jpg"></div>
+             </div>
+             <div *ngSwitchCase="'Sharone Davelaar'" class="sales_travelspecialist">
+              <div class="titel-gemaaktdoor">
+                <h1>Samengesteld door</h1> 
+                <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
+              <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/DSC05305.JPG"></div>
+             </div>
           </ng-container>
           </div>
         </div>
