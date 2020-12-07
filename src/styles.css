@@ -972,7 +972,7 @@ padding-right: 5px;
   line-height: 62px;
 }
 
-.sublinks  vtb-segment.segment-type-13::before {
+.sublinks  vtb-segment.segment-type-13:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
   content: "\f015";
@@ -1618,8 +1618,6 @@ column-gap: 30px;
 
   .reisonderdelen .accommodatie_elements.acco-optional vtb-element:before {
     position: absolute;
-    font-family: "Font Awesome 5 Free";
-    content: "\f005";
     padding-right: 30px;
    color: white;
    top: 20px;
