@@ -4211,7 +4211,6 @@ grid-template-areas:
   text-transform: uppercase;
   padding-top: 30px;
   z-index: 2;
-  display: none;
 }
 
 .reisonderdelen .default_elements vtb-element-field:nth-child(4) {
