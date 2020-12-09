@@ -51,6 +51,7 @@
       <div [innerHTML]="itinerary.extraFieldValues | extraField : 6 : 16"></div>
     </div>
     <agm-map class="travelmap"
+      [fitBounds]="locations.length > 1" 
       [zoom]="14"
       [scrollwheel]="false" 
       [zoomControl]="false"
