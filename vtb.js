@@ -29,6 +29,23 @@ const customTransforms = {
     return obj;
   },
 
+  'getMarkers': (obj, params) => {
+    let markers = [];
+    obj.dst.segments.forEach(segment => {
+
+      segment.elements.forEach(element => {
+
+        if(element.unitId == 2 && !element.optional && element.maps && element.maps.latitude) {
+          markers.push(element.maps);
+        }
+          
+      });
+    });
+
+    obj.dst.allMarkers = markers;
+
+    return obj;
+  },
 
   'addImageToEmployeeText': (obj, params) => {
     obj.dst.segments.forEach(segment => {
