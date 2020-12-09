@@ -4,6 +4,7 @@
     "methods": [
       {"function": "hasFlights", "params": {}},
       {"function": "hasProduct", "params": {}},
+      {"function": "getMarkers", "params": {}},
       {"function": "priceInfo", "params": {}},
       {"function": "polylines", "params": {}},
       {"function": "extraField", "params": {"attributeName": "voorwaarden", "extraFieldValueID": 10, "fieldID": 21}},
