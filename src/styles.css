@@ -2440,9 +2440,9 @@ tr:nth-child(odd) {background: #FFF}
   grid-area: footer1;
   margin:0 ;
   display:grid;
-  width:100%;
+  width:auto;
   overflow:hidden;
-  grid-template-columns: repeat(6, minmax(300px, 450px));
+  grid-template-columns: repeat(6, minmax(250px, 450px));
   column-gap: 3px;
   row-gap: 1px;
  }
