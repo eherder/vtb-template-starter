@@ -1790,7 +1790,7 @@ padding: 10px;
 
 .reissom .reissom-inclusief .inclusief {
   font-weight: 400;
-  border-bottom: 1px solid black;
+  border-bottom: 0px solid black;
 }
 
 .reissom .reissom-inclusief .nights {
@@ -1818,6 +1818,9 @@ color: #b2d6cf;
   clear: both;
 }
 
+.reissom .reissom-inclusief li::before {
+  display: none;
+}
 
 .reissom .reissom-inclusief ul:after {
   content: "";
@@ -1961,6 +1964,7 @@ color: #b2d6cf;
   font-size: 0.9em;
   clear: both;
 }
+
 
 .reissomoptioneel .reissomoptioneel-inclusief ul:after {
   content: "";
