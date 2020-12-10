@@ -146,6 +146,28 @@ a {
   background-image: url(https://media.bontravel.nl/wordpress/large/lightpaperfibers_2X.png);
 }
 
+
+.topbanner {
+  position: relative;
+  background: #2c3e50;
+  height: 50vh;
+}
+
+.topbanner::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -1%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 35px;
+  background-size: 35px 100%;
+  background-image: linear-gradient(135deg, #2c3e50 25%, transparent 25%), linear-gradient(225deg, #2c3e50 25%, transparent 25%);
+  background-position: 0 0;
+}
+
+
 /*********************
  *       HEADER       *
  *********************/
@@ -153,7 +175,6 @@ a {
 .grid-container .header {
 padding:0px;
 }
-
 
 
 .header {
