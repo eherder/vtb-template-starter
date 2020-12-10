@@ -1806,6 +1806,11 @@ padding: 10px;
 color: #b2d6cf;
 }
 
+.reissom .reissom-inclusief .unitnaam {
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
 .reissom .reissom-inclusief ul {
   margin: 0;
   padding: 10px 0;
