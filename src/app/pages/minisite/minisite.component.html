@@ -177,7 +177,7 @@
             <div *ngIf="segment.hasOptionalHotel" class="accommodatie_elements acco-optional">
                 <vtb-elements [dataSource]="elements" [unitIds]="[2]" [optional]="true" [elementFields]="[{name: 'media', crop: 'original/original', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},{name: 'nights', prefix:'', postfix: 'n'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
             </div>
-            <div class="accommodatie_elements">
+            <div class="default_elements">
               <vtb-elements [dataSource]="elements" [unitIds]="[27]" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/original', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},{name: 'nights', prefix:'', postfix: 'n'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}, 'personaltouch']"></vtb-elements>
           </div>
         </ng-template>
