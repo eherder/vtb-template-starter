@@ -122,6 +122,7 @@ a {
  .grid-container {
   display: grid;
   grid-template-areas: 
+  "topbanner"
   "header"
   "menu"
   "reisintroductie"
@@ -148,6 +149,7 @@ a {
 
 
 .topbanner {
+  grid-area: topbanner;
   position: relative;
   background: #2c3e50;
   height: 50vh;
