@@ -3629,6 +3629,52 @@ text-decoration: none;
     box-shadow: 5px 5px 10px #888888;
   }
 
+ 
+  .reisintroductie .brief .handtekening {
+  }
+  
+  .reisintroductie .brief .handtekening .medewerker_foto {
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+    }
+  
+    .reisintroductie .brief .handtekening.medewerker_foto img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+      width: 150px;
+      padding: 0%;
+    }
+  
+    .reisintroductie .brief .handtekening .titel-gemaaktdoor h2 {
+    margin: 0;
+    font-size: 1.2em;
+    padding: 0;
+    text-align: left;
+    font-weight: 100;
+    font-family: 'Beth Ellen', cursive;
+    text-transform: none;
+    left: 0px;
+    top: 60px;
+    position: relative;
+  }
+  
+  .reisintroductie .brief .handtekening .medewerker_tekst {
+      border-left: 5px solid black;
+      padding-left: 5%;
+      margin-left: 50px;
+  }
+  
+  .reisintroductie .brief .handtekening .medewerker_foto {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  
+
+
   .reisintroductie .reisspecialist {
     grid-area: reisspecialist;
     padding-right:10%;
