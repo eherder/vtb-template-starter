@@ -3341,7 +3341,8 @@ a {
  
  .grid-container {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
+  "topblok"
   "header"
   "menu"
   "reisintroductie"
