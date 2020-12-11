@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Oswald|Merriweater|Roboto&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Lora);
 
 /*********************
  *                   *
@@ -122,7 +123,7 @@ a {
  .grid-container {
   display: grid;
   grid-template-areas: 
-  "topbanner"
+  "topblok"
   "header"
   "menu"
   "reisintroductie"
@@ -147,26 +148,39 @@ a {
   background-image: url(https://media.bontravel.nl/wordpress/large/lightpaperfibers_2X.png);
 }
 
+/*********************
+ *       TOPBLOK       *
+ *********************/
 
-.topbanner {
-  grid-area: topbanner;
+.topblok {
+  grid-area: topblok;
+  background: lightgrey;
   position: relative;
-  background: #2c3e50;
-  height: 50vh;
+  overflow: hidden;
+  display: flex;
 }
 
-.topbanner::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  left: -1%;
-  top: 100%;
-  z-index: 10;
-  display: block;
-  height: 35px;
-  background-size: 35px 100%;
-  background-image: linear-gradient(135deg, #2c3e50 25%, transparent 25%), linear-gradient(225deg, #2c3e50 25%, transparent 25%);
-  background-position: 0 0;
+.topblok blockquote {
+  margin: 3.7em auto;
+  padding: 2em;
+  background: linear-gradient(white, white) padding-box, url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/80625/sea.jpg) border-box  0 / cover;
+  border: 2em solid transparent;
+  box-shadow: 5px 3px 30px black;
+  font-size: 1.4em;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  line-height: 1.5;
+  width: 40%;
+}
+
+.topblok footer {
+  padding-top: 1.3em;
+}
+
+.topblok cite {
+  font-style: normal;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 
