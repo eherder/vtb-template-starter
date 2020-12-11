@@ -256,9 +256,11 @@
                     ></vtb-prices-grouped>
 
                     <vtb-price-calculator 
-                    [dataSource]="itinerary.segments">
+                    [dataSource]="itinerary.segments" 
+                    [segmentTypeIds]="[1]"
+                    [reverseSegmentTypeIds]="true">
                   </vtb-price-calculator>
-                  
+
                                         <div class="exclusief-tekst"> Bovenstaande prijsopgaaf is exclusief: eventuele vertrekbelasting. <span [innerHTML]="(itinerary.extraFieldValues | extraField : 10 : 20)"></span> </div>
             </div>
           </div>
