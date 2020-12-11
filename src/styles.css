@@ -3631,14 +3631,14 @@ text-decoration: none;
   }
   
   .reisintroductie .brief .handtekening .medewerker_foto {
-      align-items: center;
-      align-content: center;
-      justify-content: center;
+      align-items: flex-start;
+      align-content: flex-start;
+      justify-content: start;
     }
   
     .reisintroductie .brief .handtekening .medewerker_foto img {
       display: block;
-      margin-left: auto;
+      margin-left: none;
       margin-right: auto;
       border-radius: 50%;
       width: 150px;
