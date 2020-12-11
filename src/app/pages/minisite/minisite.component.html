@@ -259,13 +259,13 @@
                     [dataSource]="itinerary.segments"
                     [decimals]="0" 
                     [prefix]="'€'" 
-                    [postfix]="',- , in totaal'" 
+                    [postfix]="',-  totale reissom'" 
                     [segmentTypeIds]="[99]"
                     [reverseSegmentTypeIds]="true"
                     [optional]="false">
                   </vtb-price-calculator>
 
-                                        <div class="exclusief-tekst"> Bovenstaande prijsopgaaf is exclusief: eventuele vertrekbelasting. <span [innerHTML]="(itinerary.extraFieldValues | extraField : 10 : 20)"></span> </div>
+                  <div class="exclusief-tekst"> Bovenstaande prijsopgaaf is exclusief: eventuele vertrekbelasting. <span [innerHTML]="(itinerary.extraFieldValues | extraField : 10 : 20)"></span> </div>
             </div>
           </div>
     </div>
