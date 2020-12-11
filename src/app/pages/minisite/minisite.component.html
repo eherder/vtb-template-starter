@@ -328,9 +328,19 @@
         </div>
         <div class="afsluiting-tekst">
        
-          <div> <h2>Deze reis boeken</h2>
-      <p> Is de reis zoals voorgesteld helemaal naar wens en willen jullie deze graag boeken? Dan vernemen wij dit graag zo spoedig mogelijk. Laat dit ons telefonisch of per e-mail weten. Zodra we op de hoogte zijn gaan wij direct aan de slag om de reis definitief te maken. </p>
-      <br></div>
+          <div *ngIf="(itinerary.extraFieldValues | extraField : 11 : 33)">
+            <h2>Bedankt voor jullie boeking</h2>
+               <p>Bedankt voor jullie boeking en het vertrouwen in BON travel. We gaan er alles aan doen om er voor te zorgen dat jullie een super vakantie gaan krijgen. We benadrukken graag nogmaals dat we altijd tot jullie beschikking staan voor eventuele vragen.</p>
+               <br>
+          </div>
+     
+
+      <div *ngIf="(itinerary.extraFieldValues | extraField : 11 : 32)">
+       <h2>Deze reis boeken</h2>
+          <p> Is de reis zoals voorgesteld helemaal naar wens en willen jullie deze graag boeken? Dan vernemen wij dit graag zo spoedig mogelijk. Laat dit ons telefonisch of per e-mail weten. Zodra we op de hoogte zijn gaan wij direct aan de slag om de reis definitief te maken. </p>
+          <br>
+     </div>
+
 
           <div *ngIf="(itinerary.extraFieldValues | extraField : 11 : 22)">
             <h2>Opties plaatsen</h2>
