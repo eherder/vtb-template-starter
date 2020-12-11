@@ -45,7 +45,12 @@
   <div class="reistitel"><h1>Reisvoorstel voor <span [innerHTML]="itinerary.NaamReisgezelschap"></span></h1>
     <div id="border"></div>
   </div>
-<div class="brief" [innerHTML]="itinerary.TSOrder.texts.proposal"></div>
+
+<div class="brief">
+<div  [innerHTML]="itinerary.TSOrder.texts.proposal"></div>
+</div>
+
+
 <div class="reisspecialist">
     <ng-container [ngSwitch]="(itinerary.extraFieldValues | extraField : 10 : 19)">
       <div *ngSwitchCase="'Milou van Steen'" class="sales_travelspecialist">
