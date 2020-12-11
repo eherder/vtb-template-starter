@@ -160,7 +160,7 @@ a {
   display: flex;
 }
 
-.topblok .blockquote {
+.topblok blockquote {
   margin: 3.7em auto;
   padding: 2em;
   background: linear-gradient(white, white) padding-box, url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/80625/sea.jpg) border-box  0 / cover;
@@ -173,11 +173,11 @@ a {
   width: 40%;
 }
 
-.topblok .footer {
+.topblok footer {
   padding-top: 1.3em;
 }
 
-.topblok .cite {
+.topblok cite {
   font-style: normal;
   font-size: 1.2em;
   font-weight: bold;
@@ -3342,7 +3342,7 @@ a {
  .grid-container {
   display: grid;
   grid-template-areas:
-  "topblok"
+  "topblok" 
   "header"
   "menu"
   "reisintroductie"
