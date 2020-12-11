@@ -254,8 +254,12 @@
                     [prefix]="'€'" 
                     [postfix]="',- p.p., op basis van [persons] personen'" 
                     ></vtb-prices-grouped>
-                    <vtb-price-calculator></vtb-price-calculator>
-                <div class="exclusief-tekst"> Bovenstaande prijsopgaaf is exclusief: eventuele vertrekbelasting. <span [innerHTML]="(itinerary.extraFieldValues | extraField : 10 : 20)"></span> </div>
+
+                    <vtb-price-calculator 
+                    [dataSource]="itinerary.segments">
+                  </vtb-price-calculator>
+                  
+                                        <div class="exclusief-tekst"> Bovenstaande prijsopgaaf is exclusief: eventuele vertrekbelasting. <span [innerHTML]="(itinerary.extraFieldValues | extraField : 10 : 20)"></span> </div>
             </div>
           </div>
     </div>
