@@ -256,8 +256,11 @@
                     ></vtb-prices-grouped>
 
                     <vtb-price-calculator 
-                    [dataSource]="itinerary.segments" 
-                    [segmentTypeIds]="[1]"
+                    [dataSource]="itinerary.segments"
+                    [decimals]="0" 
+                    [prefix]="'€'" 
+                    [postfix]="',- , in totaal'" 
+                    [segmentTypeIds]="[99]"
                     [reverseSegmentTypeIds]="true"
                     [optional]="false">
                   </vtb-price-calculator>
