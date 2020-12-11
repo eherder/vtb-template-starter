@@ -3155,6 +3155,7 @@ padding-left: 20px;
     grid-template-areas: 
     "reistitel" 
     "brief"
+    "handtekening"
     "reisspecialist"
     ;
     grid-area: reisintroductie;
@@ -3162,8 +3163,13 @@ padding-left: 20px;
   }
 
   .reisintroductie .brief {
+    padding: 15mm;
+      }
+
+  .reisintroductie .brief {
 padding: 15mm;
   }
+
 
   .reisintroductie .reisspecialist {
     grid-area: reisspecialist;
@@ -3601,6 +3607,7 @@ text-decoration: none;
   grid-template-areas: 
     "reistitel reistitel"
     "brief reisspecialist"
+    "handtekening reisspecialist"
     ;
   grid-area: reisintroductie;
   background-color: #ffffff;
@@ -3613,6 +3620,16 @@ text-decoration: none;
 
   .reisintroductie .brief {
     grid-area: brief;
+    padding: 15%;
+    background-color: white;
+    border: 1px solid lightgrey;
+    padding: 10%;
+    margin: 5%;
+    box-shadow: 5px 5px 10px #888888;
+  }
+
+  .reisintroductie .handtekening {
+    grid-area: handtekening;
     padding: 15%;
     background-color: white;
     border: 1px solid lightgrey;

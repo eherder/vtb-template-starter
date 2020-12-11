@@ -40,17 +40,14 @@
   ></vtb-menu>
 </div>
 
-<div class="brief">
 <div class="reisintroductie">
   <div class="reistitel"><h1>Reisvoorstel voor <span [innerHTML]="itinerary.NaamReisgezelschap"></span></h1>
     <div id="border"></div>
   </div>
-<div [innerHTML]="itinerary.TSOrder.texts.proposal">
-</div>
+  <div class="brief" [innerHTML]="itinerary.TSOrder.texts.proposal"></div>
 
-<div [innerHTML]="(itinerary.extraFieldValues | extraField : 11 : 24)"></div>
 <div class="handtekening">
-  test
+  <div [innerHTML]="(itinerary.extraFieldValues | extraField : 11 : 24)"></div>
 <ng-container [ngSwitch]="(itinerary.extraFieldValues | extraField : 10 : 19)">
   <div *ngSwitchCase="'Milou van Steen'" class="sales_travelspecialist">
       <div class="titel-gemaaktdoor">
@@ -82,6 +79,7 @@
    </div>
 </ng-container>
 </div>
+
 </div>
 
 
