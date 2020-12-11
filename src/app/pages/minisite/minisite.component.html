@@ -46,39 +46,6 @@
   </div>
   <div class="brief" [innerHTML]="itinerary.TSOrder.texts.proposal"></div>
 
-<div class="handtekening">
-  <div [innerHTML]="(itinerary.extraFieldValues | extraField : 11 : 24)"></div>
-<ng-container [ngSwitch]="(itinerary.extraFieldValues | extraField : 10 : 19)">
-  <div *ngSwitchCase="'Milou van Steen'" class="sales_travelspecialist">
-      <div class="titel-gemaaktdoor">
-        <h1>Samengesteld door</h1> 
-        <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
-      <div class="medewerker_tekst">
-      </div>
-      <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/Milou-8dd93be8.jpg"></div>
-  </div>
-  <div *ngSwitchCase="'Kelly Smid'" class="sales_travelspecialist">
-      <div class="titel-gemaaktdoor">
-        <h1>Hartelijke groet</h1> 
-        <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
-      <div class="medewerker_tekst">
-      </div>
-      <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/DSC00715kopie.jpg"></div>
-  </div>
-  <div *ngSwitchCase="'Frank Bijsterbosch'" class="sales_travelspecialist">
-    <div class="titel-gemaaktdoor">
-      <h1>Samengesteld door</h1> 
-      <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
-    <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/Frank-indianriver.jpg"></div>
-   </div>
-   <div *ngSwitchCase="'Sharone Davelaar'" class="sales_travelspecialist">
-    <div class="titel-gemaaktdoor">
-      <h1>Samengesteld door</h1> 
-      <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
-    <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/DSC05305.JPG"></div>
-   </div>
-</ng-container>
-</div>
 
 </div>
 
