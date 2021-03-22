@@ -369,6 +369,12 @@
              <p>Als je vragen hebt, de reis zou willen aanpassen of andere inspiratie zou willen opdoen dan ben je ook altijd bij ons op kantoor van harte welkom. We zijn in Stroe gevestigd (Stroe ligt centraal in Nederland aan de A1 tussen Amersfoort en Apeldoorn). We zijn aanwezig op alle werkdagen, van 10.00 tot 16.00 uur staat de koffie voor je klaar. Wil je langskomen dan kun je het beste even een afspraak maken zodat je er zeker van bent dat een van de reisexperts voor jouw reis ook op deze dag aanwezig is. Kun je vanwege je werk of andere verplichtingen niet langskomen tijdens onze openingstijden, vraag dan naar de mogelijkheden. Ons telefoonnummer is 035-5426071 of mail naar info@bontravel.nl.</p>
           </div>
 
+          <div *ngIf="(itinerary.extraFieldValues | extraField : 11 : 31)">
+            <h2>Dit voorstel bespreken via Zoom?</h2>
+            <p>We bespreken dit voorstel graag met je. Dat kan natuurlijk telefonisch maar ook via Zoom. <a href="mailto:info@bontravel.nl?subject=Zoom afspraak inplannen">Stuur een e-mail</a> met daarin de gewenste dag en tijdstip waarop je de zoommeeting zou willen inplannen. Van ons ontvang je dan een email met een uitnodigingslink. 
+            </p>
+         </div>
+
           <div [innerHTML]="(itinerary.extraFieldValues | extraField : 11 : 24)"></div>
           <div class="reisspecialist">
           <ng-container [ngSwitch]="(itinerary.extraFieldValues | extraField : 10 : 19)">
