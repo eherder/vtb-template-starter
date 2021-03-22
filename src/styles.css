@@ -801,6 +801,7 @@ padding-top: 70px;}
   padding: 15px 23px;
   color: #fff;
   max-width: 5%;
+  min-width: 125px;
   width: 100%;
   text-align: center;
   margin: auto;
@@ -5174,7 +5175,6 @@ tr:nth-child(odd) {background: #FFF}
 
  .footerimagegrid > div img {
   max-width:100%;
-  min-height:100%;
   object-fit:cover;
  margin: 0 auto;
  zoom: 2;
