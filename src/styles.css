@@ -1870,6 +1870,10 @@ color: #b2d6cf;
   letter-spacing: 1px;
 }
 
+.reissom .reissom-inclusief .unitnaam:empty:before {
+  content: 'nachten';
+}
+
 .reissom .reissom-inclusief ul {
   margin: 0;
   padding: 10px 0;
