@@ -259,7 +259,7 @@
                     [optional]="false">
                   </vtb-price-calculator>
 
-                  <div *ngIf="(itinerary.extraFieldValues | extraField : 12 : 36)">
+                  <div class="extratext" *ngIf="(itinerary.extraFieldValues | extraField : 12 : 36)">
                     <vtb-prices-grouped 
                     [dataSource]="itinerary" 
                     [decimals]="2" 
