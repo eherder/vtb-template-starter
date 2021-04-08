@@ -263,13 +263,10 @@
             </div>
             <div>
               <vtb-prices-grouped 
-              [dataSource]="itinerary.segments"
-              [decimals]="2" 
-              [optional]="false"
-              [segmentTypeIds]="[99]"
-              [postfix]="' euro p.p., based on [persons] persons'" 
-              [singlePostfix]="',- euro p.p., based on [persons] person'">
-              </vtb-prices-grouped>
+              [dataSource]="itinerary" 
+              [decimals]="0" 
+              [postfix]="',- euro p.p., based on [persons] persons'" 
+              [singlePostfix]="',- euro p.p., based on [persons] person'"></vtb-prices-grouped>                 
             </div>
           </div>
     </div>
