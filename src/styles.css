@@ -906,7 +906,7 @@ padding-right: 5px;
   display: inline;
   float:left;
   font-weight: normal;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .sublinks vtb-segment .date {
