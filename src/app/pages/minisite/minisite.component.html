@@ -259,15 +259,17 @@
                     [optional]="false">
                   </vtb-price-calculator>
 
+                  <div *ngIf="(itinerary.extraFieldValues | extraField : 10 : 36)">
+                    <vtb-prices-grouped 
+                    [dataSource]="itinerary" 
+                    [decimals]="2" 
+                    [postfix]="',- euro p.p., op basis van [persons] personen'" 
+                    [singlePostfix]="',- euro p.p., op basis van [persons] persoon'"></vtb-prices-grouped>                 
+                  </div>
+                  
                   <div class="exclusief-tekst"> <span [innerHTML]="(itinerary.extraFieldValues | extraField : 10 : 20)"></span> </div>
             </div>
-            <div *ngIf="(itinerary.extraFieldValues | extraField : 10 : 36)">
-              <vtb-prices-grouped 
-              [dataSource]="itinerary" 
-              [decimals]="2" 
-              [postfix]="',- euro p.p., op basis van [persons] personen'" 
-              [singlePostfix]="',- euro p.p., op basis van [persons] persoon'"></vtb-prices-grouped>                 
-            </div>
+
           </div>
     </div>
 
