@@ -259,6 +259,8 @@
                     [optional]="false">
                   </vtb-price-calculator>
 
+                  <div *ngIf="(itinerary.extraFieldValues | extraField : 10 : 36)">€ </div>
+
                   <div class="exclusief-tekst"> <span [innerHTML]="(itinerary.extraFieldValues | extraField : 10 : 20)"></span> </div>
             </div>
           </div>
@@ -352,7 +354,7 @@
       </div>
   </div>
 
-  
+
 
     <div class="voorwaarden">
             <div class="reistitel"><h1>Goed om te weten</h1>
