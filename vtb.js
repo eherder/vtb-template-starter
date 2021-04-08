@@ -17,7 +17,7 @@ const customTransforms = {
 
   'hasProduct': (obj, params) => {
     obj.dst.segments.forEach(segment => {
-      segment.hasOptionalHotel = false; //assume segment doesn't have optional hotel
+      segment.hasOptionalHotel = true; //assume segment doesn't have optional hotel
 
       segment.elements.forEach(element => {
 
