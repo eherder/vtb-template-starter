@@ -29,6 +29,21 @@ const customTransforms = {
     return obj;
   },
 
+
+  'hasOptionalExtra': (obj, params) => {
+    obj.dst.segments.forEach(segment => {
+      segment.hasOptionalHotel = true; //assume segment doesn't have optional hotel
+
+      segment.elements.forEach(element => {
+
+        if(element.optional) //if segment has optional 
+          segment.hasOptionalHotel = true;
+      });
+    });
+
+    return obj;
+  },
+
   'getMarkers': (obj, params) => {
     let markers = [];
     obj.dst.segments.forEach(segment => {
