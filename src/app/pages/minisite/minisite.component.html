@@ -253,7 +253,7 @@
                     [dataSource]="itinerary.segments"
                     [decimals]="2" 
                     [prefix]="'€'" 
-                    [postfix]="'totale reissom'" 
+                    [postfix]="' totale reissom'" 
                     [segmentTypeIds]="[99]"
                     [reverseSegmentTypeIds]="true"
                     [optional]="false">
@@ -264,7 +264,7 @@
           </div>
     </div>
 
-    <div class="reissomoptioneel">
+    <div class="reissomoptioneel" *ngIf="itinerary.hasOptional">
             <div class="reistitel"><h1>Optionele Extra's</h1>
                 <div id="border"></div>
             </div>
