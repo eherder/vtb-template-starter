@@ -1744,9 +1744,9 @@ line-height: normal;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-weight: 100;
     letter-spacing: 1px;
-    padding:40px 0px 10px;
+    padding:60px 0px 10px;
     text-align:center;
-    font-size: 1sem;
+    font-size: 13px;
     font-weight:bold;
     line-height:1.4em;
     text-transform: uppercase;
@@ -1778,6 +1778,12 @@ line-height: normal;
   .reissom .reissom-perpersoon h1 {
 color: #b2d6cf;
   }
+
+  .reissom .reissom-perpersoon .extratext {
+    color: #b2d6cf;
+    font-size: 12px;
+    font-style: italic;
+     }
 
 .reissom .reistitel {
   background-image: url(https://media.bontravel.nl/original/lg/money-bg.png);
