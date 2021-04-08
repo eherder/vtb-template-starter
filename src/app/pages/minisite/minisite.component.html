@@ -163,7 +163,7 @@
             [unitIds]="[13,2,4,24, 25]"
             [reverseUnitIds]="false"
             [optional]="false"
-            [segmentFields]="['day',{'name':'date', dateFormat:'EEEE d MMM'}, 'title']"
+            [segmentFields]="['day',{'name':'date', dateFormat:'EE d MMM YYYY'}, 'title']"
             [elementFields]="[{'name':'title'},{name: 'nights', prefix:'(', postfix: 'n)'}]"
         ></vtb-segments>
 
@@ -253,7 +253,7 @@
                     [dataSource]="itinerary.segments"
                     [decimals]="2" 
                     [prefix]="'€'" 
-                    [postfix]="',-  totale reissom'" 
+                    [postfix]="'totale reissom'" 
                     [segmentTypeIds]="[99]"
                     [reverseSegmentTypeIds]="true"
                     [optional]="false">
