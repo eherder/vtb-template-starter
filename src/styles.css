@@ -4353,7 +4353,7 @@ grid-template-areas:
 .reisonderdelen .default_elements vtb-element-field:nth-child(4) {
   grid-area: default-subTitle;
   font-weight: 200;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 25px;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   text-align: left;
