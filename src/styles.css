@@ -4446,7 +4446,7 @@ width:100%;
 
 .reisonderdelen .default_elements vtb-media .media-items {
   margin:0 ;
-  display:grid;
+  display:none;
   grid-area: default-image;
   width:100%;
   overflow:hidden;
