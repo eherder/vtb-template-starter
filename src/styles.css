@@ -1262,8 +1262,7 @@ width:100%;
 
 .reisonderdelen .default_elements vtb-media .media-items {
   margin:0 ;
-  display:grid;
-  grid-area: default-image;
+  display:none;
   width:100%;
   overflow:hidden;
   grid-template-columns: 1fr;
@@ -1273,11 +1272,13 @@ width:100%;
 }
 
 .reisonderdelen .default_elements vtb-media .media-items {
-  grid-area:default-image;
+  display:none;
 }
 
 .reisonderdelen .media-1 .default_elements vtb-media .media-items {
   grid-area:default-image;
+  display:none;
+
   grid-template-rows: minmax(80vh , auto) ;
   grid-template-areas: 
     "gallery1" 
