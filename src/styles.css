@@ -1108,19 +1108,19 @@ padding-right: 5px;
 
 .reisonderdelen .default_elements vtb-element {
 display: grid;
-grid-template-columns: 3fr;
+grid-template-columns: 2fr;
 overflow:visible;
 clear: both;
 margin-top: 40px;
 row-gap: 10px;
 column-gap: 30px;
 grid-template-areas:
-"default-image iconbar default-title"
-"default-image iconbar default-subTitle"
-"default-image iconbar default-date"
-"default-image iconbar default-additionalText"
-"default-image iconbar default-subadditionalText"
-"default-image iconbar default-splittable"
+"iconbar default-title"
+"iconbar default-subTitle"
+"iconbar default-date"
+"iconbar default-additionalText"
+"iconbar default-subadditionalText"
+"iconbar default-splittable"
 ;
 }
 
