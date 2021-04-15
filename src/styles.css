@@ -1107,7 +1107,7 @@ padding-right: 5px;
 }
 
 .reisonderdelen .default_elements vtb-element {
-display: grid;
+display: block;
 grid-template-columns: 2fr;
 overflow:visible;
 clear: both;
@@ -2860,7 +2860,7 @@ grid-template-areas:
 
 
 .reisonderdelen .default_elements vtb-element {
-  display: grid;
+  display: block;
   grid-template-columns: 100%;
   overflow: visible;
   clear: both;
