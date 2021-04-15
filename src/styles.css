@@ -2860,7 +2860,7 @@ grid-template-areas:
 
 
 .reisonderdelen .default_elements vtb-element {
-  display: block;
+  display: grid;
   grid-template-columns: 100%;
   overflow: visible;
   clear: both;
@@ -4319,7 +4319,7 @@ grid-area: bestemming;
 }
 
 .reisonderdelen .default_elements vtb-element {
-display: grid;
+display: block;
 grid-area: default-elements;
 grid-template-columns: 3fr;
 overflow:visible;
