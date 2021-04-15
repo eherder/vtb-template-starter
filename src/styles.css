@@ -4328,12 +4328,12 @@ margin-top: 40px;
 row-gap: 10px;
 column-gap: 30px;
 grid-template-areas:
-"default-image iconbar default-title"
-"default-image iconbar default-subTitle"
-"default-image iconbar default-date"
-"default-image iconbar default-additionalText"
-"default-image iconbar default-subadditionalText"
-"default-image iconbar default-splittable"
+"iconbar default-title"
+"iconbar default-subTitle"
+"iconbar default-date"
+"iconbar default-additionalText"
+"iconbar default-subadditionalText"
+"iconbar default-splittable"
 ;
 }
 
@@ -4484,6 +4484,7 @@ width:100%;
 .reisonderdelen .default_elements .media-7 vtb-media .media-items
  {
   grid-area:default-image;
+  display: none;
   grid-template-rows: minmax(30vh , auto) minmax(30vh , auto)  minmax(30vh , auto) ;
   grid-template-areas: 
     "gallery1" 
