@@ -1107,20 +1107,20 @@ padding-right: 5px;
 }
 
 .reisonderdelen .default_elements vtb-element {
-display: block;
-grid-template-columns: 2fr;
+display: grid;
+grid-template-columns: 3fr;
 overflow:visible;
 clear: both;
 margin-top: 40px;
 row-gap: 10px;
 column-gap: 30px;
 grid-template-areas:
-"iconbar default-title"
-"iconbar default-subTitle"
-"iconbar default-date"
-"iconbar default-additionalText"
-"iconbar default-subadditionalText"
-"iconbar default-splittable"
+"default-image iconbar default-title"
+"default-image iconbar default-subTitle"
+"default-image iconbar default-date"
+"default-image iconbar default-additionalText"
+"default-image iconbar default-subadditionalText"
+"default-image iconbar default-splittable"
 ;
 }
 
@@ -1262,7 +1262,8 @@ width:100%;
 
 .reisonderdelen .default_elements vtb-media .media-items {
   margin:0 ;
-  display:none;
+  display:grid;
+  grid-area: default-image;
   width:100%;
   overflow:hidden;
   grid-template-columns: 1fr;
@@ -1272,13 +1273,11 @@ width:100%;
 }
 
 .reisonderdelen .default_elements vtb-media .media-items {
-  display:none;
+  grid-area:default-image;
 }
 
 .reisonderdelen .media-1 .default_elements vtb-media .media-items {
   grid-area:default-image;
-  display:none;
-
   grid-template-rows: minmax(80vh , auto) ;
   grid-template-areas: 
     "gallery1" 
@@ -1745,7 +1744,7 @@ line-height: normal;
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-weight: 100;
     letter-spacing: 1px;
-    padding: 60px 0px 0px 10px;
+    padding:60px 0px 10px;
     text-align:center;
     font-size: 13px;
     font-weight:bold;
@@ -1782,7 +1781,7 @@ color: #b2d6cf;
 
   .reissom .reissom-perpersoon .extratext {
     color: #b2d6cf;
-    font-size: 14px;
+    font-size: 12px;
     font-style: italic;
      }
 
@@ -4319,7 +4318,7 @@ grid-area: bestemming;
 }
 
 .reisonderdelen .default_elements vtb-element {
-display: block;
+display: grid;
 grid-area: default-elements;
 grid-template-columns: 3fr;
 overflow:visible;
@@ -4328,12 +4327,12 @@ margin-top: 40px;
 row-gap: 10px;
 column-gap: 30px;
 grid-template-areas:
-"iconbar default-title"
-"iconbar default-subTitle"
-"iconbar default-date"
-"iconbar default-additionalText"
-"iconbar default-subadditionalText"
-"iconbar default-splittable"
+"default-image iconbar default-title"
+"default-image iconbar default-subTitle"
+"default-image iconbar default-date"
+"default-image iconbar default-additionalText"
+"default-image iconbar default-subadditionalText"
+"default-image iconbar default-splittable"
 ;
 }
 
@@ -4353,7 +4352,7 @@ grid-template-areas:
 .reisonderdelen .default_elements vtb-element-field:nth-child(4) {
   grid-area: default-subTitle;
   font-weight: 200;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 25px;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   text-align: left;
@@ -4446,7 +4445,7 @@ width:100%;
 
 .reisonderdelen .default_elements vtb-media .media-items {
   margin:0 ;
-  display:none;
+  display:grid;
   grid-area: default-image;
   width:100%;
   overflow:hidden;
@@ -4484,7 +4483,6 @@ width:100%;
 .reisonderdelen .default_elements .media-7 vtb-media .media-items
  {
   grid-area:default-image;
-  display: none;
   grid-template-rows: minmax(30vh , auto) minmax(30vh , auto)  minmax(30vh , auto) ;
   grid-template-areas: 
     "gallery1" 
