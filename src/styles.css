@@ -1638,10 +1638,7 @@ column-gap: 30px;
     position: relative;
     padding: 5px;
     margin: 5%;
-  }
-
-  .reisonderdelen .accommodatie_elements.acco-optional:empty:before{
-    display:none;
+    display: none;
   }
 
   .reisonderdelen .accommodatie_elements.acco-optional vtb-element {
