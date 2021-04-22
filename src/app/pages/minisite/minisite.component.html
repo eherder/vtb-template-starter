@@ -140,13 +140,6 @@
             [scrollwheel]="false"
             [streetViewControl]="false">
             <agm-marker *ngFor="let marker of itinerary.allMarkers" [iconUrl]="{'url': 'https://www.bontravel.nl/wp-content/uploads/2019/09/bulletyellow.png', anchor : {x:30, y:30} }" [latitude]="marker.latitude" [longitude]="marker.longitude" [agmFitBounds]="true"></agm-marker>
-            <agm-polyline [strokeWeight]="2" [strokeColor]="'black'">
-             <ng-container *ngFor="let polyline of itinerary.polylines">
-                <agm-polyline-point *ngIf="polyline.latitude && polyline.longitude"
-                  [latitude]="polyline.latitude"
-                  [longitude]="polyline.longitude"></agm-polyline-point>
-              </ng-container>
-            </agm-polyline>
           </agm-map>
         </div>
 
