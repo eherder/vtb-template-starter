@@ -15,8 +15,8 @@
   font-family: "Roboto", Sans-serif;
   font-size: 19px;
   font-weight: 400;
-  line-height: 1.9em;
-  letter-spacing: 0.8px;
+  line-height: 2.1em;
+  letter-spacing: 0.9px;
 }
 
 p {
@@ -3266,10 +3266,10 @@ padding: 15mm;
  body {
   margin: 0 auto;
   padding: 0;
-  font-family: "Montserrat", Sans-serif;
-  font-size: 19px;
+  font-family: "Roboto", Sans-serif;
+  font-size: 15px;
   font-weight: 400;
-  line-height: 1.9em;
+  line-height: 2.1em;
   letter-spacing: 0.9px;
 }
 
