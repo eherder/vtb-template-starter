@@ -3494,7 +3494,7 @@ padding:0px;
 
 .cover-images vtb-media > div.media-items > div {
   position: absolute !important;
-  top:40%;
+  top:100px;
   left:0%;
   transform:translate(-50%, -50%);
   display: none;
