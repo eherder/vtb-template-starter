@@ -200,7 +200,7 @@
         <vtb-segments [dataSource]="itinerary.segments"
         [segmentTypeIds]="[13]"
         [reverseUnitIds]="true"
-        [segmentFields]="['dayNumbers','subTitle','content','title', {name: 'media', crop: 'original/original', max: '4'}]"
+        [segmentFields]="['dayNumbers','subTitle','title','content',{name: 'media', crop: 'original/original', max: '4'}]"
         [segmentFieldsPerType]="{'13':[{name: 'media', crop: 'original/lg', max: '6'},'subTitle','content','title']}">
         <ng-template #elementTemplate let-segment="segment" let-elements="elements">
             <div class="accommodatie_elements">
