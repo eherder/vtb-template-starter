@@ -21,14 +21,15 @@
     "@angular/platform-browser": "^7.2.4",
     "@angular/platform-browser-dynamic": "^7.2.4",
     "@angular/router": "^7.2.4",
-    "@sitespirit/vtb-component-library": "0.1.5",
+    "@sitespirit/vtb-component-library": "0.2.44",
     "@sitespirit/vtb-transformer": "^1.0.0",
     "@thisissoon/angular-inviewport": "^4.2.0",
+    "agm-direction": "^0.8.9",
     "core-js": "^2.6.4",
     "intersection-observer": "^0.5.1",
+    "ngx-gallery": "^5.10.0",
     "rxjs": "^6.4.0",
-    "zone.js": "^0.8.29",
-    "ngx-gallery": "^5.10.0"
+    "zone.js": "^0.8.29"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.1",
