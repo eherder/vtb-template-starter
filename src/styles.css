@@ -722,9 +722,12 @@ padding-top: 70px;}
  grid-area: reisonderdelen-subtitle;
   font-weight: bold;
   text-align: center;
-  font-size: 20px;
-  color: #b2d6cf;
+  font-size: 30px;
+  color:black;
   font-family: 'Beth Ellen', cursive;
+  grid-area: reisonderdelen-subtitle;
+  margin-bottom: -50px;
+  margin-top: 10px;
 }
 
 .reisonderdelen .segment-field.date {
@@ -1337,12 +1340,12 @@ width:100%;
  grid-area: reisonderdelen-subtitle;
   font-weight: bold;
   text-align: center;
-  font-size: 20px;
-  color: #b2d6cf;
+  font-size: 30px;
+  color: black;
   font-family: 'Beth Ellen', cursive;
-  background: black;
-
+  margin-bottom: -50px;
 }
+
  .reisonderdelen .segment-field.content {
   background-size: 100%;
   grid-area: reisonderdelen-content;
@@ -3388,8 +3391,8 @@ a {
   "reisonderdelen"
   "reissom"
   "reissomoptioneel"
-  "voorwaarden"
   "afsluiting"
+  "voorwaarden"
   "footer1"
   "footer"
   "maingrid"
@@ -3491,7 +3494,7 @@ padding:0px;
 
 .cover-images vtb-media > div.media-items > div {
   position: absolute !important;
-  top:40%;
+  top:100px;
   left:0%;
   transform:translate(-50%, -50%);
   display: none;
