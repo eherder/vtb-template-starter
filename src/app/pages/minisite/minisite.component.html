@@ -253,10 +253,11 @@
             <div id="border2"></div>
             <div class="reissom-perpersoon">
 
-                    <vtb-price-calculator 
+                  <vtb-price-calculator 
                     [dataSource]="itinerary.segments"
                     [decimals]="2" 
                     [prefix]="'€'" 
+                    [decimalPipe]="true"
                     [postfix]="' totale reissom'" 
                     [segmentTypeIds]="[99]"
                     [reverseSegmentTypeIds]="true"
