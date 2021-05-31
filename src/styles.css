@@ -1850,6 +1850,10 @@ padding-top: 60px;
   padding: 5px 5px;
 }
 
+.reissom .reissom-inclusief div:empty {
+  padding: 0px 0px;
+}
+
 
 .reissom .reissom-inclusief .subTitle {
   font-weight: 400;
