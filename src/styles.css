@@ -2033,6 +2033,15 @@ font-size: 25px;
 color: #b2d6cf;
 }
 
+.reissomoptioneel .reissomoptioneel-inclusief .unitnaam {
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+.reissomoptioneel .reissomoptioneel-inclusief .unitnaam:empty:before {
+  content: 'nachten';
+}
+
 
 .reissomoptioneel .reissomoptioneel-inclusief ul {
   margin: 0;
