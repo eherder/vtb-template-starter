@@ -1974,9 +1974,9 @@ padding-top: 60px;
   display: grid;
   padding: 20px 0;
   grid-area: reissomoptioneel-inclusief;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 25% 10% 40% 25%;
   grid-template-areas:
-  "reissomoptioneel-nights reissomoptioneel-titel reissomoptioneel-prijs"
+  "reissomoptioneel-nights reissomoptioneel-unit reissomoptioneel-titel reissomoptioneel-prijs"
 }
 
 .reissomoptioneel .reissomoptioneel-inclusief div {
@@ -2035,6 +2035,14 @@ color: #b2d6cf;
 
 .reissomoptioneel .reissomoptioneel-inclusief .unitnaam {
   text-transform: none;
+  grid-area: reissomoptioneel-unit;
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: right;
+  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
