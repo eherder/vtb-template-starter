@@ -1525,9 +1525,19 @@ column-gap: 30px;
    box-sizing: border-box;
    padding-bottom: 0;
    overflow: hidden;
-   height: 40vh;
  }
 
+ .reisonderdelen .accommodatie_elements vtb-media > div.media-items{
+height: 20vh;
+}
+
+ .reisonderdelen .accommodatie_elements vtb-media > div.media-items .media-count-0 {
+  height: 0;
+}
+
+.reisonderdelen .accommodatie_elements vtb-element.element-unit-2 vtb-media > div.media-items  {
+  height: 40vh;
+}
 
  .reisonderdelen .accommodatie_elements vtb-media .sn-viewport--in {
   transition-delay: 0s;
@@ -1537,7 +1547,7 @@ column-gap: 30px;
   position: absolute !important;
   top:50%;
   left:50%;
-  transform:translate(-50%, -100%);
+  transform:translate(-50%, -50%);
   display: none;
   max-width: calc(100% - 2px);
   width:100%;
@@ -1653,6 +1663,23 @@ column-gap: 30px;
     border: 1px solid lightgrey;
     margin: 5%;
     box-shadow: none;
+  }
+
+  .reisonderdelen .accommodatie_elements.acco-optional vtb-element .media-0 {
+    border: 1px solid pink;
+    content: "test image 0";
+  }
+
+  .reisonderdelen .media-0 .accommodatie_elements.acco-optional vtb-media .media-items {
+    height: 0;
+    border: 1px solid pink;
+    content: "test image 0";
+  }
+
+
+  .reisonderdelen .media-0 .accommodatie_elements.acco-optional vtb-element {
+    border: 1px solid pink;
+    content: "test image 0";
   }
 
   .reisonderdelen .accommodatie_elements.acco-optional vtb-element:before {
@@ -2923,6 +2950,11 @@ grid-template-areas:
   grid-area:acco-image;
 }
 
+.reisonderdelen .media-0 .accommodatie_elements vtb-media .media-items {
+  grid-area:acco-image;
+ height: 0;
+}
+
 .reisonderdelen .media-1 .accommodatie_elements vtb-media .media-items {
   grid-area:acco-image;
   grid-template-rows: minmax(250px , auto) ;
@@ -2931,14 +2963,7 @@ grid-template-areas:
   ;
 }
 
-.reisonderdelen .media-2 .accommodatie_elements vtb-media .media-items {
-  grid-area:acco-image;
-  grid-template-rows: minmax(250px , auto) ;
-  grid-template-areas: 
-    "gallery1" 
-  ;
-}
-
+.reisonderdelen .media-2 .accommodatie_elements vtb-media .media-items,
 .reisonderdelen .accommodatie_elements .media-3 vtb-media .media-items,
 .reisonderdelen .accommodatie_elements .media-4 vtb-media .media-items,
 .reisonderdelen .accommodatie_elements .media-5 vtb-media .media-items,
@@ -4324,7 +4349,7 @@ grid-area: bestemming;
  ***********************************/
 
  .reisonderdelen .default_elements {
-   padding:5%;
+   padding: 0% 5% 5% 5%;
   display: grid;
   grid-template-areas:
   "default-element"
