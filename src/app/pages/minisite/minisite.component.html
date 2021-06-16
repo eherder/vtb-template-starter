@@ -67,7 +67,7 @@
         <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
       <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/Frank-indianriver.jpg"></div>
      </div>
-     <div *ngSwitchCase="'Sharone Davelaar'" class="sales_travelspecialist">
+     <div *ngSwitchCase="'Nienke Groothuizen'" class="sales_travelspecialist">
       <div class="titel-gemaaktdoor">
         <h1>Met vriendelijke groet,</h1> 
         <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
@@ -109,12 +109,12 @@
         </div>
         <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/Frank-indianriver.jpg"></div>
        </div>
-       <div *ngSwitchCase="'Sharone Davelaar'" class="sales_travelspecialist">
+       <div *ngSwitchCase="'Nienke Groothuizen'" class="sales_travelspecialist">
         <div class="titel-gemaaktdoor">
           <h1>Samengesteld door</h1> 
           <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
         <div class="medewerker_tekst">
-            <p>  Sharone is een echte liefhebber van het eilandgevoel. En laat de Caribbean nou net uit honderden verschillende eilanden bestaan! Sharone mixt gevoel voor mensenkennis met een flinke dosis Caribische reiservaring om jouw droomreis te maken. 
+            <p>  Nienke heeft een groot deel van het haar leven in de Caribbean gewoond. Ze heeft meerdere jaren op Antigua, Barbados en Grenada gewoond. 
               </p>
         </div>
         <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/DSC05305.JPG"></div>
@@ -211,6 +211,8 @@
             </div>
             <div *ngIf="segment.hasOptionalHotel" class="accommodatie_elements acco-optional">
                 <vtb-elements [dataSource]="elements" [unitIds]="[2,3]" [optional]="true" [elementFields]="[{name: 'media', crop: 'original/original', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},{name: 'nights', prefix:'', postfix: 'n'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
+                <vtb-elements [dataSource]="elements" [unitIds]="[2,3]" [reverseUnitIds]="true" [optional]="true" [elementFields]="[{name: 'media', crop: 'original/original', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},{name: 'nights', prefix:'', postfix: 'n'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
+
             </div>
         </ng-template>
       </vtb-segments>
@@ -357,6 +359,12 @@
               <h1>Samengesteld door</h1> 
               <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
             <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/Frank-indianriver.jpg"></div>
+           </div>
+           <div *ngSwitchCase="'Nienke Groothuizen'" class="sales_travelspecialist">
+            <div class="titel-gemaaktdoor">
+              <h1>Samengesteld door</h1> 
+              <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
+            <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/DSC05305.JPG"></div>
            </div>
            <div *ngSwitchCase="'Sharone Davelaar'" class="sales_travelspecialist">
             <div class="titel-gemaaktdoor">
