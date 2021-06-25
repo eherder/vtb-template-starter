@@ -114,7 +114,7 @@
           <h1>Samengesteld door</h1> 
           <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
         <div class="medewerker_tekst">
-            <p>  Nienke heeft een groot deel van het haar leven in de Caribbean gewoond. Ze heeft meerdere jaren op Antigua, Barbados en Grenada gewoond. 
+            <p> De Caribbean is Nienke’s tweede thuis. Ze heeft 12 jaar op Antigua gewoond en vanuit daar veel van de eilanden bezocht en sommigen ook bewoond. Ze is een echte Caribbean kenner en weet de mooiste plekjes. Grenada, Barbados, Dominica, St Lucia maar ook Turks & Taicos en Bahamas zijn plekken waar ze meerdere keren is geweest.
               </p>
         </div>
         <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/DSC05305.JPG"></div>
@@ -249,9 +249,10 @@
                 <div id="border"></div>
             </div>
             <div class="reissombrief">
-            <div class="reissom-inclusief">
-                    <vtb-elements-list [optional]="false" [segmentTypeIds]="[1,2,13,4,25,24,26,27]" [unitIds]="[11]" [reverseUnitIds]="true" [reverseSegmentTypeIds]="false" [dataSource]="itinerary.segments" [elementFields]="[{name: 'nights', prefix:''},'unitnaam','title', 'subTitle', 'inclusief']"></vtb-elements-list>
-            </div>
+              <div class="reissom-inclusief">
+                <vtb-elements-list [optional]="false" [segmentTypeIds]="[1,2,13,4,25,24,26,27]" 	[categorize]="{'-1': 'Algemeen', '2' : 'accommodatie', '6' : 'Vluchten', '9': 'Vervoer' }"
+                [unitIds]="[11]" [unitIdsOrder]="[6, 2, 8, 9, 10, -1]" [reverseUnitIds]="true" [reverseSegmentTypeIds]="false" [dataSource]="itinerary.segments" [elementFields]="[{name: 'nights', prefix:''},'unitnaam','title', 'subTitle', 'inclusief']"></vtb-elements-list>
+        </div>
             <div id="border2"></div>
             <div class="reissom-perpersoon">
 
