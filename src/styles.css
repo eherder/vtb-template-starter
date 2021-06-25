@@ -1095,7 +1095,6 @@ padding-right: 5px;
  ***********************************/
 
  .reisonderdelen .default_elements {
-   padding:5%;
   display: grid;
   grid-template-areas:
   "default-element"
