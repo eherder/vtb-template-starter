@@ -1923,6 +1923,22 @@ color: #b2d6cf;
   clear: both;
 }
 
+.reissom .reissom-inclusief li.category {
+  font-size: 16px;
+  padding-top: 40px;
+  font-weight: bold;
+  color: #b2d6cf;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+  padding: 60px 0px 0px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  grid-area: reissom-tekst;
+}
+
 .reissom .reissom-inclusief li::before {
   display: none;
 }
