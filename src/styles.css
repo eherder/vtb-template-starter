@@ -2021,6 +2021,10 @@ padding-top: 60px;
   grid-template-columns: 25% 10% 30% 25%;
   grid-template-areas:
   "reissomoptioneel-nights reissomoptioneel-unit reissomoptioneel-titel reissomoptioneel-prijs"
+  "reissomoptioneel-nights reissomoptioneel-subtitle reissomoptioneel-subtitle reissomoptioneel-prijs"
+  "reissomoptioneel-nights reissomoptioneel-inclusief reissomoptioneel-inclusief reissomoptioneel-prijs"
+
+
 }
 
 .reissomoptioneel .reissomoptioneel-inclusief div {
@@ -2040,6 +2044,31 @@ padding-top: 60px;
   z-index: 2;
 }
 
+.reissomoptioneel .reissomoptioneel-inclusief .subTitle {
+  grid-area: reissomoptioneel-titel;
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  align-items: center;
+  line-height: 20px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.reissomoptioneel .reissomoptioneel-inclusief .inclusief {
+  grid-area: reissomoptioneel-titel;
+  position: relative;
+  font-weight: bold;
+  font-size: 18px;
+  align-items: center;
+  line-height: 20px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 2;
+}
 
 .reissomoptioneel .reissomoptioneel-inclusief .nights {
   grid-area: reissomoptioneel-nights;
