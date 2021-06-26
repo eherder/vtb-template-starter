@@ -2018,6 +2018,9 @@ padding-top: 60px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: start;
+  width: 80%;
+  margin-left:20%;
+  margin-right:20%;
 }
   
 
@@ -2026,10 +2029,11 @@ padding-top: 60px;
 }
 
 .reissomoptioneel .reissomoptioneel-inclusief .title {
-  flex: 0 9 auto;
+  flex: 5 9 auto;
   position: relative;
   font-weight: bold;
   font-size: 18px;
+  width: 300px;
   align-items: center;
   line-height: 20px;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
@@ -2039,10 +2043,10 @@ padding-top: 60px;
 }
 
 .reissomoptioneel .reissomoptioneel-inclusief .subTitle {
-  flex: 0 9 auto;
+  flex: 0 12 auto;
   position: relative;
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: none;
+  font-size: 14px;
   align-items: center;
   line-height: 20px;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
