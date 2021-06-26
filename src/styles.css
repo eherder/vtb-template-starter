@@ -2015,16 +2015,13 @@ padding-top: 60px;
 
 
 .reissomoptioneel .reissomoptioneel-inclusief vtb-elements-list vtb-element {
-  display: grid;
+  display: flex;
   padding: 20px 0;
-  grid-area: reissomoptioneel-inclusief;
-  grid-template-columns: 25% 10% 30% 25%;
-  grid-template-rows: 3;
-  grid-template-areas:
-  "reissomoptioneel-nights reissomoptioneel-unit reissomoptioneel-titel reissomoptioneel-prijs"
-  "reissomoptioneel-subtitle reissomoptioneel-subtitle reissomoptioneel-subtitle reissomoptioneel-prijs"
-  "reissomoptioneel-inclusief reissomoptioneel-inclusief reissomoptioneel-inclusief reissomoptioneel-prijs";
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
 }
+  
 
 .reissomoptioneel .reissomoptioneel-inclusief div {
   padding: 5px 5px;
@@ -2032,6 +2029,7 @@ padding-top: 60px;
 
 .reissomoptioneel .reissomoptioneel-inclusief .title {
   grid-area: reissomoptioneel-titel;
+  flex: 0 9 auto;
   position: relative;
   font-weight: bold;
   font-size: 18px;
@@ -2045,6 +2043,7 @@ padding-top: 60px;
 
 .reissomoptioneel .reissomoptioneel-inclusief .subTitle {
   grid-area: reissomoptioneel-subtitle;
+  flex: 0 9 auto;
   position: relative;
   font-weight: bold;
   font-size: 18px;
@@ -2058,6 +2057,7 @@ padding-top: 60px;
 
 .reissomoptioneel .reissomoptioneel-inclusief .inclusief {
   grid-area: reissomoptioneel-inclusief;
+  flex: 0 9 auto;
   position: relative;
   font-weight: bold;
   font-size: 18px;
@@ -2072,6 +2072,7 @@ padding-top: 60px;
 .reissomoptioneel .reissomoptioneel-inclusief .nights {
   grid-area: reissomoptioneel-nights;
   position: relative;
+  flex: 1 3 auto;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
@@ -2083,6 +2084,7 @@ padding-top: 60px;
 .reissomoptioneel .reissomoptioneel-inclusief .addedValue {
   grid-area: reissomoptioneel-prijs;
   position: relative;
+  flex: 1 3 auto
   font-weight: bold;
   color: #b2d6cf;
   font-size: 18px;
