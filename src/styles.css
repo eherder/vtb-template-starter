@@ -2079,7 +2079,7 @@ padding-top: 60px;
 
 .reissomoptioneel .reissomoptioneel-inclusief .addedValue {
   position: relative;
-  flex: 1 3 auto
+  flex: 1 3 auto;
   font-weight: bold;
   color: #b2d6cf;
   font-size: 18px;
