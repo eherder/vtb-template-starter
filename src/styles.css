@@ -2043,7 +2043,7 @@ padding-top: 60px;
 }
 
 .reissomoptioneel .reissomoptioneel-inclusief .subTitle {
-  grid-area: reissomoptioneel-titel;
+  grid-area: reissomoptioneel-subtitle;
   position: relative;
   font-weight: bold;
   font-size: 18px;
@@ -2056,7 +2056,7 @@ padding-top: 60px;
 }
 
 .reissomoptioneel .reissomoptioneel-inclusief .inclusief {
-  grid-area: reissomoptioneel-titel;
+  grid-area: reissomoptioneel-inclusief;
   position: relative;
   font-weight: bold;
   font-size: 18px;
