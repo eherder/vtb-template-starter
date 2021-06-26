@@ -2022,9 +2022,7 @@ padding-top: 60px;
   grid-template-areas:
   "reissomoptioneel-nights reissomoptioneel-unit reissomoptioneel-titel reissomoptioneel-prijs"
   "reissomoptioneel-nights reissomoptioneel-subtitle reissomoptioneel-subtitle reissomoptioneel-prijs"
-  "reissomoptioneel-nights reissomoptioneel-inclusief reissomoptioneel-inclusief reissomoptioneel-prijs"
-
-
+  "reissomoptioneel-nights reissomoptioneel-inclusief reissomoptioneel-inclusief reissomoptioneel-prijs";
 }
 
 .reissomoptioneel .reissomoptioneel-inclusief div {
