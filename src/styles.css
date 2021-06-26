@@ -2089,6 +2089,7 @@ padding-top: 60px;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   text-align: left;
   text-transform: uppercase;
+  width: 200px;
 }
 
 .reissomoptioneel .reissomoptioneel-inclusief .addedValue:before {
@@ -4747,6 +4748,9 @@ padding-top: 60px;}
 
 .reissomoptioneel .reissomoptioneel-inclusief vtb-elements-list vtb-element {
   display: flex;
+  width: 80%;
+  margin-left:20%;
+  margin-right:20%;
 }
 
 .reissomoptioneel .reissomoptioneel-inclusief div {
@@ -4787,6 +4791,7 @@ padding-top: 60px;}
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   text-align: left;
   text-transform: uppercase;
+  width: 200px;
 }
 
 .reissomoptioneel .reissomoptioneel-inclusief .addedValue:before {
