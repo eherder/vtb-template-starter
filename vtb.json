@@ -16,7 +16,8 @@
       {"function": "elementExtraField", "params": {"attributeName": "personaltouch", "fieldID": 15}},
       {"function": "elementExtraField", "params": {"attributeName": "inclusief", "fieldID": 30}},
       {"function": "elementExtraField", "params": {"attributeName": "unitnaam", "fieldID": 31}},
-      {"function": "addImageToEmployeeText", "params":{}}
+      {"function": "addImageToEmployeeText", "params":{}},
+      {"function": "elementListSegments", "params":{}}
     ],
     "startWithEmptyObject": false
   }

@@ -1,4 +1,20 @@
 const customTransforms = {
+  'elementListSegments': (obj, params) => {
+    let elementListSegments = JSON.parse(JSON.stringify(obj.dst.segments));
+    elementListSegments.forEach(segment => {
+      segment.elements.forEach(element => {
+        if(element.unitId == 8 || element.unitId == 10) {
+          element.unitId = 9;
+        } else if(element.unitId == 7) {
+          element.unitId = 6;
+        }
+      })
+    });
+
+    obj.dst.elementListSegments = elementListSegments;
+    return obj;
+  },
+
   'hasFlights': (obj, params) => {
     let hasFlights = false;
 
