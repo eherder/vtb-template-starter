@@ -2,6 +2,7 @@
   "dataTransformer": {
     "customFileLocation": "customTransforms",
     "methods": [
+      {"function": "cleanup", "params":{}},
       {"function": "hasFlights", "params": {}},
       {"function": "hasProduct", "params": {}},
       {"function": "getMarkers", "params": {}},

@@ -161,6 +161,22 @@ const customTransforms = {
     });
 
     return obj;
+  },
+
+  'cleanup': (obj, params) => {
+
+    obj.dst.segments.forEach(segment => {
+      segment.elements.forEach(element => {
+        if(element.roomTypes && element.roomTypes.length) {
+          element.roomTypes.forEach(type => {
+            if(type.supplierinfo) {
+              delete type.supplierinfo;
+            }
+          })
+        }
+      });
+    });
+    return obj;
   }
 
 };
