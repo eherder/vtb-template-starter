@@ -175,6 +175,16 @@ const customTransforms = {
           })
         }
       });
+
+      segment.carRentalElements.forEach(element => {
+        if(element.roomTypes && element.roomTypes.length) {
+          element.roomTypes.forEach(type => {
+            if(type.supplierinfo) {
+              delete type.supplierinfo;
+            }
+          })
+        }
+      });
     });
     return obj;
   }
