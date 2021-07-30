@@ -71,7 +71,7 @@
       <div class="titel-gemaaktdoor">
         <h1>Met vriendelijke groet,</h1> 
         <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
-      <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/DSC05305.JPG"></div>
+      <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/IMG_1137.JPG"></div>
      </div>
   </ng-container>
 </div>
@@ -117,7 +117,17 @@
             <p> De Caribbean is Nienke’s tweede thuis. Ze heeft 12 jaar op Antigua gewoond en vanuit daar veel van de eilanden bezocht en sommigen ook bewoond. Ze is een echte Caribbean kenner en weet de mooiste plekjes. Grenada, Barbados, Dominica, St Lucia maar ook Turks & Taicos en Bahamas zijn plekken waar ze meerdere keren is geweest.
               </p>
         </div>
-        <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/DSC05305.JPG"></div>
+        <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/IMG_1137.JPG"></div>
+       </div>
+       <div *ngSwitchCase="'Talitha Nijland'" class="sales_travelspecialist">
+        <div class="titel-gemaaktdoor">
+          <h1>Samengesteld door</h1> 
+          <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
+        <div class="medewerker_tekst">
+            <p> Talitha is een echte liefhebber van het Caribisch leven. Het is dan ook geen wonder dat ze meerdere jaren op Bonaire heeft gewoond. Deze bestemming kent ze dan ook als haar broekzak. Zelfs onderwater! Met haar Padi Advanced duikbrevet heeft ze vele duiken gemaakt. Daarnaast was ze als kiter en windsurfer regelmatig op water te vinden. Vanaf Bonaire heeft ze meerdere Caribische eilanden bezocht, waaronder uiteraard de buureilanden Aruba en Curaçao. Mocht je interesse hebben in een city combi met Miami dan ben je bij Talitha ook aan het juiste adres. 
+              </p>
+        </div>
+        <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/talitha.JPG"></div>
        </div>
     </ng-container>
   </div>
@@ -365,13 +375,13 @@
             <div class="titel-gemaaktdoor">
               <h1>Samengesteld door</h1> 
               <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
-            <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/DSC05305.JPG"></div>
+            <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/IMG_1137.JPG"></div>
            </div>
-           <div *ngSwitchCase="'Sharone Davelaar'" class="sales_travelspecialist">
+           <div *ngSwitchCase="'Talitha Nijland'" class="sales_travelspecialist">
             <div class="titel-gemaaktdoor">
               <h1>Samengesteld door</h1> 
               <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2></div>
-            <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/DSC05305.JPG"></div>
+            <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/talitha.JPG"></div>
            </div>
         </ng-container>
         </div>
