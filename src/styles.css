@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Oswald|Merriweater|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Beth+Ellen|Oswald|Merriweater|Roboto&display=swap|Loved+by+the+King&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Lora);
 
 /*********************
@@ -1228,9 +1228,9 @@ grid-template-areas:
 
 .reisonderdelen blockquote {
   position: relative;
-  font-family: 'Beth Ellen', cursive;
-  font-size: 12px;
-  line-height: 13px;
+  font-family: 'montserrat', cursive;
+  font-size: 20px;
+  line-height: 22px;
   font-style: italic;
 }
 
@@ -1334,7 +1334,7 @@ width:100%;
   background: black;
   color: white;
   text-transform: capitalize;
-  padding: 30px 0px 30px 0px
+  padding: 30px 0px 60px 0px
 }
 
 .reisonderdelen .segment-field.subTitle  {
@@ -1385,7 +1385,6 @@ clear: both;
 margin-top: 0px;
 row-gap: 10px;
 column-gap: 30px;
-
 }
 
 .reisonderdelen .accommodatie_elements vtb-element-field {
@@ -1592,6 +1591,29 @@ height: 40vh;
 .reisonderdelen .accommodatie_elements .splittable  {
   grid-area: acco-splittable;
 }
+
+/***********************************
+ *       TEKST & MEDIA ONDERDELEN      *
+ ***********************************/
+
+.reisonderdelen .accommodatie_elements .element-unit-11 {
+  padding: 5%;
+  background-color: transparent;
+  box-shadow: none;
+ }
+
+ .reisonderdelen .accommodatie_elements .element-unit-11 .date, .reisonderdelen .accommodatie_elements .element-unit-11  .endDate {
+   display: none;
+ }
+
+ .reisonderdelen .accommodatie_elements .element-unit-11 vtb-element-field .title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  font-family: 'Beth Ellen', cursive;
+  text-transform: lowercase;
+ }
 
 
 /***********************************
