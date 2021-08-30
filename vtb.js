@@ -133,40 +133,34 @@ const customTransforms = {
 
     return obj;
   },
-
-  'priceInfo': (obj, params) => {
-
-    let totalPrice = 0;
-    let prices = [];
-    obj.dst.segments.forEach(segment => {
-      segment.elements.forEach(element => {
-        let price = parseFloat(element.olPrices.salesTotal);
-        if(!element.optional || !isNaN(price)) 
-          totalPrice += price;
-        
-        let participants = element.olPrices.participants;
-        let participantPrices = [];
-
-        Object.keys(participants).forEach(key => {
-          let pPrice = parseFloat(participants[key].salesPrice);
-          participants[key] = (isNaN(pPrice)) ? 0 : pPrice;
-        });
-
-        element.prices = {
-          'price': isNaN(price) ? 0 : price,
-          'participantPrices': participants
-        }
-        delete element.olPrices;
-      });
-    });
-
-    return obj;
-  },
-
+  
   'cleanup': (obj, params) => {
 
+    let keys = Object.keys(obj.dst.participants);
+    obj.dst.pList = [];
+    keys.forEach(key => {
+      obj.dst.participants[key].forEach(participant => {
+        if(!obj.dst.mainBooker || obj.dst.mainBooker == '')
+          obj.dst.mainBooker = `${participant.surname}`;
+
+        if(obj.dst.mainBookerId == participant.id) {
+          if(!obj.dst.mainBookerTitle) {
+            obj.dst.mainBookerTitle = (participant.title == 1) ? 'Dhr.' : 'Mevr.'
+          }
+        }
+  
+        if(obj.dst.preferences && obj.dst.preferences.hasOwnProperty(participant.id)) {
+          participant.preferences = obj.dst.preferences[participant.id];
+        }
+        obj.dst.pList.push(participant);
+      })
+    });
+
     obj.dst.segments.forEach(segment => {
       segment.elements.forEach(element => {
+        if((element.unitId == 2 || element.unitId == 24) && element.TSProduct) {
+          delete element.TSProduct;
+        }
         if(element.roomTypes && element.roomTypes.length) {
           element.roomTypes.forEach(type => {
             if(type.supplierinfo) {
@@ -187,7 +181,61 @@ const customTransforms = {
       });
     });
     return obj;
-  }
+  },
+
+  'priceInfo': (obj, params) => {
+
+    let totalPrice = 0;
+    let prices = [];
+    obj.dst.segments.forEach(segment => {
+      segment.elements.forEach(element => {
+        let price = parseFloat(element.olPrices.salesTotal);
+
+        if(!element.optional || !isNaN(price)) 
+          totalPrice += price;
+        
+        let participants = element.olPrices.participants;
+        let participantPrices = [];
+
+        Object.keys(participants).forEach(key => {
+          let pPrice = parseFloat(participants[key].salesPrice);
+          participants[key] = {salesPrice: (isNaN(pPrice)) ? 0 : pPrice};
+        });
+
+        element.prices = {
+          'price': isNaN(price) ? 0 : price,
+          'participantPrices': participants
+        }
+        delete element.olPrices;
+      });
+    });
+
+    return obj;
+  },
+
+ 'totals': (obj, params) => {
+    let totalParticipants = 0;
+    
+    if(obj.dst.participants) {
+      for(let key in obj.dst.participants) {
+        totalParticipants += obj.dst.participants[key].length;
+      }
+    }
+
+    obj.dst.totalParticipants = totalParticipants;
+
+    let totalSalesPrice = obj.dst.segments.reduce((total, segment) => {
+      return total + segment.elements.reduce((total, element) => {
+        let price = (element.olPrices) ? parseFloat(element.olPrices.salesTotal) : 0;
+        return (element.optional || isNaN(price)) ? total : total + price;
+      }, 0);
+    }, 0);
+
+    obj.dst.totalSalesPrice = totalSalesPrice;
+    obj.dst.averagePrice = Math.round(totalSalesPrice / totalParticipants);
+
+    return obj;
+  },
 
 };
 
