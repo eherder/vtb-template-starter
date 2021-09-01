@@ -705,19 +705,6 @@ padding-top: 70px;}
 }
 
 
-.reisonderdelen .segment-field.title {
-  grid-area: reisonderdelen-title;
-  font-weight: bold;
-  font-size: 46px;
-  line-height: 55px;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 30px;
-  color: black;
-  padding-top: 50px;
-}
-
 .reisonderdelen .segment-field.subTitle  {
  grid-area: reisonderdelen-subtitle;
   font-weight: bold;
@@ -752,7 +739,7 @@ padding-top: 70px;}
 
 .reisonderdelen .content p {
   padding-top: 2%;
-  color: black;
+  color: white;
 }
 
 .reisonderdelen .content img {
@@ -1327,13 +1314,13 @@ width:100%;
   font-weight: bold;
   font-size: 36px;
   line-height: 55px;
-  font-family: 'playfair display', Helvetica, Arial, sans-serif;
+  font-family: 'montserrat', Helvetica, Arial, sans-serif;
   text-align: center;
   letter-spacing: 1.8px;
-  background: black;
   color: white;
-  text-transform: capitalize;
-  padding: 30px 0px 60px 0px
+  text-transform: uppercase;
+  background: #95c5c7;
+  padding-top: 4%;
 }
 
 .reisonderdelen .segment-field.subTitle  {
@@ -1341,7 +1328,7 @@ width:100%;
   font-weight: bold;
   text-align: center;
   font-size: 30px;
-  color: black;
+  color: white;
   font-family: 'Beth Ellen', cursive;
   margin-bottom: -50px;
 }
@@ -1350,11 +1337,11 @@ width:100%;
   background-size: 100%;
   grid-area: reisonderdelen-content;
   padding: 5% 10%;
-  background-color: #fafafa;
-  background-image: url(https://media.bontravel.nl/original/original/background-vtb-palm.jpg);
+  background-color:#95c5c7;
   background-repeat: no-repeat;
   background-position: bottom;
   overflow: hidden;
+  color: white;
 }
 
 .reisonderdelen .accommodatie_elements vtb-element  {
@@ -1365,8 +1352,22 @@ width:100%;
  border-bottom: 1px solid black;
  background-color: white;
  border: 1px solid lightgrey;
- margin: 10%;
+ margin: 5% 10% 5% 10%;
  box-shadow: 1px 1px 10px #888888;
+}
+
+.reisonderdelen .splittable {
+  position: relative;
+  margin-top: 10%;
+}
+
+.reisonderdelen .splittable:before {
+  content: "Inbegrepen in jullie reisplan";
+  font-size: 35px;
+  color: black;
+  font-family: 'Beth Ellen', cursive;
+  text-transform: lowercase;
+  margin: 10%;
 }
 
 .reisonderdelen .accommodatie_elements vtb-element > divs {
@@ -1377,11 +1378,10 @@ width:100%;
   display: grid;
 }
 
-.reisonderdelen .accommodatie_elements  vtb-element {
+.reisonderdelen .accommodatie_elements vtb-element {
 grid-area: accommodatie-element;
 overflow:visible;
 clear: both;
-margin-top: 0px;
 row-gap: 10px;
 column-gap: 30px;
 }
@@ -1753,6 +1753,11 @@ height: 40vh;
   margin-top: 50px;
 }
 
+.reissom .reissom-perpersoon {
+  grid-area: reissom-tekst;
+  text-align: center;
+  }
+
 .reissom .reissom-perpersoon .exclusief-tekst {
 text-align: center;
 font-style: italic;
@@ -1769,11 +1774,37 @@ line-height: normal;
   display:inline;
 }
 
-.reissom .reissom-perpersoon {
-  grid-area: reissom-tekst;
-  text-align: center;
+.reissom .reissom-perpersoon .prijs-rij {
+display: block;
   }
 
+.reissom .reissom-perpersoon .prijs-rij .naam {
+    display: block;
+    float: left;
+    width: 48%;
+    text-align: right;
+      }
+
+.reissom .reissom-perpersoon .prijs-rij .prijs {
+    display: block;
+    float: right;
+    text-align: left;
+    width: 48%;
+    padding-left: 3%
+          }
+
+.reissom .reissom-perpersoon .totalereissom vtb-price-calculator {
+  border-top: 2px solid black;
+  margin-top: 30px;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size:  19px;
+  color: rgb(10, 216, 206);
+  display: grid;
+padding: 20px;
+  }
+
+      
   .reissom .reissom-perpersoon vtb-price-calculator:before {
     border-top: solid 3px black;
   }
@@ -4010,7 +4041,7 @@ text-transform: uppercase;
   font-weight: 500;
   line-height: 1.4em;
   text-transform: uppercase;
-  font-family: 'montserrat';
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
 .sublinks {
@@ -4416,6 +4447,37 @@ grid-area: bestemming;
 /***********************************
  *       REISONDERDEEL DEFAULT       *
  ***********************************/
+.reisonderdelen ol {
+  list-style: none;
+  counter-reset: item;
+}
+.reisonderdelen li {
+  counter-increment: item;
+  margin-bottom: 20px;
+}
+.reisonderdelen li:before {
+  content: counter(item);
+  display: inline-block;
+  background: black;
+  color: white;
+  padding-left: 10px;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  border-radius: 50%;
+  color: #fff;
+  width: 15px;
+  height: 30px;
+  vertical-align: middle;
+  text-align: center;
+  margin-left: -50px;
+  margin-right: 14px;
+}
+
+.reisonderdelen table {
+  color: white;
+}
+
 
  .reisonderdelen .default_elements {
   display: grid;
