@@ -279,13 +279,26 @@
             <ng-container *ngIf="itinerary.pricepp">
                <div class="prijs-rij" *ngFor="let participant of itinerary.pList">
                   <div class="naam">
-                     Totaalprijs {{participant.name}} 
+                    {{participant.name}} 
                      <ng-container *ngIf="participant.surname_prefix">{{participant.surname_prefix}} </ng-container>
                      {{participant.surname}}
                   </div>
                   <div class="prijs">
                      <vtb-price-calculator [dataSource]="itinerary.segments" [numberFormat]="true" [decimals]="2" [participantIds]="participant.id" [optional]="false" [prefix]="'&euro; '"></vtb-price-calculator>
                   </div>
+               </div>
+               <div id="border2"></div>
+               <div class="totalereissom">
+               <vtb-price-calculator 
+               [dataSource]="itinerary.segments"
+               [decimals]="2" 
+               [prefix]="'€'" 
+               [decimalPipe]="true"
+               [postfix]="' totale reissom'" 
+               [segmentTypeIds]="[99]"
+               [reverseSegmentTypeIds]="true"
+               [optional]="false">
+               </vtb-price-calculator>
                </div>
             </ng-container>
             <div class="exclusief-tekst"> <span [innerHTML]="(itinerary.extraFieldValues | extraField : 10 : 20)"></span> </div>
