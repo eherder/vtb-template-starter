@@ -73,6 +73,20 @@
                   </div>
                   <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/IMG_1137.JPG"></div>
                </div>
+               <div *ngSwitchCase="'Talitha Nijland'" class="sales_travelspecialist">
+                  <div class="titel-gemaaktdoor">
+                     <h1>Met vriendelijke groet,</h1>
+                     <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2>
+                  </div>
+                  <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/talitha.JPG"></div>
+               </div>
+               <div *ngSwitchCase="'Iris Mijnsbergen'" class="sales_travelspecialist">
+                  <div class="titel-gemaaktdoor">
+                     <h1>Met vriendelijke groet,</h1>
+                     <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2>
+                  </div>
+                  <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/Iris-mijnsbergen_cuba.JPG"></div>
+               </div>
             </ng-container>
          </div>
       </div>
