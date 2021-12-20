@@ -1667,6 +1667,10 @@ height: 40vh;
    background-image: url(https://media.bontravel.nl/original/original/shutterstock_578658502.jpg);
   }
 
+  .reisonderdelen .accommodatie_elements.acco-optional:empty {
+  display: none;
+   }
+
   .reisonderdelen .accommodatie_elements.acco-optional:before {
     content: "Optionele Extra's bij jullie reis";
     font-size: 35px;
