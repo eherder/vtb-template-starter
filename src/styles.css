@@ -4460,10 +4460,11 @@ grid-area: bestemming;
   counter-increment: item;
   margin-bottom: 20px;
 }
+
 .reisonderdelen li:before {
-  content: counter(item);
+  content: '*';
   display: inline-block;
-  background: black;
+  background:none;
   color: white;
   padding-left: 10px;
   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
