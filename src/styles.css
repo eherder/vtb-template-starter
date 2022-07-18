@@ -1915,7 +1915,7 @@ padding-top: 60px;
   z-index: 2;
   letter-spacing: 1.2px;
   border-bottom: 1px solid grey;
-  padding-top: 2%;
+  padding: 1%;
 }
 
 .reissom .reissom-inclusief vtb-elements-list vtb-element vtb-element-field:nth-child(1) {
@@ -1944,8 +1944,8 @@ padding-top: 60px;
 
 
 .reissom .reissom-inclusief .subTitle {
-  font-weight: 400;
-padding: 10px;
+font-weight: 400;
+padding: 0px 0px 10px 0px;
 }
 
 .reissom .reissom-inclusief .inclusief {
