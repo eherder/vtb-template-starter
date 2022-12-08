@@ -3,7 +3,7 @@ const customTransforms = {
     let elementListSegments = JSON.parse(JSON.stringify(obj.dst.segments));
     elementListSegments.forEach(segment => {
       segment.elements.forEach(element => {
-        if(element.unitId == 15 || element.unitId == 16 || element.unitId == 17) {
+        if(element.unitId == 15 || element.unitId == 17 || element.unitId == 16) {
           element.unitId = 9;
         } else if(element.unitId == 7) {
           element.unitId = 6;
