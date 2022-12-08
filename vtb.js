@@ -116,7 +116,7 @@ const customTransforms = {
 
     obj.dst.segments.forEach(segment => {
       segment.elements.forEach(element => {
-        if(element.unitId == 2 || element.unitId == 4) && !element.optional && element.maps) {
+        if(element.unitId == 2 && !element.optional && element.maps) {
           if(!element.maps.latitude) {
             console.log(element.maps);
           }
