@@ -55,6 +55,9 @@ const customTransforms = {
         if(element.unitId == 2 && !element.optional && element.maps && element.maps.latitude) {
           markers.push(element.maps);
         }
+        if(element.unitId == 4 && !element.optional && element.maps && element.maps.latitude) {
+          markers.push(element.maps);
+        }
           
       });
     });
