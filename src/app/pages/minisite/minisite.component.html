@@ -103,6 +103,13 @@
                   </div>
                   <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/IMG-20190426-WA0017-3.JPG"></div>
                </div>
+               <div *ngSwitchCase="'Marjolein Santing'" class="sales_travelspecialist">
+                  <div class="titel-gemaaktdoor">
+                     <h1>Met vriendelijke groet,</h1>
+                     <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2>
+                  </div>
+                  <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/foto-Marjolein-bontravel.jpg"></div>
+               </div>
             </ng-container>
          </div>
       </div>
@@ -141,13 +148,13 @@
                </div>
                <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/Frank-indianriver.jpg"></div>
             </div>
-            <div *ngSwitchCase="'Nienke Groothuizen'" class="sales_travelspecialist">
+            <div *ngSwitchCase="'Marjolein Santing'" class="sales_travelspecialist">
                <div class="titel-gemaaktdoor">
                   <h1>Samengesteld door</h1>
                   <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2>
                </div>
                <div class="medewerker_tekst">
-                  <p> De Caribbean is Nienke’s tweede thuis. Ze heeft 12 jaar op Antigua gewoond en vanuit daar veel van de eilanden bezocht en sommigen ook bewoond. Ze is een echte Caribbean kenner en weet de mooiste plekjes. Grenada, Barbados, Dominica, St Lucia maar ook Turks & Taicos en Bahamas zijn plekken waar ze meerdere keren is geweest.
+                  <p> Marjolein is een echte reisliefhebber. Ze trekt er dan ook graag op uit om de wereld te ontdekken. Het liefst wordt ze helemaal ondergedompeld in de lokale cultuur. Er is geen betere manier om een plek écht te leren kennen! Dat deed ze in de tijd dat ze in Zuid-Afrika woonde. Maar ook tijdens een citytrip naar New York. Marjolein voelt zich helemaal thuis in de Caribbean. De altijd stralende zon, een overvloed aan piña colada's, de relaxte eilandsfeer en de afwisseling van strand en natuur maken dit de perfecte bestemming. Ze ziet als een uitdaging om aan de hand van iemands wensenlijst een reisvoorstel samen te stellen dat perfect aansluit. 
                   </p>
                </div>
                <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/IMG_1137.JPG"></div>
