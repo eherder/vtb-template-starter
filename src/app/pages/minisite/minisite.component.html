@@ -282,7 +282,7 @@
       [segmentFields]="['subTitle','title','content']"
       [segmentFieldsPerType]="{'27':[{name: 'media', crop: 'original/lg', max: '5'},'subTitle','content','title']}">
       <ng-template #elementTemplate let-segment="segment" let-elements="elements">
-         <div class="accommodatie_elements">
+         <div class="accommodatie_elements extra">
             <vtb-elements [dataSource]="elements" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/original', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
          </div>
       </ng-template>

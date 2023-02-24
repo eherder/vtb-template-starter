@@ -1370,6 +1370,16 @@ width:100%;
   margin: 10%;
 }
 
+.reisonderdelen .splittable.extra:before {
+  content: "Voeg toe aan deze reis";
+  font-size: 35px;
+  color: black;
+  font-family: 'Beth Ellen', cursive;
+  text-transform: lowercase;
+  margin: 10%;
+}
+
+
 .reisonderdelen .accommodatie_elements vtb-element > divs {
   display: grid;
 }
