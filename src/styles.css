@@ -2244,6 +2244,11 @@ color: #b2d6cf;
   font-family: "Font Awesome 5 Free";
   content: "";
 }
+
+.reissomoptioneel .extra {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
 /***********************************
  *       Voorwaarden     *
  ***********************************/
