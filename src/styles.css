@@ -1610,9 +1610,14 @@ height: 40vh;
  ***********************************/
 
 .reisonderdelen .accommodatie_elements .element-unit-11 {
-  padding: 5%;
-  background-color: transparent;
-  box-shadow: none;
+  padding: 0% 5% 5% 5%;
+  display: grid;
+  grid-template-areas: "accommodatie-element";
+  border-bottom: 1px solid black;
+  background-color: white;
+  border: 1px solid lightgrey;
+  margin: 5% 10% 5% 10%;
+  box-shadow: 1px 1px 10px #888888;
  }
 
  .reisonderdelen .accommodatie_elements .element-unit-11 .date, .reisonderdelen .accommodatie_elements .element-unit-11  .endDate {
