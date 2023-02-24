@@ -288,7 +288,7 @@
       [segmentTypeIds]="[27]"
       [reverseUnitIds]="false"
       [segmentFields]="['dayNumbers','subTitle','title','content',{name: 'media', crop: 'original/original', max: '4'}]"
-      [segmentFieldsPerType]="{'13':[{name: 'media', crop: 'original/lg', max: '6'},'title','subTitle','content']}">
+      [segmentFieldsPerType]="{'27':[{name: 'media', crop: 'original/lg', max: '6'},'title','subTitle','content']}">
       <ng-template #elementTemplate let-segment="segment" let-elements="elements">
          <div class="accommodatie_elements">
             <vtb-elements [dataSource]="elements" [unitIds]="[2,15,3,11,17]" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/original', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
@@ -298,7 +298,7 @@
          </div>
       </ng-template>
        </vtb-segments>
-       
+
    </div>
 
    <div class="vluchtschema" *ngIf="itinerary.hasFlights">
