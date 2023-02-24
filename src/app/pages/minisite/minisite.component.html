@@ -275,6 +275,7 @@
             <vtb-elements [dataSource]="elements" [unitIds]="[99,13]" [reverseUnitIds]="true"  [optional]="true" [elementFields]="[{name: 'media', crop: 'original/original', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},{name: 'nights', prefix:'', postfix: 'n'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
          </div>
       </ng-template>
+      </vtb-segments>
       <vtb-segments [dataSource]="itinerary.segments"
       [segmentTypeIds]="[27]"
       [reverseUnitIds]="true"
@@ -285,7 +286,6 @@
             <vtb-elements [dataSource]="elements" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/original', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
          </div>
       </ng-template>
-      </vtb-segments>
       </vtb-segments>
    </div>
    <div class="vluchtschema" *ngIf="itinerary.hasFlights">
