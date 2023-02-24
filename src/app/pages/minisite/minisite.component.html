@@ -356,7 +356,10 @@
          <div id="border"></div>
       </div>
       <div class="reissomoptioneel-inclusief">
-         <vtb-elements-list [optional]="true" [unitIds]="[99,13]"	[unitIdsOrder]="[2, 4, 13, -1]" [reverseUnitIds]="true" [dataSource]="itinerary.segments" [elementFields]="[{name: 'nights', prefix:''},'unitnaam','title', 'subTitle', 'inclusief', 'addedValue']"></vtb-elements-list>
+         <vtb-elements-list [optional]="true" [unitIds]="[99,13]"	[unitIdsOrder]="[2, 4, 13, -1]" [reverseUnitIds]="true" [dataSource]="itinerary.segments" [elementFields]="[{name: 'nights', prefix:''},'unitnaam','title', 'subTitle', 'inclusief', 'addedValue']"> 
+         </vtb-elements-list>
+         <vtb-elements-list [unitIds]="[17]"	[unitIdsOrder]="[2, 4, 13, -1]" [reverseUnitIds]="false" [dataSource]="itinerary.segments" [elementFields]="[{name: 'nights', prefix:''},'unitnaam','title', 'subTitle', 'inclusief', 'addedValue']"> 
+         </vtb-elements-list>
       </div>
       <vtb-segments [dataSource]="itinerary.segments"
       [segmentTypeIds]="[27]"
