@@ -1625,14 +1625,16 @@ height: 40vh;
  }
 
  .reisonderdelen .accommodatie_elements .element-unit-11 vtb-element-field .title {
-  font-weight: bold;
-  text-align: center;
-  font-size: 25px;
-  color: black;
-  font-family: 'Beth Ellen', cursive;
-  text-transform: lowercase;
- }
-
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 35px;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    padding-top: 30px;
+    z-index: 2;
+    letter-spacing: 2px;
+}
 
 /***********************************
  *       SlIDER ACCO     *
