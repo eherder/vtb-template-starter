@@ -284,16 +284,7 @@
          </div>
       </div>
 
-      <vtb-segments [dataSource]="itinerary.segments"
-      [segmentTypeIds]="[27]"
-      [reverseUnitIds]="true"
-      [segmentFieldsPerType]="{'27'}">
-      <ng-template #elementTemplate let-segment="segment" let-elements="elements">
-         <div class="accommodatie_elements">
-            <vtb-elements [dataSource]="elements" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/original', max: '4', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
-         </div>
-      </ng-template>
-      </vtb-segments>
+
    </div>
    <div class="vluchtschema" *ngIf="itinerary.hasFlights">
       <div class="reistitel">
