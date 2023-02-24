@@ -276,17 +276,6 @@
          </div>
       </ng-template>
       </vtb-segments>
-      <vtb-segments [dataSource]="itinerary.segments"
-      [segmentTypeIds]="[27]"
-      [reverseUnitIds]="true"
-      [segmentFields]="['subTitle','title','content']"
-      [segmentFieldsPerType]="{'27':[{name: 'media', crop: 'original/lg', max: '5'},'subTitle','content','title']}">
-      <ng-template #elementTemplate let-segment="segment" let-elements="elements">
-         <div class="accommodatie_elements extra">
-            <vtb-elements [dataSource]="elements" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/original', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
-         </div>
-      </ng-template>
-      </vtb-segments>
    </div>
    <div class="vluchtschema" *ngIf="itinerary.hasFlights">
       <div class="reistitel">
@@ -369,6 +358,16 @@
       <div class="reissomoptioneel-inclusief">
          <vtb-elements-list [optional]="true" [unitIds]="[99,13]"	[unitIdsOrder]="[2, 4, 13, -1]" [reverseUnitIds]="true" [dataSource]="itinerary.segments" [elementFields]="[{name: 'nights', prefix:''},'unitnaam','title', 'subTitle', 'inclusief', 'addedValue']"></vtb-elements-list>
       </div>
+      <vtb-segments [dataSource]="itinerary.segments"
+      [segmentTypeIds]="[27]"
+      [reverseUnitIds]="true"
+      [segmentFieldsPerType]="{'27':[{name: 'media', crop: 'original/lg', max: '5'},'subTitle','content','title']}">
+      <ng-template #elementTemplate let-segment="segment" let-elements="elements">
+         <div class="accommodatie_elements extra">
+            <vtb-elements [dataSource]="elements" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/original', max: '4', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
+         </div>
+      </ng-template>
+      </vtb-segments>
    </div>
    <div class="afsluiting">
       <div class="reistitel">
