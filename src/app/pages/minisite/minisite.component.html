@@ -275,6 +275,24 @@
             <vtb-elements [dataSource]="elements" [unitIds]="[99,13]" [reverseUnitIds]="true"  [optional]="true" [elementFields]="[{name: 'media', crop: 'original/original', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},{name: 'nights', prefix:'', postfix: 'n'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
          </div>
       </ng-template>
+       </vtb-segments>
+       
+      <div class="reissomoptioneel">
+         <div class="reistitel">
+            <h1>Optionele Extra's</h1>
+            <div id="border"></div>
+         </div>
+      </div>
+
+      <vtb-segments [dataSource]="itinerary.segments"
+      [segmentTypeIds]="[27]"
+      [reverseUnitIds]="true"
+      [segmentFieldsPerType]="{'27':[{name: 'media', crop: 'original/lg', max: '5'},'subTitle','content','title']}">
+      <ng-template #elementTemplate let-segment="segment" let-elements="elements">
+         <div class="extra">
+            <vtb-elements [dataSource]="elements" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/original', max: '4', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
+         </div>
+      </ng-template>
       </vtb-segments>
    </div>
    <div class="vluchtschema" *ngIf="itinerary.hasFlights">
@@ -356,21 +374,8 @@
          <div id="border"></div>
       </div>
       <div class="reissomoptioneel-inclusief">
-         <vtb-elements-list [optional]="true" [unitIds]="[99,13]"	[unitIdsOrder]="[2, 4, 13, -1]" [reverseUnitIds]="true" [dataSource]="itinerary.segments" [elementFields]="[{name: 'nights', prefix:''},'unitnaam','title', 'subTitle', 'inclusief', 'addedValue']"> 
-         </vtb-elements-list>
-         <vtb-elements-list [unitIds]="[27]"	[unitIdsOrder]="[2, 4, 13, -1]" [reverseUnitIds]="false" [dataSource]="itinerary.segments" [elementFields]="[{name: 'nights', prefix:''},'unitnaam','title', 'subTitle', 'inclusief', 'addedValue']"> 
-         </vtb-elements-list>
+         <vtb-elements-list [optional]="true" [unitIds]="[99,13]"	[unitIdsOrder]="[2, 4, 13, -1]" [reverseUnitIds]="true" [dataSource]="itinerary.segments" [elementFields]="[{name: 'nights', prefix:''},'unitnaam','title', 'subTitle', 'inclusief', 'addedValue']"></vtb-elements-list>
       </div>
-      <vtb-segments [dataSource]="itinerary.segments"
-      [segmentTypeIds]="[27]"
-      [reverseUnitIds]="true"
-      [segmentFieldsPerType]="{'27':[{name: 'media', crop: 'original/lg', max: '5'},'subTitle','content','title']}">
-      <ng-template #elementTemplate let-segment="segment" let-elements="elements">
-         <div class="extra">
-            <vtb-elements [dataSource]="elements" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/original', max: '4', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
-         </div>
-      </ng-template>
-      </vtb-segments>
    </div>
    <div class="afsluiting">
       <div class="reistitel">
