@@ -1712,22 +1712,7 @@ height: 40vh;
     box-shadow: none;
   }
 
-  .reisonderdelen .accommodatie_elements.acco-optional vtb-element .media-0 {
-    border: 1px solid pink;
-    content: "test image 0";
-  }
 
-  .reisonderdelen .media-0 .accommodatie_elements.acco-optional vtb-media .media-items {
-    height: 0;
-    border: 1px solid pink;
-    content: "test image 0";
-  }
-
-
-  .reisonderdelen .media-0 .accommodatie_elements.acco-optional vtb-element {
-    border: 1px solid pink;
-    content: "test image 0";
-  }
 
   .reisonderdelen .accommodatie_elements.acco-optional vtb-element:before {
     position: absolute;
