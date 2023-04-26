@@ -335,16 +335,14 @@
                   </div>
                </div>
                <div class="totalereissom">
-               <vtb-price-calculator 
-               [dataSource]="itinerary.segments"
-               [decimals]="2" 
-               [prefix]="'€'" 
-               [decimalPipe]="true"
-               [postfix]="' totale reissom'" 
-               [segmentTypeIds]="[99]"
-               [reverseSegmentTypeIds]="true"
-               [optional]="false">
-               </vtb-price-calculator>
+                  <vtb-prices-grouped 
+  [dataSource]="itinerary" 
+  [decimals]="0" 
+  [prefix]="'€'"
+  [optional]="false"
+  [reverseSegmentTypeIds]="true"
+  [postfix]="',-  p.p., based on [persons] persons'" 
+  [singlePostfix]="',-  p.p., based on [persons] person'"></vtb-prices-grouped>
                </div>
             </ng-container>
             <div class="exclusief-tekst"> <span [innerHTML]="(itinerary.extraFieldValues | extraField : 10 : 20)"></span> </div>
