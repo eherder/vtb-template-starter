@@ -17,16 +17,16 @@
          [config]="{name: 'subTitle', tag: 'h3', class: 'cover-subTitle'}"
          [dataSource]="itinerary"
          ></vtb-text>
-      </div>    
-       <div class="cover-video"
-       *ngIf="(itinerary.youtubelink)"
-       >
-         <vtb-youtube [dataSource]="itinerary.youtubelink"
-         [controls]="false"
-         [autoplay]="true"
-         [loop]="true"
-         [fullscreen]="false"></vtb-youtube>
-    </div>
+      </div>
+      <div class="cover-video"
+      *ngIf="(itinerary.youtubelink)"
+      >
+        <vtb-youtube [dataSource]="itinerary.youtubelink"
+        [controls]="false"
+        [autoplay]="true"
+        [loop]="true"
+        [fullscreen]="false"></vtb-youtube>
+   </div>
       <div class="cover-images">
          <vtb-media
          [dataSource]="itinerary.cover"
@@ -36,10 +36,7 @@
          [config]="{crop: 'original/original'}"
          ></vtb-media>
       </div>
-
-
    </div>
-
    <div class="menu" [ngClass]="{'active': showMobileMenu}" >
       <vtb-menu
       [toggle]="true"
@@ -55,18 +52,8 @@
       </div>
       <div class="brief">
          <div  [innerHTML]="itinerary.TSOrder.texts.proposal"></div>
-         <p>Tot slot wil ik jullie nog even extra wijzen op het onderdeel <a href=".goedomteweten">'goed geinformeer op reis'</a>
-             in deze offerte. Dit tref je onderaan de mini website. Hierin staat belangrijke informatie over jullie reis. Mogelijke inreismaatregelen of aanvullende voorwaarden worden in deze sectie vermeld. 
-         </p>
          <div class="handtekening">
             <ng-container [ngSwitch]="(itinerary.extraFieldValues | extraField : 10 : 19)">
-               <div *ngSwitchCase="'Milou van Steen'" class="sales_travelspecialist">
-                  <div class="titel-gemaaktdoor">
-                     <h1>Met vriendelijke groet,</h1>
-                     <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2>
-                  </div>
-                  <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/Milou-8dd93be8.jpg"></div>
-               </div>
                <div *ngSwitchCase="'Kelly Smid'" class="sales_travelspecialist">
                   <div class="titel-gemaaktdoor">
                      <h1>Met vriendelijke groet,</h1>
@@ -87,6 +74,34 @@
                      <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2>
                   </div>
                   <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/IMG_1137.JPG"></div>
+               </div>
+               <div *ngSwitchCase="'Talitha Nijland'" class="sales_travelspecialist">
+                  <div class="titel-gemaaktdoor">
+                     <h1>Met vriendelijke groet,</h1>
+                     <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2>
+                  </div>
+                  <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/talitha.JPG"></div>
+               </div>
+               <div *ngSwitchCase="'Iris Mijnsbergen'" class="sales_travelspecialist">
+                  <div class="titel-gemaaktdoor">
+                     <h1>Met vriendelijke groet,</h1>
+                     <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2>
+                  </div>
+                  <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/PHOTO-2022-06-09-12-20-01-06f8594f.jpg"></div>
+               </div>
+               <div *ngSwitchCase="'Yessica Kuijper'" class="sales_travelspecialist">
+                  <div class="titel-gemaaktdoor">
+                     <h1>Met vriendelijke groet,</h1>
+                     <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2>
+                  </div>
+                  <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/IMG-20190426-WA0017-3.JPG"></div>
+               </div>
+               <div *ngSwitchCase="'Marjolein Santing'" class="sales_travelspecialist">
+                  <div class="titel-gemaaktdoor">
+                     <h1>Met vriendelijke groet,</h1>
+                     <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2>
+                  </div>
+                  <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/foto-Marjolein-bontravel.jpg"></div>
                </div>
             </ng-container>
          </div>
@@ -126,16 +141,16 @@
                </div>
                <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/Frank-indianriver.jpg"></div>
             </div>
-            <div *ngSwitchCase="'Nienke Groothuizen'" class="sales_travelspecialist">
+            <div *ngSwitchCase="'Marjolein Santing'" class="sales_travelspecialist">
                <div class="titel-gemaaktdoor">
                   <h1>Samengesteld door</h1>
                   <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2>
                </div>
                <div class="medewerker_tekst">
-                  <p> De Caribbean is Nienke’s tweede thuis. Ze heeft 12 jaar op Antigua gewoond en vanuit daar veel van de eilanden bezocht en sommigen ook bewoond. Ze is een echte Caribbean kenner en weet de mooiste plekjes. Grenada, Barbados, Dominica, St Lucia maar ook Turks & Taicos en Bahamas zijn plekken waar ze meerdere keren is geweest.
+                  <p> Marjolein is echt een reisliefhebber. Ze trekt er dan ook graag op uit om de wereld te ontdekken. Het liefst wordt ze helemaal ondergedompeld in de lokale cultuur. Er is geen betere manier om een plek écht te leren kennen! Dat deed ze in de tijd dat ze in Zuid-Afrika woonde. Maar ook tijdens een citytrip naar New York. Marjolein voelt zich helemaal thuis in de Caribbean. De altijd stralende zon, een overvloed aan piña colada's, de relaxte eilandsfeer en de afwisseling van strand en natuur maken dit de perfecte bestemming. Ze ziet als een uitdaging om aan de hand van iemands wensenlijst een reisvoorstel samen te stellen dat perfect aansluit. 
                   </p>
                </div>
-               <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/IMG_1137.JPG"></div>
+               <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/foto-Marjolein-bontravel.jpg"></div>
             </div>
             <div *ngSwitchCase="'Talitha Nijland'" class="sales_travelspecialist">
                <div class="titel-gemaaktdoor">
@@ -148,6 +163,37 @@
                </div>
                <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/talitha.JPG"></div>
             </div>
+            <div *ngSwitchCase="'Iris Mijnsbergen'" class="sales_travelspecialist">
+               <div class="titel-gemaaktdoor">
+                  <h1>Samengesteld door</h1>
+                  <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2>
+               </div>
+               <div class="medewerker_tekst">
+                  In Iris haar agenda moet altijd een reis gepland staan. En zodra ze terug is, worden er weer nieuwe plannen gesmeed. Want niks zo leuk als vakantievoorpret: route’s uitstippelen, inlezen in de hotspots van het land en lokale gewoontes en tradities. <br><br>
+
+                  Iris heeft dan ook alle hoeken van de wereld gezien. Mede dankzij haar hobby Eclipsjagen is ze op de meest ongebruikelijke plekken geweest. Van het zuidelijkste puntje van Chili, de ongerepte binnenlanden van China, tot de desolate vlaktes van Alaska en… natuurlijk de Caribbean. <br><br>
+                  
+                  Uiteraard om een paar dagen te relaxen onder een palmboom, maar ook om wat van de eilanden te zien. Zo ging Iris hiken door de regenwouden van Guadeloupe, bezocht ze een rumdistilleerderij op Barbados, zocht ze verborgen strandjes op Martinique en dook ze in de rijke historie van Curaçao. <br><br>
+                  
+                  Vanwege een gezonde portie nieuwsgierigheid komt Iris altijd met een zwaar beladen rugzak vol kennis (en lokale drankjes ;) weer thuis. En daar mag jij van profiteren! Iris vertaalt graag jouw wensen tot een onvergetelijke Caribische reis waarbij aan elk detail gedacht is. <br><br>
+               </div>
+               <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/PHOTO-2022-06-09-12-20-01-06f8594f.jpg"></div>
+            </div>
+            <div *ngSwitchCase="'Yessica Kuijper'" class="sales_travelspecialist">
+               <div class="titel-gemaaktdoor">
+                  <h1>Samengesteld door</h1>
+                  <h2><br />{{(itinerary.extraFieldValues | extraField : 10 : 19)}}</h2>
+               </div>
+               <div class="medewerker_tekst">
+                  <p>Yessica heeft al een flinke dosis reiservaring opgedaan, en de bucketlist is nog veel langer! Maar dat kan ook bijna niet anders met een diploma Tourism Management op zak. Een ding valt op, er staat uitzonderlijk veel tropische eilanden op deze lijst. Yessica is namelijk een echte liefhebber van het eilandleven. Het liefst wordt ze omringd door wuivende palmbomen en de zee.
+                 <br></p>             
+                  <p> En voor wie denkt dat Yessica dus tijdens haar vakantie het liefst op een strandbed onderuit zakt, die heeft het mis. Yessica wisselt de relaxte eilanddagen graag af met wat actiefs. Zo trekt ze er graag op uit om meer over de historie en cultuur te ontdekken. Met de nieuwsgierigheid van een ware ontdekkingsreiziger gaat ze op pad om alle feitjes te verzamelen over de plek waar ze is.
+                  <br></p>             
+                  <p>Voor een combinatiereis met New York ben je bij Yessica aan het juiste adres. Omdat ze zoveel mogelijk indrukken wilde op doen, heeft ze kilometers gevreten door het maken van stadswandelingen. Ze weet daarom als geen ander waarom de combinatie met een hangmat op de Caribbean zo fijn is. 
+                  </p>             
+               </div>
+               <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/IMG-20190426-WA0017-3.JPG"></div>
+            </div>
          </ng-container>
       </div>
    </div>
@@ -156,7 +202,7 @@
          <h1>reisschema</h1>
          <div id="border"></div>
       </div>
-      <!-- DEZE KAART GEEFT NU EEN ERROR-->
+      <!-- KAART START -->
       <div class="kaart" *ngIf="itinerary.allMarkers.length">
          <agm-map
          [styles]="[{'featureType':'administrative','elementType':'all','stylers':[{'hue':'#ff0000'}]},{'featureType':'administrative','elementType':'geometry.fill','stylers':[{'visibility':'off'},{'saturation':'43'}]},{'featureType':'administrative','elementType':'labels.text.fill','stylers':[{'color':'#2a969e'}]},{'featureType':'administrative.country','elementType':'geometry','stylers':[{'visibility':'simplified'},{'hue':'#ffbe00'}]},{'featureType':'administrative.country','elementType':'geometry.fill','stylers':[{'visibility':'on'}]},{'featureType':'administrative.country','elementType':'labels.text','stylers':[{'visibility':'on'},{'hue':'#00c1ff'}]},{'featureType':'administrative.country','elementType':'labels.text.fill','stylers':[{'hue':'#00ffed'},{'visibility':'on'},{'saturation':'72'},{'lightness':'-6'},{'gamma':'0.69'}]},{'featureType':'administrative.country','elementType':'labels.text.stroke','stylers':[{'weight':'2.00'},{'visibility':'simplified'},{'hue':'#ff0000'}]},{'featureType':'administrative.country','elementType':'labels.icon','stylers':[{'color':'#ff0000'},{'visibility':'on'}]},{'featureType':'administrative.province','elementType':'geometry.fill','stylers':[{'visibility':'on'}]},{'featureType':'administrative.locality','elementType':'geometry.fill','stylers':[{'visibility':'on'}]},{'featureType':'administrative.land_parcel','elementType':'geometry.fill','stylers':[{'visibility':'on'}]},{'featureType':'landscape','elementType':'all','stylers':[{'color':'#f2f2f2'},{'visibility':'on'}]},{'featureType':'landscape.man_made','elementType':'geometry.fill','stylers':[{'visibility':'off'}]},{'featureType':'landscape.natural','elementType':'geometry.fill','stylers':[{'visibility':'on'},{'color':'#f8f8f8'}]},{'featureType':'landscape.natural','elementType':'labels.text','stylers':[{'visibility':'on'},{'color':'#1db7b6'},{'lightness':'-4'},{'saturation':'85'},{'weight':'0.82'}]},{'featureType':'landscape.natural.landcover','elementType':'labels.text','stylers':[{'visibility':'on'},{'color':'#101010'}]},{'featureType':'landscape.natural.landcover','elementType':'labels.text.fill','stylers':[{'color':'#212121'}]},{'featureType':'landscape.natural.terrain','elementType':'geometry.fill','stylers':[{'visibility':'off'}]},{'featureType':'landscape.natural.terrain','elementType':'labels.text.fill','stylers':[{'visibility':'on'}]},{'featureType':'poi','elementType':'all','stylers':[{'visibility':'off'}]},{'featureType':'poi.attraction','elementType':'geometry.fill','stylers':[{'visibility':'off'}]},{'featureType':'poi.park','elementType':'geometry','stylers':[{'visibility':'off'}]},{'featureType':'poi.park','elementType':'geometry.fill','stylers':[{'visibility':'off'}]},{'featureType':'poi.park','elementType':'labels.text','stylers':[{'visibility':'on'}]},{'featureType':'poi.park','elementType':'labels.text.fill','stylers':[{'color':'#9aa995'}]},{'featureType':'road','elementType':'all','stylers':[{'saturation':-100},{'lightness':45}]},{'featureType':'road.highway','elementType':'all','stylers':[{'visibility':'simplified'}]},{'featureType':'road.highway','elementType':'geometry.fill','stylers':[{'visibility':'on'}]},{'featureType':'road.highway','elementType':'labels.text','stylers':[{'hue':'#9fff00'}]},{'featureType':'road.arterial','elementType':'labels.icon','stylers':[{'visibility':'off'}]},{'featureType':'transit','elementType':'all','stylers':[{'visibility':'off'}]},{'featureType':'water','elementType':'all','stylers':[{'color':'#b2dbdf'},{'visibility':'on'}]},{'featureType':'water','elementType':'geometry.fill','stylers':[{'color':'#b5e0df'}]}]"
@@ -187,12 +233,11 @@
                <div class="timeline-article">
                   <vtb-segments [dataSource]="itinerary.segments"
                   [segmentTypeIds]="[13,2,4,24,25]"
-                  [unitIds]="[13,15,2,4,24,25]"
+                  [unitIds]="[2,4,24,25]"
                   [reverseUnitIds]="false"
                   [optional]="false"
                   [segmentFields]="['day',{'name':'date', dateFormat:'EE d MMM yyyy'}, 'title']"
-                  [elementFields]="[{'name':'title'},{name: 'nights', prefix:'(', postfix: 'x)'}]"
-                  
+                  [elementFields]="[{'name':'title'},{name: 'nights', prefix:'(', postfix: 'n)'}]"
                   ></vtb-segments>
                </div>
                <!-- // Article -->
@@ -218,31 +263,21 @@
          <div id="border"></div>
       </div>
       <vtb-segments [dataSource]="itinerary.segments"
-      [segmentTypeIds]="[13,24,25]"
+      [segmentTypeIds]="[13,24,25,27]"
       [reverseUnitIds]="true"
-      [segmentFields]="['dayNumbers','subTitle','title','content',{'name': 'prettyDayString'},{name: 'media', crop: 'original/original', max: '4'}]"
-      [segmentFieldsPerType]="{'13':[{name: 'media', crop: 'original/lg', max: '6'},'title','subTitle','content','prettyDayString']}">
+      [segmentFields]="['dayNumbers','subTitle','title','content',{name: 'media', crop: 'original/original', max: '6'}]"
+      [segmentFieldsPerType]="{'27':[]}">
       <ng-template #elementTemplate let-segment="segment" let-elements="elements">
          <div class="accommodatie_elements">
-            <vtb-elements [dataSource]="elements" [unitIds]="[2,15,3,11]" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/original', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},{'name': 'prettyDayString'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
+            <vtb-elements [dataSource]="elements" [unitIds]="[2,15,3,11,17]" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/original', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
          </div>
          <div class="accommodatie_elements acco-optional" *ngIf="segment.hasOptionalHotel">
             <vtb-elements [dataSource]="elements" [unitIds]="[99,13]" [reverseUnitIds]="true"  [optional]="true" [elementFields]="[{name: 'media', crop: 'original/original', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},{name: 'nights', prefix:'', postfix: 'n'},[{'name':'date', dateFormat:'d MMMM (EEEE)'}, {'name':'endDate', dateFormat:'d MMMM (EEEE)', prefix: ' - ', if: 'nights'}],'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
          </div>
       </ng-template>
-      </vtb-segments>
-      <vtb-segments [dataSource]="itinerary.segments"
-      [segmentTypeIds]="[27]"
-      [reverseUnitIds]="true"
-      [segmentFields]="['subTitle','title','content']"
-      [segmentFieldsPerType]="{'27':[{name: 'media', crop: 'original/lg', max: '5'},'subTitle','content','title']}">
-      <ng-template #elementTemplate let-segment="segment" let-elements="elements">
-         <div class="accommodatie_elements">
-            <vtb-elements [dataSource]="elements" [optional]="false" [elementFields]="[{name: 'media', crop: 'original/original', max: '8', slider:'true', sliderAutoPlay: 'true', sliderInterval: '1000'},'title','subTitle','content',{name:'additionalText', tag: 'p'}, {name:'subAdditionalText', tag: 'p'}]"></vtb-elements>
-         </div>
-      </ng-template>
-      </vtb-segments>
+       </vtb-segments>
    </div>
+
    <div class="vluchtschema" *ngIf="itinerary.hasFlights">
       <div class="reistitel">
          <h1>Vluchtschema</h1>
@@ -264,9 +299,8 @@
       <div class="reissombrief">
          <div class="reissom-inclusief">
             <vtb-elements-list [optional]="false" [segmentTypeIds]="[1,2,4,13,25,24,26,27]" 	[categorize]="{'-1': 'Algemeen', '2' : 'accommodatie', '6' : 'Vluchten', '9': 'Vervoer' }"
-            [unitIds]="[11]" [unitIdsOrder]="[6, 2, 8, 9, 10, -1]" [reverseUnitIds]="true" [reverseSegmentTypeIds]="false" [dataSource]="itinerary.elementListSegments" [elementFields]="[{name: 'nights', prefix:''},'unitnaam','title', 'subTitle', 'inclusief']"></vtb-elements-list>
+            [unitIds]="[11,13]" [unitIdsOrder]="[6, 2, 8, 9, 10, -1]" [reverseUnitIds]="true" [reverseSegmentTypeIds]="false" [dataSource]="itinerary.elementListSegments" [elementFields]="[{name: 'nights', prefix:''},'unitnaam','title', 'subTitle', 'inclusief']"></vtb-elements-list>
          </div>
-         <div id="border2"></div>
          <div class="reissom-perpersoon">
             <ng-container *ngIf="!itinerary.pricepp">
                <vtb-price-calculator 
@@ -301,16 +335,14 @@
                   </div>
                </div>
                <div class="totalereissom">
-               <vtb-price-calculator 
-               [dataSource]="itinerary.segments"
-               [decimals]="2" 
-               [prefix]="'€'" 
-               [decimalPipe]="true"
-               [postfix]="' totale reissom'" 
-               [segmentTypeIds]="[99]"
-               [reverseSegmentTypeIds]="true"
-               [optional]="false">
-               </vtb-price-calculator>
+                  <vtb-prices-grouped 
+  [dataSource]="itinerary" 
+  [decimals]="0" 
+  [prefix]="'€'"
+  [optional]="false"
+  [reverseSegmentTypeIds]="true"
+  [postfix]="',-  p.p., based on [persons] persons'" 
+  [singlePostfix]="',-  p.p., based on [persons] person'"></vtb-prices-grouped>
                </div>
             </ng-container>
             <div class="exclusief-tekst"> <span [innerHTML]="(itinerary.extraFieldValues | extraField : 10 : 20)"></span> </div>
@@ -323,8 +355,11 @@
          <div id="border"></div>
       </div>
       <div class="reissomoptioneel-inclusief">
-         <vtb-elements-list [optional]="true" [unitIds]="[99]"	[unitIdsOrder]="[2, 4, 13, -1]" [reverseUnitIds]="true" [dataSource]="itinerary.segments" [elementFields]="[{name: 'nights', prefix:''},'unitnaam','title', 'subTitle', 'inclusief', 'addedValue']"></vtb-elements-list>
+         <vtb-elements-list [optional]="true" [unitIds]="[99,13]"	[unitIdsOrder]="[2, 4, 13, -1]" [reverseUnitIds]="true" [dataSource]="itinerary.segments" [elementFields]="[{name: 'nights', prefix:''},'unitnaam','title', 'subTitle', 'inclusief', 'addedValue']"></vtb-elements-list>
       </div>
+      <div>
+      </div>
+
    </div>
    <div class="afsluiting">
       <div class="reistitel">
@@ -413,7 +448,7 @@
    </div>
    <div class="voorwaarden">
       <div class="reistitel">
-         <h1 id="goedomteweten">Goed om te weten</h1>
+         <h1>Goed om te weten</h1>
          <div id="border"></div>
       </div>
       <!-- 
