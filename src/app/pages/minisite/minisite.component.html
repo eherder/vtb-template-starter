@@ -314,7 +314,7 @@
             [unitIds]="[11,13]" [unitIdsOrder]="[6, 2, 8, 9, 10, -1]" [reverseUnitIds]="true" [reverseSegmentTypeIds]="false" [dataSource]="itinerary.elementListSegments" [elementFields]="[{name: 'nights', prefix:''},'unitnaam','title', 'subTitle', 'inclusief']"></vtb-elements-list>
          </div>
          <div class="reissom-perpersoon">
-            <ng-container *ngIf="!itinerary.pricepp">
+            <ng-container *ngIf="!itinerary.pricepp && itinerary.pricehide"> 
                <vtb-price-calculator 
                [dataSource]="itinerary.segments"
                [decimals]="2" 
@@ -357,11 +357,6 @@
                [reverseSegmentTypeIds]="true"
                [optional]="false">
                </vtb-price-calculator>
-               </div>
-            </ng-container>
-            <ng-container *ngIf="itinerary.pricehide">
-               <div>
-               <p>De prijs voor deze reis volgt.</p> 
                </div>
             </ng-container>
             <div class="exclusief-tekst"> <span [innerHTML]="(itinerary.extraFieldValues | extraField : 10 : 20)"></span> </div>
