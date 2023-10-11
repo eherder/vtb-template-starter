@@ -16,6 +16,7 @@
       {"function": "extraField", "params": {"attributeName": "verzekering", "extraFieldValueID": 10, "fieldID": 26}},
       {"function": "extraField", "params": {"attributeName": "medewerkerimage", "extraFieldValueID": 10, "fieldID": 19}},
       {"function": "extraField", "params": {"attributeName": "pricepp", "extraFieldValueID": 12, "fieldID": 36}},
+      {"function": "extraField", "params": {"attributeName": "pricehide", "extraFieldValueID": 12, "fieldID": 53}},
       {"function": "extraField", "params": {"attributeName": "youtubelink", "extraFieldValueID": 10, "fieldID": 38}},
       {"function": "elementExtraField", "params": {"attributeName": "personaltouch", "fieldID": 15}},
       {"function": "elementExtraField", "params": {"attributeName": "inclusief", "fieldID": 30}},

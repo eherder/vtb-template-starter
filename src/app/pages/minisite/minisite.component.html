@@ -154,7 +154,7 @@
                   Ze zoekt de hoogste wolkenkrabbers van New York, gaat op St. Maarten op zoek naar de beste rumshop en kiest bewust voor een spectaculaire landing met een vliegtuig op Saba. Marjolein voelt zich helemaal thuis in de Caribbean. 
                   De altijd stralende zon, een overvloed aan piña colada’s, de relaxte eilandsfeer en de afwisseling van strand en natuur maken dit de perfecte bestemming. Ze ziet als een uitdaging om aan de hand van iemands wensenlijst een reisvoorstel samen te stellen dat perfect aansluit. 
                </div>
-               <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/foto-Marjolein-bontravel.jpg"></div>
+               <div class="medewerker_foto"><img src="https://media.bontravel.nl/square/md/f1b23c95-1fce-440f-8717-7d25dc30eb36.jpg"></div>
             </div>
             <div *ngSwitchCase="'Talitha Nijland'" class="sales_travelspecialist">
                <div class="titel-gemaaktdoor">
@@ -357,6 +357,11 @@
                [reverseSegmentTypeIds]="true"
                [optional]="false">
                </vtb-price-calculator>
+               </div>
+            </ng-container>
+            <ng-container *ngIf="itinerary.pricehide">
+               <div>
+               <p>De prijs voor deze reis volgt.</p> 
                </div>
             </ng-container>
             <div class="exclusief-tekst"> <span [innerHTML]="(itinerary.extraFieldValues | extraField : 10 : 20)"></span> </div>
