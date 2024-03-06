@@ -2075,6 +2075,10 @@ color: #b2d6cf;
 padding-top: 60px;
 }
 
+.reissomoptioneel .description {
+text-align: center;
+  }
+
 .reissomoptioneel .reissomoptioneel-inclusief vtb-elements-list vtb-element {
   display: flex;
   padding: 20px 0;

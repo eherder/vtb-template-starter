@@ -368,6 +368,7 @@
          <h1>Optionele Extra's</h1>
          <div id="border"></div>
       </div>
+      <div class="description">Onderstaande extra's vormen een meerprijs op de totale reissom en zijn dus niet per persoon. </div>
       <div class="reissomoptioneel-inclusief">
          <vtb-elements-list [optional]="true" [unitIds]="[99,13]"	[unitIdsOrder]="[2, 4, 13, -1]" [reverseUnitIds]="true" [dataSource]="itinerary.segments" [elementFields]="[{name: 'nights', prefix:''},'unitnaam','title', 'subTitle', 'inclusief', 'addedValue']"></vtb-elements-list>
       </div>
