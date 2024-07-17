@@ -55,7 +55,7 @@ const customTransforms = {
         if(element.unitId == 2 && !element.optional && element.maps && element.maps.latitude) {
           markers.push(element.maps);
         }
-          
+
       });
     });
 
@@ -72,7 +72,7 @@ const customTransforms = {
         }
       });
     });
-    
+
     return obj;
   },
 
@@ -81,7 +81,7 @@ const customTransforms = {
 
     obj.dst.extraFieldValues.forEach((group) => {
       if(group.id === params.extraFieldValueID) {
-        
+
         group.fields.forEach((field) => {
           if(field.id === params.fieldID)
             obj.dst[params.attributeName||field.name] = field.value;
@@ -94,20 +94,20 @@ const customTransforms = {
 
   'elementExtraField': (obj, params) => {
     if(!obj.dst.extraFieldValues) return;
- 
+
     obj.dst.segments.forEach(segment => {
       segment.elements.forEach(element => {
         if(!element.TSOrderline.extraFieldValues) return;
- 
+
         element.TSOrderline.extraFieldValues.forEach((field) => {
           if(field.id === params.fieldID) {
             element[params.attributeName||field.name] = (field.value||field.selected);
           }
-            
+
         });
       });
     });
- 
+
     return obj;
   },
 
@@ -133,7 +133,7 @@ const customTransforms = {
 
     return obj;
   },
-  
+
   'cleanup': (obj, params) => {
 
     let keys = Object.keys(obj.dst.participants);
@@ -148,7 +148,7 @@ const customTransforms = {
             obj.dst.mainBookerTitle = (participant.title == 1) ? 'Dhr.' : 'Mevr.'
           }
         }
-  
+
         if(obj.dst.preferences && obj.dst.preferences.hasOwnProperty(participant.id)) {
           participant.preferences = obj.dst.preferences[participant.id];
         }
@@ -156,8 +156,17 @@ const customTransforms = {
       })
     });
 
+    let usedTransfer = {};
+
     obj.dst.segments.forEach(segment => {
       segment.elements.forEach(element => {
+        if(element.unitId === 16 && !element.optional) {
+          if(usedTransfer[element.TSProduct.id] && usedTransfer[element.TSProduct.id] !== element.title) {
+            element.TSProduct.id = element.vtbObjectId;
+          } else {
+            usedTransfer[element.TSProduct.id] = element.title;
+          }
+        }
         if((element.unitId == 2 || element.unitId == 24) && element.TSProduct) {
           delete element.TSProduct;
         }
@@ -191,9 +200,9 @@ const customTransforms = {
       segment.elements.forEach(element => {
         let price = parseFloat(element.olPrices.salesTotal);
 
-        if(!element.optional || !isNaN(price)) 
+        if(!element.optional || !isNaN(price))
           totalPrice += price;
-        
+
         let participants = element.olPrices.participants;
         let participantPrices = [];
 
@@ -215,7 +224,7 @@ const customTransforms = {
 
  'totals': (obj, params) => {
     let totalParticipants = 0;
-    
+
     if(obj.dst.participants) {
       for(let key in obj.dst.participants) {
         totalParticipants += obj.dst.participants[key].length;
