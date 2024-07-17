@@ -2279,7 +2279,7 @@ display: none;
 .voorwaarden .afwijkende li{
   padding-top: 10px;
   padding-bottom: 10px; 
-  border-bottom: 1px solid grey; 
+  border-bottom: 1px dashed lightcyan; 
 }
   
 
@@ -2296,6 +2296,7 @@ display: none;
 
 .voorwaarden > div {
   padding: 5%;
+  padding-bottom: 1px solid lightblue;
 }
 
 .voorwaarden .voorwaarden-tekst {
@@ -2321,6 +2322,7 @@ padding-top: 20px;}
 
 .voorwaarden h2 {
   font-size: 20px;
+  padding-top: 25px;
   font-weight: 500;
 }
 
