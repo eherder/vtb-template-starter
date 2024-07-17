@@ -2271,7 +2271,7 @@ font-size: 16px;
 font-weight: bold;
 }
 
-.voorwaarden .afwijkende li{
+.voorwaarden .afwijkende li:before{
   list-style: none;
   list-style-type: none;
 }
