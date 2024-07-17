@@ -2276,11 +2276,19 @@ content: '';
 display: none;
 }
 
+.voorwaarden .afwijkende li{
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  border-bottom: 1px solid grey; 
+}
+  
+
 .voorwaarden .afwijkende ul.splittable {
   padding-left: 0;
   padding-bottom: 10px;
-  border-bottom: 1px solid;
 }
+
+
 
 .aanvullende_voorwaarden {
   display: block;
