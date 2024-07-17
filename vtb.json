@@ -19,6 +19,7 @@
       {"function": "extraField", "params": {"attributeName": "pricehide", "extraFieldValueID": 12, "fieldID": 53}},
       {"function": "extraField", "params": {"attributeName": "youtubelink", "extraFieldValueID": 10, "fieldID": 38}},
       {"function": "elementExtraField", "params": {"attributeName": "personaltouch", "fieldID": 15}},
+      {"function": "elementExtraField", "params": {"attributeName": "afwijkende", "fieldID": 67}},
       {"function": "elementExtraField", "params": {"attributeName": "inclusief", "fieldID": 30}},
       {"function": "elementExtraField", "params": {"attributeName": "unitnaam", "fieldID": 31}},
       {"function": "addImageToEmployeeText", "params":{}},

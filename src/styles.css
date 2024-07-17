@@ -2257,6 +2257,29 @@ color: #b2d6cf;
   "voorwaarden-link";
 }
 
+.voorwaarden .afwijkende {
+  list-style: none;
+  list-style-type: none;
+}
+
+.voorwaarden .afwijkende:empty:before  {
+content: "Geen afwijkende voorwaarden van toepassing";
+}
+
+.voorwaarden .afwijkende .title {
+font-size: 16px;
+font-weight: bold;
+}
+
+.voorwaarden .afwijkende li{
+  list-style: none;
+  list-style-type: none;
+}
+
+.aanvullende_voorwaarden {
+  display: block;
+}
+
 .voorwaarden > div {
   padding: 5%;
 }

@@ -491,6 +491,10 @@
             <section id="voorwaarden" class="tab-panel">
                <h2>Voorwaarden</h2>
                <div class="voorwaarden-tekst" [innerHTML]="itinerary.voorwaarden"></div>
+               <h2>Afwijkende voorwaarden</h2>
+               <div class="afwijkende">
+                  <vtb-elements-list [optional]="false" [unitIds]="[99,13]" [unitIdsOrder]="[2, 4]" [reverseUnitIds]="true" [dataSource]="itinerary.segments" [elementFields]="['title','afwijkende']"></vtb-elements-list>
+               </div>
             </section>
             <section id="praktisch" class="tab-panel">
                <h2>Praktische informatie</h2>
